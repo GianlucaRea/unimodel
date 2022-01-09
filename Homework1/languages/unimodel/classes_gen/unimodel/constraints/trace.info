@@ -1,0 +1,902 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<debug-info version="2">
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123140:jetbrains.mps.baseLanguage.structure.ConstructorDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068580123165:jetbrains.mps.baseLanguage.structure.InstanceMethodDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1068581242878:jetbrains.mps.baseLanguage.structure.ReturnStatement" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070462154015:jetbrains.mps.baseLanguage.structure.StaticFieldDeclaration" />
+  <concept fqn="c:f3061a53-9226-4cc5-a443-f952ceaf5816/1070475587102:jetbrains.mps.baseLanguage.structure.SuperConstructorInvocation" />
+  <root>
+    <file name="ConstraintsAspectDescriptor.java">
+      <unit at="10,0,20,0" name="unimodel.constraints.ConstraintsAspectDescriptor" />
+    </file>
+    <file name="GeneratedFeedbackAspectConstraints.java">
+      <unit at="10,0,17,0" name="unimodel.constraints.GeneratedFeedbackAspectConstraints" />
+    </file>
+    <file name="GeneratedRulesConstraintsAspect.java">
+      <unit at="14,0,46,0" name="unimodel.constraints.GeneratedRulesConstraintsAspect" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/342464601220395622">
+    <file name="Address_ConstraintRules.java">
+      <node id="342464601220395622" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="342464601220395635" at="25,0,26,0" concept="3" trace="check_id342464601220395635" />
+      <node id="342464601220595591" at="26,0,27,0" concept="3" trace="check_id342464601220595591" />
+      <node id="342464601220607542" at="27,0,28,0" concept="3" trace="check_id342464601220607542" />
+      <node id="342464601220616541" at="28,0,29,0" concept="3" trace="check_id342464601220616541" />
+      <node id="342464601220624942" at="29,0,30,0" concept="3" trace="check_id342464601220624942" />
+      <node id="8742999790642899071" at="30,0,31,0" concept="3" trace="check_id8742999790642899071" />
+      <node id="342464601220395622" at="32,0,33,0" concept="3" trace="RULES" />
+      <node id="342464601220395622" at="36,43,37,17" concept="2" />
+      <node id="342464601220395635" at="41,0,42,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="342464601220395635" at="42,0,43,0" concept="3" trace="ID_Only_Letters_Country" />
+      <node id="342464601220395635" at="44,40,45,97" concept="4" />
+      <node id="342464601220395635" at="49,63,50,110" concept="2" />
+      <node id="342464601220395635" at="54,67,55,18" concept="2" />
+      <node id="342464601220595591" at="60,0,61,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="342464601220595591" at="61,0,62,0" concept="3" trace="ID_Only_Letters_State" />
+      <node id="342464601220595591" at="63,38,64,95" concept="4" />
+      <node id="342464601220595591" at="68,63,69,108" concept="2" />
+      <node id="342464601220595591" at="73,67,74,18" concept="2" />
+      <node id="342464601220607542" at="79,0,80,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="342464601220607542" at="80,0,81,0" concept="3" trace="ID_Only_Letters_City" />
+      <node id="342464601220607542" at="82,37,83,94" concept="4" />
+      <node id="342464601220607542" at="87,63,88,107" concept="2" />
+      <node id="342464601220607542" at="92,67,93,18" concept="2" />
+      <node id="342464601220616541" at="98,0,99,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="342464601220616541" at="99,0,100,0" concept="3" trace="ID_Post_Code_Only_Digits" />
+      <node id="342464601220616541" at="101,41,102,98" concept="4" />
+      <node id="342464601220616541" at="106,63,107,107" concept="2" />
+      <node id="342464601220616541" at="111,67,112,18" concept="2" />
+      <node id="342464601220624942" at="117,0,118,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="342464601220624942" at="118,0,119,0" concept="3" trace="ID_Post_Code_Length" />
+      <node id="342464601220624942" at="120,36,121,93" concept="4" />
+      <node id="342464601220624942" at="125,63,126,103" concept="2" />
+      <node id="342464601220624942" at="130,67,131,18" concept="2" />
+      <node id="8742999790642899071" at="136,0,137,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790642899071" at="137,0,138,0" concept="3" trace="ID_ID_Positive" />
+      <node id="8742999790642899071" at="139,31,140,88" concept="4" />
+      <node id="8742999790642899071" at="144,63,145,88" concept="2" />
+      <node id="8742999790642899071" at="149,67,150,18" concept="2" />
+      <node id="342464601220395622" at="154,41,155,19" concept="4" />
+      <node id="342464601220395622" at="159,0,160,0" concept="3" trace="country$N3rs" />
+      <node id="342464601220395622" at="160,0,161,0" concept="3" trace="state$N8ON" />
+      <node id="342464601220395622" at="161,0,162,0" concept="3" trace="city$N9xQ" />
+      <node id="342464601220395622" at="162,0,163,0" concept="3" trace="post_code$NatU" />
+      <node id="342464601220395622" at="163,0,164,0" concept="3" trace="id$v$QZ" />
+      <node id="342464601220395635" at="44,0,47,0" concept="0" trace="Rule_Only_Letters_Country#()V" />
+      <node id="342464601220595591" at="63,0,66,0" concept="0" trace="Rule_Only_Letters_State#()V" />
+      <node id="342464601220607542" at="82,0,85,0" concept="0" trace="Rule_Only_Letters_City#()V" />
+      <node id="342464601220616541" at="101,0,104,0" concept="0" trace="Rule_Post_Code_Only_Digits#()V" />
+      <node id="342464601220624942" at="120,0,123,0" concept="0" trace="Rule_Post_Code_Length#()V" />
+      <node id="8742999790642899071" at="139,0,142,0" concept="0" trace="Rule_ID_Positive#()V" />
+      <node id="342464601220395622" at="154,0,157,0" concept="0" trace="Address_ConstraintRules#()V" />
+      <node id="342464601220395635" at="48,0,52,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220395635" at="53,0,57,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220595591" at="67,0,71,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220595591" at="72,0,76,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220607542" at="86,0,90,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220607542" at="91,0,95,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220616541" at="105,0,109,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220616541" at="110,0,114,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220624942" at="124,0,128,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220624942" at="129,0,133,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642899071" at="143,0,147,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642899071" at="148,0,152,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601220395622" at="34,0,39,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="342464601220395622" at="36,43,37,17" />
+      <scope id="342464601220395635" at="44,40,45,97" />
+      <scope id="342464601220395635" at="49,63,50,110" />
+      <scope id="342464601220395635" at="54,67,55,18" />
+      <scope id="342464601220595591" at="63,38,64,95" />
+      <scope id="342464601220595591" at="68,63,69,108" />
+      <scope id="342464601220595591" at="73,67,74,18" />
+      <scope id="342464601220607542" at="82,37,83,94" />
+      <scope id="342464601220607542" at="87,63,88,107" />
+      <scope id="342464601220607542" at="92,67,93,18" />
+      <scope id="342464601220616541" at="101,41,102,98" />
+      <scope id="342464601220616541" at="106,63,107,107" />
+      <scope id="342464601220616541" at="111,67,112,18" />
+      <scope id="342464601220624942" at="120,36,121,93" />
+      <scope id="342464601220624942" at="125,63,126,103" />
+      <scope id="342464601220624942" at="130,67,131,18" />
+      <scope id="8742999790642899071" at="139,31,140,88" />
+      <scope id="8742999790642899071" at="144,63,145,88" />
+      <scope id="8742999790642899071" at="149,67,150,18" />
+      <scope id="342464601220395622" at="154,41,155,19" />
+      <scope id="342464601220395635" at="44,0,47,0" />
+      <scope id="342464601220595591" at="63,0,66,0" />
+      <scope id="342464601220607542" at="82,0,85,0" />
+      <scope id="342464601220616541" at="101,0,104,0" />
+      <scope id="342464601220624942" at="120,0,123,0" />
+      <scope id="8742999790642899071" at="139,0,142,0" />
+      <scope id="342464601220395622" at="154,0,157,0" />
+      <scope id="342464601220395635" at="48,0,52,0">
+        <var name="context" id="342464601220395635" />
+      </scope>
+      <scope id="342464601220395635" at="53,0,57,0">
+        <var name="context" id="342464601220395635" />
+      </scope>
+      <scope id="342464601220595591" at="67,0,71,0">
+        <var name="context" id="342464601220595591" />
+      </scope>
+      <scope id="342464601220595591" at="72,0,76,0">
+        <var name="context" id="342464601220595591" />
+      </scope>
+      <scope id="342464601220607542" at="86,0,90,0">
+        <var name="context" id="342464601220607542" />
+      </scope>
+      <scope id="342464601220607542" at="91,0,95,0">
+        <var name="context" id="342464601220607542" />
+      </scope>
+      <scope id="342464601220616541" at="105,0,109,0">
+        <var name="context" id="342464601220616541" />
+      </scope>
+      <scope id="342464601220616541" at="110,0,114,0">
+        <var name="context" id="342464601220616541" />
+      </scope>
+      <scope id="342464601220624942" at="124,0,128,0">
+        <var name="context" id="342464601220624942" />
+      </scope>
+      <scope id="342464601220624942" at="129,0,133,0">
+        <var name="context" id="342464601220624942" />
+      </scope>
+      <scope id="8742999790642899071" at="143,0,147,0">
+        <var name="context" id="8742999790642899071" />
+      </scope>
+      <scope id="8742999790642899071" at="148,0,152,0">
+        <var name="context" id="8742999790642899071" />
+      </scope>
+      <scope id="342464601220395622" at="34,0,39,0" />
+      <unit id="342464601220395622" at="158,0,165,0" name="unimodel.constraints.Address_ConstraintRules$PROPS" />
+      <unit id="342464601220395635" at="40,0,58,0" name="unimodel.constraints.Address_ConstraintRules$Rule_Only_Letters_Country" />
+      <unit id="342464601220595591" at="59,0,77,0" name="unimodel.constraints.Address_ConstraintRules$Rule_Only_Letters_State" />
+      <unit id="342464601220607542" at="78,0,96,0" name="unimodel.constraints.Address_ConstraintRules$Rule_Only_Letters_City" />
+      <unit id="342464601220616541" at="97,0,115,0" name="unimodel.constraints.Address_ConstraintRules$Rule_Post_Code_Only_Digits" />
+      <unit id="342464601220624942" at="116,0,134,0" name="unimodel.constraints.Address_ConstraintRules$Rule_Post_Code_Length" />
+      <unit id="8742999790642899071" at="135,0,153,0" name="unimodel.constraints.Address_ConstraintRules$Rule_ID_Positive" />
+      <unit id="342464601220395622" at="22,0,166,0" name="unimodel.constraints.Address_ConstraintRules" />
+    </file>
+    <file name="Address_ConstraintsFeedback.java">
+      <node id="342464601220395622" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="342464601220395633" at="25,73,26,115" concept="2" />
+      <node id="342464601220595589" at="32,73,33,123" concept="2" />
+      <node id="342464601220607540" at="39,73,40,112" concept="2" />
+      <node id="342464601220616539" at="46,73,47,92" concept="2" />
+      <node id="342464601220624940" at="53,73,54,99" concept="2" />
+      <node id="8742999790642899069" at="60,73,61,86" concept="2" />
+      <node id="342464601220395622" at="65,0,66,0" concept="3" trace="PROVIDERS" />
+      <node id="342464601220395622" at="67,40,68,19" concept="4" />
+      <node id="342464601220395622" at="73,58,74,30" concept="2" />
+      <node id="342464601220395622" at="67,0,70,0" concept="0" trace="Address_ConstraintsFeedback#()V" />
+      <node id="342464601220395633" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="342464601220595589" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="342464601220607540" at="37,0,42,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="342464601220616539" at="44,0,49,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="342464601220624940" at="51,0,56,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790642899069" at="58,0,63,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="342464601220395622" at="71,0,76,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="342464601220395633" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_kacaqw_a" />
+      <node id="342464601220595589" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_kacaqw_b" />
+      <node id="342464601220607540" at="36,0,43,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_kacaqw_c" />
+      <node id="342464601220616539" at="43,0,50,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_kacaqw_d" />
+      <node id="342464601220624940" at="50,0,57,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_kacaqw_e" />
+      <node id="8742999790642899069" at="57,0,64,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_kacaqw_f" />
+      <scope id="342464601220395633" at="25,73,26,115" />
+      <scope id="342464601220595589" at="32,73,33,123" />
+      <scope id="342464601220607540" at="39,73,40,112" />
+      <scope id="342464601220616539" at="46,73,47,92" />
+      <scope id="342464601220624940" at="53,73,54,99" />
+      <scope id="8742999790642899069" at="60,73,61,86" />
+      <scope id="342464601220395622" at="67,40,68,19" />
+      <scope id="342464601220395622" at="73,58,74,30" />
+      <scope id="342464601220395622" at="67,0,70,0" />
+      <scope id="342464601220395633" at="23,0,28,0">
+        <var name="context" id="342464601220395633" />
+      </scope>
+      <scope id="342464601220595589" at="30,0,35,0">
+        <var name="context" id="342464601220595589" />
+      </scope>
+      <scope id="342464601220607540" at="37,0,42,0">
+        <var name="context" id="342464601220607540" />
+      </scope>
+      <scope id="342464601220616539" at="44,0,49,0">
+        <var name="context" id="342464601220616539" />
+      </scope>
+      <scope id="342464601220624940" at="51,0,56,0">
+        <var name="context" id="342464601220624940" />
+      </scope>
+      <scope id="8742999790642899069" at="58,0,63,0">
+        <var name="context" id="8742999790642899069" />
+      </scope>
+      <scope id="342464601220395622" at="71,0,76,0" />
+      <unit id="342464601220395633" at="22,111,28,3" name="unimodel.constraints.Address_ConstraintsFeedback$1" />
+      <unit id="342464601220595589" at="29,111,35,3" name="unimodel.constraints.Address_ConstraintsFeedback$2" />
+      <unit id="342464601220607540" at="36,111,42,3" name="unimodel.constraints.Address_ConstraintsFeedback$3" />
+      <unit id="342464601220616539" at="43,111,49,3" name="unimodel.constraints.Address_ConstraintsFeedback$4" />
+      <unit id="342464601220624940" at="50,111,56,3" name="unimodel.constraints.Address_ConstraintsFeedback$5" />
+      <unit id="8742999790642899069" at="57,111,63,3" name="unimodel.constraints.Address_ConstraintsFeedback$6" />
+      <unit id="342464601220395622" at="19,0,77,0" name="unimodel.constraints.Address_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/342464601221061123">
+    <file name="Class_ConstraintRules.java">
+      <node id="342464601221061123" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="342464601221104473" at="25,0,26,0" concept="3" trace="check_id342464601221104473" />
+      <node id="342464601222556525" at="26,0,27,0" concept="3" trace="check_id342464601222556525" />
+      <node id="342464601222565357" at="27,0,28,0" concept="3" trace="check_id342464601222565357" />
+      <node id="342464601221061123" at="29,0,30,0" concept="3" trace="RULES" />
+      <node id="342464601221061123" at="33,43,34,17" concept="2" />
+      <node id="342464601221104473" at="38,0,39,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="342464601221104473" at="39,0,40,0" concept="3" trace="ID_Seats_Is_Positive" />
+      <node id="342464601221104473" at="41,37,42,94" concept="4" />
+      <node id="342464601221104473" at="46,63,47,90" concept="2" />
+      <node id="342464601221104473" at="51,67,52,18" concept="2" />
+      <node id="342464601222556525" at="57,0,58,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="342464601222556525" at="58,0,59,0" concept="3" trace="ID_Blackboard_Positive" />
+      <node id="342464601222556525" at="60,39,61,96" concept="4" />
+      <node id="342464601222556525" at="65,63,66,96" concept="2" />
+      <node id="342464601222556525" at="70,67,71,18" concept="2" />
+      <node id="342464601222565357" at="76,0,77,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="342464601222565357" at="77,0,78,0" concept="3" trace="ID_Speaker_Positive" />
+      <node id="342464601222565357" at="79,36,80,93" concept="4" />
+      <node id="342464601222565357" at="84,63,85,93" concept="2" />
+      <node id="342464601222565357" at="89,67,90,18" concept="2" />
+      <node id="342464601221061123" at="94,39,95,19" concept="4" />
+      <node id="342464601221061123" at="99,0,100,0" concept="3" trace="seats$TYDT" />
+      <node id="342464601221061123" at="100,0,101,0" concept="3" trace="blackboard$U43g" />
+      <node id="342464601221061123" at="101,0,102,0" concept="3" trace="speaker$U4Kj" />
+      <node id="342464601221104473" at="41,0,44,0" concept="0" trace="Rule_Seats_Is_Positive#()V" />
+      <node id="342464601222556525" at="60,0,63,0" concept="0" trace="Rule_Blackboard_Positive#()V" />
+      <node id="342464601222565357" at="79,0,82,0" concept="0" trace="Rule_Speaker_Positive#()V" />
+      <node id="342464601221061123" at="94,0,97,0" concept="0" trace="Class_ConstraintRules#()V" />
+      <node id="342464601221104473" at="45,0,49,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601221104473" at="50,0,54,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601222556525" at="64,0,68,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601222556525" at="69,0,73,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601222565357" at="83,0,87,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601222565357" at="88,0,92,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601221061123" at="31,0,36,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="342464601221061123" at="33,43,34,17" />
+      <scope id="342464601221104473" at="41,37,42,94" />
+      <scope id="342464601221104473" at="46,63,47,90" />
+      <scope id="342464601221104473" at="51,67,52,18" />
+      <scope id="342464601222556525" at="60,39,61,96" />
+      <scope id="342464601222556525" at="65,63,66,96" />
+      <scope id="342464601222556525" at="70,67,71,18" />
+      <scope id="342464601222565357" at="79,36,80,93" />
+      <scope id="342464601222565357" at="84,63,85,93" />
+      <scope id="342464601222565357" at="89,67,90,18" />
+      <scope id="342464601221061123" at="94,39,95,19" />
+      <scope id="342464601221104473" at="41,0,44,0" />
+      <scope id="342464601222556525" at="60,0,63,0" />
+      <scope id="342464601222565357" at="79,0,82,0" />
+      <scope id="342464601221061123" at="94,0,97,0" />
+      <scope id="342464601221104473" at="45,0,49,0">
+        <var name="context" id="342464601221104473" />
+      </scope>
+      <scope id="342464601221104473" at="50,0,54,0">
+        <var name="context" id="342464601221104473" />
+      </scope>
+      <scope id="342464601222556525" at="64,0,68,0">
+        <var name="context" id="342464601222556525" />
+      </scope>
+      <scope id="342464601222556525" at="69,0,73,0">
+        <var name="context" id="342464601222556525" />
+      </scope>
+      <scope id="342464601222565357" at="83,0,87,0">
+        <var name="context" id="342464601222565357" />
+      </scope>
+      <scope id="342464601222565357" at="88,0,92,0">
+        <var name="context" id="342464601222565357" />
+      </scope>
+      <scope id="342464601221061123" at="31,0,36,0" />
+      <unit id="342464601221061123" at="98,0,103,0" name="unimodel.constraints.Class_ConstraintRules$PROPS" />
+      <unit id="342464601221104473" at="37,0,55,0" name="unimodel.constraints.Class_ConstraintRules$Rule_Seats_Is_Positive" />
+      <unit id="342464601222556525" at="56,0,74,0" name="unimodel.constraints.Class_ConstraintRules$Rule_Blackboard_Positive" />
+      <unit id="342464601222565357" at="75,0,93,0" name="unimodel.constraints.Class_ConstraintRules$Rule_Speaker_Positive" />
+      <unit id="342464601221061123" at="22,0,104,0" name="unimodel.constraints.Class_ConstraintRules" />
+    </file>
+    <file name="Class_ConstraintsFeedback.java">
+      <node id="342464601221061123" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="342464601221104471" at="25,73,26,95" concept="2" />
+      <node id="342464601222556523" at="32,73,33,111" concept="2" />
+      <node id="342464601222565355" at="39,73,40,108" concept="2" />
+      <node id="342464601221061123" at="44,0,45,0" concept="3" trace="PROVIDERS" />
+      <node id="342464601221061123" at="46,38,47,19" concept="4" />
+      <node id="342464601221061123" at="52,58,53,30" concept="2" />
+      <node id="342464601221061123" at="46,0,49,0" concept="0" trace="Class_ConstraintsFeedback#()V" />
+      <node id="342464601221104471" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="342464601222556523" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="342464601222565355" at="37,0,42,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="342464601221061123" at="50,0,55,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="342464601221104471" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_6rbpka_a" />
+      <node id="342464601222556523" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_6rbpka_b" />
+      <node id="342464601222565355" at="36,0,43,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_6rbpka_c" />
+      <scope id="342464601221104471" at="25,73,26,95" />
+      <scope id="342464601222556523" at="32,73,33,111" />
+      <scope id="342464601222565355" at="39,73,40,108" />
+      <scope id="342464601221061123" at="46,38,47,19" />
+      <scope id="342464601221061123" at="52,58,53,30" />
+      <scope id="342464601221061123" at="46,0,49,0" />
+      <scope id="342464601221104471" at="23,0,28,0">
+        <var name="context" id="342464601221104471" />
+      </scope>
+      <scope id="342464601222556523" at="30,0,35,0">
+        <var name="context" id="342464601222556523" />
+      </scope>
+      <scope id="342464601222565355" at="37,0,42,0">
+        <var name="context" id="342464601222565355" />
+      </scope>
+      <scope id="342464601221061123" at="50,0,55,0" />
+      <unit id="342464601221104471" at="22,111,28,3" name="unimodel.constraints.Class_ConstraintsFeedback$1" />
+      <unit id="342464601222556523" at="29,111,35,3" name="unimodel.constraints.Class_ConstraintsFeedback$2" />
+      <unit id="342464601222565355" at="36,111,42,3" name="unimodel.constraints.Class_ConstraintsFeedback$3" />
+      <unit id="342464601221061123" at="19,0,56,0" name="unimodel.constraints.Class_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/342464601221061129">
+    <file name="Room_ConstraintRules.java">
+      <node id="342464601221061129" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="342464601222577279" at="25,0,26,0" concept="3" trace="check_id342464601222577279" />
+      <node id="342464601221061129" at="27,0,28,0" concept="3" trace="RULES" />
+      <node id="342464601221061129" at="31,43,32,17" concept="2" />
+      <node id="342464601222577279" at="36,0,37,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="342464601222577279" at="37,0,38,0" concept="3" trace="ID_socket" />
+      <node id="342464601222577279" at="39,26,40,83" concept="4" />
+      <node id="342464601222577279" at="44,63,45,92" concept="2" />
+      <node id="342464601222577279" at="49,67,50,18" concept="2" />
+      <node id="342464601221061129" at="54,38,55,19" concept="4" />
+      <node id="342464601221061129" at="59,0,60,0" concept="3" trace="socket$QNUt" />
+      <node id="342464601222577279" at="39,0,42,0" concept="0" trace="Rule_socket#()V" />
+      <node id="342464601221061129" at="54,0,57,0" concept="0" trace="Room_ConstraintRules#()V" />
+      <node id="342464601222577279" at="43,0,47,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601222577279" at="48,0,52,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="342464601221061129" at="29,0,34,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="342464601221061129" at="31,43,32,17" />
+      <scope id="342464601222577279" at="39,26,40,83" />
+      <scope id="342464601222577279" at="44,63,45,92" />
+      <scope id="342464601222577279" at="49,67,50,18" />
+      <scope id="342464601221061129" at="54,38,55,19" />
+      <scope id="342464601222577279" at="39,0,42,0" />
+      <scope id="342464601221061129" at="54,0,57,0" />
+      <scope id="342464601222577279" at="43,0,47,0">
+        <var name="context" id="342464601222577279" />
+      </scope>
+      <scope id="342464601222577279" at="48,0,52,0">
+        <var name="context" id="342464601222577279" />
+      </scope>
+      <scope id="342464601221061129" at="29,0,34,0" />
+      <unit id="342464601221061129" at="58,0,61,0" name="unimodel.constraints.Room_ConstraintRules$PROPS" />
+      <unit id="342464601222577279" at="35,0,53,0" name="unimodel.constraints.Room_ConstraintRules$Rule_socket" />
+      <unit id="342464601221061129" at="22,0,62,0" name="unimodel.constraints.Room_ConstraintRules" />
+    </file>
+    <file name="Room_ConstraintsFeedback.java">
+      <node id="342464601221061129" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="342464601222577277" at="25,73,26,96" concept="2" />
+      <node id="342464601221061129" at="30,0,31,0" concept="3" trace="PROVIDERS" />
+      <node id="342464601221061129" at="32,37,33,19" concept="4" />
+      <node id="342464601221061129" at="38,58,39,30" concept="2" />
+      <node id="342464601221061129" at="32,0,35,0" concept="0" trace="Room_ConstraintsFeedback#()V" />
+      <node id="342464601222577277" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="342464601221061129" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="342464601222577277" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_nfu81n_a" />
+      <scope id="342464601222577277" at="25,73,26,96" />
+      <scope id="342464601221061129" at="32,37,33,19" />
+      <scope id="342464601221061129" at="38,58,39,30" />
+      <scope id="342464601221061129" at="32,0,35,0" />
+      <scope id="342464601222577277" at="23,0,28,0">
+        <var name="context" id="342464601222577277" />
+      </scope>
+      <scope id="342464601221061129" at="36,0,41,0" />
+      <unit id="342464601222577277" at="22,111,28,3" name="unimodel.constraints.Room_ConstraintsFeedback$1" />
+      <unit id="342464601221061129" at="19,0,42,0" name="unimodel.constraints.Room_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790642829663">
+    <file name="University_ConstraintRules.java">
+      <node id="8742999790642829663" at="15,0,16,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790642829663" at="18,0,19,0" concept="3" trace="RULES" />
+      <node id="8742999790642829663" at="22,43,23,17" concept="2" />
+      <node id="8742999790642829663" at="26,44,27,19" concept="4" />
+      <node id="8742999790642829663" at="26,0,29,0" concept="0" trace="University_ConstraintRules#()V" />
+      <node id="8742999790642829663" at="20,0,25,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="8742999790642829663" at="22,43,23,17" />
+      <scope id="8742999790642829663" at="26,44,27,19" />
+      <scope id="8742999790642829663" at="26,0,29,0" />
+      <scope id="8742999790642829663" at="20,0,25,0" />
+      <unit id="8742999790642829663" at="14,0,30,0" name="unimodel.constraints.University_ConstraintRules" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790642829664">
+    <file name="Building_ConstraintRules.java">
+      <node id="8742999790642829664" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790642832116" at="25,0,26,0" concept="3" trace="check_id8742999790642832116" />
+      <node id="8742999790642842080" at="26,0,27,0" concept="3" trace="check_id8742999790642842080" />
+      <node id="8742999790642829664" at="28,0,29,0" concept="3" trace="RULES" />
+      <node id="8742999790642829664" at="32,43,33,17" concept="2" />
+      <node id="8742999790642832116" at="37,0,38,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790642832116" at="38,0,39,0" concept="3" trace="ID_Phone_Only_Digits" />
+      <node id="8742999790642832116" at="40,37,41,94" concept="4" />
+      <node id="8742999790642832116" at="45,63,46,103" concept="2" />
+      <node id="8742999790642832116" at="50,67,51,18" concept="2" />
+      <node id="8742999790642842080" at="56,0,57,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790642842080" at="57,0,58,0" concept="3" trace="ID_Phone_Length" />
+      <node id="8742999790642842080" at="59,32,60,89" concept="4" />
+      <node id="8742999790642842080" at="64,63,65,100" concept="2" />
+      <node id="8742999790642842080" at="69,67,70,18" concept="2" />
+      <node id="8742999790642829664" at="74,42,75,19" concept="4" />
+      <node id="8742999790642829664" at="79,0,80,0" concept="3" trace="phone$N1$i" />
+      <node id="8742999790642832116" at="40,0,43,0" concept="0" trace="Rule_Phone_Only_Digits#()V" />
+      <node id="8742999790642842080" at="59,0,62,0" concept="0" trace="Rule_Phone_Length#()V" />
+      <node id="8742999790642829664" at="74,0,77,0" concept="0" trace="Building_ConstraintRules#()V" />
+      <node id="8742999790642832116" at="44,0,48,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642832116" at="49,0,53,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642842080" at="63,0,67,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642842080" at="68,0,72,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642829664" at="30,0,35,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="8742999790642829664" at="32,43,33,17" />
+      <scope id="8742999790642832116" at="40,37,41,94" />
+      <scope id="8742999790642832116" at="45,63,46,103" />
+      <scope id="8742999790642832116" at="50,67,51,18" />
+      <scope id="8742999790642842080" at="59,32,60,89" />
+      <scope id="8742999790642842080" at="64,63,65,100" />
+      <scope id="8742999790642842080" at="69,67,70,18" />
+      <scope id="8742999790642829664" at="74,42,75,19" />
+      <scope id="8742999790642832116" at="40,0,43,0" />
+      <scope id="8742999790642842080" at="59,0,62,0" />
+      <scope id="8742999790642829664" at="74,0,77,0" />
+      <scope id="8742999790642832116" at="44,0,48,0">
+        <var name="context" id="8742999790642832116" />
+      </scope>
+      <scope id="8742999790642832116" at="49,0,53,0">
+        <var name="context" id="8742999790642832116" />
+      </scope>
+      <scope id="8742999790642842080" at="63,0,67,0">
+        <var name="context" id="8742999790642842080" />
+      </scope>
+      <scope id="8742999790642842080" at="68,0,72,0">
+        <var name="context" id="8742999790642842080" />
+      </scope>
+      <scope id="8742999790642829664" at="30,0,35,0" />
+      <unit id="8742999790642829664" at="78,0,81,0" name="unimodel.constraints.Building_ConstraintRules$PROPS" />
+      <unit id="8742999790642832116" at="36,0,54,0" name="unimodel.constraints.Building_ConstraintRules$Rule_Phone_Only_Digits" />
+      <unit id="8742999790642842080" at="55,0,73,0" name="unimodel.constraints.Building_ConstraintRules$Rule_Phone_Length" />
+      <unit id="8742999790642829664" at="22,0,82,0" name="unimodel.constraints.Building_ConstraintRules" />
+    </file>
+    <file name="Building_ConstraintsFeedback.java">
+      <node id="8742999790642829664" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790642832115" at="25,73,26,99" concept="2" />
+      <node id="8742999790642842078" at="32,73,33,94" concept="2" />
+      <node id="8742999790642829664" at="37,0,38,0" concept="3" trace="PROVIDERS" />
+      <node id="8742999790642829664" at="39,41,40,19" concept="4" />
+      <node id="8742999790642829664" at="45,58,46,30" concept="2" />
+      <node id="8742999790642829664" at="39,0,42,0" concept="0" trace="Building_ConstraintsFeedback#()V" />
+      <node id="8742999790642832115" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790642842078" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790642829664" at="43,0,48,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="8742999790642832115" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_m8cstk_a" />
+      <node id="8742999790642842078" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_m8cstk_b" />
+      <scope id="8742999790642832115" at="25,73,26,99" />
+      <scope id="8742999790642842078" at="32,73,33,94" />
+      <scope id="8742999790642829664" at="39,41,40,19" />
+      <scope id="8742999790642829664" at="45,58,46,30" />
+      <scope id="8742999790642829664" at="39,0,42,0" />
+      <scope id="8742999790642832115" at="23,0,28,0">
+        <var name="context" id="8742999790642832115" />
+      </scope>
+      <scope id="8742999790642842078" at="30,0,35,0">
+        <var name="context" id="8742999790642842078" />
+      </scope>
+      <scope id="8742999790642829664" at="43,0,48,0" />
+      <unit id="8742999790642832115" at="22,111,28,3" name="unimodel.constraints.Building_ConstraintsFeedback$1" />
+      <unit id="8742999790642842078" at="29,111,35,3" name="unimodel.constraints.Building_ConstraintsFeedback$2" />
+      <unit id="8742999790642829664" at="19,0,49,0" name="unimodel.constraints.Building_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790642921861">
+    <file name="Floor_ConstraintRules.java">
+      <node id="8742999790642921861" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790642921866" at="25,0,26,0" concept="3" trace="check_id8742999790642921866" />
+      <node id="8742999790642921861" at="27,0,28,0" concept="3" trace="RULES" />
+      <node id="8742999790642921861" at="31,43,32,17" concept="2" />
+      <node id="8742999790642921866" at="36,0,37,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790642921866" at="37,0,38,0" concept="3" trace="ID_Bathroom_Positive" />
+      <node id="8742999790642921866" at="39,37,40,94" concept="4" />
+      <node id="8742999790642921866" at="44,63,45,95" concept="2" />
+      <node id="8742999790642921866" at="49,67,50,18" concept="2" />
+      <node id="8742999790642921861" at="54,39,55,19" concept="4" />
+      <node id="8742999790642921861" at="59,0,60,0" concept="3" trace="bathrooms$Tbw0" />
+      <node id="8742999790642921866" at="39,0,42,0" concept="0" trace="Rule_Bathroom_Positive#()V" />
+      <node id="8742999790642921861" at="54,0,57,0" concept="0" trace="Floor_ConstraintRules#()V" />
+      <node id="8742999790642921866" at="43,0,47,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642921866" at="48,0,52,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642921861" at="29,0,34,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="8742999790642921861" at="31,43,32,17" />
+      <scope id="8742999790642921866" at="39,37,40,94" />
+      <scope id="8742999790642921866" at="44,63,45,95" />
+      <scope id="8742999790642921866" at="49,67,50,18" />
+      <scope id="8742999790642921861" at="54,39,55,19" />
+      <scope id="8742999790642921866" at="39,0,42,0" />
+      <scope id="8742999790642921861" at="54,0,57,0" />
+      <scope id="8742999790642921866" at="43,0,47,0">
+        <var name="context" id="8742999790642921866" />
+      </scope>
+      <scope id="8742999790642921866" at="48,0,52,0">
+        <var name="context" id="8742999790642921866" />
+      </scope>
+      <scope id="8742999790642921861" at="29,0,34,0" />
+      <unit id="8742999790642921861" at="58,0,61,0" name="unimodel.constraints.Floor_ConstraintRules$PROPS" />
+      <unit id="8742999790642921866" at="35,0,53,0" name="unimodel.constraints.Floor_ConstraintRules$Rule_Bathroom_Positive" />
+      <unit id="8742999790642921861" at="22,0,62,0" name="unimodel.constraints.Floor_ConstraintRules" />
+    </file>
+    <file name="Floor_ConstraintsFeedback.java">
+      <node id="8742999790642921861" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790642921865" at="25,73,26,98" concept="2" />
+      <node id="8742999790642921861" at="30,0,31,0" concept="3" trace="PROVIDERS" />
+      <node id="8742999790642921861" at="32,38,33,19" concept="4" />
+      <node id="8742999790642921861" at="38,58,39,30" concept="2" />
+      <node id="8742999790642921861" at="32,0,35,0" concept="0" trace="Floor_ConstraintsFeedback#()V" />
+      <node id="8742999790642921865" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790642921861" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="8742999790642921865" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_mxmhys_a" />
+      <scope id="8742999790642921865" at="25,73,26,98" />
+      <scope id="8742999790642921861" at="32,38,33,19" />
+      <scope id="8742999790642921861" at="38,58,39,30" />
+      <scope id="8742999790642921861" at="32,0,35,0" />
+      <scope id="8742999790642921865" at="23,0,28,0">
+        <var name="context" id="8742999790642921865" />
+      </scope>
+      <scope id="8742999790642921861" at="36,0,41,0" />
+      <unit id="8742999790642921865" at="22,111,28,3" name="unimodel.constraints.Floor_ConstraintsFeedback$1" />
+      <unit id="8742999790642921861" at="19,0,42,0" name="unimodel.constraints.Floor_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790642953264">
+    <file name="Library_ConstraintRules.java">
+      <node id="8742999790642953264" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790642953269" at="25,0,26,0" concept="3" trace="check_id8742999790642953269" />
+      <node id="8742999790642953344" at="26,0,27,0" concept="3" trace="check_id8742999790642953344" />
+      <node id="8742999790642953264" at="28,0,29,0" concept="3" trace="RULES" />
+      <node id="8742999790642953264" at="32,43,33,17" concept="2" />
+      <node id="8742999790642953269" at="37,0,38,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790642953269" at="38,0,39,0" concept="3" trace="ID_Workstation_Positive" />
+      <node id="8742999790642953269" at="40,40,41,97" concept="4" />
+      <node id="8742999790642953269" at="45,63,46,98" concept="2" />
+      <node id="8742999790642953269" at="50,67,51,18" concept="2" />
+      <node id="8742999790642953344" at="56,0,57,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790642953344" at="57,0,58,0" concept="3" trace="ID_Computers_Positive" />
+      <node id="8742999790642953344" at="59,38,60,95" concept="4" />
+      <node id="8742999790642953344" at="64,63,65,95" concept="2" />
+      <node id="8742999790642953344" at="69,67,70,18" concept="2" />
+      <node id="8742999790642953264" at="74,41,75,19" concept="4" />
+      <node id="8742999790642953264" at="79,0,80,0" concept="3" trace="workstations$Qcwk" />
+      <node id="8742999790642953264" at="80,0,81,0" concept="3" trace="computers$QcYm" />
+      <node id="8742999790642953269" at="40,0,43,0" concept="0" trace="Rule_Workstation_Positive#()V" />
+      <node id="8742999790642953344" at="59,0,62,0" concept="0" trace="Rule_Computers_Positive#()V" />
+      <node id="8742999790642953264" at="74,0,77,0" concept="0" trace="Library_ConstraintRules#()V" />
+      <node id="8742999790642953269" at="44,0,48,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642953269" at="49,0,53,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642953344" at="63,0,67,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642953344" at="68,0,72,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642953264" at="30,0,35,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="8742999790642953264" at="32,43,33,17" />
+      <scope id="8742999790642953269" at="40,40,41,97" />
+      <scope id="8742999790642953269" at="45,63,46,98" />
+      <scope id="8742999790642953269" at="50,67,51,18" />
+      <scope id="8742999790642953344" at="59,38,60,95" />
+      <scope id="8742999790642953344" at="64,63,65,95" />
+      <scope id="8742999790642953344" at="69,67,70,18" />
+      <scope id="8742999790642953264" at="74,41,75,19" />
+      <scope id="8742999790642953269" at="40,0,43,0" />
+      <scope id="8742999790642953344" at="59,0,62,0" />
+      <scope id="8742999790642953264" at="74,0,77,0" />
+      <scope id="8742999790642953269" at="44,0,48,0">
+        <var name="context" id="8742999790642953269" />
+      </scope>
+      <scope id="8742999790642953269" at="49,0,53,0">
+        <var name="context" id="8742999790642953269" />
+      </scope>
+      <scope id="8742999790642953344" at="63,0,67,0">
+        <var name="context" id="8742999790642953344" />
+      </scope>
+      <scope id="8742999790642953344" at="68,0,72,0">
+        <var name="context" id="8742999790642953344" />
+      </scope>
+      <scope id="8742999790642953264" at="30,0,35,0" />
+      <unit id="8742999790642953264" at="78,0,82,0" name="unimodel.constraints.Library_ConstraintRules$PROPS" />
+      <unit id="8742999790642953269" at="36,0,54,0" name="unimodel.constraints.Library_ConstraintRules$Rule_Workstation_Positive" />
+      <unit id="8742999790642953344" at="55,0,73,0" name="unimodel.constraints.Library_ConstraintRules$Rule_Computers_Positive" />
+      <unit id="8742999790642953264" at="22,0,83,0" name="unimodel.constraints.Library_ConstraintRules" />
+    </file>
+    <file name="Library_ConstraintsFeedback.java">
+      <node id="8742999790642953264" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790642953268" at="25,73,26,104" concept="2" />
+      <node id="8742999790642953342" at="32,73,33,98" concept="2" />
+      <node id="8742999790642953264" at="37,0,38,0" concept="3" trace="PROVIDERS" />
+      <node id="8742999790642953264" at="39,40,40,19" concept="4" />
+      <node id="8742999790642953264" at="45,58,46,30" concept="2" />
+      <node id="8742999790642953264" at="39,0,42,0" concept="0" trace="Library_ConstraintsFeedback#()V" />
+      <node id="8742999790642953268" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790642953342" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790642953264" at="43,0,48,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="8742999790642953268" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_n0f6kr_a" />
+      <node id="8742999790642953342" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_n0f6kr_b" />
+      <scope id="8742999790642953268" at="25,73,26,104" />
+      <scope id="8742999790642953342" at="32,73,33,98" />
+      <scope id="8742999790642953264" at="39,40,40,19" />
+      <scope id="8742999790642953264" at="45,58,46,30" />
+      <scope id="8742999790642953264" at="39,0,42,0" />
+      <scope id="8742999790642953268" at="23,0,28,0">
+        <var name="context" id="8742999790642953268" />
+      </scope>
+      <scope id="8742999790642953342" at="30,0,35,0">
+        <var name="context" id="8742999790642953342" />
+      </scope>
+      <scope id="8742999790642953264" at="43,0,48,0" />
+      <unit id="8742999790642953268" at="22,111,28,3" name="unimodel.constraints.Library_ConstraintsFeedback$1" />
+      <unit id="8742999790642953342" at="29,111,35,3" name="unimodel.constraints.Library_ConstraintsFeedback$2" />
+      <unit id="8742999790642953264" at="19,0,49,0" name="unimodel.constraints.Library_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790642971792">
+    <file name="Book_ConstraintRules.java">
+      <node id="8742999790642971792" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790642971797" at="25,0,26,0" concept="3" trace="check_id8742999790642971797" />
+      <node id="8742999790642995291" at="26,0,27,0" concept="3" trace="check_id8742999790642995291" />
+      <node id="8742999790643011170" at="27,0,28,0" concept="3" trace="check_id8742999790643011170" />
+      <node id="8742999790642971792" at="29,0,30,0" concept="3" trace="RULES" />
+      <node id="8742999790642971792" at="33,43,34,17" concept="2" />
+      <node id="8742999790642971797" at="38,0,39,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790642971797" at="39,0,40,0" concept="3" trace="ID_Quantity_Positive" />
+      <node id="8742999790642971797" at="41,37,42,94" concept="4" />
+      <node id="8742999790642971797" at="46,63,47,94" concept="2" />
+      <node id="8742999790642971797" at="51,67,52,18" concept="2" />
+      <node id="8742999790642995291" at="57,0,58,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790642995291" at="58,0,59,0" concept="3" trace="ID_ISBN_Lenght" />
+      <node id="8742999790642995291" at="60,31,61,88" concept="4" />
+      <node id="8742999790642995291" at="65,63,66,99" concept="2" />
+      <node id="8742999790642995291" at="70,67,71,18" concept="2" />
+      <node id="8742999790643011170" at="76,0,77,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790643011170" at="77,0,78,0" concept="3" trace="ID_ISBN_Only_Digit" />
+      <node id="8742999790643011170" at="79,35,80,92" concept="4" />
+      <node id="8742999790643011170" at="84,63,85,102" concept="2" />
+      <node id="8742999790643011170" at="89,67,90,18" concept="2" />
+      <node id="8742999790642971792" at="94,38,95,19" concept="4" />
+      <node id="8742999790642971792" at="99,0,100,0" concept="3" trace="quantity$QlDV" />
+      <node id="8742999790642971792" at="100,0,101,0" concept="3" trace="ISBN$Qr3i" />
+      <node id="8742999790642971797" at="41,0,44,0" concept="0" trace="Rule_Quantity_Positive#()V" />
+      <node id="8742999790642995291" at="60,0,63,0" concept="0" trace="Rule_ISBN_Lenght#()V" />
+      <node id="8742999790643011170" at="79,0,82,0" concept="0" trace="Rule_ISBN_Only_Digit#()V" />
+      <node id="8742999790642971792" at="94,0,97,0" concept="0" trace="Book_ConstraintRules#()V" />
+      <node id="8742999790642971797" at="45,0,49,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642971797" at="50,0,54,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642995291" at="64,0,68,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642995291" at="69,0,73,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643011170" at="83,0,87,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643011170" at="88,0,92,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790642971792" at="31,0,36,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="8742999790642971792" at="33,43,34,17" />
+      <scope id="8742999790642971797" at="41,37,42,94" />
+      <scope id="8742999790642971797" at="46,63,47,94" />
+      <scope id="8742999790642971797" at="51,67,52,18" />
+      <scope id="8742999790642995291" at="60,31,61,88" />
+      <scope id="8742999790642995291" at="65,63,66,99" />
+      <scope id="8742999790642995291" at="70,67,71,18" />
+      <scope id="8742999790643011170" at="79,35,80,92" />
+      <scope id="8742999790643011170" at="84,63,85,102" />
+      <scope id="8742999790643011170" at="89,67,90,18" />
+      <scope id="8742999790642971792" at="94,38,95,19" />
+      <scope id="8742999790642971797" at="41,0,44,0" />
+      <scope id="8742999790642995291" at="60,0,63,0" />
+      <scope id="8742999790643011170" at="79,0,82,0" />
+      <scope id="8742999790642971792" at="94,0,97,0" />
+      <scope id="8742999790642971797" at="45,0,49,0">
+        <var name="context" id="8742999790642971797" />
+      </scope>
+      <scope id="8742999790642971797" at="50,0,54,0">
+        <var name="context" id="8742999790642971797" />
+      </scope>
+      <scope id="8742999790642995291" at="64,0,68,0">
+        <var name="context" id="8742999790642995291" />
+      </scope>
+      <scope id="8742999790642995291" at="69,0,73,0">
+        <var name="context" id="8742999790642995291" />
+      </scope>
+      <scope id="8742999790643011170" at="83,0,87,0">
+        <var name="context" id="8742999790643011170" />
+      </scope>
+      <scope id="8742999790643011170" at="88,0,92,0">
+        <var name="context" id="8742999790643011170" />
+      </scope>
+      <scope id="8742999790642971792" at="31,0,36,0" />
+      <unit id="8742999790642971792" at="98,0,102,0" name="unimodel.constraints.Book_ConstraintRules$PROPS" />
+      <unit id="8742999790642971797" at="37,0,55,0" name="unimodel.constraints.Book_ConstraintRules$Rule_Quantity_Positive" />
+      <unit id="8742999790642995291" at="56,0,74,0" name="unimodel.constraints.Book_ConstraintRules$Rule_ISBN_Lenght" />
+      <unit id="8742999790643011170" at="75,0,93,0" name="unimodel.constraints.Book_ConstraintRules$Rule_ISBN_Only_Digit" />
+      <unit id="8742999790642971792" at="22,0,103,0" name="unimodel.constraints.Book_ConstraintRules" />
+    </file>
+    <file name="Book_ConstraintsFeedback.java">
+      <node id="8742999790642971792" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790642971796" at="25,73,26,109" concept="2" />
+      <node id="8742999790642995289" at="32,73,33,108" concept="2" />
+      <node id="8742999790643011168" at="39,73,40,96" concept="2" />
+      <node id="8742999790642971792" at="44,0,45,0" concept="3" trace="PROVIDERS" />
+      <node id="8742999790642971792" at="46,37,47,19" concept="4" />
+      <node id="8742999790642971792" at="52,58,53,30" concept="2" />
+      <node id="8742999790642971792" at="46,0,49,0" concept="0" trace="Book_ConstraintsFeedback#()V" />
+      <node id="8742999790642971796" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790642995289" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790643011168" at="37,0,42,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790642971792" at="50,0,55,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="8742999790642971796" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_st5qki_a" />
+      <node id="8742999790642995289" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_st5qki_b" />
+      <node id="8742999790643011168" at="36,0,43,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_st5qki_c" />
+      <scope id="8742999790642971796" at="25,73,26,109" />
+      <scope id="8742999790642995289" at="32,73,33,108" />
+      <scope id="8742999790643011168" at="39,73,40,96" />
+      <scope id="8742999790642971792" at="46,37,47,19" />
+      <scope id="8742999790642971792" at="52,58,53,30" />
+      <scope id="8742999790642971792" at="46,0,49,0" />
+      <scope id="8742999790642971796" at="23,0,28,0">
+        <var name="context" id="8742999790642971796" />
+      </scope>
+      <scope id="8742999790642995289" at="30,0,35,0">
+        <var name="context" id="8742999790642995289" />
+      </scope>
+      <scope id="8742999790643011168" at="37,0,42,0">
+        <var name="context" id="8742999790643011168" />
+      </scope>
+      <scope id="8742999790642971792" at="50,0,55,0" />
+      <unit id="8742999790642971796" at="22,111,28,3" name="unimodel.constraints.Book_ConstraintsFeedback$1" />
+      <unit id="8742999790642995289" at="29,111,35,3" name="unimodel.constraints.Book_ConstraintsFeedback$2" />
+      <unit id="8742999790643011168" at="36,111,42,3" name="unimodel.constraints.Book_ConstraintsFeedback$3" />
+      <unit id="8742999790642971792" at="19,0,56,0" name="unimodel.constraints.Book_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790643036497">
+    <file name="Office_ConstraintRules.java">
+      <node id="8742999790643036497" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790643036502" at="25,0,26,0" concept="3" trace="check_id8742999790643036502" />
+      <node id="8742999790643036497" at="27,0,28,0" concept="3" trace="RULES" />
+      <node id="8742999790643036497" at="31,43,32,17" concept="2" />
+      <node id="8742999790643036502" at="36,0,37,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790643036502" at="37,0,38,0" concept="3" trace="ID_Capacity_Positive" />
+      <node id="8742999790643036502" at="39,37,40,94" concept="4" />
+      <node id="8742999790643036502" at="44,63,45,94" concept="2" />
+      <node id="8742999790643036502" at="49,67,50,18" concept="2" />
+      <node id="8742999790643036497" at="54,40,55,19" concept="4" />
+      <node id="8742999790643036497" at="59,0,60,0" concept="3" trace="capacity$TWvQ" />
+      <node id="8742999790643036502" at="39,0,42,0" concept="0" trace="Rule_Capacity_Positive#()V" />
+      <node id="8742999790643036497" at="54,0,57,0" concept="0" trace="Office_ConstraintRules#()V" />
+      <node id="8742999790643036502" at="43,0,47,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643036502" at="48,0,52,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643036497" at="29,0,34,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="8742999790643036497" at="31,43,32,17" />
+      <scope id="8742999790643036502" at="39,37,40,94" />
+      <scope id="8742999790643036502" at="44,63,45,94" />
+      <scope id="8742999790643036502" at="49,67,50,18" />
+      <scope id="8742999790643036497" at="54,40,55,19" />
+      <scope id="8742999790643036502" at="39,0,42,0" />
+      <scope id="8742999790643036497" at="54,0,57,0" />
+      <scope id="8742999790643036502" at="43,0,47,0">
+        <var name="context" id="8742999790643036502" />
+      </scope>
+      <scope id="8742999790643036502" at="48,0,52,0">
+        <var name="context" id="8742999790643036502" />
+      </scope>
+      <scope id="8742999790643036497" at="29,0,34,0" />
+      <unit id="8742999790643036497" at="58,0,61,0" name="unimodel.constraints.Office_ConstraintRules$PROPS" />
+      <unit id="8742999790643036502" at="35,0,53,0" name="unimodel.constraints.Office_ConstraintRules$Rule_Capacity_Positive" />
+      <unit id="8742999790643036497" at="22,0,62,0" name="unimodel.constraints.Office_ConstraintRules" />
+    </file>
+    <file name="Office_ConstraintsFeedback.java">
+      <node id="8742999790643036497" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790643036501" at="25,73,26,102" concept="2" />
+      <node id="8742999790643036497" at="30,0,31,0" concept="3" trace="PROVIDERS" />
+      <node id="8742999790643036497" at="32,39,33,19" concept="4" />
+      <node id="8742999790643036497" at="38,58,39,30" concept="2" />
+      <node id="8742999790643036497" at="32,0,35,0" concept="0" trace="Office_ConstraintsFeedback#()V" />
+      <node id="8742999790643036501" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790643036497" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="8742999790643036501" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_5aohkc_a" />
+      <scope id="8742999790643036501" at="25,73,26,102" />
+      <scope id="8742999790643036497" at="32,39,33,19" />
+      <scope id="8742999790643036497" at="38,58,39,30" />
+      <scope id="8742999790643036497" at="32,0,35,0" />
+      <scope id="8742999790643036501" at="23,0,28,0">
+        <var name="context" id="8742999790643036501" />
+      </scope>
+      <scope id="8742999790643036497" at="36,0,41,0" />
+      <unit id="8742999790643036501" at="22,111,28,3" name="unimodel.constraints.Office_ConstraintsFeedback$1" />
+      <unit id="8742999790643036497" at="19,0,42,0" name="unimodel.constraints.Office_ConstraintsFeedback" />
+    </file>
+  </root>
+  <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790643042702">
+    <file name="Person_ConstraintRules.java">
+      <node id="8742999790643042702" at="23,0,24,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790643042707" at="25,0,26,0" concept="3" trace="check_id8742999790643042707" />
+      <node id="8742999790643063996" at="26,0,27,0" concept="3" trace="check_id8742999790643063996" />
+      <node id="8742999790643042702" at="28,0,29,0" concept="3" trace="RULES" />
+      <node id="8742999790643042702" at="32,43,33,17" concept="2" />
+      <node id="8742999790643042707" at="37,0,38,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790643042707" at="38,0,39,0" concept="3" trace="ID_Age_Range" />
+      <node id="8742999790643042707" at="40,29,41,86" concept="4" />
+      <node id="8742999790643042707" at="45,63,46,171" concept="2" />
+      <node id="8742999790643042707" at="50,67,51,18" concept="2" />
+      <node id="8742999790643063996" at="56,0,57,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790643063996" at="57,0,58,0" concept="3" trace="ID_unnamed_3h0umw_b0" />
+      <node id="8742999790643063996" at="59,37,60,94" concept="4" />
+      <node id="8742999790643063996" at="64,63,65,106" concept="2" />
+      <node id="8742999790643063996" at="69,67,70,18" concept="2" />
+      <node id="8742999790643042702" at="74,40,75,19" concept="4" />
+      <node id="8742999790643042702" at="79,0,80,0" concept="3" trace="age$UdCu" />
+      <node id="8742999790643042702" at="80,0,81,0" concept="3" trace="fiscal_code$UjvR" />
+      <node id="8742999790643042707" at="40,0,43,0" concept="0" trace="Rule_Age_Range#()V" />
+      <node id="8742999790643063996" at="59,0,62,0" concept="0" trace="Rule_unnamed_3h0umw_b0#()V" />
+      <node id="8742999790643042702" at="74,0,77,0" concept="0" trace="Person_ConstraintRules#()V" />
+      <node id="8742999790643042707" at="44,0,48,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643042707" at="49,0,53,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643063996" at="63,0,67,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643063996" at="68,0,72,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643042702" at="30,0,35,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="8742999790643042702" at="32,43,33,17" />
+      <scope id="8742999790643042707" at="40,29,41,86" />
+      <scope id="8742999790643042707" at="45,63,46,171" />
+      <scope id="8742999790643042707" at="50,67,51,18" />
+      <scope id="8742999790643063996" at="59,37,60,94" />
+      <scope id="8742999790643063996" at="64,63,65,106" />
+      <scope id="8742999790643063996" at="69,67,70,18" />
+      <scope id="8742999790643042702" at="74,40,75,19" />
+      <scope id="8742999790643042707" at="40,0,43,0" />
+      <scope id="8742999790643063996" at="59,0,62,0" />
+      <scope id="8742999790643042702" at="74,0,77,0" />
+      <scope id="8742999790643042707" at="44,0,48,0">
+        <var name="context" id="8742999790643042707" />
+      </scope>
+      <scope id="8742999790643042707" at="49,0,53,0">
+        <var name="context" id="8742999790643042707" />
+      </scope>
+      <scope id="8742999790643063996" at="63,0,67,0">
+        <var name="context" id="8742999790643063996" />
+      </scope>
+      <scope id="8742999790643063996" at="68,0,72,0">
+        <var name="context" id="8742999790643063996" />
+      </scope>
+      <scope id="8742999790643042702" at="30,0,35,0" />
+      <unit id="8742999790643042702" at="78,0,82,0" name="unimodel.constraints.Person_ConstraintRules$PROPS" />
+      <unit id="8742999790643042707" at="36,0,54,0" name="unimodel.constraints.Person_ConstraintRules$Rule_Age_Range" />
+      <unit id="8742999790643063996" at="55,0,73,0" name="unimodel.constraints.Person_ConstraintRules$Rule_unnamed_3h0umw_b0" />
+      <unit id="8742999790643042702" at="22,0,83,0" name="unimodel.constraints.Person_ConstraintRules" />
+    </file>
+    <file name="Person_ConstraintsFeedback.java">
+      <node id="8742999790643042702" at="20,0,21,0" concept="3" trace="CONCEPT" />
+      <node id="8742999790643042706" at="25,73,26,119" concept="2" />
+      <node id="8742999790643063994" at="32,73,33,108" concept="2" />
+      <node id="8742999790643042702" at="37,0,38,0" concept="3" trace="PROVIDERS" />
+      <node id="8742999790643042702" at="39,39,40,19" concept="4" />
+      <node id="8742999790643042702" at="45,58,46,30" concept="2" />
+      <node id="8742999790643042702" at="39,0,42,0" concept="0" trace="Person_ConstraintsFeedback#()V" />
+      <node id="8742999790643042706" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790643063994" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790643042702" at="43,0,48,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="8742999790643042706" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_3jc2rc_a" />
+      <node id="8742999790643063994" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_3jc2rc_b" />
+      <scope id="8742999790643042706" at="25,73,26,119" />
+      <scope id="8742999790643063994" at="32,73,33,108" />
+      <scope id="8742999790643042702" at="39,39,40,19" />
+      <scope id="8742999790643042702" at="45,58,46,30" />
+      <scope id="8742999790643042702" at="39,0,42,0" />
+      <scope id="8742999790643042706" at="23,0,28,0">
+        <var name="context" id="8742999790643042706" />
+      </scope>
+      <scope id="8742999790643063994" at="30,0,35,0">
+        <var name="context" id="8742999790643063994" />
+      </scope>
+      <scope id="8742999790643042702" at="43,0,48,0" />
+      <unit id="8742999790643042706" at="22,111,28,3" name="unimodel.constraints.Person_ConstraintsFeedback$1" />
+      <unit id="8742999790643063994" at="29,111,35,3" name="unimodel.constraints.Person_ConstraintsFeedback$2" />
+      <unit id="8742999790643042702" at="19,0,49,0" name="unimodel.constraints.Person_ConstraintsFeedback" />
+    </file>
+  </root>
+</debug-info>
+
