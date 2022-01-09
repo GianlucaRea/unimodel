@@ -1,0 +1,90 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/it.univaq.disim.unimodel/src" modelPluginID="it.univaq.disim.unimodel"
+    modelName="Unimodel" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>unimodel.ecore</foreignModel>
+  <genPackages prefix="Unimodel" disposableProviderFactory="true" ecorePackage="unimodel.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="unimodel.ecore#//Type">
+      <genEnumLiterals ecoreEnumLiteral="unimodel.ecore#//Type/PROFESSOR_OFFICE"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel.ecore#//Type/PHD_ROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel.ecore#//Type/ADMINISTRATION"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel.ecore#//Type/SECRETARIAT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="unimodel.ecore#//Category">
+      <genEnumLiterals ecoreEnumLiteral="unimodel.ecore#//Category/PROFESSOR"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel.ecore#//Category/PHD_STUDENT"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel.ecore#//Category/ADMINISTRATOR"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel.ecore#//Category/STAFF"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel.ecore#//Category/STUDENT"/>
+    </genEnums>
+    <genClasses ecoreClass="unimodel.ecore#//University">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//University/chancellor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//University/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//University/buildings"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Named">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Named/name"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Building">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Building/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Building/phone"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/address"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/library"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/floors"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/person"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Address">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/post_code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/street"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/civic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/id"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Library">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Library/workstations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Library/computers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Library/books"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Library/loans"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Book">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Book/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Book/ISBN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Book/author"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Loan">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Loan/date"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel.ecore#//Loan/loans_has_book"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel.ecore#//Loan/loan_has_person"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Floor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Floor/number"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Floor/rooms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Floor/bathrooms"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Room">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Room/dimension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Room/sockets"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Office">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Office/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Office/capacity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Office/person_in_office"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel.ecore#//Office/office_address"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Class">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Class/seats"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Class/blackboards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Class/speakers"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Person/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Person/badge"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Person/age"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Person/fiscal_code"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

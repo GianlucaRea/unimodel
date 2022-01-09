@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unimodel:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:unimodel="http://www.example.org/unimodel"
+    xsi:schemaLocation="http://www.example.org/unimodel unimodel.ecore"
+    name="Unite"
+    chancellor="Tizio Caio"
+    description="Università degli studi di Teramo">
+  <buildings
+      name="Edificio verde"
+      description="Nessuna è una prova"
+      phone="1234567890">
+    <address
+        country="Italy"
+        state="TE"
+        city="Teramo"
+        post_code="64100"
+        street="via giuseppe garibaldi"
+        civic="1A"
+        id="2"/>
+    <library
+        name="Nazionale di Teramo"
+        workstations="23"
+        computers="12">
+      <books
+          name="Incoronazione di Carlo Magno"
+          quantity="12"
+          ISBN="1232435267182"
+          author="Barbero"/>
+      <loans
+          date="0800-12-25T01:00:00.000+0100"
+          loans_has_book="//@buildings.0/@library/@books.0"
+          loan_has_person="//@buildings.0/@person.0"/>
+    </library>
+    <floors
+        number="1"
+        bathrooms="5">
+      <rooms
+          xsi:type="unimodel:Office"
+          name="segreteria"
+          dimension="25.5"
+          sockets="12"
+          capacity="4"
+          office_address="2">
+        <person_in_office
+            name="Carlo Martello"
+            category="STAFF"
+            badge="25"
+            age="65"
+            fiscal_code="REXPATEREUROPEA2"/>
+      </rooms>
+    </floors>
+    <person
+        name="Carlo Magno"
+        category="STUDENT"
+        badge="1"
+        age="27"
+        fiscal_code="REXPATEREUROPEA1"/>
+  </buildings>
+</unimodel:University>

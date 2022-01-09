@@ -1,0 +1,105 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unimodel:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:unimodel="http://www.example.org/unimodel"
+    xsi:schemaLocation="http://www.example.org/unimodel unimodel.ecore"
+    name="Univaq"
+    chancellor="Edoardo Alesse"
+    description="L'università degli studi dell'Aquila">
+  <buildings
+      name="coppito 0"
+      description="Edificio Alan Turing"
+      phone="0862433185">
+    <address
+        country="Italy"
+        state="AQ"
+        city="L'Aquila"
+        post_code="67100"
+        street="via vetoio"
+        civic="1"
+        id="1"/>
+    <library
+        name="libreriaX"
+        workstations="20"
+        computers="20">
+      <books
+          name="Model Driven Engineering"
+          quantity="10"
+          ISBN="1234567890123"
+          author="Alfonso Pierantonio"/>
+      <books
+          name="Software Engineering for Iot"
+          quantity="1"
+          ISBN="0987632564731"
+          author="Davide Di Ruscio"/>
+      <books
+          name="Software Architecture"
+          quantity="3"
+          ISBN="2836483728392"
+          author="Henry Muccini"/>
+      <books
+          name="Software Quality Engineering"
+          quantity="5"
+          ISBN="1536473829192"
+          author="Vittorio Cortellessa"/>
+      <loans
+          date="2021-11-26T01:00:00.000+0100"
+          loans_has_book="//@buildings.0/@library/@books.0"/>
+      <loans
+          date="2021-09-28T02:00:00.000+0200"
+          loans_has_book="//@buildings.0/@library/@books.3"/>
+    </library>
+    <floors
+        number="1"
+        bathrooms="4">
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Aula A0.4"
+          dimension="40.0"
+          sockets="5"
+          seats="45"
+          blackboards="1"
+          speakers="2"/>
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Aula Professori"
+          dimension="25.5"
+          sockets="4"
+          capacity="1"
+          office_address="1">
+        <person_in_office
+            name="Luca Forlizzi"
+            badge="1"
+            age="25"
+            fiscal_code="QWEROT23P23I898S"/>
+      </rooms>
+    </floors>
+    <floors
+        bathrooms="4">
+      <rooms
+          name="Maintenance Room"
+          dimension="10.5"
+          sockets="2"/>
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Administration"
+          dimension="32.0"
+          sockets="12"
+          capacity="4"
+          office_address="1">
+        <person_in_office
+            name="Luigi Collina"
+            category="ADMINISTRATOR"
+            badge="67"
+            age="58"
+            fiscal_code="QWERTY23O23Q978Q"/>
+      </rooms>
+    </floors>
+    <person
+        name="Gianluca Rea"/>
+    <person
+        name="Pietro Ciammaricone"/>
+  </buildings>
+</unimodel:University>

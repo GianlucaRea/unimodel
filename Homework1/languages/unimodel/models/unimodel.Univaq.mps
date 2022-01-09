@@ -158,7 +158,7 @@
           </node>
         </node>
         <node concept="31LeDq" id="7_lnZMSB9Vo" role="31LeBM">
-          <property role="TrG5h" value="Maintenca Room" />
+          <property role="TrG5h" value="Maintenance Room" />
           <property role="31LeDl" value="10.5" />
           <property role="31LeDn" value="2" />
         </node>
@@ -217,7 +217,7 @@
         <property role="31LeCa" value="7_lnZMS$rnr/STUDENT" />
         <property role="31LeC4" value="1" />
         <property role="31LeC7" value="27" />
-        <property role="31LeC3" value="CAROLUSREXEUROPA" />
+        <property role="31LeC3" value="REXPATEREUROPEA1" />
       </node>
       <node concept="31LeF4" id="7_lnZMSCZKJ" role="31LeE7">
         <property role="31Lesq" value="2" />
@@ -231,6 +231,20 @@
       <node concept="31LeF7" id="7_lnZMSCZKK" role="31LeDu">
         <property role="31LeDj" value="1" />
         <property role="31LeDd" value="5" />
+        <node concept="31LeDi" id="7_lnZMSDsTe" role="31Ms4q">
+          <property role="TrG5h" value="segreteria" />
+          <property role="31LeCv" value="4" />
+          <property role="31LeDl" value="25.5" />
+          <property role="31LeDn" value="12" />
+          <ref role="31LeBG" node="7_lnZMSCZKJ" />
+          <node concept="31LeC9" id="7_lnZMSDsTf" role="31LeBw">
+            <property role="TrG5h" value="Carlo martello" />
+            <property role="31LeC4" value="25" />
+            <property role="31LeC7" value="65" />
+            <property role="31LeC3" value="REXPATEREUROPEA2" />
+            <property role="31LeCa" value="7_lnZMS$rnm/STAFF" />
+          </node>
+        </node>
       </node>
       <node concept="31LeEF" id="7_lnZMSCZKL" role="31LeDz">
         <property role="TrG5h" value="Nazionale Di Teramo" />
