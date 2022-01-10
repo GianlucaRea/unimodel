@@ -5,8 +5,12 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b28a29cd-c76c-449c-ac73-f3694c9095ea" name="Changes" comment="">
+      <change beforePath="$PROJECT_DIR$/../Documentation/Unimodel.mdzip" beforeDir="false" afterPath="$PROJECT_DIR$/../Documentation/Unimodel.mdzip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentation/Unimodel.mdzip.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../Documentation/Unimodel.mdzip.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/models/unimodel.Univaq.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/models/unimodel.Univaq.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/languages/unimodel/models/unimodel.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/models/unimodel.editor.mps" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework2/it.univaq.disim.unimodel/model/Univaq.xmi" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework2/it.univaq.disim.unimodel/model/Univaq.xmi" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Homework2/it.univaq.disim.unimodel/model/unimodel.ecore" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework2/it.univaq.disim.unimodel/model/unimodel.ecore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -141,78 +145,14 @@
               <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:20cbdf8a-8b44-4730-b828-8dd0d13593a9(unimodel.editor) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.editor.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Department" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
           </PATH>
           <PATH>
             <PATH_ELEMENT>
               <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:8a1ac2af-b452-4f6d-a997-fcde45094820(unimodel.structure) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.structure.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Enumeration" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.constraints.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.constraints.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Department" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -266,7 +206,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="Department" />
+              <option name="myItemId" value="Enumeration" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -281,6 +221,24 @@
             </PATH_ELEMENT>
             <PATH_ELEMENT>
               <option name="myItemId" value="r:20cbdf8a-8b44-4730-b828-8dd0d13593a9(unimodel.editor) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.editor.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Department" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unimodel" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.constraints.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </PATH>
@@ -311,6 +269,52 @@
               <option name="myItemId" value="r:8a1ac2af-b452-4f6d-a997-fcde45094820(unimodel.structure) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Department" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unimodel" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unimodel" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.constraints.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Department" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+          </PATH>
+          <PATH>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="Unimodel" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="r:8a1ac2af-b452-4f6d-a997-fcde45094820(unimodel.structure) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.structure.mps]" />
+              <option name="myItemType" value="" />
+            </PATH_ELEMENT>
           </PATH>
           <SELECTED>
             <PATH_ELEMENT>
@@ -322,15 +326,7 @@
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="all models" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:d293d080-7667-4388-ab20-447f73a962d5(unimodel.Univaq) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.Univaq.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8742999790643837997" />
+              <option name="myItemId" value="r:8a1ac2af-b452-4f6d-a997-fcde45094820(unimodel.structure) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.structure.mps]" />
               <option name="myItemType" value="" />
             </PATH_ELEMENT>
           </SELECTED>

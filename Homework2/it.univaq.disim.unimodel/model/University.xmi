@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unimodel:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:unimodel="http://www.example.org/unimodel"
+    xsi:schemaLocation="http://www.example.org/unimodel unimodel.ecore">
+  <buildings
+      phone="1234567890">
+    <address
+        country="ASDFGHJK"
+        post_code="12345"
+        id="1"/>
+    <library
+        name="CIU"
+        workstations="1">
+      <books
+          name="QWERTYUIO"
+          quantity="15"
+          ISBN="1231231231231"/>
+      <loans
+          book="//@buildings.0/@library/@books.0"
+          person="//@buildings.0/@library/@person.0"/>
+      <person
+          name="y"
+          fiscal_code="asdasdasdasdasda"/>
+    </library>
+    <floors>
+      <rooms
+          xsi:type="unimodel:Office">
+        <person_in_office
+            name="x"/>
+      </rooms>
+    </floors>
+  </buildings>
+</unimodel:University>
