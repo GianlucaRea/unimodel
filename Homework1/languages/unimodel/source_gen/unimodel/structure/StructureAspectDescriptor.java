@@ -126,7 +126,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.aggregate("address", 0x79555ffcb891b57bL).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L).optional(false).ordered(true).multiple(false).origin("8742999790642640251").done();
     b.aggregate("library", 0x79555ffcb891b59fL).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b557L).optional(true).ordered(true).multiple(false).origin("8742999790642640287").done();
     b.aggregate("floor", 0x79555ffcb891b5a2L).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b53bL).optional(false).ordered(true).multiple(true).origin("8742999790642640290").done();
-    b.aggregate("persons", 0x79555ffcb89e78daL).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b5f5L).optional(true).ordered(true).multiple(true).origin("8742999790643476698").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForClass() {
@@ -161,8 +160,9 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.version(2);
     b.property("workstations", 0x79555ffcb891b574L).type(PrimitiveTypeId.INTEGER).origin("8742999790642640244").done();
     b.property("computers", 0x79555ffcb891b576L).type(PrimitiveTypeId.INTEGER).origin("8742999790642640246").done();
-    b.aggregate("books", 0x79555ffcb891b604L).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b57fL).optional(false).ordered(true).multiple(true).origin("8742999790642640388").done();
+    b.aggregate("books", 0x79555ffcb891b604L).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b57fL).optional(true).ordered(true).multiple(true).origin("8742999790642640388").done();
     b.aggregate("loans", 0x79555ffcb891b606L).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b58bL).optional(true).ordered(true).multiple(true).origin("8742999790642640390").done();
+    b.aggregate("person", 0x79555ffcb8a5fd9fL).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b5f5L).optional(true).ordered(true).multiple(true).origin("8742999790643969439").done();
     return b.create();
   }
   private static ConceptDescriptor createDescriptorForLoans() {

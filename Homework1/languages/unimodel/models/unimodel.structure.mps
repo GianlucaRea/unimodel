@@ -123,13 +123,6 @@
       <property role="20lbJX" value="fLJekj6/_1__n" />
       <ref role="20lvS9" node="7_lnZMS$rkV" resolve="Floor" />
     </node>
-    <node concept="1TJgyj" id="7_lnZMSBBzq" role="1TKVEi">
-      <property role="IQ2ns" value="8742999790643476698" />
-      <property role="20lmBu" value="fLJjDmT/aggregation" />
-      <property role="20kJfa" value="persons" />
-      <property role="20lbJX" value="fLJekj5/_0__n" />
-      <ref role="20lvS9" node="7_lnZMS$rnP" resolve="Person" />
-    </node>
   </node>
   <node concept="1TIwiD" id="7_lnZMS$rkS">
     <property role="EcuMT" value="8742999790642640184" />
@@ -231,7 +224,7 @@
       <property role="IQ2ns" value="8742999790642640388" />
       <property role="20lmBu" value="fLJjDmT/aggregation" />
       <property role="20kJfa" value="books" />
-      <property role="20lbJX" value="fLJekj6/_1__n" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7_lnZMS$rlZ" resolve="Book" />
     </node>
     <node concept="1TJgyj" id="7_lnZMS$ro6" role="1TKVEi">
@@ -240,6 +233,13 @@
       <property role="20kJfa" value="loans" />
       <property role="20lbJX" value="fLJekj5/_0__n" />
       <ref role="20lvS9" node="7_lnZMS$rmb" resolve="Loans" />
+    </node>
+    <node concept="1TJgyj" id="7_lnZMSDvQv" role="1TKVEi">
+      <property role="IQ2ns" value="8742999790643969439" />
+      <property role="20lmBu" value="fLJjDmT/aggregation" />
+      <property role="20kJfa" value="person" />
+      <property role="20lbJX" value="fLJekj5/_0__n" />
+      <ref role="20lvS9" node="7_lnZMS$rnP" resolve="Person" />
     </node>
   </node>
   <node concept="1TIwiD" id="7_lnZMS$rlZ">

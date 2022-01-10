@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unimodel:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:unimodel="http://www.example.org/unimodel"
+    xsi:schemaLocation="http://www.example.org/unimodel unimodel.ecore"
+    name="Univaq"
+    chancellor="Alesse"
+    description="L'università degli studi dell'Aquila">
+  <buildings
+      name="Coppito 0"
+      description="Edificio Alan Turing"
+      phone="0862433185">
+    <address
+        country="Italy"
+        state="AQ"
+        city="L'Aquila"
+        post_code="67100"
+        street="Via Vetoio"
+        civic="1"
+        id="1"/>
+    <library
+        name="Libreria Universitaria"
+        workstations="12"
+        computers="4">
+      <books
+          name="Model Driven Engineering"
+          quantity="5"
+          ISBN="9745789815212"
+          author="Alfonso Pierantonio"/>
+      <books
+          name="Software Engineering for IoT"
+          quantity="2"
+          ISBN="5431245416527"
+          author="Davide Di Ruscio"/>
+      <books
+          name="Software Architecture"
+          quantity="2"
+          ISBN="5431245416527"
+          author="Davide Di Ruscio"/>
+      <books
+          name="Software Quality Engineering"
+          quantity="3"
+          ISBN="9480123051842"
+          author="Vittorio Cortellessa"/>
+      <loans
+          date="2021-11-28T01:00:00.000+0100"
+          book="//@buildings.0/@library/@books.0"
+          person="//@buildings.0/@library/@person.0"/>
+      <loans
+          date="2021-12-29T01:00:00.000+0100"
+          book="//@buildings.0/@library/@books.1"
+          person="//@buildings.0/@library/@person.0"/>
+      <loans
+          date="2021-09-30T02:00:00.000+0200"
+          book="//@buildings.0/@library/@books.3"
+          person="//@buildings.0/@library/@person.1"/>
+      <loans
+          date="2021-10-28T02:00:00.000+0200"
+          book="//@buildings.0/@library/@books.0"
+          person="//@buildings.0/@library/@person.1"/>
+      <loans
+          date="2021-11-27T01:00:00.000+0100"
+          book="//@buildings.0/@library/@books.3"
+          person="//@buildings.0/@floors.0/@rooms.1/@person_in_office.0"/>
+      <person
+          name="Gianluca Rea"
+          category="STUDENT"
+          badge="245703"
+          age="25"
+          fiscal_code="7FVRJWE2M9L4VYGB"
+          library="//@buildings.0/@library"/>
+      <person
+          name="Pietro Ciammaricone"
+          badge="278912"
+          age="27"
+          fiscal_code="0XTCOTW45VROAPPM"
+          library="//@buildings.0/@library"/>
+    </library>
+    <floors
+        bathrooms="4">
+      <rooms
+          name="Mantainance Room"
+          dimension="12.0"
+          sockets="4"/>
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Ufficio 1"
+          dimension="10.0"
+          capacity="4"
+          office_address="1">
+        <person_in_office
+            name="Luca Forlizzi"
+            badge="250"
+            age="40"
+            fiscal_code="JDNFQZADXEK3ZOF8"
+            library="//@buildings.0/@library"/>
+        <person_in_office
+            name="Vittorio Cortelessa"
+            badge="15"
+            age="40"
+            fiscal_code="S6W5ZHVU1FFUQAGE"
+            library="//@buildings.0/@library"/>
+      </rooms>
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Ufficio 2"
+          dimension="9.4"
+          sockets="6"
+          type="PHD_ROOM"
+          capacity="6"
+          office_address="1">
+        <person_in_office
+            name="Tizio Caio"
+            category="PHD_STUDENT"
+            badge="250983"
+            age="28"
+            fiscal_code="9VMOYYX02DUY7R30"
+            library="//@buildings.0/@library"/>
+        <person_in_office
+            name="Caio Tizio"
+            category="PHD_STUDENT"
+            badge="261092"
+            age="28"
+            fiscal_code="8JPS0M6Q6QSTQ680"/>
+      </rooms>
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Aula A0.4"
+          dimension="10.5"
+          sockets="8"
+          seats="50"
+          blackboards="2"
+          speakers="2"
+          computers="1"/>
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Aula A0.5"
+          dimension="12.0"
+          sockets="8"
+          seats="60"
+          blackboards="2"
+          speakers="2"
+          computers="2"/>
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Aula A0.6"
+          dimension="14.0"
+          sockets="12"
+          seats="70"
+          blackboards="2"
+          speakers="2"
+          computers="1"/>
+    </floors>
+    <floors
+        number="1"
+        bathrooms="4">
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Segreteria Studenti"
+          dimension="12.0"
+          sockets="14"
+          type="SECRETARIAT"
+          capacity="3"
+          office_address="1">
+        <person_in_office
+            name="Paolo Rossi"
+            category="STAFF"
+            badge="12"
+            age="45"
+            fiscal_code="UEY3YOP1O89ZGPG5"
+            library="//@buildings.0/@library"/>
+        <person_in_office
+            name="Mario Rossi"
+            category="STAFF"
+            badge="14"
+            age="38"
+            fiscal_code="W5V85GLZYO14P8BV"/>
+      </rooms>
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Ufficio Tasse"
+          dimension="15.0"
+          sockets="5"
+          type="ADMINISTRATION"
+          capacity="2"
+          office_address="1">
+        <person_in_office
+            name="Giuseppe Adelchi"
+            category="ADMINISTRATOR"
+            badge="17"
+            age="58"
+            fiscal_code="Z4KA3T7IU6CSUJXE"/>
+      </rooms>
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Aula A1.2"
+          dimension="14.0"
+          sockets="4"
+          seats="25"
+          blackboards="3"
+          speakers="2"/>
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Aula A1.3"
+          dimension="15.0"
+          sockets="4"
+          seats="30"
+          blackboards="1"
+          speakers="2"/>
+    </floors>
+  </buildings>
+  <buildings
+      name="Palazzo Camponesci"
+      description="Rettorato dell'Università degli studi dell'Aquila"
+      phone="0862432030">
+    <address
+        country="Italy"
+        state="AQ"
+        city="L'Aquila"
+        post_code="67100"
+        street="Piazza Santa Margherita"
+        civic="2"
+        id="2"/>
+    <floors
+        bathrooms="4">
+      <rooms
+          name="Info Point"
+          dimension="4.0"
+          sockets="4"/>
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Dirigenza Amministrativa"
+          dimension="20.0"
+          sockets="8"
+          type="ADMINISTRATION"
+          capacity="4"
+          office_address="2">
+        <person_in_office
+            name="Alfonso Adelchi"
+            category="ADMINISTRATOR"
+            badge="29"
+            age="39"
+            fiscal_code="SKMF0TWJY6WV2HSQ"/>
+        <person_in_office
+            name="Massimo Litona"
+            category="ADMINISTRATOR"
+            badge="34"
+            age="87"
+            fiscal_code="E41WZFLN27QFF2JK"/>
+      </rooms>
+    </floors>
+    <floors
+        number="2"
+        bathrooms="5">
+      <rooms
+          name="Stanza Stampa"
+          dimension="25.0"
+          sockets="25"/>
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Ufficio Iscrizione"
+          dimension="15.0"
+          sockets="25"
+          capacity="12"
+          office_address="2">
+        <person_in_office
+            name="Massimo Cerna"
+            badge="98"
+            age="55"
+            fiscal_code="976BGYAWT2R7IQGR"/>
+      </rooms>
+    </floors>
+  </buildings>
+</unimodel:University>

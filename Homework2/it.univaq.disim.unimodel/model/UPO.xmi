@@ -1,0 +1,226 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<unimodel:University
+    xmi:version="2.0"
+    xmlns:xmi="http://www.omg.org/XMI"
+    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:unimodel="http://www.example.org/unimodel"
+    xsi:schemaLocation="http://www.example.org/unimodel unimodel.ecore"
+    name="UPO"
+    chancellor="Gian Carlo Avanzi"
+    description="Università del Piemonte Orientale">
+  <buildings
+      name="Disit"
+      description="Sede Di Alessandria"
+      phone="5515837941">
+    <address
+        country="Italy"
+        state="AL"
+        city="Alessandria"
+        post_code="15121"
+        street="Viale Teresa Michel"
+        civic="1"
+        id="1"/>
+    <library
+        name="Libreria Alessandria"
+        workstations="100"
+        computers="10">
+      <books
+          name="Programming in Java"
+          quantity="12"
+          ISBN="4564016065297"
+          author="Michele Pagano"/>
+      <books
+          name="Programming in C"
+          quantity="3"
+          ISBN="3379456640249"
+          author="Michele Pagano"/>
+      <books
+          name="Algorithms and Data Structure"
+          quantity="8"
+          ISBN="8682114523967"
+          author="Paolo Cesare"/>
+      <books
+          name="Ricerca Operativa"
+          quantity="7"
+          ISBN="9135852894764"
+          author="Manolo Rossi"/>
+      <loans
+          date="2020-10-29T01:00:00.000+0100"
+          book="//@buildings.0/@library/@books.2"
+          person="//@buildings.0/@library/@person.0"/>
+      <loans
+          date="2021-09-30T02:00:00.000+0200"
+          book="//@buildings.0/@library/@books.2"
+          person="//@buildings.0/@library/@person.1"/>
+      <loans
+          date="2020-11-29T01:00:00.000+0100"
+          book="//@buildings.0/@library/@books.1"
+          person="//@buildings.0/@library/@person.1"/>
+      <person
+          name="Michele Bravo"
+          category="STUDENT"
+          badge="240987"
+          age="23"
+          fiscal_code="KH51HS1S3EBRCOP0"/>
+      <person
+          name="Massimo Clero"
+          category="STUDENT"
+          badge="252690"
+          age="24"
+          fiscal_code="F6QHI4W1TBIZ8273"/>
+    </library>
+    <floors
+        number="-1"
+        bathrooms="4">
+      <rooms
+          name="Aula Manutenzione"
+          dimension="25.0"
+          sockets="5"/>
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Aula Professori 1"
+          dimension="14.0"
+          sockets="14"
+          capacity="5"
+          office_address="1">
+        <person_in_office
+            name="Giacomo Di Rosna"
+            badge="89"
+            age="42"
+            fiscal_code="6TZ9NLAF4E16A4JU"/>
+        <person_in_office
+            name="Massimo Rossi"
+            badge="78"
+            age="43"
+            fiscal_code="1QZJ7R1F8E89Y00T"/>
+      </rooms>
+    </floors>
+    <floors
+        bathrooms="4">
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Classe A0.4"
+          dimension="14.0"
+          sockets="10"
+          seats="50"
+          blackboards="3"
+          speakers="2"
+          computers="2"/>
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Aula A0.5"
+          dimension="16.0"
+          sockets="14"
+          seats="60"
+          blackboards="2"
+          speakers="2"
+          computers="2"/>
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Aula A0.6"
+          dimension="18.0"
+          sockets="10"
+          seats="40"
+          blackboards="3"
+          speakers="2"
+          computers="1"/>
+      <rooms
+          xsi:type="unimodel:Class"
+          name="Aula A0.7"
+          dimension="19.0"
+          sockets="35"
+          seats="35"
+          blackboards="2"
+          speakers="2"
+          computers="1"/>
+    </floors>
+  </buildings>
+  <buildings
+      name="Disum"
+      description="Sede dei dipartimenti umanistici"
+      phone="2949611155">
+    <address
+        country="Italy"
+        state="VC"
+        city="Vercelli"
+        post_code="13100"
+        street="Via Galileo Ferraris"
+        civic="107"
+        id="2"/>
+    <library
+        name="Libreria Di Alessandria"
+        workstations="100"
+        computers="10">
+      <books
+          name="Carlo Magno: Un padre dell'Europa"
+          quantity="15"
+          ISBN="9505602416136"
+          author="Alessandro barbero"/>
+      <books
+          name="Medioevo da non credere"
+          quantity="18"
+          ISBN="7984489607253"
+          author="Alessandro Barbero"/>
+      <books
+          name="Waterloo"
+          quantity="13"
+          ISBN="4912004006157"
+          author="13"/>
+      <loans
+          date="2021-11-30T01:00:00.000+0100"
+          book="//@buildings.1/@library/@books.0"
+          person="//@buildings.1/@library/@person.0"/>
+      <loans
+          date="2021-09-21T01:00:00.000+0200"
+          book="//@buildings.1/@library/@books.1"
+          person="//@buildings.1/@library/@person.1"/>
+      <loans
+          date="2021-03-29T02:00:00.000+0200"
+          book="//@buildings.1/@library/@books.2"
+          person="//@buildings.1/@library/@person.2"/>
+      <loans
+          date="2021-05-24T02:00:00.000+0200"
+          book="//@buildings.1/@library/@books.0"
+          person="//@buildings.1/@library/@person.2"/>
+      <person
+          name="Pipino Il Breve"
+          category="STUDENT"
+          badge="153232"
+          age="29"
+          fiscal_code="B3ZUNJ55T2B7JSM4"/>
+      <person
+          name="Richard the Lionhearth"
+          category="STUDENT"
+          badge="153232"
+          age="29"
+          fiscal_code="FBD4EE0NAYEWGDW0"/>
+      <person
+          name="Napoleone Bonaparte"
+          category="STUDENT"
+          badge="211928"
+          age="21"
+          fiscal_code="FBD4EE0NAYEWGDW0"/>
+    </library>
+    <floors
+        number="1"
+        bathrooms="5">
+      <rooms
+          name="Aula Manutenzioni"
+          dimension="10.9"
+          sockets="16"/>
+      <rooms
+          xsi:type="unimodel:Office"
+          name="Ufficio Professori"
+          dimension="10.0"
+          sockets="5"
+          capacity="4"
+          office_address="2">
+        <person_in_office
+            name="Alessandro Barbero"
+            badge="1"
+            age="50"
+            fiscal_code="QQUBAIS8M3682KIY"/>
+      </rooms>
+    </floors>
+  </buildings>
+</unimodel:University>

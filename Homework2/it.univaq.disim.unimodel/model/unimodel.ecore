@@ -12,8 +12,8 @@
   <eClassifiers xsi:type="ecore:EClass" name="University" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="chancellor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="buildings" upperBound="-1"
-        eType="#//Building" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="buildings" lowerBound="1"
+        upperBound="-1" eType="#//Building" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Named">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -173,6 +173,8 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="blackboards" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="speakers" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="computers" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Person" eSuperTypes="#//Named">
