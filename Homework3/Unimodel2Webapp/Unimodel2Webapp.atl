@@ -1,0 +1,35 @@
+-- @path MM1=/it.univaq.disim.unimodel/model/unimodel.ecore
+-- @path MM2=/it.univaq.disim.unimodel_webapp/model/unimodel_webapp.ecore
+
+module Unimodel2Webapp;
+create OUT : MM2 from IN1 : MM1;
+
+
+-- ---------------- --
+-- RULES DEFINITION --
+-- ----------------	--
+
+rule University2Webapp {
+	from
+		s : MM1!University
+	to
+		t: MM2!Application(
+			name <- s.name
+			
+			)
+}
+
+rule University2Info{ 
+	from
+		s : MM1!University
+	to
+		t: MM2!Info(
+		 	chancellor <- s.chancellor,
+			description <- s.description
+			)
+	}
+
+ 
+
+
+

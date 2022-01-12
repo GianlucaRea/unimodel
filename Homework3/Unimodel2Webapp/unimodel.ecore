@@ -1,0 +1,227 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="unimodel" nsURI="http://www.example.org/unimodel" nsPrefix="unimodel">
+  <eAnnotations source="http://www.eclipse.org/OCL/Import">
+    <details key="ecore" value="http://www.eclipse.org/emf/2002/Ecore"/>
+  </eAnnotations>
+  <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+    <details key="invocationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="settingDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+    <details key="validationDelegates" value="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot"/>
+  </eAnnotations>
+  <eClassifiers xsi:type="ecore:EClass" name="University" eSuperTypes="#//Named">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="chancellor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="buildings" lowerBound="1"
+        upperBound="-1" eType="#//Building" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Named">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Building" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="phone_length"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="phone_length" value="self.phone.size() = 10"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="address" lowerBound="1"
+        eType="#//Address" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="library" eType="#//Library"
+        containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="floors" lowerBound="1"
+        upperBound="-1" eType="#//Floor" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Address">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="postcode_length id_number"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="postcode_length" value="self.post_code.size() = 5"/>
+      <details key="id_number" value="self.id >= 1"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="country" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="city" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="post_code" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="street" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="civic" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
+        iD="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Library" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="workstation_positive computers_positive"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="workstation_positive" value="self.workstations >= 1"/>
+      <details key="computers_positive" value="self.computers >= 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="workstations" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="computers" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="books" ordered="false"
+        upperBound="-1" eType="#//Book" containment="true" eOpposite="#//Book/library">
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="loans" ordered="false"
+        upperBound="-1" eType="#//Loan" containment="true">
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person" upperBound="-1"
+        eType="#//Person" containment="true"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Book" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="quantity_positive ISBN_legth SufficientCopies"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="quantity_positive" value="self.quantity >= 0"/>
+      <details key="ISBN_legth" value="self.ISBN.size() = 13"/>
+      <details key="SufficientCopies" value="library.loans->select(book=self)->size() &lt;= quantity"/>
+    </eAnnotations>
+    <eOperations name="isBookAvailable" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBooleanObject">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="loans->size() &lt; quantity"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="ISBN" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="author" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="library" eType="#//Library"
+        eOpposite="#//Library/books"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="loans" ordered="false"
+        upperBound="-1" eType="#//Loan" volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="library.loans->select(book=self)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Loan">
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="date" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EDate"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="book" eType="#//Book"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person" eType="#//Person"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Floor">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="bathroom_positive"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="bathroom_positive" value="self.bathrooms >= 1"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="rooms" upperBound="-1"
+        eType="#//Room" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="bathrooms" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Room" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="sockets_positive"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="sockets_positive" value="self.sockets >= 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="dimension" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EFloat"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="sockets" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Office" eSuperTypes="#//Room">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="capacity_positive person_in_office_constraint"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="capacity_positive" value="self.capacity >= 1"/>
+      <details key="person_in_office_constraint" value="self.person_in_office->size() &lt;= capacity"/>
+    </eAnnotations>
+    <eOperations name="getPersonInOffice" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EBigInteger">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="body" value="self.person_in_office->size()"/>
+      </eAnnotations>
+    </eOperations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//Type"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="capacity" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person_in_office" lowerBound="1"
+        upperBound="-1" eType="#//Person" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="office_address" lowerBound="1"
+        eType="#//Address"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Class" eSuperTypes="#//Room">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="seats_positive blackboards_positive speakers_positive"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="seats_positive" value="self.seats > 0"/>
+      <details key="blackboards_positive" value="self.blackboards >= 0"/>
+      <details key="speakers_positive" value="self.speakers >= 0"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="seats" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="blackboards" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="speakers" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="computers" lowerBound="1"
+        eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Person" eSuperTypes="#//Named">
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
+      <details key="constraints" value="age_upper_bound age_lower_bound fiscal_code_length"/>
+    </eAnnotations>
+    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+      <details key="age_upper_bound" value="self.age >= 16"/>
+      <details key="age_lower_bound" value="self.age &lt;= 120"/>
+      <details key="fiscal_code_length" value="self.fiscal_code.size() = 16"/>
+    </eAnnotations>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" lowerBound="1"
+        eType="#//Category"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="badge" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="age" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="fiscal_code" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="library" eType="#//Library"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="loans" ordered="false"
+        upperBound="-1" eType="#//Loan" volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="library.loans->select(person=self)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="books" ordered="false"
+        unique="false" upperBound="-1" eType="#//Book" volatile="true" derived="true">
+      <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
+        <details key="derivation" value="loans->collect(book)"/>
+      </eAnnotations>
+      <eAnnotations source="http://www.eclipse.org/OCL/Collection">
+        <details key="nullFree" value="false"/>
+      </eAnnotations>
+    </eStructuralFeatures>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Type">
+    <eLiterals name="PROFESSOR_OFFICE"/>
+    <eLiterals name="PHD_ROOM" value="1"/>
+    <eLiterals name="ADMINISTRATION" value="2"/>
+    <eLiterals name="SECRETARIAT" value="3"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EEnum" name="Category">
+    <eLiterals name="PROFESSOR"/>
+    <eLiterals name="PHD_STUDENT" value="1"/>
+    <eLiterals name="ADMINISTRATOR" value="2"/>
+    <eLiterals name="STAFF" value="3"/>
+    <eLiterals name="STUDENT" value="4"/>
+  </eClassifiers>
+</ecore:EPackage>
