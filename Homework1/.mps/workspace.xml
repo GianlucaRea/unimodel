@@ -5,52 +5,9 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="b28a29cd-c76c-449c-ac73-f3694c9095ea" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$personListHandler_x0ve1k_r3a.class" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/unimodel/models/unimodel.university.mps" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/university/generated" afterDir="false" />
-      <change afterPath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/university/trace.info" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentation/Unimodel.mdzip" beforeDir="false" afterPath="$PROJECT_DIR$/../Documentation/Unimodel.mdzip" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/../Documentation/Unimodel.mdzip.bak" beforeDir="false" afterPath="$PROJECT_DIR$/../Documentation/Unimodel.mdzip.bak" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.mps/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.mps/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/Univaq/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/university/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$LINKS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$addressSingleRoleHandler_fo5bqk_j3a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$addressSingleRoleHandler_fo5bqk_j3a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$floorListHandler_fo5bqk_r3a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$floorListHandler_fo5bqk_r3a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$librarySingleRoleHandler_fo5bqk_n3a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$librarySingleRoleHandler_fo5bqk_n3a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$personsListHandler_fo5bqk_v3a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a$personsListHandler_fo5bqk_v3a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Building_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Floor_EditorBuilder_a$roomListHandler_hpwqe8_j2a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Floor_EditorBuilder_a$roomListHandler_hpwqe8_j2a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$2.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$2.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$3.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$3.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$CONCEPTS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$CONCEPTS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$LINKS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$LINKS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$PROPS.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$PROPS.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$booksListHandler_x0ve1k_j3a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$booksListHandler_x0ve1k_j3a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$loansListHandler_x0ve1k_n3a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a$loansListHandler_x0ve1k_n3a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/Library_EditorBuilder_a.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/structure/StructureAspectDescriptor.class" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/structure/StructureAspectDescriptor.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/classes_gen/unimodel/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/models/unimodel.Univaq.mps" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/models/unimodel.editor.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/models/unimodel.editor.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/models/unimodel.structure.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/models/unimodel.structure.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/Univaq/dependencies" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/university/dependencies" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/Univaq/generated" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/editor/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/editor/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/structure/generated" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen.caches/unimodel/structure/generated" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/Univaq/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/sandbox/classes_gen/unimodel/sandbox/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/editor/Building_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/editor/Building_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/editor/Library_EditorBuilder_a.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/editor/Library_EditorBuilder_a.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/editor/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/editor/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/structure/StructureAspectDescriptor.java" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/structure/StructureAspectDescriptor.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/structure/aspectcps-descriptorclasses.mps" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/structure/aspectcps-descriptorclasses.mps" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/structure/trace.info" beforeDir="false" afterPath="$PROJECT_DIR$/languages/unimodel/source_gen/unimodel/structure/trace.info" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Homework2/it.univaq.disim.unimodel/model/University.xmi" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/../Homework2/it.univaq.disim.unimodel/model/unimodel.ecore" beforeDir="false" afterPath="$PROJECT_DIR$/../Homework2/it.univaq.disim.unimodel/model/unimodel.ecore" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -63,7 +20,7 @@
         <TabState>
           <option name="title" value="Console" />
           <tab>
-            <model ref="5b3a834e-5bc5-4e6d-b80d-aa364991b3b1/r:c7333522-7689-40b6-81bd-53accdf0f937(TempModule5b3a834e-5bc5-4e6d-b80d-aa364991b3b1/ConsoleModel_101036435999750)">
+            <model ref="223ee596-b771-40db-aa71-97dcda3afd4b/r:97339d1f-af5f-4e28-8550-12267bd98d53(TempModule223ee596-b771-40db-aa71-97dcda3afd4b/ConsoleModel_39333470222791)">
               <persistence version="9" />
               <languages>
                 <devkit ref="70d3d6da-af63-483d-a75f-9c8acf8de332(jetbrains.mps.console.devkit)" />
@@ -83,11 +40,11 @@
                   <concept id="757553790980850366" name="jetbrains.mps.console.base.structure.History" flags="ng" index="3balQm" />
                 </language>
               </registry>
-              <node concept="aymSD" id="7_lnZMSDvQr">
-                <node concept="3balQm" id="7_lnZMSDvQs" role="aymYE" />
-                <node concept="2Clz$F" id="7_lnZMSDvQt" role="aymYO" />
-                <node concept="2_V_lH" id="7_lnZMSDvQu" role="1PhJh3">
-                  <ref role="2_V_lI" node="7_lnZMSDvQt" resolve="CommandHolder" />
+              <node concept="aymSD" id="335ldyr73Kf">
+                <node concept="3balQm" id="335ldyr73Kg" role="aymYE" />
+                <node concept="2Clz$F" id="335ldyr73Kh" role="aymYO" />
+                <node concept="2_V_lH" id="335ldyr73Ki" role="1PhJh3">
+                  <ref role="2_V_lI" node="335ldyr73Kh" resolve="CommandHolder" />
                 </node>
               </node>
             </model>
@@ -170,103 +127,8 @@
     </option>
   </component>
   <component name="ProjectView">
-    <navigator currentView="ProjectPane" proportions="" version="1" />
-    <panes>
-      <pane id="FileSystem" />
-      <pane id="Scope" />
-      <pane id="ProjectPane">
-        <subPane>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all models" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.constraints.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all models" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all models" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:1f371ae4-d225-4a11-b3f1-8d1548bd139d(unimodel.university) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.university.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </PATH>
-          <SELECTED>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="Unimodel" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="6069f38a-d5c2-473e-be65-6672ae45792c(unimodel)" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="all models" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints) in IdeaFile[path: /Users/gianlucarea/Desktop/Projects/Unimodel/Homework1/languages/unimodel/models/unimodel.constraints.mps]" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="8742999790642921861" />
-              <option name="myItemType" value="" />
-            </PATH_ELEMENT>
-          </SELECTED>
-        </subPane>
-      </pane>
-    </panes>
+    <navigator proportions="" version="1" />
+    <panes />
   </component>
   <component name="ProjectViewState">
     <option name="hideEmptyMiddlePackages" value="true" />
