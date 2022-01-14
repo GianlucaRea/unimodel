@@ -11,6 +11,12 @@ import unimodel.UnimodelFactory;
  * <!-- begin-user-doc -->
  * A test case for the model object '<em><b>Building</b></em>'.
  * <!-- end-user-doc -->
+ * <p>
+ * The following operations are tested:
+ * <ul>
+ *   <li>{@link unimodel.Building#phone_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Phone length</em>}</li>
+ * </ul>
+ * </p>
  * @generated
  */
 public class BuildingTest extends NamedTest {
@@ -65,6 +71,19 @@ public class BuildingTest extends NamedTest {
 	@Override
 	protected void tearDown() throws Exception {
 		setFixture(null);
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Building#phone_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Phone length</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Building#phone_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	public void testPhone_length__DiagnosticChain_Map() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
 	}
 
 } //BuildingTest

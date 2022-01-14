@@ -11,6 +11,21 @@ import unimodel.UnimodelFactory;
  * <!-- begin-user-doc -->
  * A test case for the model object '<em><b>Person</b></em>'.
  * <!-- end-user-doc -->
+ * <p>
+ * The following features are tested:
+ * <ul>
+ *   <li>{@link unimodel.Person#getLoans() <em>Loans</em>}</li>
+ *   <li>{@link unimodel.Person#getBooks() <em>Books</em>}</li>
+ * </ul>
+ * </p>
+ * <p>
+ * The following operations are tested:
+ * <ul>
+ *   <li>{@link unimodel.Person#fiscal_code_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Fiscal code length</em>}</li>
+ *   <li>{@link unimodel.Person#age_lower_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Age lower bound</em>}</li>
+ *   <li>{@link unimodel.Person#age_upper_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Age upper bound</em>}</li>
+ * </ul>
+ * </p>
  * @generated
  */
 public class PersonTest extends NamedTest {
@@ -65,6 +80,71 @@ public class PersonTest extends NamedTest {
 	@Override
 	protected void tearDown() throws Exception {
 		setFixture(null);
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Person#getLoans() <em>Loans</em>}' feature getter.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Person#getLoans()
+	 * @generated
+	 */
+	public void testGetLoans() {
+		// TODO: implement this feature getter test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Person#getBooks() <em>Books</em>}' feature getter.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Person#getBooks()
+	 * @generated
+	 */
+	public void testGetBooks() {
+		// TODO: implement this feature getter test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Person#fiscal_code_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Fiscal code length</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Person#fiscal_code_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	public void testFiscal_code_length__DiagnosticChain_Map() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Person#age_lower_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Age lower bound</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Person#age_lower_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	public void testAge_lower_bound__DiagnosticChain_Map() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Person#age_upper_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Age upper bound</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Person#age_upper_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	public void testAge_upper_bound__DiagnosticChain_Map() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
 	}
 
 } //PersonTest

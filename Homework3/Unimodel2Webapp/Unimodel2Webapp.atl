@@ -1,5 +1,5 @@
--- @path MM1=/it.univaq.disim.unimodel/model/unimodel.ecore
--- @path MM2=/it.univaq.disim.unimodel_webapp/model/unimodel_webapp.ecore
+-- @path MM1=/Unimodel2Webapp/unimodel.ecore
+-- @path MM2=/Unimodel2Webapp/unimodel_webapp.ecore
 
 module Unimodel2Webapp;
 create OUT : MM2 from IN1 : MM1;
@@ -11,23 +11,43 @@ create OUT : MM2 from IN1 : MM1;
 
 rule University2Webapp {
 	from
-		s : MM1!University
+		u : MM1!University
 	to
-		t: MM2!Application(
-			name <- s.name
+		a: MM2!Application(
+				name <- u.name
 			
+			),
+		d: MM2!Description(
+		 		chancellor <- u.chancellor,
+				description <- u.description
 			)
 }
 
-rule University2Info{ 
-	from
-		s : MM1!University
+rule Building2BPage {
+	from 
+		address : MM1!Address,
+		building : MM1!Building
 	to
-		t: MM2!Info(
-		 	chancellor <- s.chancellor,
-			description <- s.description
+		bpage : MM2!Building_Page (
+				name <- building.name,
+				info <- info
+			),	
+		info: MM2!Info (
+			 
+				description <- building.description,
+				phone <- building.phone,
+				
+				city <- address.city,
+				civic <- address.civic,
+				country <- address.country,
+				postcode <- address.post_code,
+				state <- address.state,
+				street <- address.street
 			)
-	}
+}
+
+
+
 
  
 

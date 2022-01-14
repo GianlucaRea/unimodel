@@ -11,6 +11,14 @@ import unimodel.UnimodelFactory;
  * <!-- begin-user-doc -->
  * A test case for the model object '<em><b>Office</b></em>'.
  * <!-- end-user-doc -->
+ * <p>
+ * The following operations are tested:
+ * <ul>
+ *   <li>{@link unimodel.Office#getPersonInOffice() <em>Get Person In Office</em>}</li>
+ *   <li>{@link unimodel.Office#capacity_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Capacity positive</em>}</li>
+ *   <li>{@link unimodel.Office#person_in_office_constraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Person in office constraint</em>}</li>
+ * </ul>
+ * </p>
  * @generated
  */
 public class OfficeTest extends RoomTest {
@@ -65,6 +73,45 @@ public class OfficeTest extends RoomTest {
 	@Override
 	protected void tearDown() throws Exception {
 		setFixture(null);
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Office#getPersonInOffice() <em>Get Person In Office</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Office#getPersonInOffice()
+	 * @generated
+	 */
+	public void testGetPersonInOffice() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Office#capacity_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Capacity positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Office#capacity_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	public void testCapacity_positive__DiagnosticChain_Map() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Office#person_in_office_constraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Person in office constraint</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Office#person_in_office_constraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	public void testPerson_in_office_constraint__DiagnosticChain_Map() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
 	}
 
 } //OfficeTest

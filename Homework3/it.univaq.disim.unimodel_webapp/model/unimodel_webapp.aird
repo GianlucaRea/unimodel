@@ -3,6 +3,7 @@
   <viewpoint:DAnalysis uid="_HZCtEHOIEeyge5DosrqWbA" selectedViews="_HawkUHOIEeyge5DosrqWbA" version="14.5.1.202106111100">
     <semanticResources>unimodel_webapp.ecore</semanticResources>
     <semanticResources>unimodel_webapp.genmodel</semanticResources>
+    <semanticResources>../webappout</semanticResources>
     <ownedViews xmi:type="viewpoint:DView" uid="_HawkUHOIEeyge5DosrqWbA">
       <viewpoint xmi:type="description:Viewpoint" href="platform:/plugin/org.eclipse.emf.ecoretools.design/description/ecore.odesign#//@ownedViewpoints[name='Design']"/>
       <ownedRepresentationDescriptors xmi:type="viewpoint:DRepresentationDescriptor" uid="_Hb6a4HOIEeyge5DosrqWbA" name="unimodel_webapp" repPath="#_HbiAYHOIEeyge5DosrqWbA" changeId="1ff08849-9cb0-4fac-b9b6-538b8654ac7d">

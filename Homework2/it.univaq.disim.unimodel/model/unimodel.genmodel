@@ -33,7 +33,6 @@
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/address"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/library"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/floors"/>
-      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/person"/>
     </genClasses>
     <genClasses ecoreClass="unimodel.ecore#//Address">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/country"/>
@@ -49,6 +48,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Library/computers"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Library/books"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Library/loans"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Library/person"/>
     </genClasses>
     <genClasses ecoreClass="unimodel.ecore#//Book">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Book/quantity"/>
@@ -83,12 +83,14 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Class/seats"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Class/blackboards"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Class/speakers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Class/computers"/>
     </genClasses>
     <genClasses ecoreClass="unimodel.ecore#//Person">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Person/category"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Person/badge"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Person/age"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Person/fiscal_code"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel.ecore#//Person/library"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel.ecore#//Person/loans"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel.ecore#//Person/books"/>
     </genClasses>

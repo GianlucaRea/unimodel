@@ -19,7 +19,8 @@
         upperBound="-1" eType="#//Map_Section" containment="true"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Map_Section">
-    <eStructuralFeatures xsi:type="ecore:EReference" name="room" upperBound="-1" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="room" upperBound="-1" eType="#//Room"
+        containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number_bathrooms" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>

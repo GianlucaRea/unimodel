@@ -31,6 +31,7 @@ public class UnimodelAllTests extends TestSuite {
 	 */
 	public static Test suite() {
 		TestSuite suite = new UnimodelAllTests("Unimodel Tests");
+		suite.addTest(UnimodelTests.suite());
 		return suite;
 	}
 

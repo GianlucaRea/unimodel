@@ -31,6 +31,15 @@ public class UnimodelTests extends TestSuite {
 	 */
 	public static Test suite() {
 		TestSuite suite = new UnimodelTests("unimodel Tests");
+		suite.addTestSuite(BuildingTest.class);
+		suite.addTestSuite(AddressTest.class);
+		suite.addTestSuite(LibraryTest.class);
+		suite.addTestSuite(BookTest.class);
+		suite.addTestSuite(FloorTest.class);
+		suite.addTestSuite(RoomTest.class);
+		suite.addTestSuite(OfficeTest.class);
+		suite.addTestSuite(ClassTest.class);
+		suite.addTestSuite(PersonTest.class);
 		return suite;
 	}
 

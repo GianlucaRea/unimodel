@@ -1,6 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="/it.univaq.disim.unimodel_webapp/src-gen" creationIcons="false"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/it.univaq.disim.unimodel_webapp/src-gen" creationIcons="false"
     editDirectory="/it.univaq.disim.unimodel_webapp.edit/src-gen" editorDirectory="/it.univaq.disim.unimodel_webapp.editor/src-gen"
     modelPluginID="it.univaq.disim.unimodel_webapp" modelName="Unimodel_webapp" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
     codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
@@ -8,5 +9,93 @@
   <foreignModel>unimodel_webapp.ecore</foreignModel>
   <testsDirectory xsi:nil="true"/>
   <genPackages prefix="Unimodel_webapp" basePackage="it.univaq.disim" disposableProviderFactory="true"
-      ecorePackage="unimodel_webapp.ecore#/"/>
+      ecorePackage="unimodel_webapp.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="unimodel_webapp.ecore#//Type">
+      <genEnumLiterals ecoreEnumLiteral="unimodel_webapp.ecore#//Type/PROFESSOR_OFFICE"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel_webapp.ecore#//Type/PHD_ROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel_webapp.ecore#//Type/ADMINISTRATION"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel_webapp.ecore#//Type/SECRETARIAT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="unimodel_webapp.ecore#//Category">
+      <genEnumLiterals ecoreEnumLiteral="unimodel_webapp.ecore#//Category/PROFESSOR"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel_webapp.ecore#//Category/PHD_STUDENT"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel_webapp.ecore#//Category/ADMINISTRATOR"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel_webapp.ecore#//Category/STAFF"/>
+      <genEnumLiterals ecoreEnumLiteral="unimodel_webapp.ecore#//Category/STUDENT"/>
+    </genEnums>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Application">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Application/Description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Application/Department_Page"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Application/users"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Building_Page">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Building_Page/info"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Building_Page/library_page"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Building_Page/map_section"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Map_Section">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Map_Section/room"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Map_Section/number"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Map_Section/number_bathrooms"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Room">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Room/dimension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Room/sockets"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Class">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Class/seats"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Class/number_computers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Class/number_blackboars"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Class/number_speakers"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Office">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Office/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Office/capacity"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Office/person_in_office"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Office/office_info"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Library_Page">
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Library_Page/books"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Library_Page/loans"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Library_Page/workstation"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Library_Page/computers"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Loan">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Loan/date"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Loan/book"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Loan/user"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//User">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//User/username"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//User/age"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//User/badge"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//User/category"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//User/loans"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Book">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Book/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Book/ISBN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Book/author"/>
+      <genFeatures property="None" notify="false" createChild="false" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Book/library"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Book/books"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel_webapp.ecore#//Book/loans"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Info">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Info/description"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Info/phone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Info/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Info/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Info/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Info/postcode"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Info/street"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Info/civic"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Description">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Description/chancellor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Description/description"/>
+    </genClasses>
+    <genClasses ecoreClass="unimodel_webapp.ecore#//Named">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel_webapp.ecore#//Named/name"/>
+    </genClasses>
+  </genPackages>
 </genmodel:GenModel>
