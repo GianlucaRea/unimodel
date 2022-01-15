@@ -5,51 +5,154 @@ module Unimodel2Webapp;
 create OUT : MM2 from IN1 : MM1;
 
 
+---Return all the users in the system
+helper context MM1!University def: getAllUsers() : Sequence(MM1!Person) = MM1!Person.allInstances()->asSequence();
+---Return all the building in the system
+helper context MM1!University def: getAllBuilding() : Sequence(MM1!Building) = MM1!Building.allInstances()->asSequence();
+
 -- ---------------- --
 -- RULES DEFINITION --
 -- ----------------	--
 
 rule University2Webapp {
 	from
-		u : MM1!University
+		s : MM1!University
 	to
-		a: MM2!Application(
-				name <- u.name
-			
+		t: MM2!Application(
+				name <- s.name,
+				Description <- y,
+				users <- s.getAllUsers(),
+				Department_Page <- s.getAllBuilding()
 			),
-		d: MM2!Description(
-		 		chancellor <- u.chancellor,
-				description <- u.description
+		y: MM2!Description(
+ 				chancellor <- s.chancellor,
+				description <- s.description
 			)
 }
 
-rule Building2BPage {
-	from 
-		address : MM1!Address,
-		building : MM1!Building
+
+rule Person2User{
+	from
+		s: MM1!Person
 	to
-		bpage : MM2!Building_Page (
-				name <- building.name,
-				info <- info
-			),	
-		info: MM2!Info (
-			 
-				description <- building.description,
-				phone <- building.phone,
-				
-				city <- address.city,
-				civic <- address.civic,
-				country <- address.country,
-				postcode <- address.post_code,
-				state <- address.state,
-				street <- address.street
-			)
+		t: MM2!User(
+			name <- s.name,
+			username <- s.fiscal_code,
+			age <- s.age,
+			badge <- s.badge
+			---loans <- s.loans
+		)
 }
 
+rule Building2Building_Page{
+	from
+	  	s: MM1!Building
+	to
+		t: MM2!Building_Page(
+			name <- s.name,
+			info <- s.address,
+			map_section <-s.floors,
+			library_page <- s.library
+		)
 
+}
 
+rule Address2Info{
+	from
+		s: MM1!Address
+	to
+	 	t: MM2!Info(
+			country <- s.country,
+			state <- s.state,
+			city <- s.city,
+			postcode <- s.post_code,
+			street <- s.street,
+			civic <- s.civic
+		)
+}
 
+rule Floor2MSection{
+	from
+		s: MM1!Floor
+	to
+		t: MM2!Map_Section(
+			number <- s.number,	
+			number_bathrooms <- s.bathrooms,
+			room <- s.rooms,
+			office <- s.office,
+			class <- s.class
+		)
+}
+
+rule Library2LPage{
+	from
+		s: MM1!Library
+	to
+		t: MM2!Library_Page(
+			name <- s.name,
+			computers <- s.computers,
+			workstation <- s.workstations,
+			books <- s.books,
+			loans <- s.loans
+		)
+	}
+
+rule Book2Book{
+	from
+		s: MM1!Book
+	to
+		t: MM2!Book(
+			name <- s.name,
+			quantity <- s.quantity,
+			ISBN <- s.ISBN,
+			author <- s.author
+		)
+}
+
+rule Loan2Loan{
+	from
+		s: MM1!Loan
+	to
+		t: MM2!Loan(
+			date <- s.date,
+			book <- s.book,
+			user <- s.person
+		)
+}
  
+rule Room2Room{
+	from
+		s: MM1!Room
+	to
+		t: MM2!Room(
+			dimension <- s.dimension,
+			sockets <- s.sockets,
+			name <- s.name
+		)
+}
 
+rule Office2Office{
+	from 
+		s: MM1!Office
+	to
+		t: MM2!Office(
+			name <- s.name,
+			capacity <- s.capacity,
+			person_in_office <- s.person_in_office,
+			office_info <- s.office_address
+		)
+}
+
+rule Class2Class{
+	from 
+		s: MM1!Class
+	to
+		t: MM2!Class(
+			seats <- s.seats,
+			number_computers <- s.computers,
+			number_blackboards <- s.blackboards,
+			number_speakers <- s.speakers
+		)
+}	
 
 
