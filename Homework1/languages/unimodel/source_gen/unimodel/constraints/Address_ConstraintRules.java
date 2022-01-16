@@ -27,9 +27,11 @@ public final class Address_ConstraintRules extends BaseRulesConstraintsDescripto
   public static final Rule<ContainmentContext> check_id342464601220607542 = new Rule_Only_Letters_City();
   public static final Rule<ContainmentContext> check_id342464601220616541 = new Rule_Post_Code_Only_Digits();
   public static final Rule<ContainmentContext> check_id342464601220624942 = new Rule_Post_Code_Length();
-  public static final Rule<ContainmentContext> check_id8742999790642899071 = new Rule_ID_Positive();
+  public static final Rule<ContainmentContext> check_id5676955340386764998 = new Rule_Phone_Length();
+  public static final Rule<ContainmentContext> check_id5676955340386781187 = new Rule_Phone_Regex();
+  public static final Rule<ContainmentContext> check_id5676955340386792831 = new Rule_Id_positive();
 
-  private static final List<Rule<?>> RULES = Collections.unmodifiableList(Arrays.<Rule<?>>asList(check_id342464601220395635, check_id342464601220595591, check_id342464601220607542, check_id342464601220616541, check_id342464601220624942, check_id8742999790642899071));
+  private static final List<Rule<?>> RULES = Collections.unmodifiableList(Arrays.<Rule<?>>asList(check_id342464601220395635, check_id342464601220595591, check_id342464601220607542, check_id342464601220616541, check_id342464601220624942, check_id5676955340386764998, check_id5676955340386781187, check_id5676955340386792831));
 
   @NotNull
   @Override
@@ -132,17 +134,55 @@ public final class Address_ConstraintRules extends BaseRulesConstraintsDescripto
     }
   }
 
-  public static final class Rule_ID_Positive extends BaseRule<ContainmentContext> {
-    private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790642899071");
-    public static final RuleId ID_ID_Positive = new RuleId(8742999790642899071L, SOURCE_NODE_REF);
+  public static final class Rule_Phone_Length extends BaseRule<ContainmentContext> {
+    private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/5676955340386764998");
+    public static final RuleId ID_Phone_Length = new RuleId(5676955340386764998L, SOURCE_NODE_REF);
 
-    public Rule_ID_Positive() {
-      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_ID_Positive, SOURCE_NODE_REF);
+    public Rule_Phone_Length() {
+      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_Phone_Length, SOURCE_NODE_REF);
     }
 
     @Override
     public boolean check(@NotNull ContainmentContext context) {
-      return SPropertyOperations.getInteger(context.getChildNode(), PROPS.id$v$QZ) >= 1;
+      return SPropertyOperations.getString(context.getChildNode(), PROPS.phone_number$M3$J).length() == 10;
+    }
+
+    @Override
+    public boolean appliesTo(@NotNull ContainmentContext context) {
+      return true;
+    }
+  }
+
+  public static final class Rule_Phone_Regex extends BaseRule<ContainmentContext> {
+    private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/5676955340386781187");
+    public static final RuleId ID_Phone_Regex = new RuleId(5676955340386781187L, SOURCE_NODE_REF);
+
+    public Rule_Phone_Regex() {
+      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_Phone_Regex, SOURCE_NODE_REF);
+    }
+
+    @Override
+    public boolean check(@NotNull ContainmentContext context) {
+      return SPropertyOperations.getString(context.getChildNode(), PROPS.phone_number$M3$J).matches("[0-9]+");
+    }
+
+    @Override
+    public boolean appliesTo(@NotNull ContainmentContext context) {
+      return true;
+    }
+  }
+
+  public static final class Rule_Id_positive extends BaseRule<ContainmentContext> {
+    private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/5676955340386792831");
+    public static final RuleId ID_Id_positive = new RuleId(5676955340386792831L, SOURCE_NODE_REF);
+
+    public Rule_Id_positive() {
+      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_Id_positive, SOURCE_NODE_REF);
+    }
+
+    @Override
+    public boolean check(@NotNull ContainmentContext context) {
+      return SPropertyOperations.getInteger(context.getChildNode(), PROPS.id$LWLi) >= 1;
     }
 
     @Override
@@ -160,6 +200,7 @@ public final class Address_ConstraintRules extends BaseRulesConstraintsDescripto
     /*package*/ static final SProperty state$N8ON = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L, 0x79555ffcb891b53eL, "state");
     /*package*/ static final SProperty city$N9xQ = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L, 0x79555ffcb891b541L, "city");
     /*package*/ static final SProperty post_code$NatU = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L, 0x79555ffcb891b545L, "post_code");
-    /*package*/ static final SProperty id$v$QZ = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L, 0x79555ffcb891b8e6L, "id");
+    /*package*/ static final SProperty phone_number$M3$J = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L, 0x4ec898cde57f8c31L, "phone_number");
+    /*package*/ static final SProperty id$LWLi = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L, 0x4ec898cde57f8c29L, "id");
   }
 }

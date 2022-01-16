@@ -51,18 +51,32 @@ public final class Address_ConstraintsFeedback extends BaseFeedbackDescriptor {
     @NotNull
     @Override
     public MessageProvider.Msg yieldMessage(ContainmentContext context) {
-      return new MessageProvider.StringMsg("Warning: The postal code must be of five digits" + "");
+      return new MessageProvider.StringMsg("Warning: The postal code must be of five digit" + "");
     }
   };
-  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_kacaqw_f = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Address_ConstraintRules.Rule_ID_Positive.ID_ID_Positive)) {
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_kacaqw_f = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Address_ConstraintRules.Rule_Phone_Length.ID_Phone_Length)) {
     @NotNull
     @Override
     public MessageProvider.Msg yieldMessage(ContainmentContext context) {
-      return new MessageProvider.StringMsg("Warning: The id cannot be less than one");
+      return new MessageProvider.StringMsg("Warning: The phone code must be of 10 digits");
+    }
+  };
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_kacaqw_g = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Address_ConstraintRules.Rule_Phone_Regex.ID_Phone_Regex)) {
+    @NotNull
+    @Override
+    public MessageProvider.Msg yieldMessage(ContainmentContext context) {
+      return new MessageProvider.StringMsg("Warning: The phone code must be formed only by digits");
+    }
+  };
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_kacaqw_h = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Address_ConstraintRules.Rule_Id_positive.ID_Id_positive)) {
+    @NotNull
+    @Override
+    public MessageProvider.Msg yieldMessage(ContainmentContext context) {
+      return new MessageProvider.StringMsg("Warning: The id cannot be negative ");
     }
   };
 
-  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenConstraintRuleFails_kacaqw_a, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_b, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_c, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_d, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_e, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_f));
+  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenConstraintRuleFails_kacaqw_a, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_b, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_c, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_d, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_e, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_f, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_g, MSGPROVIDER_WhenConstraintRuleFails_kacaqw_h));
 
   public Address_ConstraintsFeedback() {
     super(CONCEPT);

@@ -23,7 +23,7 @@ public final class Person_ConstraintRules extends BaseRulesConstraintsDescriptor
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b5f5L, "unimodel.structure.Person");
 
   public static final Rule<ContainmentContext> check_id8742999790643042707 = new Rule_Age_Range();
-  public static final Rule<ContainmentContext> check_id8742999790643063996 = new Rule_unnamed_3h0umw_b0();
+  public static final Rule<ContainmentContext> check_id8742999790643063996 = new Rule_Fiscal_Code_Range();
 
   private static final List<Rule<?>> RULES = Collections.unmodifiableList(Arrays.<Rule<?>>asList(check_id8742999790643042707, check_id8742999790643063996));
 
@@ -52,12 +52,12 @@ public final class Person_ConstraintRules extends BaseRulesConstraintsDescriptor
     }
   }
 
-  public static final class Rule_unnamed_3h0umw_b0 extends BaseRule<ContainmentContext> {
+  public static final class Rule_Fiscal_Code_Range extends BaseRule<ContainmentContext> {
     private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790643063996");
-    public static final RuleId ID_unnamed_3h0umw_b0 = new RuleId(8742999790643063996L, SOURCE_NODE_REF);
+    public static final RuleId ID_Fiscal_Code_Range = new RuleId(8742999790643063996L, SOURCE_NODE_REF);
 
-    public Rule_unnamed_3h0umw_b0() {
-      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_unnamed_3h0umw_b0, SOURCE_NODE_REF);
+    public Rule_Fiscal_Code_Range() {
+      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_Fiscal_Code_Range, SOURCE_NODE_REF);
     }
 
     @Override

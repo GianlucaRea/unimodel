@@ -1,5 +1,5 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<model ref="r:1f371ae4-d225-4a11-b3f1-8d1548bd139d(unimodel.university)">
+<model ref="r:d1e1883b-bc07-4235-87e3-3cf99c71dc61(unimodel.university)">
   <persistence version="9" />
   <languages>
     <use id="6069f38a-d5c2-473e-be65-6672ae45792c" name="unimodel" version="0" />
@@ -48,6 +48,11 @@
         <child id="8742999790643969439" name="person" index="31Wa9z" />
       </concept>
       <concept id="8742999790642640184" name="unimodel.structure.Address" flags="ng" index="31LeF4">
+        <property id="402891894202185369" name="phone" index="9mmEi" />
+        <property id="5676955340386569257" name="id" index="2FHLj$" />
+        <property id="5676955340386569265" name="phone_number" index="2FHLjW" />
+        <property id="7444858770124322702" name="phone" index="VpOgl" />
+        <property id="7444858770124464202" name="id" index="Vqhfh" />
         <property id="8742999790642641126" name="id" index="31Lesq" />
         <property id="8742999790642640208" name="civic" index="31LeEG" />
         <property id="8742999790642640202" name="street" index="31LeEQ" />
@@ -64,6 +69,7 @@
         <child id="8742999790643355366" name="offices" index="31Ms4q" />
       </concept>
       <concept id="8742999790642640176" name="unimodel.structure.Building" flags="ng" index="31LeFc">
+        <property id="402891894201889599" name="phone" index="9nIWO" />
         <property id="8742999790642640181" name="phone" index="31LeF9" />
         <property id="8742999790642640179" name="description" index="31LeFf" />
         <child id="8742999790642640290" name="floor" index="31LeDu" />
@@ -82,297 +88,6 @@
       </concept>
     </language>
   </registry>
-  <node concept="31LeFq" id="7_lnZMSDXjq">
-    <property role="TrG5h" value="Univaq" />
-    <property role="31LeFn" value="Alesse" />
-    <property role="31LeFh" value="Università degli studi dell'Aquila" />
-    <node concept="31LeFc" id="7_lnZMSDXju" role="31LeE5">
-      <property role="TrG5h" value="Coppito 0" />
-      <property role="31LeFf" value="Edificio Alan Turing" />
-      <property role="31LeF9" value="0862433185" />
-      <node concept="31LeF7" id="7_lnZMSDXjB" role="31LeDu">
-        <property role="31LeDj" value="0" />
-        <property role="31LeDd" value="4" />
-        <node concept="31LeCq" id="7_lnZMSDXkW" role="31Ms4l">
-          <property role="TrG5h" value="Aula A0.4" />
-          <property role="31LeCr" value="50" />
-          <property role="31LeCl" value="2" />
-          <property role="31LeCg" value="2" />
-          <property role="31LeCc" value="1" />
-          <property role="31LeDl" value="10.5" />
-          <property role="31LeDn" value="8" />
-        </node>
-        <node concept="31LeCq" id="7_lnZMSDXkY" role="31Ms4l">
-          <property role="TrG5h" value="Aula A0.5" />
-          <property role="31LeCr" value="60" />
-          <property role="31LeCl" value="2" />
-          <property role="31LeCg" value="2" />
-          <property role="31LeCc" value="1" />
-          <property role="31LeDl" value="12.0" />
-          <property role="31LeDn" value="8" />
-        </node>
-        <node concept="31LeCq" id="7_lnZMSDXl1" role="31Ms4l">
-          <property role="TrG5h" value="Aula A0.6" />
-          <property role="31LeCr" value="70" />
-          <property role="31LeCl" value="2" />
-          <property role="31LeCg" value="2" />
-          <property role="31LeCc" value="1" />
-          <property role="31LeDl" value="14.0" />
-          <property role="31LeDn" value="12" />
-        </node>
-        <node concept="31LeDq" id="7_lnZMSDXkz" role="31LeBM">
-          <property role="TrG5h" value="Mantainance Room" />
-          <property role="31LeDl" value="12.0" />
-          <property role="31LeDn" value="4" />
-        </node>
-        <node concept="31LeDi" id="7_lnZMSDXjG" role="31Ms4q">
-          <property role="TrG5h" value="Ufficio 1" />
-          <property role="31LeCv" value="4" />
-          <property role="31LeDl" value="10.0" />
-          <property role="31LeDn" value="6" />
-          <ref role="31LeBG" node="7_lnZMSDXjv" />
-          <node concept="31LeC9" id="7_lnZMSDXkr" role="31LeBw">
-            <property role="TrG5h" value="Luca Forlizzi" />
-            <property role="31LeC4" value="250" />
-            <property role="31LeC7" value="40" />
-            <property role="31LeC3" value="JDNFQZADXEK3ZOF8" />
-          </node>
-          <node concept="31LeC9" id="7_lnZMSDXk_" role="31LeBw">
-            <property role="TrG5h" value="Vittorio Cortellessa" />
-            <property role="31LeC4" value="15" />
-            <property role="31LeC7" value="40" />
-            <property role="31LeC3" value="S6W5ZHVU1FFUQAGE" />
-          </node>
-        </node>
-        <node concept="31LeDi" id="7_lnZMSDXkM" role="31Ms4q">
-          <property role="TrG5h" value="Ufficio 2" />
-          <property role="31LeCv" value="6" />
-          <property role="31LeDl" value="9.40" />
-          <property role="31LeDn" value="6" />
-          <property role="31LeCt" value="7_lnZMS$rmQ/PHD_ROOM" />
-          <ref role="31LeBG" node="7_lnZMSDXjv" />
-          <node concept="31LeC9" id="7_lnZMSDXkN" role="31LeBw">
-            <property role="TrG5h" value="Tizio Caio" />
-            <property role="31LeC4" value="250983" />
-            <property role="31LeC7" value="28" />
-            <property role="31LeC3" value="9VMOYYX02DUY7R30" />
-            <property role="31LeCa" value="7_lnZMS$rnf/PHD_STUDENT" />
-          </node>
-          <node concept="31LeC9" id="7_lnZMSDXkT" role="31LeBw">
-            <property role="TrG5h" value="Caio Tizio" />
-            <property role="31LeCa" value="7_lnZMS$rnf/PHD_STUDENT" />
-            <property role="31LeC4" value="261092" />
-            <property role="31LeC7" value="28" />
-            <property role="31LeC3" value="8JPS0M6Q6QSTQ680" />
-          </node>
-        </node>
-      </node>
-      <node concept="31LeF4" id="7_lnZMSDXjv" role="31LeE7">
-        <property role="31Lesq" value="1" />
-        <property role="31LeF0" value="Italy" />
-        <property role="31LeF2" value="AQ" />
-        <property role="31LeEX" value="L'Aquila" />
-        <property role="31LeET" value="67100" />
-        <property role="31LeEQ" value="Via Vetoio" />
-        <property role="31LeEG" value="1" />
-      </node>
-      <node concept="31LeF7" id="7_lnZMSDXjw" role="31LeDu">
-        <property role="31LeDj" value="1" />
-        <property role="31LeDd" value="4" />
-        <node concept="31LeCq" id="7_lnZMSDXll" role="31Ms4l">
-          <property role="TrG5h" value="Aula A1.2" />
-          <property role="31LeCr" value="25" />
-          <property role="31LeCl" value="3" />
-          <property role="31LeCg" value="2" />
-          <property role="31LeCc" value="0" />
-          <property role="31LeDl" value="14.0" />
-          <property role="31LeDn" value="4" />
-        </node>
-        <node concept="31LeCq" id="7_lnZMSDXln" role="31Ms4l">
-          <property role="TrG5h" value="Aula A1.3" />
-          <property role="31LeCr" value="30" />
-          <property role="31LeCl" value="1" />
-          <property role="31LeCg" value="2" />
-          <property role="31LeCc" value="0" />
-          <property role="31LeDl" value="15.0" />
-          <property role="31LeDn" value="4" />
-        </node>
-        <node concept="31LeDi" id="7_lnZMSDXl7" role="31Ms4q">
-          <property role="TrG5h" value="Segreteria Studenti" />
-          <property role="31LeCv" value="3" />
-          <property role="31LeCt" value="7_lnZMS$rmT/SECRETARIAT" />
-          <property role="31LeDl" value="12.0" />
-          <property role="31LeDn" value="14" />
-          <ref role="31LeBG" node="7_lnZMSDXjv" />
-          <node concept="31LeC9" id="7_lnZMSDXl8" role="31LeBw">
-            <property role="TrG5h" value="Paolo Rossi" />
-            <property role="31LeCa" value="7_lnZMS$rnm/STAFF" />
-            <property role="31LeC4" value="12" />
-            <property role="31LeC7" value="45" />
-            <property role="31LeC3" value="UEY3YOP1O89ZGPG5" />
-          </node>
-          <node concept="31LeC9" id="7_lnZMSDXlb" role="31LeBw">
-            <property role="TrG5h" value="Maria Rossi" />
-            <property role="31LeCa" value="7_lnZMS$rnm/STAFF" />
-            <property role="31LeC4" value="14" />
-            <property role="31LeC7" value="38" />
-            <property role="31LeC3" value="W5V85GLZYO14P8BV" />
-          </node>
-        </node>
-        <node concept="31LeDi" id="7_lnZMSDXle" role="31Ms4q">
-          <property role="TrG5h" value="Ufficio Tasse" />
-          <property role="31LeCt" value="7_lnZMS$rmX/ADMINISTRATION" />
-          <property role="31LeCv" value="2" />
-          <property role="31LeDl" value="15.0" />
-          <property role="31LeDn" value="5" />
-          <ref role="31LeBG" node="7_lnZMSDXjv" />
-          <node concept="31LeC9" id="7_lnZMSDXlf" role="31LeBw">
-            <property role="TrG5h" value="Giuseppe Adelchi" />
-            <property role="31LeC3" value="Z4KA3T7IU6CSUJXE" />
-            <property role="31LeC7" value="58" />
-            <property role="31LeC4" value="17" />
-            <property role="31LeCa" value="7_lnZMS$rni/ADMINISTRATOR" />
-          </node>
-        </node>
-      </node>
-      <node concept="31LeEF" id="7_lnZMSDXjE" role="31LeDz">
-        <property role="TrG5h" value="Libreria Universitaria" />
-        <property role="31LeE8" value="12" />
-        <property role="31LeEa" value="4" />
-        <node concept="31LeC9" id="7_lnZMSDXka" role="31Wa9z">
-          <property role="TrG5h" value="Gianluca Rea" />
-          <property role="31LeCa" value="7_lnZMS$rnr/STUDENT" />
-          <property role="31LeC4" value="245703" />
-          <property role="31LeC7" value="25" />
-          <property role="31LeC3" value="7FVRJWE2M9L4VYGB" />
-        </node>
-        <node concept="31LeC9" id="7_lnZMSDXkc" role="31Wa9z">
-          <property role="TrG5h" value="Pietro Ciammaricone" />
-          <property role="31LeC3" value="0XTCOTW45VROAPPM" />
-          <property role="31LeC4" value="278912" />
-          <property role="31LeC7" value="27" />
-        </node>
-        <node concept="31LeDR" id="7_lnZMSDXk8" role="31LeBU">
-          <property role="31LeDK" value="28-11-2021" />
-          <ref role="31LeBP" node="7_lnZMSDXjK" resolve="Model Driven Engineering" />
-          <ref role="31LeBR" node="7_lnZMSDXka" resolve="Gianluca Rea" />
-        </node>
-        <node concept="31LeDR" id="7_lnZMSDXkf" role="31LeBU">
-          <property role="31LeDK" value="29-12-2021" />
-          <ref role="31LeBP" node="7_lnZMSDXjM" resolve="Software Engineering for IoT" />
-          <ref role="31LeBR" node="7_lnZMSDXka" resolve="Gianluca Rea" />
-        </node>
-        <node concept="31LeDR" id="7_lnZMSDXki" role="31LeBU">
-          <property role="31LeDK" value="30-09-2021" />
-          <ref role="31LeBP" node="7_lnZMSDXjT" resolve="Software Quality Engineering" />
-          <ref role="31LeBR" node="7_lnZMSDXkc" resolve="Pietro Ciammaricone" />
-        </node>
-        <node concept="31LeDR" id="7_lnZMSDXkm" role="31LeBU">
-          <property role="31LeDK" value="28-10-2021" />
-          <ref role="31LeBP" node="7_lnZMSDXjK" resolve="Model Driven Engineering" />
-          <ref role="31LeBR" node="7_lnZMSDXkc" resolve="Pietro Ciammaricone" />
-        </node>
-        <node concept="31LeDR" id="7_lnZMSDXkt" role="31LeBU">
-          <property role="31LeDK" value="27-11-2021" />
-          <ref role="31LeBP" node="7_lnZMSDXjT" resolve="Software Quality Engineering" />
-          <ref role="31LeBR" node="7_lnZMSDXkr" resolve="Luca Forlizzi" />
-        </node>
-        <node concept="31LeE3" id="7_lnZMSDXjK" role="31LeBS">
-          <property role="TrG5h" value="Model Driven Engineering" />
-          <property role="31LeDY" value="5" />
-          <property role="31LeDS" value="9745789815212" />
-          <property role="31LeDV" value="Alfonso Pierantonio" />
-        </node>
-        <node concept="31LeE3" id="7_lnZMSDXjM" role="31LeBS">
-          <property role="TrG5h" value="Software Engineering for IoT" />
-          <property role="31LeDY" value="2" />
-          <property role="31LeDS" value="5431245416527" />
-          <property role="31LeDV" value="Davide Di Ruscio" />
-        </node>
-        <node concept="31LeE3" id="7_lnZMSDXjP" role="31LeBS">
-          <property role="TrG5h" value="Software Architecture" />
-          <property role="31LeDY" value="4" />
-          <property role="31LeDS" value="5724825357930" />
-          <property role="31LeDV" value="Henry Muccini" />
-        </node>
-        <node concept="31LeE3" id="7_lnZMSDXjT" role="31LeBS">
-          <property role="TrG5h" value="Software Quality Engineering" />
-          <property role="31LeDY" value="3" />
-          <property role="31LeDS" value="9480123051842" />
-          <property role="31LeDV" value="Vittorio Cortellessa" />
-        </node>
-      </node>
-    </node>
-    <node concept="31LeFc" id="7_lnZMSDXjr" role="31LeE5">
-      <property role="TrG5h" value="Palazzo Camponesci" />
-      <property role="31LeFf" value="Rettorato dell'Università degli studi dell'Aquila" />
-      <property role="31LeF9" value="0862432030" />
-      <node concept="31LeF4" id="7_lnZMSDXjs" role="31LeE7">
-        <property role="31LeEQ" value="Piazza Santa Margherita" />
-        <property role="31LeEG" value="2" />
-        <property role="31LeET" value="67100" />
-        <property role="31LeEX" value="L'Aquila" />
-        <property role="31LeF2" value="AQ" />
-        <property role="31LeF0" value="Italy" />
-        <property role="31Lesq" value="2" />
-      </node>
-      <node concept="31LeF7" id="7_lnZMSDXjt" role="31LeDu">
-        <property role="31LeDj" value="0" />
-        <property role="31LeDd" value="4" />
-        <node concept="31LeDi" id="7_lnZMSDXls" role="31Ms4q">
-          <property role="TrG5h" value="Dirigenza Amministrativa" />
-          <property role="31LeCt" value="7_lnZMS$rmX/ADMINISTRATION" />
-          <property role="31LeCv" value="4" />
-          <property role="31LeDl" value="20.0" />
-          <property role="31LeDn" value="8" />
-          <ref role="31LeBG" node="7_lnZMSDXjs" />
-          <node concept="31LeC9" id="7_lnZMSDXlt" role="31LeBw">
-            <property role="TrG5h" value="Alfonso Adelchi" />
-            <property role="31LeCa" value="7_lnZMS$rni/ADMINISTRATOR" />
-            <property role="31LeC4" value="29" />
-            <property role="31LeC7" value="39" />
-            <property role="31LeC3" value="SKMF0TWJY6WV2HSQ" />
-          </node>
-          <node concept="31LeC9" id="7_lnZMSDXlw" role="31LeBw">
-            <property role="TrG5h" value="Massimo Litona" />
-            <property role="31LeCa" value="7_lnZMS$rni/ADMINISTRATOR" />
-            <property role="31LeC4" value="34" />
-            <property role="31LeC7" value="87" />
-            <property role="31LeC3" value="E41WZFLN27QFF2JK" />
-          </node>
-        </node>
-        <node concept="31LeDq" id="7_lnZMSDXlq" role="31LeBM">
-          <property role="TrG5h" value="Info Point" />
-          <property role="31LeDl" value="4.0" />
-          <property role="31LeDn" value="4" />
-        </node>
-      </node>
-      <node concept="31LeF7" id="7_lnZMSDXlz" role="31LeDu">
-        <property role="31LeDj" value="2" />
-        <property role="31LeDd" value="5" />
-        <node concept="31LeDi" id="7_lnZMSDXlG" role="31Ms4q">
-          <property role="TrG5h" value="Ufficio Iscrizione " />
-          <property role="31LeCt" value="7_lnZMS$rmX/ADMINISTRATION" />
-          <property role="31LeCv" value="12" />
-          <property role="31LeDl" value="15.0" />
-          <property role="31LeDn" value="25" />
-          <ref role="31LeBG" node="7_lnZMSDXjs" />
-          <node concept="31LeC9" id="7_lnZMSDXlH" role="31LeBw">
-            <property role="TrG5h" value="Massimo Cerna" />
-            <property role="31LeC4" value="98" />
-            <property role="31LeC7" value="55" />
-            <property role="31LeC3" value="976BGYAWT2R7IQGR" />
-            <property role="31LeCa" value="7_lnZMS$rni/ADMINISTRATOR" />
-          </node>
-        </node>
-        <node concept="31LeDq" id="7_lnZMSDXlE" role="31LeBM">
-          <property role="TrG5h" value="Stanza Stampa" />
-          <property role="31LeDl" value="25.0" />
-          <property role="31LeDn" value="25" />
-        </node>
-      </node>
-    </node>
-  </node>
   <node concept="31LeFq" id="7_lnZMSEqCX">
     <property role="TrG5h" value="UPO" />
     <property role="31LeFh" value="Università del Piemonte Orientale" />
@@ -389,6 +104,11 @@
         <property role="31LeET" value="15121" />
         <property role="31LeEQ" value="Viale Teresa Michel" />
         <property role="31LeEG" value="1" />
+        <property role="Vqhfh" value="1" />
+        <property role="VpOgl" value="0" />
+        <property role="9mmEi" value="12345667890" />
+        <property role="2FHLj$" value="1" />
+        <property role="2FHLjW" value="1234567890" />
       </node>
       <node concept="31LeF7" id="7_lnZMSEqD0" role="31LeDu">
         <property role="31LeDj" value="-1" />
@@ -483,8 +203,8 @@
         </node>
         <node concept="31LeDR" id="7_lnZMSEv4l" role="31LeBU">
           <property role="31LeDK" value="30-09-2021" />
-          <ref role="31LeBP" node="7_lnZMSEv45" resolve="Algorithms and Data Structure" />
           <ref role="31LeBR" node="7_lnZMSEv4i" resolve="Massimo Clero" />
+          <ref role="31LeBP" node="7_lnZMSEv45" resolve="Algorithms and Data Structure" />
         </node>
         <node concept="31LeDR" id="7_lnZMSEv4o" role="31LeBU">
           <property role="31LeDK" value="29-11-2020" />
@@ -529,6 +249,11 @@
         <property role="31LeET" value="13100" />
         <property role="31LeEQ" value="Via Galileo Ferraris " />
         <property role="31LeEG" value="107" />
+        <property role="Vqhfh" value="2" />
+        <property role="VpOgl" value="0862086234" />
+        <property role="9mmEi" value="0987654321" />
+        <property role="2FHLj$" value="1" />
+        <property role="2FHLjW" value="1234567890" />
       </node>
       <node concept="31LeF7" id="7_lnZMSEvdf" role="31LeDu">
         <property role="31LeDj" value="1" />
@@ -558,13 +283,13 @@
         <property role="31LeEa" value="10" />
         <node concept="31LeDR" id="7_lnZMSEvdT" role="31LeBU">
           <property role="31LeDK" value="30-11-2021" />
-          <ref role="31LeBP" node="7_lnZMSEvdF" resolve="Carlo Magno: Un padre dell'Europa" />
           <ref role="31LeBR" node="7_lnZMSEvdO" resolve="Pipino Il Breve" />
+          <ref role="31LeBP" node="7_lnZMSEvdF" resolve="Carlo Magno: Un padre dell'Europa" />
         </node>
         <node concept="31LeDR" id="7_lnZMSEvdV" role="31LeBU">
           <property role="31LeDK" value="21-09-2021" />
-          <ref role="31LeBP" node="7_lnZMSEvdH" resolve="Medioevo da non credere" />
           <ref role="31LeBR" node="7_lnZMSEvdQ" resolve="Richard the Lionheart" />
+          <ref role="31LeBP" node="7_lnZMSEvdH" resolve="Medioevo da non credere" />
         </node>
         <node concept="31LeDR" id="7_lnZMSEvdY" role="31LeBU">
           <property role="31LeDK" value="29-03-2021" />
@@ -573,8 +298,8 @@
         </node>
         <node concept="31LeDR" id="7_lnZMSEve6" role="31LeBU">
           <property role="31LeDK" value="24-05-2021" />
-          <ref role="31LeBP" node="7_lnZMSEvdF" resolve="Carlo Magno: Un padre dell'Europa" />
           <ref role="31LeBR" node="7_lnZMSEve2" resolve="Napoleone Bonaparte" />
+          <ref role="31LeBP" node="7_lnZMSEvdF" resolve="Carlo Magno: Un padre dell'Europa" />
         </node>
         <node concept="31LeC9" id="7_lnZMSEvdO" role="31Wa9z">
           <property role="TrG5h" value="Pipino Il Breve" />
@@ -614,6 +339,308 @@
           <property role="31LeDY" value="13" />
           <property role="31LeDS" value="4912004006157" />
           <property role="31LeDV" value="Alessandro Barbero" />
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="31LeFq" id="7_lnZMSDXjq">
+    <property role="TrG5h" value="Univaq" />
+    <property role="31LeFn" value="Alesse" />
+    <property role="31LeFh" value="Università degli studi dell'Aquila" />
+    <node concept="31LeFc" id="7_lnZMSDXju" role="31LeE5">
+      <property role="TrG5h" value="Coppito 1" />
+      <property role="31LeFf" value="Edificio Alan Turing" />
+      <property role="31LeF9" value="0862433185" />
+      <property role="9nIWO" value="1" />
+      <node concept="31LeF7" id="7_lnZMSDXjB" role="31LeDu">
+        <property role="31LeDj" value="0" />
+        <property role="31LeDd" value="4" />
+        <node concept="31LeCq" id="7_lnZMSDXkW" role="31Ms4l">
+          <property role="TrG5h" value="Aula A0.4" />
+          <property role="31LeCr" value="50" />
+          <property role="31LeCl" value="2" />
+          <property role="31LeCg" value="2" />
+          <property role="31LeCc" value="1" />
+          <property role="31LeDl" value="10.5" />
+          <property role="31LeDn" value="8" />
+        </node>
+        <node concept="31LeCq" id="7_lnZMSDXkY" role="31Ms4l">
+          <property role="TrG5h" value="Aula A0.5" />
+          <property role="31LeCr" value="60" />
+          <property role="31LeCl" value="2" />
+          <property role="31LeCg" value="2" />
+          <property role="31LeCc" value="1" />
+          <property role="31LeDl" value="12.0" />
+          <property role="31LeDn" value="8" />
+        </node>
+        <node concept="31LeCq" id="7_lnZMSDXl1" role="31Ms4l">
+          <property role="TrG5h" value="Aula A0.6" />
+          <property role="31LeCr" value="70" />
+          <property role="31LeCl" value="2" />
+          <property role="31LeCg" value="2" />
+          <property role="31LeCc" value="1" />
+          <property role="31LeDl" value="14.0" />
+          <property role="31LeDn" value="12" />
+        </node>
+        <node concept="31LeDq" id="7_lnZMSDXkz" role="31LeBM">
+          <property role="TrG5h" value="Mantainance Room" />
+          <property role="31LeDl" value="12.0" />
+          <property role="31LeDn" value="4" />
+        </node>
+        <node concept="31LeDi" id="7_lnZMSDXjG" role="31Ms4q">
+          <property role="TrG5h" value="Ufficio 1" />
+          <property role="31LeCv" value="4" />
+          <property role="31LeDl" value="10.0" />
+          <property role="31LeDn" value="6" />
+          <ref role="31LeBG" node="7_lnZMSDXjv" />
+          <node concept="31LeC9" id="7_lnZMSDXkr" role="31LeBw">
+            <property role="TrG5h" value="Luca Forlizzi" />
+            <property role="31LeC4" value="250" />
+            <property role="31LeC7" value="40" />
+            <property role="31LeC3" value="JDNFQZADXEK3ZOF8" />
+          </node>
+          <node concept="31LeC9" id="7_lnZMSDXk_" role="31LeBw">
+            <property role="TrG5h" value="Vittorio Cortellessa" />
+            <property role="31LeC4" value="15" />
+            <property role="31LeC7" value="40" />
+            <property role="31LeC3" value="S6W5ZHVU1FFUQAGE" />
+          </node>
+        </node>
+        <node concept="31LeDi" id="7_lnZMSDXkM" role="31Ms4q">
+          <property role="TrG5h" value="Ufficio 2" />
+          <property role="31LeCv" value="6" />
+          <property role="31LeDl" value="9.40" />
+          <property role="31LeDn" value="6" />
+          <property role="31LeCt" value="7_lnZMS$rmQ/PHD_ROOM" />
+          <ref role="31LeBG" node="7_lnZMSDXjv" />
+          <node concept="31LeC9" id="7_lnZMSDXkN" role="31LeBw">
+            <property role="TrG5h" value="Tizio Caio" />
+            <property role="31LeC4" value="250983" />
+            <property role="31LeC7" value="28" />
+            <property role="31LeC3" value="9VMOYYX02DUY7R30" />
+            <property role="31LeCa" value="7_lnZMS$rnf/PHD_STUDENT" />
+          </node>
+          <node concept="31LeC9" id="7_lnZMSDXkT" role="31LeBw">
+            <property role="TrG5h" value="Caio Tizio" />
+            <property role="31LeCa" value="7_lnZMS$rnf/PHD_STUDENT" />
+            <property role="31LeC4" value="261092" />
+            <property role="31LeC7" value="28" />
+            <property role="31LeC3" value="8JPS0M6Q6QSTQ680" />
+          </node>
+        </node>
+      </node>
+      <node concept="31LeF4" id="7_lnZMSDXjv" role="31LeE7">
+        <property role="31Lesq" value="1" />
+        <property role="31LeF0" value="Italy" />
+        <property role="31LeF2" value="AQ" />
+        <property role="31LeEX" value="L'Aquila" />
+        <property role="31LeET" value="67100" />
+        <property role="31LeEQ" value="Via Vetoio" />
+        <property role="31LeEG" value="1" />
+        <property role="Vqhfh" value="1" />
+        <property role="VpOgl" value="0862086212" />
+        <property role="9mmEi" value="08627372123" />
+        <property role="2FHLj$" value="1" />
+        <property role="2FHLjW" value="1234567890" />
+      </node>
+      <node concept="31LeF7" id="7_lnZMSDXjw" role="31LeDu">
+        <property role="31LeDj" value="1" />
+        <property role="31LeDd" value="4" />
+        <node concept="31LeCq" id="7_lnZMSDXll" role="31Ms4l">
+          <property role="TrG5h" value="Aula A1.2" />
+          <property role="31LeCr" value="25" />
+          <property role="31LeCl" value="3" />
+          <property role="31LeCg" value="2" />
+          <property role="31LeCc" value="0" />
+          <property role="31LeDl" value="14.0" />
+          <property role="31LeDn" value="4" />
+        </node>
+        <node concept="31LeCq" id="7_lnZMSDXln" role="31Ms4l">
+          <property role="TrG5h" value="Aula A1.3" />
+          <property role="31LeCr" value="30" />
+          <property role="31LeCl" value="1" />
+          <property role="31LeCg" value="2" />
+          <property role="31LeCc" value="0" />
+          <property role="31LeDl" value="15.0" />
+          <property role="31LeDn" value="4" />
+        </node>
+        <node concept="31LeDi" id="7_lnZMSDXl7" role="31Ms4q">
+          <property role="TrG5h" value="Segreteria Studenti" />
+          <property role="31LeCv" value="3" />
+          <property role="31LeCt" value="7_lnZMS$rmT/SECRETARIAT" />
+          <property role="31LeDl" value="12.0" />
+          <property role="31LeDn" value="14" />
+          <ref role="31LeBG" node="7_lnZMSDXjv" />
+          <node concept="31LeC9" id="7_lnZMSDXl8" role="31LeBw">
+            <property role="TrG5h" value="Paolo Rossi" />
+            <property role="31LeCa" value="7_lnZMS$rnm/STAFF" />
+            <property role="31LeC4" value="12" />
+            <property role="31LeC7" value="45" />
+            <property role="31LeC3" value="UEY3YOP1O89ZGPG5" />
+          </node>
+          <node concept="31LeC9" id="7_lnZMSDXlb" role="31LeBw">
+            <property role="TrG5h" value="Maria Rossi" />
+            <property role="31LeCa" value="7_lnZMS$rnm/STAFF" />
+            <property role="31LeC4" value="14" />
+            <property role="31LeC7" value="38" />
+            <property role="31LeC3" value="W5V85GLZYO14P8BV" />
+          </node>
+        </node>
+        <node concept="31LeDi" id="7_lnZMSDXle" role="31Ms4q">
+          <property role="TrG5h" value="Ufficio Tasse" />
+          <property role="31LeCt" value="7_lnZMS$rmX/ADMINISTRATION" />
+          <property role="31LeCv" value="2" />
+          <property role="31LeDl" value="15.0" />
+          <property role="31LeDn" value="5" />
+          <ref role="31LeBG" node="7_lnZMSDXjv" />
+          <node concept="31LeC9" id="7_lnZMSDXlf" role="31LeBw">
+            <property role="TrG5h" value="Giuseppe Adelchi" />
+            <property role="31LeC3" value="Z4KA3T7IU6CSUJXE" />
+            <property role="31LeC7" value="58" />
+            <property role="31LeC4" value="17" />
+            <property role="31LeCa" value="7_lnZMS$rni/ADMINISTRATOR" />
+          </node>
+        </node>
+      </node>
+      <node concept="31LeEF" id="7_lnZMSDXjE" role="31LeDz">
+        <property role="TrG5h" value="Libreria Universitaria" />
+        <property role="31LeE8" value="12" />
+        <property role="31LeEa" value="4" />
+        <node concept="31LeC9" id="7_lnZMSDXka" role="31Wa9z">
+          <property role="TrG5h" value="Gianluca Rea" />
+          <property role="31LeCa" value="7_lnZMS$rnr/STUDENT" />
+          <property role="31LeC4" value="245703" />
+          <property role="31LeC7" value="25" />
+          <property role="31LeC3" value="7FVRJWE2M9L4VYGB" />
+        </node>
+        <node concept="31LeC9" id="7_lnZMSDXkc" role="31Wa9z">
+          <property role="TrG5h" value="Pietro Ciammaricone" />
+          <property role="31LeC3" value="0XTCOTW45VROAPPM" />
+          <property role="31LeC4" value="278912" />
+          <property role="31LeC7" value="27" />
+        </node>
+        <node concept="31LeDR" id="7_lnZMSDXk8" role="31LeBU">
+          <property role="31LeDK" value="28-11-2021" />
+          <ref role="31LeBP" node="7_lnZMSDXjK" resolve="Model Driven Engineering" />
+          <ref role="31LeBR" node="7_lnZMSDXka" resolve="Gianluca Rea" />
+        </node>
+        <node concept="31LeDR" id="7_lnZMSDXkf" role="31LeBU">
+          <property role="31LeDK" value="29-12-2021" />
+          <ref role="31LeBR" node="7_lnZMSDXka" resolve="Gianluca Rea" />
+          <ref role="31LeBP" node="7_lnZMSDXjM" resolve="Software Engineering for IoT" />
+        </node>
+        <node concept="31LeDR" id="7_lnZMSDXki" role="31LeBU">
+          <property role="31LeDK" value="30-09-2021" />
+          <ref role="31LeBR" node="7_lnZMSDXkc" resolve="Pietro Ciammaricone" />
+          <ref role="31LeBP" node="7_lnZMSDXjT" resolve="Software Quality Engineering" />
+        </node>
+        <node concept="31LeDR" id="7_lnZMSDXkm" role="31LeBU">
+          <property role="31LeDK" value="28-10-2021" />
+          <ref role="31LeBR" node="7_lnZMSDXkc" resolve="Pietro Ciammaricone" />
+          <ref role="31LeBP" node="7_lnZMSDXjK" resolve="Model Driven Engineering" />
+        </node>
+        <node concept="31LeDR" id="7_lnZMSDXkt" role="31LeBU">
+          <property role="31LeDK" value="27-11-2021" />
+          <ref role="31LeBP" node="7_lnZMSDXjT" resolve="Software Quality Engineering" />
+          <ref role="31LeBR" node="7_lnZMSDXkr" resolve="Luca Forlizzi" />
+        </node>
+        <node concept="31LeE3" id="7_lnZMSDXjK" role="31LeBS">
+          <property role="TrG5h" value="Model Driven Engineering" />
+          <property role="31LeDY" value="5" />
+          <property role="31LeDS" value="9745789815212" />
+          <property role="31LeDV" value="Alfonso Pierantonio" />
+        </node>
+        <node concept="31LeE3" id="7_lnZMSDXjM" role="31LeBS">
+          <property role="TrG5h" value="Software Engineering for IoT" />
+          <property role="31LeDY" value="2" />
+          <property role="31LeDS" value="5431245416527" />
+          <property role="31LeDV" value="Davide Di Ruscio" />
+        </node>
+        <node concept="31LeE3" id="7_lnZMSDXjP" role="31LeBS">
+          <property role="TrG5h" value="Software Architecture" />
+          <property role="31LeDY" value="4" />
+          <property role="31LeDS" value="5724825357930" />
+          <property role="31LeDV" value="Henry Muccini" />
+        </node>
+        <node concept="31LeE3" id="7_lnZMSDXjT" role="31LeBS">
+          <property role="TrG5h" value="Software Quality Engineering" />
+          <property role="31LeDY" value="3" />
+          <property role="31LeDS" value="9480123051842" />
+          <property role="31LeDV" value="Vittorio Cortellessa" />
+        </node>
+      </node>
+    </node>
+    <node concept="31LeFc" id="7_lnZMSDXjr" role="31LeE5">
+      <property role="TrG5h" value="Palazzo Camponesci" />
+      <property role="31LeFf" value="Rettorato dell'Università degli studi dell'Aquila" />
+      <property role="31LeF9" value="0862432030" />
+      <node concept="31LeF4" id="7_lnZMSDXjs" role="31LeE7">
+        <property role="31LeEQ" value="Piazza Santa Margherita" />
+        <property role="31LeEG" value="2" />
+        <property role="31LeET" value="67100" />
+        <property role="31LeEX" value="L'Aquila" />
+        <property role="31LeF2" value="AQ" />
+        <property role="31LeF0" value="Italy" />
+        <property role="31Lesq" value="2" />
+        <property role="Vqhfh" value="1" />
+        <property role="VpOgl" value="0862086211" />
+        <property role="9mmEi" value="0862876327" />
+        <property role="2FHLj$" value="1" />
+        <property role="2FHLjW" value="1234567890" />
+      </node>
+      <node concept="31LeF7" id="7_lnZMSDXjt" role="31LeDu">
+        <property role="31LeDj" value="0" />
+        <property role="31LeDd" value="4" />
+        <node concept="31LeDi" id="7_lnZMSDXls" role="31Ms4q">
+          <property role="TrG5h" value="Dirigenza Amministrativa" />
+          <property role="31LeCt" value="7_lnZMS$rmX/ADMINISTRATION" />
+          <property role="31LeCv" value="4" />
+          <property role="31LeDl" value="20.0" />
+          <property role="31LeDn" value="8" />
+          <ref role="31LeBG" node="7_lnZMSDXjs" />
+          <node concept="31LeC9" id="7_lnZMSDXlt" role="31LeBw">
+            <property role="TrG5h" value="Alfonso Adelchi" />
+            <property role="31LeCa" value="7_lnZMS$rni/ADMINISTRATOR" />
+            <property role="31LeC4" value="29" />
+            <property role="31LeC7" value="39" />
+            <property role="31LeC3" value="SKMF0TWJY6WV2HSQ" />
+          </node>
+          <node concept="31LeC9" id="7_lnZMSDXlw" role="31LeBw">
+            <property role="TrG5h" value="Massimo Litona" />
+            <property role="31LeCa" value="7_lnZMS$rni/ADMINISTRATOR" />
+            <property role="31LeC4" value="34" />
+            <property role="31LeC7" value="87" />
+            <property role="31LeC3" value="E41WZFLN27QFF2JK" />
+          </node>
+        </node>
+        <node concept="31LeDq" id="7_lnZMSDXlq" role="31LeBM">
+          <property role="TrG5h" value="Info Point" />
+          <property role="31LeDl" value="4.0" />
+          <property role="31LeDn" value="4" />
+        </node>
+      </node>
+      <node concept="31LeF7" id="7_lnZMSDXlz" role="31LeDu">
+        <property role="31LeDj" value="2" />
+        <property role="31LeDd" value="5" />
+        <node concept="31LeDi" id="7_lnZMSDXlG" role="31Ms4q">
+          <property role="TrG5h" value="Ufficio Iscrizione " />
+          <property role="31LeCt" value="7_lnZMS$rmX/ADMINISTRATION" />
+          <property role="31LeCv" value="12" />
+          <property role="31LeDl" value="15.0" />
+          <property role="31LeDn" value="25" />
+          <ref role="31LeBG" node="7_lnZMSDXjs" />
+          <node concept="31LeC9" id="7_lnZMSDXlH" role="31LeBw">
+            <property role="TrG5h" value="Massimo Cerna" />
+            <property role="31LeC4" value="98" />
+            <property role="31LeC7" value="55" />
+            <property role="31LeC3" value="976BGYAWT2R7IQGR" />
+            <property role="31LeCa" value="7_lnZMS$rni/ADMINISTRATOR" />
+          </node>
+        </node>
+        <node concept="31LeDq" id="7_lnZMSDXlE" role="31LeBM">
+          <property role="TrG5h" value="Stanza Stampa" />
+          <property role="31LeDl" value="25.0" />
+          <property role="31LeDn" value="25" />
         </node>
       </node>
     </node>

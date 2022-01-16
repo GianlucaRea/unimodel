@@ -184,7 +184,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
     private EditorCell createProperty_1() {
       getCellFactory().pushCellContext();
       try {
-        final SProperty property = PROPS.id$v$QZ;
+        final SProperty property = PROPS.id$LWLi;
         getCellFactory().setPropertyInfo(new SPropertyInfo(myNode, property));
         EditorCell_Property editorCell = EditorCell_Property.create(getEditorContext(), new SPropertyAccessor(myNode, property, false, false), myNode);
         editorCell.setDefaultText("<no id>");
@@ -529,7 +529,7 @@ import org.jetbrains.mps.openapi.language.SConcept;
 
   private static final class PROPS {
     /*package*/ static final SProperty name$MnvL = MetaAdapterFactory.getProperty(0xceab519525ea4f22L, 0x9b92103b95ca8c0cL, 0x110396eaaa4L, 0x110396ec041L, "name");
-    /*package*/ static final SProperty id$v$QZ = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L, 0x79555ffcb891b8e6L, "id");
+    /*package*/ static final SProperty id$LWLi = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L, 0x4ec898cde57f8c29L, "id");
     /*package*/ static final SProperty type$TW1O = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b5aeL, 0x79555ffcb891b5e1L, "type");
     /*package*/ static final SProperty capacity$TWvQ = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b5aeL, 0x79555ffcb891b5e3L, "capacity");
     /*package*/ static final SProperty dimension$QNsr = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b5a6L, 0x79555ffcb891b5a9L, "dimension");

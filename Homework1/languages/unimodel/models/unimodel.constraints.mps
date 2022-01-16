@@ -106,273 +106,10 @@
     <ref role="3Oh7Pe" to="vl8c:7_lnZMS$rkA" resolve="University" />
   </node>
   <node concept="3Oh7Pa" id="7_lnZMS_9_w">
+    <property role="3GE5qa" value="" />
     <ref role="3Oh7Pe" to="vl8c:7_lnZMS$rkK" resolve="Building" />
     <node concept="3OnDbq" id="7_lnZMS_9_B" role="3Oh7Pb">
       <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
-      <node concept="1DCEPf" id="7_lnZMS_abN" role="3OnDbr">
-        <node concept="3Qq5Rn" id="7_lnZMS_abO" role="2j4cqI">
-          <property role="EcuMT" value="8742999790642832116" />
-          <property role="TrG5h" value="Phone_Only_Digits" />
-          <node concept="2K0Yjh" id="7_lnZMS_abP" role="2K0Fuo">
-            <node concept="2OqwBi" id="7_lnZMS_bLH" role="2K0yoH">
-              <node concept="2OqwBi" id="7_lnZMS_aYW" role="2Oq$k0">
-                <node concept="3QpRc$" id="7_lnZMS_aM_" role="2Oq$k0">
-                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
-                </node>
-                <node concept="3TrcHB" id="7_lnZMS_bhH" role="2OqNvi">
-                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rkP" resolve="phone" />
-                </node>
-              </node>
-              <node concept="liA8E" id="7_lnZMS_clq" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                <node concept="Xl_RD" id="7_lnZMS_cmj" role="37wK5m">
-                  <property role="Xl_RC" value="[0-9]+" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DCEQD" id="7_lnZMS_abR" role="1DCEQI">
-          <node concept="16I2mz" id="7_lnZMS_cwy" role="16N$OO">
-            <node concept="16N$OT" id="7_lnZMS_cwz" role="16I2mt">
-              <property role="16N$OU" value="Warning: The phone is formed by not digit characters" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1DCEPf" id="7_lnZMS_cBu" role="3OnDbr">
-        <node concept="3Qq5Rn" id="7_lnZMS_cBw" role="2j4cqI">
-          <property role="EcuMT" value="8742999790642842080" />
-          <property role="TrG5h" value="Phone_Length" />
-          <node concept="2K0Yjh" id="7_lnZMS_cBy" role="2K0Fuo">
-            <node concept="3clFbC" id="7_lnZMS_fhG" role="2K0yoH">
-              <node concept="3cmrfG" id="7_lnZMS_fU1" role="3uHU7w">
-                <property role="3cmrfH" value="10" />
-              </node>
-              <node concept="2OqwBi" id="7_lnZMS_dR$" role="3uHU7B">
-                <node concept="2OqwBi" id="7_lnZMS_cSy" role="2Oq$k0">
-                  <node concept="3QpRc$" id="7_lnZMS_cI$" role="2Oq$k0">
-                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
-                  </node>
-                  <node concept="3TrcHB" id="7_lnZMS_dpu" role="2OqNvi">
-                    <ref role="3TsBF5" to="vl8c:7_lnZMS$rkP" resolve="phone" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="7_lnZMS_eo3" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DCEQD" id="7_lnZMS_cBA" role="1DCEQI">
-          <node concept="16I2mz" id="7_lnZMS_fVX" role="16N$OO">
-            <node concept="16N$OT" id="7_lnZMS_fW5" role="16I2mt">
-              <property role="16N$OU" value="Warning: The phone must be formed by 10 numbers" />
-            </node>
-          </node>
-        </node>
-      </node>
-    </node>
-  </node>
-  <node concept="3Oh7Pa" id="j0FrQ7SN9A">
-    <ref role="3Oh7Pe" to="vl8c:7_lnZMS$rkS" resolve="Address" />
-    <node concept="3OnDbq" id="j0FrQ7SN9B" role="3Oh7Pb">
-      <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
-      <node concept="1DCEPf" id="j0FrQ7SN9L" role="3OnDbr">
-        <node concept="3Qq5Rn" id="j0FrQ7SN9N" role="2j4cqI">
-          <property role="EcuMT" value="342464601220395635" />
-          <property role="TrG5h" value="Only_Letters_Country" />
-          <node concept="2K0Yjh" id="j0FrQ7SN9P" role="2K0Fuo">
-            <node concept="2OqwBi" id="j0FrQ7SO04" role="2K0yoH">
-              <node concept="2OqwBi" id="j0FrQ7SNlV" role="2Oq$k0">
-                <node concept="3QpRc$" id="j0FrQ7SNao" role="2Oq$k0">
-                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
-                </node>
-                <node concept="3TrcHB" id="j0FrQ7SNwy" role="2OqNvi">
-                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rkW" resolve="country" />
-                </node>
-              </node>
-              <node concept="liA8E" id="j0FrQ7SOfk" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                <node concept="Xl_RD" id="j0FrQ7SOgc" role="37wK5m">
-                  <property role="Xl_RC" value="[a-zA-Z' ]+" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DCEQD" id="j0FrQ7SN9T" role="1DCEQI">
-          <node concept="16I2mz" id="j0FrQ7SOpx" role="16N$OO">
-            <node concept="16N$OT" id="j0FrQ7SOpy" role="16I2mt">
-              <property role="16N$OU" value="Warning: The country can have only alphabetic letters and apostrophe" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1DCEPf" id="j0FrQ7TzY5" role="3OnDbr">
-        <node concept="3Qq5Rn" id="j0FrQ7TzY7" role="2j4cqI">
-          <property role="EcuMT" value="342464601220595591" />
-          <property role="TrG5h" value="Only_Letters_State" />
-          <node concept="2K0Yjh" id="j0FrQ7TzY9" role="2K0Fuo">
-            <node concept="2OqwBi" id="j0FrQ7TAbj" role="2K0yoH">
-              <node concept="2OqwBi" id="j0FrQ7T$9F" role="2Oq$k0">
-                <node concept="3QpRc$" id="j0FrQ7TzZG" role="2Oq$k0">
-                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
-                </node>
-                <node concept="3TrcHB" id="j0FrQ7T_OX" role="2OqNvi">
-                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rkY" resolve="state" />
-                </node>
-              </node>
-              <node concept="liA8E" id="j0FrQ7TAxv" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                <node concept="Xl_RD" id="j0FrQ7TAyr" role="37wK5m">
-                  <property role="Xl_RC" value="[a-zA-Z' ]+" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DCEQD" id="j0FrQ7TzYd" role="1DCEQI">
-          <node concept="16I2mz" id="j0FrQ7TAGy" role="16N$OO">
-            <node concept="16N$OT" id="j0FrQ7TAGF" role="16I2mt">
-              <property role="16N$OU" value="Warning: The state can have only alphabetic letters and apostrop" />
-            </node>
-            <node concept="16N$OT" id="j0FrQ7TAGN" role="16I2mt">
-              <property role="16N$OU" value="he" />
-            </node>
-            <node concept="16N$OT" id="j0FrQ7TAGR" role="16I2mt">
-              <property role="16N$OU" value="" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1DCEPf" id="j0FrQ7TASO" role="3OnDbr">
-        <node concept="3Qq5Rn" id="j0FrQ7TASQ" role="2j4cqI">
-          <property role="EcuMT" value="342464601220607542" />
-          <property role="TrG5h" value="Only_Letters_City" />
-          <node concept="2K0Yjh" id="j0FrQ7TASS" role="2K0Fuo">
-            <node concept="2OqwBi" id="j0FrQ7TCpH" role="2K0yoH">
-              <node concept="2OqwBi" id="j0FrQ7TB79" role="2Oq$k0">
-                <node concept="3QpRc$" id="j0FrQ7TAVA" role="2Oq$k0">
-                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
-                </node>
-                <node concept="3TrcHB" id="j0FrQ7UxIP" role="2OqNvi">
-                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rl1" resolve="city" />
-                </node>
-              </node>
-              <node concept="liA8E" id="j0FrQ7TCJT" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                <node concept="Xl_RD" id="j0FrQ7TCKS" role="37wK5m">
-                  <property role="Xl_RC" value="[a-zA-Z' ]+" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DCEQD" id="j0FrQ7TASW" role="1DCEQI">
-          <node concept="16I2mz" id="j0FrQ7TCXp" role="16N$OO">
-            <node concept="16N$OT" id="j0FrQ7TCXz" role="16I2mt">
-              <property role="16N$OU" value="Warning: The city can have only alphabetic letters and apostrophe" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1DCEPf" id="j0FrQ7TD5r" role="3OnDbr">
-        <node concept="3Qq5Rn" id="j0FrQ7TD5t" role="2j4cqI">
-          <property role="EcuMT" value="342464601220616541" />
-          <property role="TrG5h" value="Post_Code_Only_Digits" />
-          <node concept="2K0Yjh" id="j0FrQ7TD5v" role="2K0Fuo">
-            <node concept="2OqwBi" id="j0FrQ7TEnR" role="2K0yoH">
-              <node concept="2OqwBi" id="j0FrQ7TDl5" role="2Oq$k0">
-                <node concept="3QpRc$" id="j0FrQ7TD9y" role="2Oq$k0">
-                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
-                </node>
-                <node concept="3TrcHB" id="j0FrQ7TDWC" role="2OqNvi">
-                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rl5" resolve="post_code" />
-                </node>
-              </node>
-              <node concept="liA8E" id="j0FrQ7TESd" role="2OqNvi">
-                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
-                <node concept="Xl_RD" id="j0FrQ7TETe" role="37wK5m">
-                  <property role="Xl_RC" value="[0-9]+" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DCEQD" id="j0FrQ7TD5z" role="1DCEQI">
-          <node concept="16I2mz" id="j0FrQ7TEZR" role="16N$OO">
-            <node concept="16N$OT" id="j0FrQ7TEZS" role="16I2mt">
-              <property role="16N$OU" value="Warning: The postal code can have only digits" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1DCEPf" id="j0FrQ7TF8G" role="3OnDbr">
-        <node concept="3Qq5Rn" id="j0FrQ7TF8I" role="2j4cqI">
-          <property role="EcuMT" value="342464601220624942" />
-          <property role="TrG5h" value="Post_Code_Length" />
-          <node concept="2K0Yjh" id="j0FrQ7TF8K" role="2K0Fuo">
-            <node concept="3clFbC" id="j0FrQ7TJas" role="2K0yoH">
-              <node concept="3cmrfG" id="j0FrQ7TJAx" role="3uHU7w">
-                <property role="3cmrfH" value="5" />
-              </node>
-              <node concept="2OqwBi" id="j0FrQ7TH5X" role="3uHU7B">
-                <node concept="2OqwBi" id="j0FrQ7TFra" role="2Oq$k0">
-                  <node concept="3QpRc$" id="j0FrQ7TFhZ" role="2Oq$k0">
-                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
-                  </node>
-                  <node concept="3TrcHB" id="j0FrQ7TGza" role="2OqNvi">
-                    <ref role="3TsBF5" to="vl8c:7_lnZMS$rl5" resolve="post_code" />
-                  </node>
-                </node>
-                <node concept="liA8E" id="j0FrQ7THAH" role="2OqNvi">
-                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DCEQD" id="j0FrQ7TF8O" role="1DCEQI">
-          <node concept="16I2mz" id="j0FrQ7TJBA" role="16N$OO">
-            <node concept="16N$OT" id="7_lnZMS_qri" role="16I2mt">
-              <property role="16N$OU" value="Warning: The postal code must be of five digits" />
-            </node>
-            <node concept="16N$OT" id="7_lnZMS_qrh" role="16I2mt">
-              <property role="16N$OU" value="" />
-            </node>
-          </node>
-        </node>
-      </node>
-      <node concept="1DCEPf" id="7_lnZMS_qxX" role="3OnDbr">
-        <node concept="3Qq5Rn" id="7_lnZMS_qxZ" role="2j4cqI">
-          <property role="EcuMT" value="8742999790642899071" />
-          <property role="TrG5h" value="ID_Positive" />
-          <node concept="2K0Yjh" id="7_lnZMS_qy1" role="2K0Fuo">
-            <node concept="2d3UOw" id="7_lnZMS_tF9" role="2K0yoH">
-              <node concept="3cmrfG" id="7_lnZMS_tFN" role="3uHU7w">
-                <property role="3cmrfH" value="1" />
-              </node>
-              <node concept="2OqwBi" id="7_lnZMS_rhq" role="3uHU7B">
-                <node concept="3QpRc$" id="7_lnZMS_r6E" role="2Oq$k0">
-                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
-                </node>
-                <node concept="3TrcHB" id="7_lnZMS_rJX" role="2OqNvi">
-                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rzA" resolve="id" />
-                </node>
-              </node>
-            </node>
-          </node>
-        </node>
-        <node concept="1DCEQD" id="7_lnZMS_qy5" role="1DCEQI">
-          <node concept="16I2mz" id="7_lnZMS_tKS" role="16N$OO">
-            <node concept="16N$OT" id="7_lnZMS_tKT" role="16I2mt">
-              <property role="16N$OU" value="Warning: The id cannot be less than one" />
-            </node>
-          </node>
-        </node>
-      </node>
     </node>
   </node>
   <node concept="3Oh7Pa" id="7_lnZMS_w65">
@@ -781,6 +518,7 @@
       <node concept="1DCEPf" id="7_lnZMSA2MU" role="3OnDbr">
         <node concept="3Qq5Rn" id="7_lnZMSA2MW" role="2j4cqI">
           <property role="EcuMT" value="8742999790643063996" />
+          <property role="TrG5h" value="Fiscal_Code_Range" />
           <node concept="2K0Yjh" id="7_lnZMSA2MY" role="2K0Fuo">
             <node concept="3clFbC" id="7_lnZMSA71e" role="2K0yoH">
               <node concept="3cmrfG" id="7_lnZMSA7vb" role="3uHU7w">
@@ -806,6 +544,271 @@
           <node concept="16I2mz" id="7_lnZMSA7zw" role="16N$OO">
             <node concept="16N$OT" id="7_lnZMSA7zx" role="16I2mt">
               <property role="16N$OU" value="Warnign: the fiscal code of a person must be of 16 characters" />
+            </node>
+          </node>
+        </node>
+      </node>
+    </node>
+  </node>
+  <node concept="3Oh7Pa" id="j0FrQ7SN9A">
+    <property role="3GE5qa" value="" />
+    <ref role="3Oh7Pe" to="vl8c:7_lnZMS$rkS" resolve="Address" />
+    <node concept="3OnDbq" id="j0FrQ7SN9B" role="3Oh7Pb">
+      <ref role="3OnDbs" to="prp3:6X8eyFnbIRR" resolve="CanBeChild" />
+      <node concept="1DCEPf" id="j0FrQ7SN9L" role="3OnDbr">
+        <node concept="3Qq5Rn" id="j0FrQ7SN9N" role="2j4cqI">
+          <property role="EcuMT" value="342464601220395635" />
+          <property role="TrG5h" value="Only_Letters_Country" />
+          <node concept="2K0Yjh" id="j0FrQ7SN9P" role="2K0Fuo">
+            <node concept="2OqwBi" id="j0FrQ7SO04" role="2K0yoH">
+              <node concept="2OqwBi" id="j0FrQ7SNlV" role="2Oq$k0">
+                <node concept="3QpRc$" id="j0FrQ7SNao" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="j0FrQ7SNwy" role="2OqNvi">
+                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rkW" resolve="country" />
+                </node>
+              </node>
+              <node concept="liA8E" id="j0FrQ7SOfk" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="j0FrQ7SOgc" role="37wK5m">
+                  <property role="Xl_RC" value="[a-zA-Z' ]+" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="j0FrQ7SN9T" role="1DCEQI">
+          <node concept="16I2mz" id="j0FrQ7SOpx" role="16N$OO">
+            <node concept="16N$OT" id="j0FrQ7SOpy" role="16I2mt">
+              <property role="16N$OU" value="Warning: The country can have only alphabetic letters and apostrophe" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="j0FrQ7TzY5" role="3OnDbr">
+        <node concept="3Qq5Rn" id="j0FrQ7TzY7" role="2j4cqI">
+          <property role="EcuMT" value="342464601220595591" />
+          <property role="TrG5h" value="Only_Letters_State" />
+          <node concept="2K0Yjh" id="j0FrQ7TzY9" role="2K0Fuo">
+            <node concept="2OqwBi" id="j0FrQ7TAbj" role="2K0yoH">
+              <node concept="2OqwBi" id="j0FrQ7T$9F" role="2Oq$k0">
+                <node concept="3QpRc$" id="j0FrQ7TzZG" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="j0FrQ7T_OX" role="2OqNvi">
+                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rkY" resolve="state" />
+                </node>
+              </node>
+              <node concept="liA8E" id="j0FrQ7TAxv" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="j0FrQ7TAyr" role="37wK5m">
+                  <property role="Xl_RC" value="[a-zA-Z' ]+" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="j0FrQ7TzYd" role="1DCEQI">
+          <node concept="16I2mz" id="j0FrQ7TAGy" role="16N$OO">
+            <node concept="16N$OT" id="j0FrQ7TAGF" role="16I2mt">
+              <property role="16N$OU" value="Warning: The state can have only alphabetic letters and apostrop" />
+            </node>
+            <node concept="16N$OT" id="j0FrQ7TAGN" role="16I2mt">
+              <property role="16N$OU" value="he" />
+            </node>
+            <node concept="16N$OT" id="j0FrQ7TAGR" role="16I2mt">
+              <property role="16N$OU" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="j0FrQ7TASO" role="3OnDbr">
+        <node concept="3Qq5Rn" id="j0FrQ7TASQ" role="2j4cqI">
+          <property role="EcuMT" value="342464601220607542" />
+          <property role="TrG5h" value="Only_Letters_City" />
+          <node concept="2K0Yjh" id="j0FrQ7TASS" role="2K0Fuo">
+            <node concept="2OqwBi" id="j0FrQ7TCpH" role="2K0yoH">
+              <node concept="2OqwBi" id="j0FrQ7TB79" role="2Oq$k0">
+                <node concept="3QpRc$" id="j0FrQ7TAVA" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="j0FrQ7UxIP" role="2OqNvi">
+                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rl1" resolve="city" />
+                </node>
+              </node>
+              <node concept="liA8E" id="j0FrQ7TCJT" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="j0FrQ7TCKS" role="37wK5m">
+                  <property role="Xl_RC" value="[a-zA-Z' ]+" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="j0FrQ7TASW" role="1DCEQI">
+          <node concept="16I2mz" id="j0FrQ7TCXp" role="16N$OO">
+            <node concept="16N$OT" id="j0FrQ7TCXz" role="16I2mt">
+              <property role="16N$OU" value="Warning: The city can have only alphabetic letters and apostrophe" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="j0FrQ7TD5r" role="3OnDbr">
+        <node concept="3Qq5Rn" id="j0FrQ7TD5t" role="2j4cqI">
+          <property role="EcuMT" value="342464601220616541" />
+          <property role="TrG5h" value="Post_Code_Only_Digits" />
+          <node concept="2K0Yjh" id="j0FrQ7TD5v" role="2K0Fuo">
+            <node concept="2OqwBi" id="j0FrQ7TEnR" role="2K0yoH">
+              <node concept="2OqwBi" id="j0FrQ7TDl5" role="2Oq$k0">
+                <node concept="3QpRc$" id="j0FrQ7TD9y" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="j0FrQ7TDWC" role="2OqNvi">
+                  <ref role="3TsBF5" to="vl8c:7_lnZMS$rl5" resolve="post_code" />
+                </node>
+              </node>
+              <node concept="liA8E" id="j0FrQ7TESd" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="j0FrQ7TETe" role="37wK5m">
+                  <property role="Xl_RC" value="[0-9]+" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="j0FrQ7TD5z" role="1DCEQI">
+          <node concept="16I2mz" id="j0FrQ7TEZR" role="16N$OO">
+            <node concept="16N$OT" id="j0FrQ7TEZS" role="16I2mt">
+              <property role="16N$OU" value="Warning: The postal code can have only digits" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="j0FrQ7TF8G" role="3OnDbr">
+        <node concept="3Qq5Rn" id="j0FrQ7TF8I" role="2j4cqI">
+          <property role="EcuMT" value="342464601220624942" />
+          <property role="TrG5h" value="Post_Code_Length" />
+          <node concept="2K0Yjh" id="j0FrQ7TF8K" role="2K0Fuo">
+            <node concept="3clFbC" id="j0FrQ7TJas" role="2K0yoH">
+              <node concept="3cmrfG" id="j0FrQ7TJAx" role="3uHU7w">
+                <property role="3cmrfH" value="5" />
+              </node>
+              <node concept="2OqwBi" id="j0FrQ7TH5X" role="3uHU7B">
+                <node concept="2OqwBi" id="j0FrQ7TFra" role="2Oq$k0">
+                  <node concept="3QpRc$" id="j0FrQ7TFhZ" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="j0FrQ7TGza" role="2OqNvi">
+                    <ref role="3TsBF5" to="vl8c:7_lnZMS$rl5" resolve="post_code" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="j0FrQ7THAH" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="j0FrQ7TF8O" role="1DCEQI">
+          <node concept="16I2mz" id="j0FrQ7TJBA" role="16N$OO">
+            <node concept="16N$OT" id="4V8AcR_wCt2" role="16I2mt">
+              <property role="16N$OU" value="Warning: The postal code must be of five digit" />
+            </node>
+            <node concept="16N$OT" id="4V8AcR_wCt8" role="16I2mt">
+              <property role="16N$OU" value="" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="4V8AcR_wCz4" role="3OnDbr">
+        <node concept="3Qq5Rn" id="4V8AcR_wCz6" role="2j4cqI">
+          <property role="EcuMT" value="5676955340386764998" />
+          <property role="TrG5h" value="Phone_Length" />
+          <node concept="2K0Yjh" id="4V8AcR_wCz8" role="2K0Fuo">
+            <node concept="3clFbC" id="4V8AcR_wFug" role="2K0yoH">
+              <node concept="3cmrfG" id="4V8AcR_wFuv" role="3uHU7w">
+                <property role="3cmrfH" value="10" />
+              </node>
+              <node concept="2OqwBi" id="4V8AcR_wE75" role="3uHU7B">
+                <node concept="2OqwBi" id="4V8AcR_wDh5" role="2Oq$k0">
+                  <node concept="3QpRc$" id="4V8AcR_wD7M" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="4V8AcR_wDBb" role="2OqNvi">
+                    <ref role="3TsBF5" to="vl8c:4V8AcR_vSKL" resolve="phone_number" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="4V8AcR_wEBr" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="4V8AcR_wCzc" role="1DCEQI">
+          <node concept="16I2mz" id="4V8AcR_wFUs" role="16N$OO">
+            <node concept="16N$OT" id="4V8AcR_wFUt" role="16I2mt">
+              <property role="16N$OU" value="Warning: The phone code must be of 10 digits" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="4V8AcR_wGw1" role="3OnDbr">
+        <node concept="3Qq5Rn" id="4V8AcR_wGw3" role="2j4cqI">
+          <property role="EcuMT" value="5676955340386781187" />
+          <property role="TrG5h" value="Phone_Regex" />
+          <node concept="2K0Yjh" id="4V8AcR_wGw5" role="2K0Fuo">
+            <node concept="2OqwBi" id="4V8AcR_wI51" role="2K0yoH">
+              <node concept="2OqwBi" id="4V8AcR_wHf0" role="2Oq$k0">
+                <node concept="3QpRc$" id="4V8AcR_wH5P" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="4V8AcR_wHCm" role="2OqNvi">
+                  <ref role="3TsBF5" to="vl8c:4V8AcR_vSKL" resolve="phone_number" />
+                </node>
+              </node>
+              <node concept="liA8E" id="4V8AcR_wIDQ" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="4V8AcR_wIF0" role="37wK5m">
+                  <property role="Xl_RC" value="[0-9]+" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="4V8AcR_wGw9" role="1DCEQI">
+          <node concept="16I2mz" id="4V8AcR_wIHj" role="16N$OO">
+            <node concept="16N$OT" id="4V8AcR_wIHp" role="16I2mt">
+              <property role="16N$OU" value="Warning: The phone code must be formed only by digits" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="4V8AcR_wJlX" role="3OnDbr">
+        <node concept="3Qq5Rn" id="4V8AcR_wJlZ" role="2j4cqI">
+          <property role="EcuMT" value="5676955340386792831" />
+          <property role="TrG5h" value="Id_positive" />
+          <node concept="2K0Yjh" id="4V8AcR_wJm1" role="2K0Fuo">
+            <node concept="2d3UOw" id="4V8AcR_wLLg" role="2K0yoH">
+              <node concept="3cmrfG" id="4V8AcR_wLLM" role="3uHU7w">
+                <property role="3cmrfH" value="1" />
+              </node>
+              <node concept="2OqwBi" id="4V8AcR_wJBZ" role="3uHU7B">
+                <node concept="3QpRc$" id="4V8AcR_wJuO" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="4V8AcR_wJRl" role="2OqNvi">
+                  <ref role="3TsBF5" to="vl8c:4V8AcR_vSKD" resolve="id" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="4V8AcR_wJm5" role="1DCEQI">
+          <node concept="16I2mz" id="4V8AcR_wLU6" role="16N$OO">
+            <node concept="16N$OT" id="4V8AcR_wLU7" role="16I2mt">
+              <property role="16N$OU" value="Warning: The id cannot be negative " />
             </node>
           </node>
         </node>

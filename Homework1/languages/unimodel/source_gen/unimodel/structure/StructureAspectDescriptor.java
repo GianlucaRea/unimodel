@@ -95,7 +95,8 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.class_(false, false, false);
     b.origin("r:8a1ac2af-b452-4f6d-a997-fcde45094820(unimodel.structure)/8742999790642640184");
     b.version(2);
-    b.property("id", 0x79555ffcb891b8e6L).type(PrimitiveTypeId.INTEGER).origin("8742999790642641126").done();
+    b.property("id", 0x4ec898cde57f8c29L).type(PrimitiveTypeId.INTEGER).origin("5676955340386569257").done();
+    b.property("phone_number", 0x4ec898cde57f8c31L).type(PrimitiveTypeId.STRING).origin("5676955340386569265").done();
     b.property("country", 0x79555ffcb891b53cL).type(PrimitiveTypeId.STRING).origin("8742999790642640188").done();
     b.property("state", 0x79555ffcb891b53eL).type(PrimitiveTypeId.STRING).origin("8742999790642640190").done();
     b.property("city", 0x79555ffcb891b541L).type(PrimitiveTypeId.STRING).origin("8742999790642640193").done();
@@ -122,7 +123,6 @@ public class StructureAspectDescriptor extends BaseStructureAspectDescriptor {
     b.origin("r:8a1ac2af-b452-4f6d-a997-fcde45094820(unimodel.structure)/8742999790642640176");
     b.version(2);
     b.property("description", 0x79555ffcb891b533L).type(PrimitiveTypeId.STRING).origin("8742999790642640179").done();
-    b.property("phone", 0x79555ffcb891b535L).type(PrimitiveTypeId.STRING).origin("8742999790642640181").done();
     b.aggregate("address", 0x79555ffcb891b57bL).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b538L).optional(false).ordered(true).multiple(false).origin("8742999790642640251").done();
     b.aggregate("library", 0x79555ffcb891b59fL).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b557L).optional(true).ordered(true).multiple(false).origin("8742999790642640287").done();
     b.aggregate("floor", 0x79555ffcb891b5a2L).target(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b53bL).optional(false).ordered(true).multiple(true).origin("8742999790642640290").done();

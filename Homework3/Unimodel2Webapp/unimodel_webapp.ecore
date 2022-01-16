@@ -23,10 +23,6 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number_bathrooms" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="office" upperBound="-1"
-        eType="#//Office"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="class" upperBound="-1"
-        eType="#//Class"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Room" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="dimension" lowerBound="1"

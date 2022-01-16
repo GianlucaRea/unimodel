@@ -108,36 +108,11 @@
     <classNode dependClassName="java.util.Arrays" />
     <classNode dependClassName="java.util.Collections" />
     <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.BaseRule" />
     <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.Rule" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.RuleId" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.kinds.PredefinedRuleKinds" />
-    <classNode dependClassName="jetbrains.mps.lang.smodel.generator.smodelAdapter.SPropertyOperations" />
     <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SProperty" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.model.SNodeReference" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.persistence.PersistenceFacade" />
     <classNode extendsClassName="jetbrains.mps.core.aspects.constraints.rules.BaseRulesConstraintsDescriptor" />
-  </dependency>
-  <dependency className="unimodel.constraints.Building_ConstraintsFeedback">
-    <classNode dependClassName="java.lang.Override" />
-    <classNode dependClassName="java.util.Arrays" />
-    <classNode dependClassName="java.util.Collections" />
-    <classNode dependClassName="java.util.List" />
-    <classNode dependClassName="java.util.stream.Stream" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.constraints.rules.kinds.ContainmentContext" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.api.FeedbackProvider" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.BaseMessageProvider" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.FailingRuleProblemId" />
-    <classNode dependClassName="jetbrains.mps.core.aspects.feedback.messages.MessageProvider" />
-    <classNode dependClassName="jetbrains.mps.smodel.adapter.structure.MetaAdapterFactory" />
-    <classNode dependClassName="org.jetbrains.annotations.NotNull" />
-    <classNode dependClassName="org.jetbrains.mps.openapi.language.SAbstractConcept" />
-    <classNode dependClassName="unimodel.constraints.Building_ConstraintRules" />
-    <classNode extendsClassName="jetbrains.mps.core.aspects.feedback.api.BaseFeedbackDescriptor" />
   </dependency>
   <dependency className="unimodel.constraints.Class_ConstraintRules">
     <classNode dependClassName="java.lang.Override" />
@@ -225,7 +200,6 @@
     <classNode dependClassName="org.jetbrains.annotations.NotNull" />
     <classNode dependClassName="unimodel.constraints.Address_ConstraintsFeedback" />
     <classNode dependClassName="unimodel.constraints.Book_ConstraintsFeedback" />
-    <classNode dependClassName="unimodel.constraints.Building_ConstraintsFeedback" />
     <classNode dependClassName="unimodel.constraints.Class_ConstraintsFeedback" />
     <classNode dependClassName="unimodel.constraints.Floor_ConstraintsFeedback" />
     <classNode dependClassName="unimodel.constraints.Library_ConstraintsFeedback" />

@@ -26,7 +26,7 @@ public final class Person_ConstraintsFeedback extends BaseFeedbackDescriptor {
       return new MessageProvider.StringMsg("Warning: The age of a person cannot be lower than 16 and higher than 120");
     }
   };
-  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_3jc2rc_b = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Person_ConstraintRules.Rule_unnamed_3h0umw_b0.ID_unnamed_3h0umw_b0)) {
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_3jc2rc_b = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Person_ConstraintRules.Rule_Fiscal_Code_Range.ID_Fiscal_Code_Range)) {
     @NotNull
     @Override
     public MessageProvider.Msg yieldMessage(ContainmentContext context) {

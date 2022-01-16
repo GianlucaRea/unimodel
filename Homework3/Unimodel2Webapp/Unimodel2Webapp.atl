@@ -9,8 +9,9 @@ create OUT : MM2 from IN1 : MM1;
 helper context MM1!University def: getAllUsers() : Sequence(MM1!Person) = MM1!Person.allInstances()->asSequence();
 ---Return all the building in the system
 helper context MM1!University def: getAllBuilding() : Sequence(MM1!Building) = MM1!Building.allInstances()->asSequence();
-
--- ---------------- --
+---Return all rooms of a floor
+helper context MM1!Floor def : getAllRoomOfFloor() : Sequence(MM1!Room) = MM1!Room.allInstances()->asSequence();
+		
 -- RULES DEFINITION --
 -- ----------------	--
 
@@ -78,9 +79,7 @@ rule Floor2MSection{
 		t: MM2!Map_Section(
 			number <- s.number,	
 			number_bathrooms <- s.bathrooms,
-			room <- s.rooms,
-			office <- s.office,
-			class <- s.class
+			room <- s.getAllRoomOfFloor()
 		)
 }
 
@@ -131,7 +130,7 @@ rule Room2Room{
 		)
 }
 
-rule Office2Office{
+rule Office2Office extends Room2Room{
 	from 
 		s: MM1!Office
 	to
@@ -143,7 +142,7 @@ rule Office2Office{
 		)
 }
 
-rule Class2Class{
+rule Class2Class extends Room2Room{
 	from 
 		s: MM1!Class
 	to

@@ -11,6 +11,6 @@ public final class GeneratedFeedbackAspectConstraints implements FeedbackAspect 
   @NotNull
   @Override
   public Stream<FeedbackPerConceptDescriptor> getPerConceptDescriptors() {
-    return Stream.of(new Building_ConstraintsFeedback(), new Address_ConstraintsFeedback(), new Floor_ConstraintsFeedback(), new Library_ConstraintsFeedback(), new Book_ConstraintsFeedback(), new Class_ConstraintsFeedback(), new Room_ConstraintsFeedback(), new Office_ConstraintsFeedback(), new Person_ConstraintsFeedback());
+    return Stream.of(new Floor_ConstraintsFeedback(), new Library_ConstraintsFeedback(), new Book_ConstraintsFeedback(), new Class_ConstraintsFeedback(), new Room_ConstraintsFeedback(), new Office_ConstraintsFeedback(), new Person_ConstraintsFeedback(), new Address_ConstraintsFeedback());
   }
 }

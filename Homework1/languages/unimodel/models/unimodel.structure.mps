@@ -89,6 +89,7 @@
     <property role="EcuMT" value="8742999790642640176" />
     <property role="TrG5h" value="Building" />
     <property role="R4oN_" value="This concept describe a building of a University" />
+    <property role="3GE5qa" value="" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
     <node concept="PrWs8" id="7_lnZMS$rkL" role="PzmwI">
       <ref role="PrY4T" to="tpck:h0TrEE$" resolve="INamedConcept" />
@@ -96,11 +97,6 @@
     <node concept="1TJgyi" id="7_lnZMS$rkN" role="1TKVEl">
       <property role="IQ2nx" value="8742999790642640179" />
       <property role="TrG5h" value="description" />
-      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
-    </node>
-    <node concept="1TJgyi" id="7_lnZMS$rkP" role="1TKVEl">
-      <property role="IQ2nx" value="8742999790642640181" />
-      <property role="TrG5h" value="phone" />
       <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyj" id="7_lnZMS$rlV" role="1TKVEi">
@@ -128,11 +124,17 @@
     <property role="EcuMT" value="8742999790642640184" />
     <property role="TrG5h" value="Address" />
     <property role="R4oN_" value="This concept describe the address of the building" />
+    <property role="3GE5qa" value="" />
     <ref role="1TJDcQ" to="tpck:gw2VY9q" resolve="BaseConcept" />
-    <node concept="1TJgyi" id="7_lnZMS$rzA" role="1TKVEl">
-      <property role="IQ2nx" value="8742999790642641126" />
+    <node concept="1TJgyi" id="4V8AcR_vSKD" role="1TKVEl">
+      <property role="IQ2nx" value="5676955340386569257" />
       <property role="TrG5h" value="id" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
+    </node>
+    <node concept="1TJgyi" id="4V8AcR_vSKL" role="1TKVEl">
+      <property role="IQ2nx" value="5676955340386569265" />
+      <property role="TrG5h" value="phone_number" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
     </node>
     <node concept="1TJgyi" id="7_lnZMS$rkW" role="1TKVEl">
       <property role="IQ2nx" value="8742999790642640188" />
