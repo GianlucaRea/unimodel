@@ -10,8 +10,7 @@
     description="Università del Piemonte Orientale">
   <buildings
       name="Disit"
-      description="Sede Di Alessandria"
-      phone="5515837941">
+      description="Sede Di Alessandria">
     <address
         country="Italy"
         state="AL"
@@ -19,7 +18,8 @@
         post_code="15121"
         street="Viale Teresa Michel"
         civic="1"
-        id="1"/>
+        id="1"
+        phone="5515837941"/>
     <library
         name="Libreria Alessandria"
         workstations="100"
@@ -82,7 +82,8 @@
           dimension="14.0"
           sockets="14"
           capacity="5"
-          office_address="1">
+          office_address="1"
+          phone="0987654321">
         <person_in_office
             name="Giacomo Di Rosna"
             badge="89"
@@ -137,8 +138,7 @@
   </buildings>
   <buildings
       name="Disum"
-      description="Sede dei dipartimenti umanistici"
-      phone="2949611155">
+      description="Sede dei dipartimenti umanistici">
     <address
         country="Italy"
         state="VC"
@@ -146,7 +146,8 @@
         post_code="13100"
         street="Via Galileo Ferraris"
         civic="107"
-        id="2"/>
+        id="2"
+        phone="2949611155"/>
     <library
         name="Libreria Di Alessandria"
         workstations="100"
@@ -214,7 +215,8 @@
           dimension="10.0"
           sockets="5"
           capacity="4"
-          office_address="2">
+          office_address="2"
+          phone="0987654321">
         <person_in_office
             name="Alessandro Barbero"
             badge="1"

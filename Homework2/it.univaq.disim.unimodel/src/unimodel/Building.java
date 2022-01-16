@@ -14,11 +14,9 @@ import org.eclipse.emf.common.util.EList;
  * </p>
  * <ul>
  *   <li>{@link unimodel.Building#getDescription <em>Description</em>}</li>
- *   <li>{@link unimodel.Building#getPhone <em>Phone</em>}</li>
  *   <li>{@link unimodel.Building#getAddress <em>Address</em>}</li>
  *   <li>{@link unimodel.Building#getLibrary <em>Library</em>}</li>
  *   <li>{@link unimodel.Building#getFloors <em>Floors</em>}</li>
- *   <li>{@link unimodel.Building#getPerson <em>Person</em>}</li>
  * </ul>
  *
  * @see unimodel.UnimodelPackage#getBuilding()
@@ -47,28 +45,6 @@ public interface Building extends Named {
 	 * @generated
 	 */
 	void setDescription(String value);
-
-	/**
-	 * Returns the value of the '<em><b>Phone</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Phone</em>' attribute.
-	 * @see #setPhone(String)
-	 * @see unimodel.UnimodelPackage#getBuilding_Phone()
-	 * @model
-	 * @generated
-	 */
-	String getPhone();
-
-	/**
-	 * Sets the value of the '{@link unimodel.Building#getPhone <em>Phone</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Phone</em>' attribute.
-	 * @see #getPhone()
-	 * @generated
-	 */
-	void setPhone(String value);
 
 	/**
 	 * Returns the value of the '<em><b>Address</b></em>' containment reference.
@@ -125,17 +101,5 @@ public interface Building extends Named {
 	 * @generated
 	 */
 	EList<Floor> getFloors();
-
-	/**
-	 * Returns the value of the '<em><b>Person</b></em>' containment reference list.
-	 * The list contents are of type {@link unimodel.Person}.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Person</em>' containment reference list.
-	 * @see unimodel.UnimodelPackage#getBuilding_Person()
-	 * @model containment="true"
-	 * @generated
-	 */
-	EList<Person> getPerson();
 
 } // Building

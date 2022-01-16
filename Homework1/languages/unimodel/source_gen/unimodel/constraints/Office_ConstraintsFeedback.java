@@ -26,8 +26,22 @@ public final class Office_ConstraintsFeedback extends BaseFeedbackDescriptor {
       return new MessageProvider.StringMsg("Warning: The capacity of a office cannot be less than 1");
     }
   };
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_5aohkc_b = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Office_ConstraintRules.Rule_phone_Regex.ID_phone_Regex)) {
+    @NotNull
+    @Override
+    public MessageProvider.Msg yieldMessage(ContainmentContext context) {
+      return new MessageProvider.StringMsg("Warning: The phone number must be formed only by digits");
+    }
+  };
+  private static final FeedbackProvider<ContainmentContext> MSGPROVIDER_WhenConstraintRuleFails_5aohkc_c = new BaseMessageProvider<ContainmentContext>(new FailingRuleProblemId(Office_ConstraintRules.Rule_phone_length.ID_phone_length)) {
+    @NotNull
+    @Override
+    public MessageProvider.Msg yieldMessage(ContainmentContext context) {
+      return new MessageProvider.StringMsg("Warning The phone length must be formed by 10 digits");
+    }
+  };
 
-  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenConstraintRuleFails_5aohkc_a));
+  private static final List<FeedbackProvider> PROVIDERS = Collections.unmodifiableList(Arrays.<FeedbackProvider>asList(MSGPROVIDER_WhenConstraintRuleFails_5aohkc_a, MSGPROVIDER_WhenConstraintRuleFails_5aohkc_b, MSGPROVIDER_WhenConstraintRuleFails_5aohkc_c));
 
   public Office_ConstraintsFeedback() {
     super(CONCEPT);

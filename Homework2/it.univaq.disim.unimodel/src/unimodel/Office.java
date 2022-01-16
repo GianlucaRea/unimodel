@@ -2,6 +2,9 @@
  */
 package unimodel;
 
+import java.math.BigInteger;
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -17,10 +20,11 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link unimodel.Office#getCapacity <em>Capacity</em>}</li>
  *   <li>{@link unimodel.Office#getPerson_in_office <em>Person in office</em>}</li>
  *   <li>{@link unimodel.Office#getOffice_address <em>Office address</em>}</li>
+ *   <li>{@link unimodel.Office#getPhone <em>Phone</em>}</li>
  * </ul>
  *
  * @see unimodel.UnimodelPackage#getOffice()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='person_in_office_constraint'"
  * @generated
  */
 public interface Office extends Room {
@@ -104,5 +108,52 @@ public interface Office extends Room {
 	 * @generated
 	 */
 	void setOffice_address(Address value);
+
+	/**
+	 * Returns the value of the '<em><b>Phone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Phone</em>' attribute.
+	 * @see #setPhone(String)
+	 * @see unimodel.UnimodelPackage#getOffice_Phone()
+	 * @model
+	 * @generated
+	 */
+	String getPhone();
+
+	/**
+	 * Sets the value of the '{@link unimodel.Office#getPhone <em>Phone</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Phone</em>' attribute.
+	 * @see #getPhone()
+	 * @generated
+	 */
+	void setPhone(String value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model kind="operation"
+	 *        annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.person_in_office-&gt;size()'"
+	 * @generated
+	 */
+	BigInteger getPersonInOffice();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.capacity &gt;= 1'"
+	 * @generated
+	 */
+	boolean capacity_positive(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.person_in_office-&gt;size() &lt;= capacity'"
+	 * @generated
+	 */
+	boolean person_in_office_constraint(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Office

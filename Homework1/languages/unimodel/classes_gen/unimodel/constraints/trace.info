@@ -743,58 +743,115 @@
     <file name="Office_ConstraintRules.java">
       <node id="8742999790643036497" at="23,0,24,0" concept="3" trace="CONCEPT" />
       <node id="8742999790643036502" at="25,0,26,0" concept="3" trace="check_id8742999790643036502" />
-      <node id="8742999790643036497" at="27,0,28,0" concept="3" trace="RULES" />
-      <node id="8742999790643036497" at="31,43,32,17" concept="2" />
-      <node id="8742999790643036502" at="36,0,37,0" concept="3" trace="SOURCE_NODE_REF" />
-      <node id="8742999790643036502" at="37,0,38,0" concept="3" trace="ID_Capacity_Positive" />
-      <node id="8742999790643036502" at="39,37,40,94" concept="4" />
-      <node id="8742999790643036502" at="44,63,45,94" concept="2" />
-      <node id="8742999790643036502" at="49,67,50,18" concept="2" />
-      <node id="8742999790643036497" at="54,40,55,19" concept="4" />
-      <node id="8742999790643036497" at="59,0,60,0" concept="3" trace="capacity$TWvQ" />
-      <node id="8742999790643036502" at="39,0,42,0" concept="0" trace="Rule_Capacity_Positive#()V" />
-      <node id="8742999790643036497" at="54,0,57,0" concept="0" trace="Office_ConstraintRules#()V" />
-      <node id="8742999790643036502" at="43,0,47,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
-      <node id="8742999790643036502" at="48,0,52,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
-      <node id="8742999790643036497" at="29,0,34,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
-      <scope id="8742999790643036497" at="31,43,32,17" />
-      <scope id="8742999790643036502" at="39,37,40,94" />
-      <scope id="8742999790643036502" at="44,63,45,94" />
-      <scope id="8742999790643036502" at="49,67,50,18" />
-      <scope id="8742999790643036497" at="54,40,55,19" />
-      <scope id="8742999790643036502" at="39,0,42,0" />
-      <scope id="8742999790643036497" at="54,0,57,0" />
-      <scope id="8742999790643036502" at="43,0,47,0">
+      <node id="7882222383593919205" at="26,0,27,0" concept="3" trace="check_id7882222383593919205" />
+      <node id="7882222383593928490" at="27,0,28,0" concept="3" trace="check_id7882222383593928490" />
+      <node id="8742999790643036497" at="29,0,30,0" concept="3" trace="RULES" />
+      <node id="8742999790643036497" at="33,43,34,17" concept="2" />
+      <node id="8742999790643036502" at="38,0,39,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="8742999790643036502" at="39,0,40,0" concept="3" trace="ID_Capacity_Positive" />
+      <node id="8742999790643036502" at="41,37,42,94" concept="4" />
+      <node id="8742999790643036502" at="46,63,47,94" concept="2" />
+      <node id="8742999790643036502" at="51,67,52,18" concept="2" />
+      <node id="7882222383593919205" at="57,0,58,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7882222383593919205" at="58,0,59,0" concept="3" trace="ID_phone_Regex" />
+      <node id="7882222383593919205" at="60,31,61,88" concept="4" />
+      <node id="7882222383593919205" at="65,63,66,103" concept="2" />
+      <node id="7882222383593919205" at="70,67,71,18" concept="2" />
+      <node id="7882222383593928490" at="76,0,77,0" concept="3" trace="SOURCE_NODE_REF" />
+      <node id="7882222383593928490" at="77,0,78,0" concept="3" trace="ID_phone_length" />
+      <node id="7882222383593928490" at="79,32,80,89" concept="4" />
+      <node id="7882222383593928490" at="84,63,85,100" concept="2" />
+      <node id="7882222383593928490" at="89,67,90,18" concept="2" />
+      <node id="8742999790643036497" at="94,40,95,19" concept="4" />
+      <node id="8742999790643036497" at="99,0,100,0" concept="3" trace="capacity$TWvQ" />
+      <node id="8742999790643036497" at="100,0,101,0" concept="3" trace="phone$2oH5" />
+      <node id="8742999790643036502" at="41,0,44,0" concept="0" trace="Rule_Capacity_Positive#()V" />
+      <node id="7882222383593919205" at="60,0,63,0" concept="0" trace="Rule_phone_Regex#()V" />
+      <node id="7882222383593928490" at="79,0,82,0" concept="0" trace="Rule_phone_length#()V" />
+      <node id="8742999790643036497" at="94,0,97,0" concept="0" trace="Office_ConstraintRules#()V" />
+      <node id="8742999790643036502" at="45,0,49,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643036502" at="50,0,54,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7882222383593919205" at="64,0,68,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7882222383593919205" at="69,0,73,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7882222383593928490" at="83,0,87,0" concept="1" trace="check#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="7882222383593928490" at="88,0,92,0" concept="1" trace="appliesTo#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Z" />
+      <node id="8742999790643036497" at="31,0,36,0" concept="1" trace="getDeclaredRules#()Ljava/util/List;" />
+      <scope id="8742999790643036497" at="33,43,34,17" />
+      <scope id="8742999790643036502" at="41,37,42,94" />
+      <scope id="8742999790643036502" at="46,63,47,94" />
+      <scope id="8742999790643036502" at="51,67,52,18" />
+      <scope id="7882222383593919205" at="60,31,61,88" />
+      <scope id="7882222383593919205" at="65,63,66,103" />
+      <scope id="7882222383593919205" at="70,67,71,18" />
+      <scope id="7882222383593928490" at="79,32,80,89" />
+      <scope id="7882222383593928490" at="84,63,85,100" />
+      <scope id="7882222383593928490" at="89,67,90,18" />
+      <scope id="8742999790643036497" at="94,40,95,19" />
+      <scope id="8742999790643036502" at="41,0,44,0" />
+      <scope id="7882222383593919205" at="60,0,63,0" />
+      <scope id="7882222383593928490" at="79,0,82,0" />
+      <scope id="8742999790643036497" at="94,0,97,0" />
+      <scope id="8742999790643036502" at="45,0,49,0">
         <var name="context" id="8742999790643036502" />
       </scope>
-      <scope id="8742999790643036502" at="48,0,52,0">
+      <scope id="8742999790643036502" at="50,0,54,0">
         <var name="context" id="8742999790643036502" />
       </scope>
-      <scope id="8742999790643036497" at="29,0,34,0" />
-      <unit id="8742999790643036497" at="58,0,61,0" name="unimodel.constraints.Office_ConstraintRules$PROPS" />
-      <unit id="8742999790643036502" at="35,0,53,0" name="unimodel.constraints.Office_ConstraintRules$Rule_Capacity_Positive" />
-      <unit id="8742999790643036497" at="22,0,62,0" name="unimodel.constraints.Office_ConstraintRules" />
+      <scope id="7882222383593919205" at="64,0,68,0">
+        <var name="context" id="7882222383593919205" />
+      </scope>
+      <scope id="7882222383593919205" at="69,0,73,0">
+        <var name="context" id="7882222383593919205" />
+      </scope>
+      <scope id="7882222383593928490" at="83,0,87,0">
+        <var name="context" id="7882222383593928490" />
+      </scope>
+      <scope id="7882222383593928490" at="88,0,92,0">
+        <var name="context" id="7882222383593928490" />
+      </scope>
+      <scope id="8742999790643036497" at="31,0,36,0" />
+      <unit id="8742999790643036497" at="98,0,102,0" name="unimodel.constraints.Office_ConstraintRules$PROPS" />
+      <unit id="8742999790643036502" at="37,0,55,0" name="unimodel.constraints.Office_ConstraintRules$Rule_Capacity_Positive" />
+      <unit id="7882222383593919205" at="56,0,74,0" name="unimodel.constraints.Office_ConstraintRules$Rule_phone_Regex" />
+      <unit id="7882222383593928490" at="75,0,93,0" name="unimodel.constraints.Office_ConstraintRules$Rule_phone_length" />
+      <unit id="8742999790643036497" at="22,0,103,0" name="unimodel.constraints.Office_ConstraintRules" />
     </file>
     <file name="Office_ConstraintsFeedback.java">
       <node id="8742999790643036497" at="20,0,21,0" concept="3" trace="CONCEPT" />
       <node id="8742999790643036501" at="25,73,26,102" concept="2" />
-      <node id="8742999790643036497" at="30,0,31,0" concept="3" trace="PROVIDERS" />
-      <node id="8742999790643036497" at="32,39,33,19" concept="4" />
-      <node id="8742999790643036497" at="38,58,39,30" concept="2" />
-      <node id="8742999790643036497" at="32,0,35,0" concept="0" trace="Office_ConstraintsFeedback#()V" />
+      <node id="7882222383593919203" at="32,73,33,102" concept="2" />
+      <node id="7882222383593928488" at="39,73,40,99" concept="2" />
+      <node id="8742999790643036497" at="44,0,45,0" concept="3" trace="PROVIDERS" />
+      <node id="8742999790643036497" at="46,39,47,19" concept="4" />
+      <node id="8742999790643036497" at="52,58,53,30" concept="2" />
+      <node id="8742999790643036497" at="46,0,49,0" concept="0" trace="Office_ConstraintsFeedback#()V" />
       <node id="8742999790643036501" at="23,0,28,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
-      <node id="8742999790643036497" at="36,0,41,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
+      <node id="7882222383593919203" at="30,0,35,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="7882222383593928488" at="37,0,42,0" concept="1" trace="yieldMessage#(Ljetbrains/mps/core/aspects/constraints/rules/kinds/ContainmentContext;)Ljetbrains/mps/core/aspects/feedback/messages/MessageProvider/Msg;" />
+      <node id="8742999790643036497" at="50,0,55,0" concept="1" trace="getDeclaredProviders#()Ljava/util/stream/Stream;" />
       <node id="8742999790643036501" at="22,0,29,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_5aohkc_a" />
+      <node id="7882222383593919203" at="29,0,36,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_5aohkc_b" />
+      <node id="7882222383593928488" at="36,0,43,0" concept="3" trace="MSGPROVIDER_WhenConstraintRuleFails_5aohkc_c" />
       <scope id="8742999790643036501" at="25,73,26,102" />
-      <scope id="8742999790643036497" at="32,39,33,19" />
-      <scope id="8742999790643036497" at="38,58,39,30" />
-      <scope id="8742999790643036497" at="32,0,35,0" />
+      <scope id="7882222383593919203" at="32,73,33,102" />
+      <scope id="7882222383593928488" at="39,73,40,99" />
+      <scope id="8742999790643036497" at="46,39,47,19" />
+      <scope id="8742999790643036497" at="52,58,53,30" />
+      <scope id="8742999790643036497" at="46,0,49,0" />
       <scope id="8742999790643036501" at="23,0,28,0">
         <var name="context" id="8742999790643036501" />
       </scope>
-      <scope id="8742999790643036497" at="36,0,41,0" />
+      <scope id="7882222383593919203" at="30,0,35,0">
+        <var name="context" id="7882222383593919203" />
+      </scope>
+      <scope id="7882222383593928488" at="37,0,42,0">
+        <var name="context" id="7882222383593928488" />
+      </scope>
+      <scope id="8742999790643036497" at="50,0,55,0" />
       <unit id="8742999790643036501" at="22,111,28,3" name="unimodel.constraints.Office_ConstraintsFeedback$1" />
-      <unit id="8742999790643036497" at="19,0,42,0" name="unimodel.constraints.Office_ConstraintsFeedback" />
+      <unit id="7882222383593919203" at="29,111,35,3" name="unimodel.constraints.Office_ConstraintsFeedback$2" />
+      <unit id="7882222383593928488" at="36,111,42,3" name="unimodel.constraints.Office_ConstraintsFeedback$3" />
+      <unit id="8742999790643036497" at="19,0,56,0" name="unimodel.constraints.Office_ConstraintsFeedback" />
     </file>
   </root>
   <root nodeRef="r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/8742999790643042702">

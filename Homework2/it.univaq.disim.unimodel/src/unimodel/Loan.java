@@ -16,8 +16,8 @@ import org.eclipse.emf.ecore.EObject;
  * </p>
  * <ul>
  *   <li>{@link unimodel.Loan#getDate <em>Date</em>}</li>
- *   <li>{@link unimodel.Loan#getLoans_has_book <em>Loans has book</em>}</li>
- *   <li>{@link unimodel.Loan#getLoan_has_person <em>Loan has person</em>}</li>
+ *   <li>{@link unimodel.Loan#getBook <em>Book</em>}</li>
+ *   <li>{@link unimodel.Loan#getPerson <em>Person</em>}</li>
  * </ul>
  *
  * @see unimodel.UnimodelPackage#getLoan()
@@ -32,7 +32,7 @@ public interface Loan extends EObject {
 	 * @return the value of the '<em>Date</em>' attribute.
 	 * @see #setDate(Date)
 	 * @see unimodel.UnimodelPackage#getLoan_Date()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	Date getDate();
@@ -48,47 +48,47 @@ public interface Loan extends EObject {
 	void setDate(Date value);
 
 	/**
-	 * Returns the value of the '<em><b>Loans has book</b></em>' reference.
+	 * Returns the value of the '<em><b>Book</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Loans has book</em>' reference.
-	 * @see #setLoans_has_book(Book)
-	 * @see unimodel.UnimodelPackage#getLoan_Loans_has_book()
-	 * @model required="true"
+	 * @return the value of the '<em>Book</em>' reference.
+	 * @see #setBook(Book)
+	 * @see unimodel.UnimodelPackage#getLoan_Book()
+	 * @model
 	 * @generated
 	 */
-	Book getLoans_has_book();
+	Book getBook();
 
 	/**
-	 * Sets the value of the '{@link unimodel.Loan#getLoans_has_book <em>Loans has book</em>}' reference.
+	 * Sets the value of the '{@link unimodel.Loan#getBook <em>Book</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Loans has book</em>' reference.
-	 * @see #getLoans_has_book()
+	 * @param value the new value of the '<em>Book</em>' reference.
+	 * @see #getBook()
 	 * @generated
 	 */
-	void setLoans_has_book(Book value);
+	void setBook(Book value);
 
 	/**
-	 * Returns the value of the '<em><b>Loan has person</b></em>' reference.
+	 * Returns the value of the '<em><b>Person</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the value of the '<em>Loan has person</em>' reference.
-	 * @see #setLoan_has_person(Person)
-	 * @see unimodel.UnimodelPackage#getLoan_Loan_has_person()
-	 * @model required="true"
+	 * @return the value of the '<em>Person</em>' reference.
+	 * @see #setPerson(Person)
+	 * @see unimodel.UnimodelPackage#getLoan_Person()
+	 * @model
 	 * @generated
 	 */
-	Person getLoan_has_person();
+	Person getPerson();
 
 	/**
-	 * Sets the value of the '{@link unimodel.Loan#getLoan_has_person <em>Loan has person</em>}' reference.
+	 * Sets the value of the '{@link unimodel.Loan#getPerson <em>Person</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @param value the new value of the '<em>Loan has person</em>' reference.
-	 * @see #getLoan_has_person()
+	 * @param value the new value of the '<em>Person</em>' reference.
+	 * @see #getPerson()
 	 * @generated
 	 */
-	void setLoan_has_person(Person value);
+	void setPerson(Person value);
 
 } // Loan

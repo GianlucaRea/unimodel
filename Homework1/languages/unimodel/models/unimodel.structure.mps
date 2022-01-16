@@ -337,6 +337,11 @@
       <property role="TrG5h" value="capacity" />
       <ref role="AX2Wp" to="tpck:fKAQMTA" resolve="integer" />
     </node>
+    <node concept="1TJgyi" id="6PzhRVYJOCv" role="1TKVEl">
+      <property role="IQ2nx" value="7882222383593900575" />
+      <property role="TrG5h" value="phone" />
+      <ref role="AX2Wp" to="tpck:fKAOsGN" resolve="string" />
+    </node>
     <node concept="1TJgyj" id="7_lnZMS$rog" role="1TKVEi">
       <property role="IQ2ns" value="8742999790642640400" />
       <property role="20kJfa" value="address" />

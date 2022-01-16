@@ -17,6 +17,7 @@
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="map_section" lowerBound="1"
         upperBound="-1" eType="#//Map_Section" containment="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Map_Section">
     <eStructuralFeatures xsi:type="ecore:EReference" name="room" upperBound="-1" eType="#//Room"
@@ -34,7 +35,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="seats" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number_computers" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number_blackboars" lowerBound="1"
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="number_blackboards" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="number_speakers" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
@@ -43,8 +44,10 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="type" lowerBound="1" eType="#//Type"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="capacity" lowerBound="1"
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="person_in_office" eType="#//User"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="person_in_office" upperBound="-1"
+        eType="#//User"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="office_info" eType="#//Info"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Library_Page" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EReference" name="books" upperBound="-1"
@@ -69,7 +72,9 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="category" lowerBound="1"
         eType="#//Category"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="loans" upperBound="-1"
-        eType="#//Loan" derived="true"/>
+        eType="#//Loan"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="books" upperBound="-1"
+        eType="#//Book"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Book" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="quantity" lowerBound="1"
@@ -78,20 +83,18 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="author" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="library" eType="#//Library_Page"
         eOpposite="#//Library_Page/books"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="books" upperBound="-1"
-        eType="#//Book" derived="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="loans" upperBound="-1"
         eType="#//Loan"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Info">
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="country" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="city" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="postcode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="postcode" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="street" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="civic" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Description">
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="chancellor" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>

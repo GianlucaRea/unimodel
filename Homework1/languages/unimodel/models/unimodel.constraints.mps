@@ -465,6 +465,70 @@
           </node>
         </node>
       </node>
+      <node concept="1DCEPf" id="6PzhRVYJTbz" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6PzhRVYJTb_" role="2j4cqI">
+          <property role="EcuMT" value="7882222383593919205" />
+          <property role="TrG5h" value="phone_Regex" />
+          <node concept="2K0Yjh" id="6PzhRVYJTbB" role="2K0Fuo">
+            <node concept="2OqwBi" id="6PzhRVYJUCf" role="2K0yoH">
+              <node concept="2OqwBi" id="6PzhRVYJTnp" role="2Oq$k0">
+                <node concept="3QpRc$" id="6PzhRVYJTcE" role="2Oq$k0">
+                  <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                </node>
+                <node concept="3TrcHB" id="6PzhRVYJU8Z" role="2OqNvi">
+                  <ref role="3TsBF5" to="vl8c:6PzhRVYJOCv" resolve="phone" />
+                </node>
+              </node>
+              <node concept="liA8E" id="6PzhRVYJV97" role="2OqNvi">
+                <ref role="37wK5l" to="wyt6:~String.matches(java.lang.String)" resolve="matches" />
+                <node concept="Xl_RD" id="6PzhRVYJV9Z" role="37wK5m">
+                  <property role="Xl_RC" value="[0-9]+" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6PzhRVYJTbF" role="1DCEQI">
+          <node concept="16I2mz" id="6PzhRVYJVf$" role="16N$OO">
+            <node concept="16N$OT" id="6PzhRVYJVfE" role="16I2mt">
+              <property role="16N$OU" value="Warning: The phone number must be formed only by digits" />
+            </node>
+          </node>
+        </node>
+      </node>
+      <node concept="1DCEPf" id="6PzhRVYJVsC" role="3OnDbr">
+        <node concept="3Qq5Rn" id="6PzhRVYJVsE" role="2j4cqI">
+          <property role="EcuMT" value="7882222383593928490" />
+          <property role="TrG5h" value="phone_length" />
+          <node concept="2K0Yjh" id="6PzhRVYJVsG" role="2K0Fuo">
+            <node concept="3clFbC" id="6PzhRVYJY53" role="2K0yoH">
+              <node concept="3cmrfG" id="6PzhRVYJYx2" role="3uHU7w">
+                <property role="3cmrfH" value="10" />
+              </node>
+              <node concept="2OqwBi" id="6PzhRVYJWEp" role="3uHU7B">
+                <node concept="2OqwBi" id="6PzhRVYJVE9" role="2Oq$k0">
+                  <node concept="3QpRc$" id="6PzhRVYJVuS" role="2Oq$k0">
+                    <ref role="3QpVTF" to="prp3:6X8eyFnbL3m" resolve="childNode" />
+                  </node>
+                  <node concept="3TrcHB" id="6PzhRVYJWfS" role="2OqNvi">
+                    <ref role="3TsBF5" to="vl8c:6PzhRVYJOCv" resolve="phone" />
+                  </node>
+                </node>
+                <node concept="liA8E" id="6PzhRVYJXeq" role="2OqNvi">
+                  <ref role="37wK5l" to="wyt6:~String.length()" resolve="length" />
+                </node>
+              </node>
+            </node>
+          </node>
+        </node>
+        <node concept="1DCEQD" id="6PzhRVYJVsK" role="1DCEQI">
+          <node concept="16I2mz" id="6PzhRVYJYy7" role="16N$OO">
+            <node concept="16N$OT" id="6PzhRVYJYy8" role="16I2mt">
+              <property role="16N$OU" value="Warning The phone length must be formed by 10 digits" />
+            </node>
+          </node>
+        </node>
+      </node>
     </node>
   </node>
   <node concept="3Oh7Pa" id="7_lnZMS_XAe">

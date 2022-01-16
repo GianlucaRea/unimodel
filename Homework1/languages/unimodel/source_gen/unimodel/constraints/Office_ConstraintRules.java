@@ -23,8 +23,10 @@ public final class Office_ConstraintRules extends BaseRulesConstraintsDescriptor
   private static final SAbstractConcept CONCEPT = MetaAdapterFactory.getConcept(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b5aeL, "unimodel.structure.Office");
 
   public static final Rule<ContainmentContext> check_id8742999790643036502 = new Rule_Capacity_Positive();
+  public static final Rule<ContainmentContext> check_id7882222383593919205 = new Rule_phone_Regex();
+  public static final Rule<ContainmentContext> check_id7882222383593928490 = new Rule_phone_length();
 
-  private static final List<Rule<?>> RULES = Collections.unmodifiableList(Arrays.<Rule<?>>asList(check_id8742999790643036502));
+  private static final List<Rule<?>> RULES = Collections.unmodifiableList(Arrays.<Rule<?>>asList(check_id8742999790643036502, check_id7882222383593919205, check_id7882222383593928490));
 
   @NotNull
   @Override
@@ -51,11 +53,50 @@ public final class Office_ConstraintRules extends BaseRulesConstraintsDescriptor
     }
   }
 
+  public static final class Rule_phone_Regex extends BaseRule<ContainmentContext> {
+    private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/7882222383593919205");
+    public static final RuleId ID_phone_Regex = new RuleId(7882222383593919205L, SOURCE_NODE_REF);
+
+    public Rule_phone_Regex() {
+      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_phone_Regex, SOURCE_NODE_REF);
+    }
+
+    @Override
+    public boolean check(@NotNull ContainmentContext context) {
+      return SPropertyOperations.getString(context.getChildNode(), PROPS.phone$2oH5).matches("[0-9]+");
+    }
+
+    @Override
+    public boolean appliesTo(@NotNull ContainmentContext context) {
+      return true;
+    }
+  }
+
+  public static final class Rule_phone_length extends BaseRule<ContainmentContext> {
+    private static final SNodeReference SOURCE_NODE_REF = PersistenceFacade.getInstance().createNodeReference("r:18f26838-7640-4eda-91b6-ad750b54a45f(unimodel.constraints)/7882222383593928490");
+    public static final RuleId ID_phone_length = new RuleId(7882222383593928490L, SOURCE_NODE_REF);
+
+    public Rule_phone_length() {
+      super(CONCEPT, PredefinedRuleKinds.CAN_BE_CHILD, ID_phone_length, SOURCE_NODE_REF);
+    }
+
+    @Override
+    public boolean check(@NotNull ContainmentContext context) {
+      return SPropertyOperations.getString(context.getChildNode(), PROPS.phone$2oH5).length() == 10;
+    }
+
+    @Override
+    public boolean appliesTo(@NotNull ContainmentContext context) {
+      return true;
+    }
+  }
+
   /*package*/ Office_ConstraintRules() {
     super(CONCEPT);
   }
 
   private static final class PROPS {
     /*package*/ static final SProperty capacity$TWvQ = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b5aeL, 0x79555ffcb891b5e3L, "capacity");
+    /*package*/ static final SProperty phone$2oH5 = MetaAdapterFactory.getProperty(0x6069f38ad5c2473eL, 0xbe656672ae45792cL, 0x79555ffcb891b5aeL, 0x6d63477efebf4a1fL, "phone");
   }
 }

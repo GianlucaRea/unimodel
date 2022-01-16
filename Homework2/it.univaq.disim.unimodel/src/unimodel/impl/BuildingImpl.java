@@ -3,10 +3,8 @@
 package unimodel.impl;
 
 import java.util.Collection;
-
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EClass;
@@ -21,7 +19,6 @@ import unimodel.Address;
 import unimodel.Building;
 import unimodel.Floor;
 import unimodel.Library;
-import unimodel.Person;
 import unimodel.UnimodelPackage;
 
 /**
@@ -33,11 +30,9 @@ import unimodel.UnimodelPackage;
  * </p>
  * <ul>
  *   <li>{@link unimodel.impl.BuildingImpl#getDescription <em>Description</em>}</li>
- *   <li>{@link unimodel.impl.BuildingImpl#getPhone <em>Phone</em>}</li>
  *   <li>{@link unimodel.impl.BuildingImpl#getAddress <em>Address</em>}</li>
  *   <li>{@link unimodel.impl.BuildingImpl#getLibrary <em>Library</em>}</li>
  *   <li>{@link unimodel.impl.BuildingImpl#getFloors <em>Floors</em>}</li>
- *   <li>{@link unimodel.impl.BuildingImpl#getPerson <em>Person</em>}</li>
  * </ul>
  *
  * @generated
@@ -62,26 +57,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 	 * @ordered
 	 */
 	protected String description = DESCRIPTION_EDEFAULT;
-
-	/**
-	 * The default value of the '{@link #getPhone() <em>Phone</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPhone()
-	 * @generated
-	 * @ordered
-	 */
-	protected static final String PHONE_EDEFAULT = null;
-
-	/**
-	 * The cached value of the '{@link #getPhone() <em>Phone</em>}' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPhone()
-	 * @generated
-	 * @ordered
-	 */
-	protected String phone = PHONE_EDEFAULT;
 
 	/**
 	 * The cached value of the '{@link #getAddress() <em>Address</em>}' containment reference.
@@ -112,16 +87,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 	 * @ordered
 	 */
 	protected EList<Floor> floors;
-
-	/**
-	 * The cached value of the '{@link #getPerson() <em>Person</em>}' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see #getPerson()
-	 * @generated
-	 * @ordered
-	 */
-	protected EList<Person> person;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -161,27 +126,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 		description = newDescription;
 		if (eNotificationRequired())
 			eNotify(new ENotificationImpl(this, Notification.SET, UnimodelPackage.BUILDING__DESCRIPTION, oldDescription, description));
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public String getPhone() {
-		return phone;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
-	public void setPhone(String newPhone) {
-		String oldPhone = phone;
-		phone = newPhone;
-		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, UnimodelPackage.BUILDING__PHONE, oldPhone, phone));
 	}
 
 	/**
@@ -287,18 +231,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public EList<Person> getPerson() {
-		if (person == null) {
-			person = new EObjectContainmentEList<Person>(Person.class, this, UnimodelPackage.BUILDING__PERSON);
-		}
-		return person;
-	}
-
-	/**
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -308,8 +240,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 				return basicSetLibrary(null, msgs);
 			case UnimodelPackage.BUILDING__FLOORS:
 				return ((InternalEList<?>)getFloors()).basicRemove(otherEnd, msgs);
-			case UnimodelPackage.BUILDING__PERSON:
-				return ((InternalEList<?>)getPerson()).basicRemove(otherEnd, msgs);
 		}
 		return super.eInverseRemove(otherEnd, featureID, msgs);
 	}
@@ -324,16 +254,12 @@ public class BuildingImpl extends NamedImpl implements Building {
 		switch (featureID) {
 			case UnimodelPackage.BUILDING__DESCRIPTION:
 				return getDescription();
-			case UnimodelPackage.BUILDING__PHONE:
-				return getPhone();
 			case UnimodelPackage.BUILDING__ADDRESS:
 				return getAddress();
 			case UnimodelPackage.BUILDING__LIBRARY:
 				return getLibrary();
 			case UnimodelPackage.BUILDING__FLOORS:
 				return getFloors();
-			case UnimodelPackage.BUILDING__PERSON:
-				return getPerson();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -350,9 +276,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 			case UnimodelPackage.BUILDING__DESCRIPTION:
 				setDescription((String)newValue);
 				return;
-			case UnimodelPackage.BUILDING__PHONE:
-				setPhone((String)newValue);
-				return;
 			case UnimodelPackage.BUILDING__ADDRESS:
 				setAddress((Address)newValue);
 				return;
@@ -362,10 +285,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 			case UnimodelPackage.BUILDING__FLOORS:
 				getFloors().clear();
 				getFloors().addAll((Collection<? extends Floor>)newValue);
-				return;
-			case UnimodelPackage.BUILDING__PERSON:
-				getPerson().clear();
-				getPerson().addAll((Collection<? extends Person>)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -382,9 +301,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 			case UnimodelPackage.BUILDING__DESCRIPTION:
 				setDescription(DESCRIPTION_EDEFAULT);
 				return;
-			case UnimodelPackage.BUILDING__PHONE:
-				setPhone(PHONE_EDEFAULT);
-				return;
 			case UnimodelPackage.BUILDING__ADDRESS:
 				setAddress((Address)null);
 				return;
@@ -393,9 +309,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 				return;
 			case UnimodelPackage.BUILDING__FLOORS:
 				getFloors().clear();
-				return;
-			case UnimodelPackage.BUILDING__PERSON:
-				getPerson().clear();
 				return;
 		}
 		super.eUnset(featureID);
@@ -411,16 +324,12 @@ public class BuildingImpl extends NamedImpl implements Building {
 		switch (featureID) {
 			case UnimodelPackage.BUILDING__DESCRIPTION:
 				return DESCRIPTION_EDEFAULT == null ? description != null : !DESCRIPTION_EDEFAULT.equals(description);
-			case UnimodelPackage.BUILDING__PHONE:
-				return PHONE_EDEFAULT == null ? phone != null : !PHONE_EDEFAULT.equals(phone);
 			case UnimodelPackage.BUILDING__ADDRESS:
 				return address != null;
 			case UnimodelPackage.BUILDING__LIBRARY:
 				return library != null;
 			case UnimodelPackage.BUILDING__FLOORS:
 				return floors != null && !floors.isEmpty();
-			case UnimodelPackage.BUILDING__PERSON:
-				return person != null && !person.isEmpty();
 		}
 		return super.eIsSet(featureID);
 	}
@@ -437,8 +346,6 @@ public class BuildingImpl extends NamedImpl implements Building {
 		StringBuilder result = new StringBuilder(super.toString());
 		result.append(" (description: ");
 		result.append(description);
-		result.append(", phone: ");
-		result.append(phone);
 		result.append(')');
 		return result.toString();
 	}

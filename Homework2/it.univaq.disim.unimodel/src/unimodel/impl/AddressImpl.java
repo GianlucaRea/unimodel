@@ -2,15 +2,30 @@
  */
 package unimodel.impl;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.Map;
 import org.eclipse.emf.common.notify.Notification;
-
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.impl.MinimalEObjectImpl;
 
+import org.eclipse.ocl.pivot.evaluation.Executor;
+import org.eclipse.ocl.pivot.ids.TypeId;
+import org.eclipse.ocl.pivot.library.oclany.OclComparableGreaterThanEqualOperation;
+import org.eclipse.ocl.pivot.library.oclany.OclComparableLessThanEqualOperation;
+import org.eclipse.ocl.pivot.library.string.CGStringGetSeverityOperation;
+import org.eclipse.ocl.pivot.library.string.CGStringLogDiagnosticOperation;
+import org.eclipse.ocl.pivot.library.string.StringSizeOperation;
+import org.eclipse.ocl.pivot.utilities.PivotUtil;
+import org.eclipse.ocl.pivot.utilities.ValueUtil;
+import org.eclipse.ocl.pivot.values.IntegerValue;
+import org.eclipse.ocl.pivot.values.InvalidValueException;
 import unimodel.Address;
 import unimodel.UnimodelPackage;
+import unimodel.UnimodelTables;
 
 /**
  * <!-- begin-user-doc -->
@@ -27,6 +42,7 @@ import unimodel.UnimodelPackage;
  *   <li>{@link unimodel.impl.AddressImpl#getStreet <em>Street</em>}</li>
  *   <li>{@link unimodel.impl.AddressImpl#getCivic <em>Civic</em>}</li>
  *   <li>{@link unimodel.impl.AddressImpl#getId <em>Id</em>}</li>
+ *   <li>{@link unimodel.impl.AddressImpl#getPhone <em>Phone</em>}</li>
  * </ul>
  *
  * @generated
@@ -171,6 +187,26 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 	 * @ordered
 	 */
 	protected int id = ID_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getPhone() <em>Phone</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhone()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PHONE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPhone() <em>Phone</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhone()
+	 * @generated
+	 * @ordered
+	 */
+	protected String phone = PHONE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -343,6 +379,173 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getPhone() {
+		return phone;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPhone(String newPhone) {
+		String oldPhone = phone;
+		phone = newPhone;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UnimodelPackage.ADDRESS__PHONE, oldPhone, phone));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean id_number(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		final String constraintName = "Address::id_number";
+		try {
+			/**
+			 *
+			 * inv id_number:
+			 *   let severity : Integer[1] = constraintName.getSeverity()
+			 *   in
+			 *     if severity <= 0
+			 *     then true
+			 *     else
+			 *       let result : Boolean[1] = self.id >= 1
+			 *       in
+			 *         constraintName.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+			 *     endif
+			 */
+			final /*@NonInvalid*/ Executor executor = PivotUtil.getExecutor(this, context);
+			final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, UnimodelPackage.Literals.ADDRESS___ID_NUMBER__DIAGNOSTICCHAIN_MAP);
+			final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, UnimodelTables.INT_0).booleanValue();
+			/*@NonInvalid*/ boolean symbol_0;
+			if (le) {
+				symbol_0 = true;
+			}
+			else {
+				final /*@NonInvalid*/ int id = this.getId();
+				final /*@NonInvalid*/ IntegerValue BOXED_id = ValueUtil.integerValueOf(id);
+				final /*@NonInvalid*/ boolean result = OclComparableGreaterThanEqualOperation.INSTANCE.evaluate(executor, BOXED_id, UnimodelTables.INT_1).booleanValue();
+				final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, constraintName, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, UnimodelTables.INT_0).booleanValue();
+				symbol_0 = logDiagnostic;
+			}
+			return symbol_0;
+		}
+		catch (Throwable e) {
+			return ValueUtil.validationFailedDiagnostic(constraintName, this, diagnostics, context, e);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean phone_length(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		final String constraintName = "Address::phone_length";
+		try {
+			/**
+			 *
+			 * inv phone_length:
+			 *   let severity : Integer[1] = constraintName.getSeverity()
+			 *   in
+			 *     if severity <= 0
+			 *     then true
+			 *     else
+			 *       let result : Boolean[1] = self.phone.size() = 10
+			 *       in
+			 *         constraintName.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+			 *     endif
+			 */
+			final /*@NonInvalid*/ Executor executor = PivotUtil.getExecutor(this, context);
+			final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, UnimodelPackage.Literals.ADDRESS___PHONE_LENGTH__DIAGNOSTICCHAIN_MAP);
+			final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, UnimodelTables.INT_0).booleanValue();
+			/*@NonInvalid*/ boolean symbol_0;
+			if (le) {
+				symbol_0 = true;
+			}
+			else {
+				/*@Caught*/ Object CAUGHT_result;
+				try {
+					final /*@NonInvalid*/ String phone = this.getPhone();
+					if (phone == null) {
+						throw new InvalidValueException("Null \'\'String\'\' rather than \'\'OclVoid\'\' value required");
+					}
+					final /*@Thrown*/ IntegerValue size = StringSizeOperation.INSTANCE.evaluate(phone);
+					final /*@Thrown*/ boolean result = size.equals(UnimodelTables.INT_10);
+					CAUGHT_result = result;
+				}
+				catch (Exception e) {
+					CAUGHT_result = ValueUtil.createInvalidValue(e);
+				}
+				final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, constraintName, this, (Object)null, diagnostics, context, (Object)null, severity_0, CAUGHT_result, UnimodelTables.INT_0).booleanValue();
+				symbol_0 = logDiagnostic;
+			}
+			return symbol_0;
+		}
+		catch (Throwable e) {
+			return ValueUtil.validationFailedDiagnostic(constraintName, this, diagnostics, context, e);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean postcode_length(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		final String constraintName = "Address::postcode_length";
+		try {
+			/**
+			 *
+			 * inv postcode_length:
+			 *   let severity : Integer[1] = constraintName.getSeverity()
+			 *   in
+			 *     if severity <= 0
+			 *     then true
+			 *     else
+			 *       let result : Boolean[1] = self.post_code.size() = 5
+			 *       in
+			 *         constraintName.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+			 *     endif
+			 */
+			final /*@NonInvalid*/ Executor executor = PivotUtil.getExecutor(this, context);
+			final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, UnimodelPackage.Literals.ADDRESS___POSTCODE_LENGTH__DIAGNOSTICCHAIN_MAP);
+			final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, UnimodelTables.INT_0).booleanValue();
+			/*@NonInvalid*/ boolean symbol_0;
+			if (le) {
+				symbol_0 = true;
+			}
+			else {
+				/*@Caught*/ Object CAUGHT_result;
+				try {
+					final /*@NonInvalid*/ String post_code = this.getPost_code();
+					if (post_code == null) {
+						throw new InvalidValueException("Null \'\'String\'\' rather than \'\'OclVoid\'\' value required");
+					}
+					final /*@Thrown*/ IntegerValue size = StringSizeOperation.INSTANCE.evaluate(post_code);
+					final /*@Thrown*/ boolean result = size.equals(UnimodelTables.INT_5);
+					CAUGHT_result = result;
+				}
+				catch (Exception e) {
+					CAUGHT_result = ValueUtil.createInvalidValue(e);
+				}
+				final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, constraintName, this, (Object)null, diagnostics, context, (Object)null, severity_0, CAUGHT_result, UnimodelTables.INT_0).booleanValue();
+				symbol_0 = logDiagnostic;
+			}
+			return symbol_0;
+		}
+		catch (Throwable e) {
+			return ValueUtil.validationFailedDiagnostic(constraintName, this, diagnostics, context, e);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -360,6 +563,8 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 				return getCivic();
 			case UnimodelPackage.ADDRESS__ID:
 				return getId();
+			case UnimodelPackage.ADDRESS__PHONE:
+				return getPhone();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -392,6 +597,9 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 				return;
 			case UnimodelPackage.ADDRESS__ID:
 				setId((Integer)newValue);
+				return;
+			case UnimodelPackage.ADDRESS__PHONE:
+				setPhone((String)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -426,6 +634,9 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 			case UnimodelPackage.ADDRESS__ID:
 				setId(ID_EDEFAULT);
 				return;
+			case UnimodelPackage.ADDRESS__PHONE:
+				setPhone(PHONE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -452,8 +663,29 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 				return CIVIC_EDEFAULT == null ? civic != null : !CIVIC_EDEFAULT.equals(civic);
 			case UnimodelPackage.ADDRESS__ID:
 				return id != ID_EDEFAULT;
+			case UnimodelPackage.ADDRESS__PHONE:
+				return PHONE_EDEFAULT == null ? phone != null : !PHONE_EDEFAULT.equals(phone);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	@SuppressWarnings("unchecked")
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case UnimodelPackage.ADDRESS___POSTCODE_LENGTH__DIAGNOSTICCHAIN_MAP:
+				return postcode_length((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+			case UnimodelPackage.ADDRESS___ID_NUMBER__DIAGNOSTICCHAIN_MAP:
+				return id_number((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+			case UnimodelPackage.ADDRESS___PHONE_LENGTH__DIAGNOSTICCHAIN_MAP:
+				return phone_length((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**
@@ -480,6 +712,8 @@ public class AddressImpl extends MinimalEObjectImpl.Container implements Address
 		result.append(civic);
 		result.append(", id: ");
 		result.append(id);
+		result.append(", phone: ");
+		result.append(phone);
 		result.append(')');
 		return result.toString();
 	}

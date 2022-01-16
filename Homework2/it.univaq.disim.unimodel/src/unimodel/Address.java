@@ -2,6 +2,8 @@
  */
 package unimodel;
 
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.ecore.EObject;
 
 /**
@@ -20,10 +22,11 @@ import org.eclipse.emf.ecore.EObject;
  *   <li>{@link unimodel.Address#getStreet <em>Street</em>}</li>
  *   <li>{@link unimodel.Address#getCivic <em>Civic</em>}</li>
  *   <li>{@link unimodel.Address#getId <em>Id</em>}</li>
+ *   <li>{@link unimodel.Address#getPhone <em>Phone</em>}</li>
  * </ul>
  *
  * @see unimodel.UnimodelPackage#getAddress()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='phone_length'"
  * @generated
  */
 public interface Address extends EObject {
@@ -180,5 +183,51 @@ public interface Address extends EObject {
 	 * @generated
 	 */
 	void setId(int value);
+
+	/**
+	 * Returns the value of the '<em><b>Phone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Phone</em>' attribute.
+	 * @see #setPhone(String)
+	 * @see unimodel.UnimodelPackage#getAddress_Phone()
+	 * @model
+	 * @generated
+	 */
+	String getPhone();
+
+	/**
+	 * Sets the value of the '{@link unimodel.Address#getPhone <em>Phone</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Phone</em>' attribute.
+	 * @see #getPhone()
+	 * @generated
+	 */
+	void setPhone(String value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.id &gt;= 1'"
+	 * @generated
+	 */
+	boolean id_number(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.phone.size() = 10'"
+	 * @generated
+	 */
+	boolean phone_length(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.post_code.size() = 5'"
+	 * @generated
+	 */
+	boolean postcode_length(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Address

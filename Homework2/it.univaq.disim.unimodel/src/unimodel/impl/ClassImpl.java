@@ -2,13 +2,27 @@
  */
 package unimodel.impl;
 
+import java.lang.reflect.InvocationTargetException;
+import java.util.Map;
 import org.eclipse.emf.common.notify.Notification;
-
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.EClass;
 
 import org.eclipse.emf.ecore.impl.ENotificationImpl;
 
+import org.eclipse.ocl.pivot.evaluation.Executor;
+import org.eclipse.ocl.pivot.ids.TypeId;
+import org.eclipse.ocl.pivot.library.oclany.OclComparableGreaterThanEqualOperation;
+import org.eclipse.ocl.pivot.library.oclany.OclComparableGreaterThanOperation;
+import org.eclipse.ocl.pivot.library.oclany.OclComparableLessThanEqualOperation;
+import org.eclipse.ocl.pivot.library.string.CGStringGetSeverityOperation;
+import org.eclipse.ocl.pivot.library.string.CGStringLogDiagnosticOperation;
+import org.eclipse.ocl.pivot.utilities.PivotUtil;
+import org.eclipse.ocl.pivot.utilities.ValueUtil;
+import org.eclipse.ocl.pivot.values.IntegerValue;
 import unimodel.UnimodelPackage;
+import unimodel.UnimodelTables;
 
 /**
  * <!-- begin-user-doc -->
@@ -21,6 +35,7 @@ import unimodel.UnimodelPackage;
  *   <li>{@link unimodel.impl.ClassImpl#getSeats <em>Seats</em>}</li>
  *   <li>{@link unimodel.impl.ClassImpl#getBlackboards <em>Blackboards</em>}</li>
  *   <li>{@link unimodel.impl.ClassImpl#getSpeakers <em>Speakers</em>}</li>
+ *   <li>{@link unimodel.impl.ClassImpl#getComputers <em>Computers</em>}</li>
  * </ul>
  *
  * @generated
@@ -85,6 +100,26 @@ public class ClassImpl extends RoomImpl implements unimodel.Class {
 	 * @ordered
 	 */
 	protected int speakers = SPEAKERS_EDEFAULT;
+
+	/**
+	 * The default value of the '{@link #getComputers() <em>Computers</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getComputers()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final int COMPUTERS_EDEFAULT = 0;
+
+	/**
+	 * The cached value of the '{@link #getComputers() <em>Computers</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getComputers()
+	 * @generated
+	 * @ordered
+	 */
+	protected int computers = COMPUTERS_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -173,6 +208,153 @@ public class ClassImpl extends RoomImpl implements unimodel.Class {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public int getComputers() {
+		return computers;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setComputers(int newComputers) {
+		int oldComputers = computers;
+		computers = newComputers;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UnimodelPackage.CLASS__COMPUTERS, oldComputers, computers));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean seats_positive(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		final String constraintName = "Class::seats_positive";
+		try {
+			/**
+			 *
+			 * inv seats_positive:
+			 *   let severity : Integer[1] = constraintName.getSeverity()
+			 *   in
+			 *     if severity <= 0
+			 *     then true
+			 *     else
+			 *       let result : Boolean[1] = self.seats > 0
+			 *       in
+			 *         constraintName.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+			 *     endif
+			 */
+			final /*@NonInvalid*/ Executor executor = PivotUtil.getExecutor(this, context);
+			final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, UnimodelPackage.Literals.CLASS___SEATS_POSITIVE__DIAGNOSTICCHAIN_MAP);
+			final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, UnimodelTables.INT_0).booleanValue();
+			/*@NonInvalid*/ boolean symbol_0;
+			if (le) {
+				symbol_0 = true;
+			}
+			else {
+				final /*@NonInvalid*/ int seats = this.getSeats();
+				final /*@NonInvalid*/ IntegerValue BOXED_seats = ValueUtil.integerValueOf(seats);
+				final /*@NonInvalid*/ boolean result = OclComparableGreaterThanOperation.INSTANCE.evaluate(executor, BOXED_seats, UnimodelTables.INT_0).booleanValue();
+				final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, constraintName, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, UnimodelTables.INT_0).booleanValue();
+				symbol_0 = logDiagnostic;
+			}
+			return symbol_0;
+		}
+		catch (Throwable e) {
+			return ValueUtil.validationFailedDiagnostic(constraintName, this, diagnostics, context, e);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean blackboards_positive(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		final String constraintName = "Class::blackboards_positive";
+		try {
+			/**
+			 *
+			 * inv blackboards_positive:
+			 *   let severity : Integer[1] = constraintName.getSeverity()
+			 *   in
+			 *     if severity <= 0
+			 *     then true
+			 *     else
+			 *       let result : Boolean[1] = self.blackboards >= 0
+			 *       in
+			 *         constraintName.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+			 *     endif
+			 */
+			final /*@NonInvalid*/ Executor executor = PivotUtil.getExecutor(this, context);
+			final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, UnimodelPackage.Literals.CLASS___BLACKBOARDS_POSITIVE__DIAGNOSTICCHAIN_MAP);
+			final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, UnimodelTables.INT_0).booleanValue();
+			/*@NonInvalid*/ boolean symbol_0;
+			if (le) {
+				symbol_0 = true;
+			}
+			else {
+				final /*@NonInvalid*/ int blackboards = this.getBlackboards();
+				final /*@NonInvalid*/ IntegerValue BOXED_blackboards = ValueUtil.integerValueOf(blackboards);
+				final /*@NonInvalid*/ boolean result = OclComparableGreaterThanEqualOperation.INSTANCE.evaluate(executor, BOXED_blackboards, UnimodelTables.INT_0).booleanValue();
+				final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, constraintName, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, UnimodelTables.INT_0).booleanValue();
+				symbol_0 = logDiagnostic;
+			}
+			return symbol_0;
+		}
+		catch (Throwable e) {
+			return ValueUtil.validationFailedDiagnostic(constraintName, this, diagnostics, context, e);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean speakers_positive(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		final String constraintName = "Class::speakers_positive";
+		try {
+			/**
+			 *
+			 * inv speakers_positive:
+			 *   let severity : Integer[1] = constraintName.getSeverity()
+			 *   in
+			 *     if severity <= 0
+			 *     then true
+			 *     else
+			 *       let result : Boolean[1] = self.speakers >= 0
+			 *       in
+			 *         constraintName.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+			 *     endif
+			 */
+			final /*@NonInvalid*/ Executor executor = PivotUtil.getExecutor(this, context);
+			final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, UnimodelPackage.Literals.CLASS___SPEAKERS_POSITIVE__DIAGNOSTICCHAIN_MAP);
+			final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, UnimodelTables.INT_0).booleanValue();
+			/*@NonInvalid*/ boolean symbol_0;
+			if (le) {
+				symbol_0 = true;
+			}
+			else {
+				final /*@NonInvalid*/ int speakers = this.getSpeakers();
+				final /*@NonInvalid*/ IntegerValue BOXED_speakers = ValueUtil.integerValueOf(speakers);
+				final /*@NonInvalid*/ boolean result = OclComparableGreaterThanEqualOperation.INSTANCE.evaluate(executor, BOXED_speakers, UnimodelTables.INT_0).booleanValue();
+				final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, constraintName, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, UnimodelTables.INT_0).booleanValue();
+				symbol_0 = logDiagnostic;
+			}
+			return symbol_0;
+		}
+		catch (Throwable e) {
+			return ValueUtil.validationFailedDiagnostic(constraintName, this, diagnostics, context, e);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public Object eGet(int featureID, boolean resolve, boolean coreType) {
 		switch (featureID) {
@@ -182,6 +364,8 @@ public class ClassImpl extends RoomImpl implements unimodel.Class {
 				return getBlackboards();
 			case UnimodelPackage.CLASS__SPEAKERS:
 				return getSpeakers();
+			case UnimodelPackage.CLASS__COMPUTERS:
+				return getComputers();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -202,6 +386,9 @@ public class ClassImpl extends RoomImpl implements unimodel.Class {
 				return;
 			case UnimodelPackage.CLASS__SPEAKERS:
 				setSpeakers((Integer)newValue);
+				return;
+			case UnimodelPackage.CLASS__COMPUTERS:
+				setComputers((Integer)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -224,6 +411,9 @@ public class ClassImpl extends RoomImpl implements unimodel.Class {
 			case UnimodelPackage.CLASS__SPEAKERS:
 				setSpeakers(SPEAKERS_EDEFAULT);
 				return;
+			case UnimodelPackage.CLASS__COMPUTERS:
+				setComputers(COMPUTERS_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -242,8 +432,29 @@ public class ClassImpl extends RoomImpl implements unimodel.Class {
 				return blackboards != BLACKBOARDS_EDEFAULT;
 			case UnimodelPackage.CLASS__SPEAKERS:
 				return speakers != SPEAKERS_EDEFAULT;
+			case UnimodelPackage.CLASS__COMPUTERS:
+				return computers != COMPUTERS_EDEFAULT;
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	@SuppressWarnings("unchecked")
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case UnimodelPackage.CLASS___SEATS_POSITIVE__DIAGNOSTICCHAIN_MAP:
+				return seats_positive((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+			case UnimodelPackage.CLASS___BLACKBOARDS_POSITIVE__DIAGNOSTICCHAIN_MAP:
+				return blackboards_positive((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+			case UnimodelPackage.CLASS___SPEAKERS_POSITIVE__DIAGNOSTICCHAIN_MAP:
+				return speakers_positive((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**
@@ -262,6 +473,8 @@ public class ClassImpl extends RoomImpl implements unimodel.Class {
 		result.append(blackboards);
 		result.append(", speakers: ");
 		result.append(speakers);
+		result.append(", computers: ");
+		result.append(computers);
 		result.append(')');
 		return result.toString();
 	}

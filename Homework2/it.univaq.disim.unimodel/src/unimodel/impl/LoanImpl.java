@@ -26,8 +26,8 @@ import unimodel.UnimodelPackage;
  * </p>
  * <ul>
  *   <li>{@link unimodel.impl.LoanImpl#getDate <em>Date</em>}</li>
- *   <li>{@link unimodel.impl.LoanImpl#getLoans_has_book <em>Loans has book</em>}</li>
- *   <li>{@link unimodel.impl.LoanImpl#getLoan_has_person <em>Loan has person</em>}</li>
+ *   <li>{@link unimodel.impl.LoanImpl#getBook <em>Book</em>}</li>
+ *   <li>{@link unimodel.impl.LoanImpl#getPerson <em>Person</em>}</li>
  * </ul>
  *
  * @generated
@@ -54,24 +54,24 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 	protected Date date = DATE_EDEFAULT;
 
 	/**
-	 * The cached value of the '{@link #getLoans_has_book() <em>Loans has book</em>}' reference.
+	 * The cached value of the '{@link #getBook() <em>Book</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLoans_has_book()
+	 * @see #getBook()
 	 * @generated
 	 * @ordered
 	 */
-	protected Book loans_has_book;
+	protected Book book;
 
 	/**
-	 * The cached value of the '{@link #getLoan_has_person() <em>Loan has person</em>}' reference.
+	 * The cached value of the '{@link #getPerson() <em>Person</em>}' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @see #getLoan_has_person()
+	 * @see #getPerson()
 	 * @generated
 	 * @ordered
 	 */
-	protected Person loan_has_person;
+	protected Person person;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -118,16 +118,16 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Book getLoans_has_book() {
-		if (loans_has_book != null && loans_has_book.eIsProxy()) {
-			InternalEObject oldLoans_has_book = (InternalEObject)loans_has_book;
-			loans_has_book = (Book)eResolveProxy(oldLoans_has_book);
-			if (loans_has_book != oldLoans_has_book) {
+	public Book getBook() {
+		if (book != null && book.eIsProxy()) {
+			InternalEObject oldBook = (InternalEObject)book;
+			book = (Book)eResolveProxy(oldBook);
+			if (book != oldBook) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, UnimodelPackage.LOAN__LOANS_HAS_BOOK, oldLoans_has_book, loans_has_book));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, UnimodelPackage.LOAN__BOOK, oldBook, book));
 			}
 		}
-		return loans_has_book;
+		return book;
 	}
 
 	/**
@@ -135,8 +135,8 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Book basicGetLoans_has_book() {
-		return loans_has_book;
+	public Book basicGetBook() {
+		return book;
 	}
 
 	/**
@@ -144,11 +144,11 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLoans_has_book(Book newLoans_has_book) {
-		Book oldLoans_has_book = loans_has_book;
-		loans_has_book = newLoans_has_book;
+	public void setBook(Book newBook) {
+		Book oldBook = book;
+		book = newBook;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, UnimodelPackage.LOAN__LOANS_HAS_BOOK, oldLoans_has_book, loans_has_book));
+			eNotify(new ENotificationImpl(this, Notification.SET, UnimodelPackage.LOAN__BOOK, oldBook, book));
 	}
 
 	/**
@@ -156,16 +156,16 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Person getLoan_has_person() {
-		if (loan_has_person != null && loan_has_person.eIsProxy()) {
-			InternalEObject oldLoan_has_person = (InternalEObject)loan_has_person;
-			loan_has_person = (Person)eResolveProxy(oldLoan_has_person);
-			if (loan_has_person != oldLoan_has_person) {
+	public Person getPerson() {
+		if (person != null && person.eIsProxy()) {
+			InternalEObject oldPerson = (InternalEObject)person;
+			person = (Person)eResolveProxy(oldPerson);
+			if (person != oldPerson) {
 				if (eNotificationRequired())
-					eNotify(new ENotificationImpl(this, Notification.RESOLVE, UnimodelPackage.LOAN__LOAN_HAS_PERSON, oldLoan_has_person, loan_has_person));
+					eNotify(new ENotificationImpl(this, Notification.RESOLVE, UnimodelPackage.LOAN__PERSON, oldPerson, person));
 			}
 		}
-		return loan_has_person;
+		return person;
 	}
 
 	/**
@@ -173,8 +173,8 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public Person basicGetLoan_has_person() {
-		return loan_has_person;
+	public Person basicGetPerson() {
+		return person;
 	}
 
 	/**
@@ -182,11 +182,11 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	public void setLoan_has_person(Person newLoan_has_person) {
-		Person oldLoan_has_person = loan_has_person;
-		loan_has_person = newLoan_has_person;
+	public void setPerson(Person newPerson) {
+		Person oldPerson = person;
+		person = newPerson;
 		if (eNotificationRequired())
-			eNotify(new ENotificationImpl(this, Notification.SET, UnimodelPackage.LOAN__LOAN_HAS_PERSON, oldLoan_has_person, loan_has_person));
+			eNotify(new ENotificationImpl(this, Notification.SET, UnimodelPackage.LOAN__PERSON, oldPerson, person));
 	}
 
 	/**
@@ -199,12 +199,12 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 		switch (featureID) {
 			case UnimodelPackage.LOAN__DATE:
 				return getDate();
-			case UnimodelPackage.LOAN__LOANS_HAS_BOOK:
-				if (resolve) return getLoans_has_book();
-				return basicGetLoans_has_book();
-			case UnimodelPackage.LOAN__LOAN_HAS_PERSON:
-				if (resolve) return getLoan_has_person();
-				return basicGetLoan_has_person();
+			case UnimodelPackage.LOAN__BOOK:
+				if (resolve) return getBook();
+				return basicGetBook();
+			case UnimodelPackage.LOAN__PERSON:
+				if (resolve) return getPerson();
+				return basicGetPerson();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -220,11 +220,11 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 			case UnimodelPackage.LOAN__DATE:
 				setDate((Date)newValue);
 				return;
-			case UnimodelPackage.LOAN__LOANS_HAS_BOOK:
-				setLoans_has_book((Book)newValue);
+			case UnimodelPackage.LOAN__BOOK:
+				setBook((Book)newValue);
 				return;
-			case UnimodelPackage.LOAN__LOAN_HAS_PERSON:
-				setLoan_has_person((Person)newValue);
+			case UnimodelPackage.LOAN__PERSON:
+				setPerson((Person)newValue);
 				return;
 		}
 		super.eSet(featureID, newValue);
@@ -241,11 +241,11 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 			case UnimodelPackage.LOAN__DATE:
 				setDate(DATE_EDEFAULT);
 				return;
-			case UnimodelPackage.LOAN__LOANS_HAS_BOOK:
-				setLoans_has_book((Book)null);
+			case UnimodelPackage.LOAN__BOOK:
+				setBook((Book)null);
 				return;
-			case UnimodelPackage.LOAN__LOAN_HAS_PERSON:
-				setLoan_has_person((Person)null);
+			case UnimodelPackage.LOAN__PERSON:
+				setPerson((Person)null);
 				return;
 		}
 		super.eUnset(featureID);
@@ -261,10 +261,10 @@ public class LoanImpl extends MinimalEObjectImpl.Container implements Loan {
 		switch (featureID) {
 			case UnimodelPackage.LOAN__DATE:
 				return DATE_EDEFAULT == null ? date != null : !DATE_EDEFAULT.equals(date);
-			case UnimodelPackage.LOAN__LOANS_HAS_BOOK:
-				return loans_has_book != null;
-			case UnimodelPackage.LOAN__LOAN_HAS_PERSON:
-				return loan_has_person != null;
+			case UnimodelPackage.LOAN__BOOK:
+				return book != null;
+			case UnimodelPackage.LOAN__PERSON:
+				return person != null;
 		}
 		return super.eIsSet(featureID);
 	}

@@ -16,8 +16,9 @@ import unimodel.UnimodelFactory;
  * <p>
  * The following operations are tested:
  * <ul>
- *   <li>{@link unimodel.Address#id_number(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Id number</em>}</li>
  *   <li>{@link unimodel.Address#postcode_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Postcode length</em>}</li>
+ *   <li>{@link unimodel.Address#id_number(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Id number</em>}</li>
+ *   <li>{@link unimodel.Address#phone_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Phone length</em>}</li>
  * </ul>
  * </p>
  * @generated
@@ -101,6 +102,19 @@ public class AddressTest extends TestCase {
 	 * @generated
 	 */
 	public void testId_number__DiagnosticChain_Map() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
+	 * Tests the '{@link unimodel.Address#phone_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Phone length</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Address#phone_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	public void testPhone_length__DiagnosticChain_Map() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();

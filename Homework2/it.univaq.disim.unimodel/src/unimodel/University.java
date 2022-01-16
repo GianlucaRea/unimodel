@@ -74,7 +74,7 @@ public interface University extends Named {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Buildings</em>' containment reference list.
 	 * @see unimodel.UnimodelPackage#getUniversity_Buildings()
-	 * @model containment="true"
+	 * @model containment="true" required="true"
 	 * @generated
 	 */
 	EList<Building> getBuildings();

@@ -10,8 +10,7 @@
     description="L'università degli studi dell'Aquila">
   <buildings
       name="Coppito 0"
-      description="Edificio Alan Turing"
-      phone="0862433185">
+      description="Edificio Alan Turing">
     <address
         country="Italy"
         state="AQ"
@@ -19,7 +18,8 @@
         post_code="67100"
         street="Via Vetoio"
         civic="1"
-        id="1"/>
+        id="1"
+        phone="0862433185"/>
     <library
         name="Libreria Universitaria"
         workstations="12"
@@ -89,7 +89,8 @@
           name="Ufficio 1"
           dimension="10.0"
           capacity="4"
-          office_address="1">
+          office_address="1"
+          phone="1234567890">
         <person_in_office
             name="Luca Forlizzi"
             badge="250"
@@ -110,7 +111,8 @@
           sockets="6"
           type="PHD_ROOM"
           capacity="6"
-          office_address="1">
+          office_address="1"
+          phone="1234567890">
         <person_in_office
             name="Tizio Caio"
             category="PHD_STUDENT"
@@ -163,7 +165,8 @@
           sockets="14"
           type="SECRETARIAT"
           capacity="3"
-          office_address="1">
+          office_address="1"
+          phone="1234567890">
         <person_in_office
             name="Paolo Rossi"
             category="STAFF"
@@ -185,7 +188,8 @@
           sockets="5"
           type="ADMINISTRATION"
           capacity="2"
-          office_address="1">
+          office_address="1"
+          phone="1234567890">
         <person_in_office
             name="Giuseppe Adelchi"
             category="ADMINISTRATOR"
@@ -213,8 +217,7 @@
   </buildings>
   <buildings
       name="Palazzo Camponesci"
-      description="Rettorato dell'Università degli studi dell'Aquila"
-      phone="0862432030">
+      description="Rettorato dell'Università degli studi dell'Aquila">
     <address
         country="Italy"
         state="AQ"
@@ -222,7 +225,8 @@
         post_code="67100"
         street="Piazza Santa Margherita"
         civic="2"
-        id="2"/>
+        id="2"
+        phone="0862432030"/>
     <floors
         bathrooms="4">
       <rooms
@@ -236,7 +240,8 @@
           sockets="8"
           type="ADMINISTRATION"
           capacity="4"
-          office_address="2">
+          office_address="2"
+          phone="1234567890">
         <person_in_office
             name="Alfonso Adelchi"
             category="ADMINISTRATOR"
@@ -264,7 +269,8 @@
           dimension="15.0"
           sockets="25"
           capacity="12"
-          office_address="2">
+          office_address="2"
+          phone="1234567890">
         <person_in_office
             name="Massimo Cerna"
             badge="98"

@@ -11,6 +11,10 @@ helper context MM1!University def: getAllUsers() : Sequence(MM1!Person) = MM1!Pe
 helper context MM1!University def: getAllBuilding() : Sequence(MM1!Building) = MM1!Building.allInstances()->asSequence();
 ---Return all rooms of a floor
 helper context MM1!Floor def : getAllRoomOfFloor() : Sequence(MM1!Room) = MM1!Room.allInstances()->asSequence();
+---Return all loans of a user
+helper context MM1!Person def: getAllLoansOfUser(): Sequence(MM1!Loan)= if self.library->oclIsUndefined() then Sequence {} else self.library.loans->select(c|c.person.name = self.name)->collect(i|i) endif;
+---Return all books of a user
+helper context MM1!Person def: getAllBooksOfUser(): Sequence(MM1!Book)= if self.library->oclIsUndefined() then Sequence {} else self.library.loans->select(c|c.person.name = self.name)->collect(i|i.book) endif;
 		
 -- RULES DEFINITION --
 -- ----------------	--
@@ -40,8 +44,10 @@ rule Person2User{
 			name <- s.name,
 			username <- s.fiscal_code,
 			age <- s.age,
-			badge <- s.badge
-			---loans <- s.loans
+			badge <- s.badge,
+			category <- s.category,
+			loans <- s.getAllLoansOfUser(),
+			books <- s.getAllBooksOfUser()
 		)
 }
 
@@ -52,6 +58,7 @@ rule Building2Building_Page{
 		t: MM2!Building_Page(
 			name <- s.name,
 			info <- s.address,
+			description <- s.description,
 			map_section <-s.floors,
 			library_page <- s.library
 		)
@@ -68,20 +75,13 @@ rule Address2Info{
 			city <- s.city,
 			postcode <- s.post_code,
 			street <- s.street,
-			civic <- s.civic
+			civic <- s.civic,
+			phone <- s.phone,
+			id <- s.id
 		)
 }
 
-rule Floor2MSection{
-	from
-		s: MM1!Floor
-	to
-		t: MM2!Map_Section(
-			number <- s.number,	
-			number_bathrooms <- s.bathrooms,
-			room <- s.getAllRoomOfFloor()
-		)
-}
+
 
 rule Library2LPage{
 	from
@@ -104,7 +104,8 @@ rule Book2Book{
 			name <- s.name,
 			quantity <- s.quantity,
 			ISBN <- s.ISBN,
-			author <- s.author
+			author <- s.author,
+			loans <- s.loans
 		)
 }
 
@@ -116,6 +117,18 @@ rule Loan2Loan{
 			date <- s.date,
 			book <- s.book,
 			user <- s.person
+		)
+}
+
+
+rule Floor2MSection{
+	from
+		s: MM1!Floor
+	to
+		t: MM2!Map_Section(
+			number <- s.number,	
+			number_bathrooms <- s.bathrooms,
+			room <- s.rooms
 		)
 }
  
@@ -137,8 +150,10 @@ rule Office2Office extends Room2Room{
 		t: MM2!Office(
 			name <- s.name,
 			capacity <- s.capacity,
+			type <- s.type,
 			person_in_office <- s.person_in_office,
-			office_info <- s.office_address
+			office_info <- s.office_address,
+			phone <- s.phone
 		)
 }
 
@@ -147,11 +162,11 @@ rule Class2Class extends Room2Room{
 		s: MM1!Class
 	to
 		t: MM2!Class(
-			seats <- s.seats,
-			number_computers <- s.computers,
-			number_blackboards <- s.blackboards,
-			number_speakers <- s.speakers
+		seats <- s.seats,
+		number_computers <- s.computers,
+		number_blackboards <- s.blackboards,
+		number_speakers <- s.speakers
 		)
-}	
+}
 
 

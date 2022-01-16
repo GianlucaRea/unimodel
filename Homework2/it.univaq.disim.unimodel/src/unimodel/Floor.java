@@ -2,6 +2,8 @@
  */
 package unimodel;
 
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
 import org.eclipse.emf.ecore.EObject;
@@ -21,7 +23,7 @@ import org.eclipse.emf.ecore.EObject;
  * </ul>
  *
  * @see unimodel.UnimodelPackage#getFloor()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='bathroom_positive'"
  * @generated
  */
 public interface Floor extends EObject {
@@ -66,7 +68,7 @@ public interface Floor extends EObject {
 	 * @return the value of the '<em>Bathrooms</em>' attribute.
 	 * @see #setBathrooms(int)
 	 * @see unimodel.UnimodelPackage#getFloor_Bathrooms()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	int getBathrooms();
@@ -80,5 +82,13 @@ public interface Floor extends EObject {
 	 * @generated
 	 */
 	void setBathrooms(int value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.bathrooms &gt;= 1'"
+	 * @generated
+	 */
+	boolean bathroom_positive(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Floor

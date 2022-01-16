@@ -2,6 +2,8 @@
  */
 package unimodel;
 
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
 
 /**
@@ -17,10 +19,11 @@ import org.eclipse.emf.common.util.EList;
  *   <li>{@link unimodel.Library#getComputers <em>Computers</em>}</li>
  *   <li>{@link unimodel.Library#getBooks <em>Books</em>}</li>
  *   <li>{@link unimodel.Library#getLoans <em>Loans</em>}</li>
+ *   <li>{@link unimodel.Library#getPerson <em>Person</em>}</li>
  * </ul>
  *
  * @see unimodel.UnimodelPackage#getLibrary()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='computers_positive'"
  * @generated
  */
 public interface Library extends Named {
@@ -31,7 +34,7 @@ public interface Library extends Named {
 	 * @return the value of the '<em>Workstations</em>' attribute.
 	 * @see #setWorkstations(int)
 	 * @see unimodel.UnimodelPackage#getLibrary_Workstations()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	int getWorkstations();
@@ -53,7 +56,7 @@ public interface Library extends Named {
 	 * @return the value of the '<em>Computers</em>' attribute.
 	 * @see #setComputers(int)
 	 * @see unimodel.UnimodelPackage#getLibrary_Computers()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	int getComputers();
@@ -71,11 +74,14 @@ public interface Library extends Named {
 	/**
 	 * Returns the value of the '<em><b>Books</b></em>' containment reference list.
 	 * The list contents are of type {@link unimodel.Book}.
+	 * It is bidirectional and its opposite is '{@link unimodel.Book#getLibrary <em>Library</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Books</em>' containment reference list.
 	 * @see unimodel.UnimodelPackage#getLibrary_Books()
-	 * @model containment="true" required="true"
+	 * @see unimodel.Book#getLibrary
+	 * @model opposite="library" containment="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/OCL/Collection nullFree='false'"
 	 * @generated
 	 */
 	EList<Book> getBooks();
@@ -87,9 +93,38 @@ public interface Library extends Named {
 	 * <!-- end-user-doc -->
 	 * @return the value of the '<em>Loans</em>' containment reference list.
 	 * @see unimodel.UnimodelPackage#getLibrary_Loans()
-	 * @model containment="true"
+	 * @model containment="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/OCL/Collection nullFree='false'"
 	 * @generated
 	 */
 	EList<Loan> getLoans();
+
+	/**
+	 * Returns the value of the '<em><b>Person</b></em>' containment reference list.
+	 * The list contents are of type {@link unimodel.Person}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Person</em>' containment reference list.
+	 * @see unimodel.UnimodelPackage#getLibrary_Person()
+	 * @model containment="true"
+	 * @generated
+	 */
+	EList<Person> getPerson();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.workstations &gt;= 1'"
+	 * @generated
+	 */
+	boolean workstation_positive(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.computers &gt;= 0'"
+	 * @generated
+	 */
+	boolean computers_positive(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Library

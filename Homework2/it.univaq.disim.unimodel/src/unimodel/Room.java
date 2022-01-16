@@ -2,6 +2,9 @@
  */
 package unimodel;
 
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -17,7 +20,7 @@ package unimodel;
  * </ul>
  *
  * @see unimodel.UnimodelPackage#getRoom()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='sockets_positive'"
  * @generated
  */
 public interface Room extends Named {
@@ -28,7 +31,7 @@ public interface Room extends Named {
 	 * @return the value of the '<em>Dimension</em>' attribute.
 	 * @see #setDimension(float)
 	 * @see unimodel.UnimodelPackage#getRoom_Dimension()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	float getDimension();
@@ -50,7 +53,7 @@ public interface Room extends Named {
 	 * @return the value of the '<em>Sockets</em>' attribute.
 	 * @see #setSockets(int)
 	 * @see unimodel.UnimodelPackage#getRoom_Sockets()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	int getSockets();
@@ -64,5 +67,13 @@ public interface Room extends Named {
 	 * @generated
 	 */
 	void setSockets(int value);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.sockets &gt;= 0'"
+	 * @generated
+	 */
+	boolean sockets_positive(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Room

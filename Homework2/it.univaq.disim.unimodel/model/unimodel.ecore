@@ -19,14 +19,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="name" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Building" eSuperTypes="#//Named">
-    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-      <details key="constraints" value="phone_length"/>
-    </eAnnotations>
-    <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
-      <details key="phone_length" value="self.phone.size() = 10"/>
-    </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="description" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="address" lowerBound="1"
         eType="#//Address" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="library" eType="#//Library"
@@ -36,11 +29,12 @@
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Address">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
-      <details key="constraints" value="postcode_length id_number"/>
+      <details key="constraints" value="postcode_length id_number phone_length"/>
     </eAnnotations>
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot">
       <details key="postcode_length" value="self.post_code.size() = 5"/>
       <details key="id_number" value="self.id >= 1"/>
+      <details key="phone_length" value="self.phone.size() = 10"/>
     </eAnnotations>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="country" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="state" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
@@ -50,6 +44,7 @@
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="civic" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="id" lowerBound="1" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"
         iD="true"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Library" eSuperTypes="#//Named">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">
@@ -159,6 +154,7 @@
         upperBound="-1" eType="#//Person" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="office_address" lowerBound="1"
         eType="#//Address"/>
+    <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
   <eClassifiers xsi:type="ecore:EClass" name="Class" eSuperTypes="#//Room">
     <eAnnotations source="http://www.eclipse.org/emf/2002/Ecore">

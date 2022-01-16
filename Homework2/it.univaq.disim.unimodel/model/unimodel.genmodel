@@ -29,7 +29,6 @@
     </genClasses>
     <genClasses ecoreClass="unimodel.ecore#//Building">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Building/description"/>
-      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Building/phone"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/address"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/library"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Building/floors"/>
@@ -42,6 +41,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/street"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/civic"/>
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Address/phone"/>
     </genClasses>
     <genClasses ecoreClass="unimodel.ecore#//Library">
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Library/workstations"/>
@@ -77,6 +77,7 @@
       <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Office/capacity"/>
       <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference unimodel.ecore#//Office/person_in_office"/>
       <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference unimodel.ecore#//Office/office_address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute unimodel.ecore#//Office/phone"/>
       <genOperations ecoreOperation="unimodel.ecore#//Office/getPersonInOffice"/>
     </genClasses>
     <genClasses ecoreClass="unimodel.ecore#//Class">

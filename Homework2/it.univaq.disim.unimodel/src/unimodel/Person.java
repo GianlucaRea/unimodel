@@ -2,6 +2,10 @@
  */
 package unimodel;
 
+import java.util.Map;
+import org.eclipse.emf.common.util.DiagnosticChain;
+import org.eclipse.emf.common.util.EList;
+
 
 /**
  * <!-- begin-user-doc -->
@@ -16,10 +20,13 @@ package unimodel;
  *   <li>{@link unimodel.Person#getBadge <em>Badge</em>}</li>
  *   <li>{@link unimodel.Person#getAge <em>Age</em>}</li>
  *   <li>{@link unimodel.Person#getFiscal_code <em>Fiscal code</em>}</li>
+ *   <li>{@link unimodel.Person#getLibrary <em>Library</em>}</li>
+ *   <li>{@link unimodel.Person#getLoans <em>Loans</em>}</li>
+ *   <li>{@link unimodel.Person#getBooks <em>Books</em>}</li>
  * </ul>
  *
  * @see unimodel.UnimodelPackage#getPerson()
- * @model
+ * @model annotation="http://www.eclipse.org/emf/2002/Ecore constraints='age_upper_bound'"
  * @generated
  */
 public interface Person extends Named {
@@ -77,7 +84,7 @@ public interface Person extends Named {
 	 * @return the value of the '<em>Age</em>' attribute.
 	 * @see #setAge(int)
 	 * @see unimodel.UnimodelPackage#getPerson_Age()
-	 * @model
+	 * @model required="true"
 	 * @generated
 	 */
 	int getAge();
@@ -113,5 +120,77 @@ public interface Person extends Named {
 	 * @generated
 	 */
 	void setFiscal_code(String value);
+
+	/**
+	 * Returns the value of the '<em><b>Library</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Library</em>' reference.
+	 * @see #setLibrary(Library)
+	 * @see unimodel.UnimodelPackage#getPerson_Library()
+	 * @model
+	 * @generated
+	 */
+	Library getLibrary();
+
+	/**
+	 * Sets the value of the '{@link unimodel.Person#getLibrary <em>Library</em>}' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @param value the new value of the '<em>Library</em>' reference.
+	 * @see #getLibrary()
+	 * @generated
+	 */
+	void setLibrary(Library value);
+
+	/**
+	 * Returns the value of the '<em><b>Loans</b></em>' reference list.
+	 * The list contents are of type {@link unimodel.Loan}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Loans</em>' reference list.
+	 * @see unimodel.UnimodelPackage#getPerson_Loans()
+	 * @model volatile="true" derived="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/OCL/Collection nullFree='false'"
+	 * @generated
+	 */
+	EList<Loan> getLoans();
+
+	/**
+	 * Returns the value of the '<em><b>Books</b></em>' reference list.
+	 * The list contents are of type {@link unimodel.Book}.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the value of the '<em>Books</em>' reference list.
+	 * @see unimodel.UnimodelPackage#getPerson_Books()
+	 * @model volatile="true" derived="true" ordered="false"
+	 *        annotation="http://www.eclipse.org/OCL/Collection nullFree='false'"
+	 * @generated
+	 */
+	EList<Book> getBooks();
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.fiscal_code.size() = 16'"
+	 * @generated
+	 */
+	boolean fiscal_code_length(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.age &lt;= 120'"
+	 * @generated
+	 */
+	boolean age_lower_bound(DiagnosticChain diagnostics, Map<Object, Object> context);
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @model annotation="http://www.eclipse.org/emf/2002/Ecore/OCL/Pivot body='self.age &gt;= 16'"
+	 * @generated
+	 */
+	boolean age_upper_bound(DiagnosticChain diagnostics, Map<Object, Object> context);
 
 } // Person

@@ -2,13 +2,16 @@
  */
 package unimodel.impl;
 
+import java.lang.reflect.InvocationTargetException;
+import java.math.BigInteger;
 import java.util.Collection;
 
+import java.util.List;
+import java.util.Map;
 import org.eclipse.emf.common.notify.Notification;
 import org.eclipse.emf.common.notify.NotificationChain;
-
+import org.eclipse.emf.common.util.DiagnosticChain;
 import org.eclipse.emf.common.util.EList;
-
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.InternalEObject;
 
@@ -17,11 +20,24 @@ import org.eclipse.emf.ecore.impl.ENotificationImpl;
 import org.eclipse.emf.ecore.util.EObjectContainmentEList;
 import org.eclipse.emf.ecore.util.InternalEList;
 
+import org.eclipse.ocl.pivot.evaluation.Executor;
+import org.eclipse.ocl.pivot.ids.IdResolver;
+import org.eclipse.ocl.pivot.ids.TypeId;
+import org.eclipse.ocl.pivot.library.collection.CollectionSizeOperation;
+import org.eclipse.ocl.pivot.library.oclany.OclComparableGreaterThanEqualOperation;
+import org.eclipse.ocl.pivot.library.oclany.OclComparableLessThanEqualOperation;
+import org.eclipse.ocl.pivot.library.string.CGStringGetSeverityOperation;
+import org.eclipse.ocl.pivot.library.string.CGStringLogDiagnosticOperation;
+import org.eclipse.ocl.pivot.utilities.PivotUtil;
+import org.eclipse.ocl.pivot.utilities.ValueUtil;
+import org.eclipse.ocl.pivot.values.IntegerValue;
+import org.eclipse.ocl.pivot.values.OrderedSetValue;
 import unimodel.Address;
 import unimodel.Office;
 import unimodel.Person;
 import unimodel.Type;
 import unimodel.UnimodelPackage;
+import unimodel.UnimodelTables;
 
 /**
  * <!-- begin-user-doc -->
@@ -35,6 +51,7 @@ import unimodel.UnimodelPackage;
  *   <li>{@link unimodel.impl.OfficeImpl#getCapacity <em>Capacity</em>}</li>
  *   <li>{@link unimodel.impl.OfficeImpl#getPerson_in_office <em>Person in office</em>}</li>
  *   <li>{@link unimodel.impl.OfficeImpl#getOffice_address <em>Office address</em>}</li>
+ *   <li>{@link unimodel.impl.OfficeImpl#getPhone <em>Phone</em>}</li>
  * </ul>
  *
  * @generated
@@ -99,6 +116,26 @@ public class OfficeImpl extends RoomImpl implements Office {
 	 * @ordered
 	 */
 	protected Address office_address;
+
+	/**
+	 * The default value of the '{@link #getPhone() <em>Phone</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhone()
+	 * @generated
+	 * @ordered
+	 */
+	protected static final String PHONE_EDEFAULT = null;
+
+	/**
+	 * The cached value of the '{@link #getPhone() <em>Phone</em>}' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see #getPhone()
+	 * @generated
+	 * @ordered
+	 */
+	protected String phone = PHONE_EDEFAULT;
 
 	/**
 	 * <!-- begin-user-doc -->
@@ -216,6 +253,133 @@ public class OfficeImpl extends RoomImpl implements Office {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
+	public String getPhone() {
+		return phone;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public void setPhone(String newPhone) {
+		String oldPhone = phone;
+		phone = newPhone;
+		if (eNotificationRequired())
+			eNotify(new ENotificationImpl(this, Notification.SET, UnimodelPackage.OFFICE__PHONE, oldPhone, phone));
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public BigInteger getPersonInOffice() {
+		/**
+		 * self.person_in_office->size()
+		 */
+		final /*@NonInvalid*/ Executor executor = PivotUtil.getExecutor(this);
+		final /*@NonInvalid*/ IdResolver idResolver = executor.getIdResolver();
+		final /*@NonInvalid*/ List<Person> person_in_office = this.getPerson_in_office();
+		final /*@NonInvalid*/ OrderedSetValue BOXED_person_in_office = idResolver.createOrderedSetOfAll(UnimodelTables.ORD_CLSSid_Person, person_in_office);
+		final /*@NonInvalid*/ IntegerValue size = CollectionSizeOperation.INSTANCE.evaluate(BOXED_person_in_office);
+		final BigInteger ECORE_size = ValueUtil.bigIntegerValueOf(size);
+		return ECORE_size;
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean capacity_positive(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		final String constraintName = "Office::capacity_positive";
+		try {
+			/**
+			 *
+			 * inv capacity_positive:
+			 *   let severity : Integer[1] = constraintName.getSeverity()
+			 *   in
+			 *     if severity <= 0
+			 *     then true
+			 *     else
+			 *       let result : Boolean[1] = self.capacity >= 1
+			 *       in
+			 *         constraintName.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+			 *     endif
+			 */
+			final /*@NonInvalid*/ Executor executor = PivotUtil.getExecutor(this, context);
+			final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, UnimodelPackage.Literals.OFFICE___CAPACITY_POSITIVE__DIAGNOSTICCHAIN_MAP);
+			final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, UnimodelTables.INT_0).booleanValue();
+			/*@NonInvalid*/ boolean symbol_0;
+			if (le) {
+				symbol_0 = true;
+			}
+			else {
+				final /*@NonInvalid*/ int capacity = this.getCapacity();
+				final /*@NonInvalid*/ IntegerValue BOXED_capacity = ValueUtil.integerValueOf(capacity);
+				final /*@NonInvalid*/ boolean result = OclComparableGreaterThanEqualOperation.INSTANCE.evaluate(executor, BOXED_capacity, UnimodelTables.INT_1).booleanValue();
+				final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, constraintName, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, UnimodelTables.INT_0).booleanValue();
+				symbol_0 = logDiagnostic;
+			}
+			return symbol_0;
+		}
+		catch (Throwable e) {
+			return ValueUtil.validationFailedDiagnostic(constraintName, this, diagnostics, context, e);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	public boolean person_in_office_constraint(final DiagnosticChain diagnostics, final Map<Object, Object> context) {
+		final String constraintName = "Office::person_in_office_constraint";
+		try {
+			/**
+			 *
+			 * inv person_in_office_constraint:
+			 *   let severity : Integer[1] = constraintName.getSeverity()
+			 *   in
+			 *     if severity <= 0
+			 *     then true
+			 *     else
+			 *       let result : Boolean[1] = self.person_in_office->size() <= capacity
+			 *       in
+			 *         constraintName.logDiagnostic(self, null, diagnostics, context, null, severity, result, 0)
+			 *     endif
+			 */
+			final /*@NonInvalid*/ Executor executor = PivotUtil.getExecutor(this, context);
+			final /*@NonInvalid*/ IdResolver idResolver = executor.getIdResolver();
+			final /*@NonInvalid*/ IntegerValue severity_0 = CGStringGetSeverityOperation.INSTANCE.evaluate(executor, UnimodelPackage.Literals.OFFICE___PERSON_IN_OFFICE_CONSTRAINT__DIAGNOSTICCHAIN_MAP);
+			final /*@NonInvalid*/ boolean le = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, severity_0, UnimodelTables.INT_0).booleanValue();
+			/*@NonInvalid*/ boolean symbol_0;
+			if (le) {
+				symbol_0 = true;
+			}
+			else {
+				final /*@NonInvalid*/ List<Person> person_in_office = this.getPerson_in_office();
+				final /*@NonInvalid*/ OrderedSetValue BOXED_person_in_office = idResolver.createOrderedSetOfAll(UnimodelTables.ORD_CLSSid_Person, person_in_office);
+				final /*@NonInvalid*/ IntegerValue size = CollectionSizeOperation.INSTANCE.evaluate(BOXED_person_in_office);
+				final /*@NonInvalid*/ int capacity = this.getCapacity();
+				final /*@NonInvalid*/ IntegerValue BOXED_capacity = ValueUtil.integerValueOf(capacity);
+				final /*@NonInvalid*/ boolean result = OclComparableLessThanEqualOperation.INSTANCE.evaluate(executor, size, BOXED_capacity).booleanValue();
+				final /*@NonInvalid*/ boolean logDiagnostic = CGStringLogDiagnosticOperation.INSTANCE.evaluate(executor, TypeId.BOOLEAN, constraintName, this, (Object)null, diagnostics, context, (Object)null, severity_0, result, UnimodelTables.INT_0).booleanValue();
+				symbol_0 = logDiagnostic;
+			}
+			return symbol_0;
+		}
+		catch (Throwable e) {
+			return ValueUtil.validationFailedDiagnostic(constraintName, this, diagnostics, context, e);
+		}
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
 	@Override
 	public NotificationChain eInverseRemove(InternalEObject otherEnd, int featureID, NotificationChain msgs) {
 		switch (featureID) {
@@ -242,6 +406,8 @@ public class OfficeImpl extends RoomImpl implements Office {
 			case UnimodelPackage.OFFICE__OFFICE_ADDRESS:
 				if (resolve) return getOffice_address();
 				return basicGetOffice_address();
+			case UnimodelPackage.OFFICE__PHONE:
+				return getPhone();
 		}
 		return super.eGet(featureID, resolve, coreType);
 	}
@@ -268,6 +434,9 @@ public class OfficeImpl extends RoomImpl implements Office {
 			case UnimodelPackage.OFFICE__OFFICE_ADDRESS:
 				setOffice_address((Address)newValue);
 				return;
+			case UnimodelPackage.OFFICE__PHONE:
+				setPhone((String)newValue);
+				return;
 		}
 		super.eSet(featureID, newValue);
 	}
@@ -292,6 +461,9 @@ public class OfficeImpl extends RoomImpl implements Office {
 			case UnimodelPackage.OFFICE__OFFICE_ADDRESS:
 				setOffice_address((Address)null);
 				return;
+			case UnimodelPackage.OFFICE__PHONE:
+				setPhone(PHONE_EDEFAULT);
+				return;
 		}
 		super.eUnset(featureID);
 	}
@@ -312,8 +484,29 @@ public class OfficeImpl extends RoomImpl implements Office {
 				return person_in_office != null && !person_in_office.isEmpty();
 			case UnimodelPackage.OFFICE__OFFICE_ADDRESS:
 				return office_address != null;
+			case UnimodelPackage.OFFICE__PHONE:
+				return PHONE_EDEFAULT == null ? phone != null : !PHONE_EDEFAULT.equals(phone);
 		}
 		return super.eIsSet(featureID);
+	}
+
+	/**
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 */
+	@Override
+	@SuppressWarnings("unchecked")
+	public Object eInvoke(int operationID, EList<?> arguments) throws InvocationTargetException {
+		switch (operationID) {
+			case UnimodelPackage.OFFICE___GET_PERSON_IN_OFFICE:
+				return getPersonInOffice();
+			case UnimodelPackage.OFFICE___CAPACITY_POSITIVE__DIAGNOSTICCHAIN_MAP:
+				return capacity_positive((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+			case UnimodelPackage.OFFICE___PERSON_IN_OFFICE_CONSTRAINT__DIAGNOSTICCHAIN_MAP:
+				return person_in_office_constraint((DiagnosticChain)arguments.get(0), (Map<Object, Object>)arguments.get(1));
+		}
+		return super.eInvoke(operationID, arguments);
 	}
 
 	/**
@@ -330,6 +523,8 @@ public class OfficeImpl extends RoomImpl implements Office {
 		result.append(type);
 		result.append(", capacity: ");
 		result.append(capacity);
+		result.append(", phone: ");
+		result.append(phone);
 		result.append(')');
 		return result.toString();
 	}

@@ -5,6 +5,7 @@ package unimodel;
 import org.eclipse.emf.ecore.EAttribute;
 import org.eclipse.emf.ecore.EClass;
 import org.eclipse.emf.ecore.EEnum;
+import org.eclipse.emf.ecore.EOperation;
 import org.eclipse.emf.ecore.EPackage;
 import org.eclipse.emf.ecore.EReference;
 
@@ -22,6 +23,7 @@ import org.eclipse.emf.ecore.EReference;
  * <!-- end-user-doc -->
  * @see unimodel.UnimodelFactory
  * @model kind="package"
+ *        annotation="http://www.eclipse.org/emf/2002/Ecore"
  * @generated
  */
 public interface UnimodelPackage extends EPackage {
@@ -187,22 +189,13 @@ public interface UnimodelPackage extends EPackage {
 	int BUILDING__DESCRIPTION = NAMED_FEATURE_COUNT + 0;
 
 	/**
-	 * The feature id for the '<em><b>Phone</b></em>' attribute.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILDING__PHONE = NAMED_FEATURE_COUNT + 1;
-
-	/**
 	 * The feature id for the '<em><b>Address</b></em>' containment reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BUILDING__ADDRESS = NAMED_FEATURE_COUNT + 2;
+	int BUILDING__ADDRESS = NAMED_FEATURE_COUNT + 1;
 
 	/**
 	 * The feature id for the '<em><b>Library</b></em>' containment reference.
@@ -211,7 +204,7 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUILDING__LIBRARY = NAMED_FEATURE_COUNT + 3;
+	int BUILDING__LIBRARY = NAMED_FEATURE_COUNT + 2;
 
 	/**
 	 * The feature id for the '<em><b>Floors</b></em>' containment reference list.
@@ -220,16 +213,7 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUILDING__FLOORS = NAMED_FEATURE_COUNT + 4;
-
-	/**
-	 * The feature id for the '<em><b>Person</b></em>' containment reference list.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @generated
-	 * @ordered
-	 */
-	int BUILDING__PERSON = NAMED_FEATURE_COUNT + 5;
+	int BUILDING__FLOORS = NAMED_FEATURE_COUNT + 3;
 
 	/**
 	 * The number of structural features of the '<em>Building</em>' class.
@@ -238,7 +222,7 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BUILDING_FEATURE_COUNT = NAMED_FEATURE_COUNT + 6;
+	int BUILDING_FEATURE_COUNT = NAMED_FEATURE_COUNT + 4;
 
 	/**
 	 * The number of operations of the '<em>Building</em>' class.
@@ -323,13 +307,49 @@ public interface UnimodelPackage extends EPackage {
 	int ADDRESS__ID = 6;
 
 	/**
+	 * The feature id for the '<em><b>Phone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDRESS__PHONE = 7;
+
+	/**
 	 * The number of structural features of the '<em>Address</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_FEATURE_COUNT = 7;
+	int ADDRESS_FEATURE_COUNT = 8;
+
+	/**
+	 * The operation id for the '<em>Postcode length</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDRESS___POSTCODE_LENGTH__DIAGNOSTICCHAIN_MAP = 0;
+
+	/**
+	 * The operation id for the '<em>Id number</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDRESS___ID_NUMBER__DIAGNOSTICCHAIN_MAP = 1;
+
+	/**
+	 * The operation id for the '<em>Phone length</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ADDRESS___PHONE_LENGTH__DIAGNOSTICCHAIN_MAP = 2;
 
 	/**
 	 * The number of operations of the '<em>Address</em>' class.
@@ -338,7 +358,7 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int ADDRESS_OPERATION_COUNT = 0;
+	int ADDRESS_OPERATION_COUNT = 3;
 
 	/**
 	 * The meta object id for the '{@link unimodel.impl.LibraryImpl <em>Library</em>}' class.
@@ -396,13 +416,40 @@ public interface UnimodelPackage extends EPackage {
 	int LIBRARY__LOANS = NAMED_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>Person</b></em>' containment reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIBRARY__PERSON = NAMED_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Library</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LIBRARY_FEATURE_COUNT = NAMED_FEATURE_COUNT + 4;
+	int LIBRARY_FEATURE_COUNT = NAMED_FEATURE_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Workstation positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIBRARY___WORKSTATION_POSITIVE__DIAGNOSTICCHAIN_MAP = NAMED_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Computers positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int LIBRARY___COMPUTERS_POSITIVE__DIAGNOSTICCHAIN_MAP = NAMED_OPERATION_COUNT + 1;
 
 	/**
 	 * The number of operations of the '<em>Library</em>' class.
@@ -411,7 +458,7 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int LIBRARY_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int LIBRARY_OPERATION_COUNT = NAMED_OPERATION_COUNT + 2;
 
 	/**
 	 * The meta object id for the '{@link unimodel.impl.BookImpl <em>Book</em>}' class.
@@ -460,13 +507,67 @@ public interface UnimodelPackage extends EPackage {
 	int BOOK__AUTHOR = NAMED_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Library</b></em>' container reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOK__LIBRARY = NAMED_FEATURE_COUNT + 3;
+
+	/**
+	 * The feature id for the '<em><b>Loans</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOK__LOANS = NAMED_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Book</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int BOOK_FEATURE_COUNT = NAMED_FEATURE_COUNT + 3;
+	int BOOK_FEATURE_COUNT = NAMED_FEATURE_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Is Book Available</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOK___IS_BOOK_AVAILABLE = NAMED_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Quantity positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOK___QUANTITY_POSITIVE__DIAGNOSTICCHAIN_MAP = NAMED_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>ISBN legth</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOK___ISBN_LEGTH__DIAGNOSTICCHAIN_MAP = NAMED_OPERATION_COUNT + 2;
+
+	/**
+	 * The operation id for the '<em>Sufficient Copies</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int BOOK___SUFFICIENT_COPIES__DIAGNOSTICCHAIN_MAP = NAMED_OPERATION_COUNT + 3;
 
 	/**
 	 * The number of operations of the '<em>Book</em>' class.
@@ -475,7 +576,7 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int BOOK_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int BOOK_OPERATION_COUNT = NAMED_OPERATION_COUNT + 4;
 
 	/**
 	 * The meta object id for the '{@link unimodel.impl.LoanImpl <em>Loan</em>}' class.
@@ -497,22 +598,22 @@ public interface UnimodelPackage extends EPackage {
 	int LOAN__DATE = 0;
 
 	/**
-	 * The feature id for the '<em><b>Loans has book</b></em>' reference.
+	 * The feature id for the '<em><b>Book</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LOAN__LOANS_HAS_BOOK = 1;
+	int LOAN__BOOK = 1;
 
 	/**
-	 * The feature id for the '<em><b>Loan has person</b></em>' reference.
+	 * The feature id for the '<em><b>Person</b></em>' reference.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int LOAN__LOAN_HAS_PERSON = 2;
+	int LOAN__PERSON = 2;
 
 	/**
 	 * The number of structural features of the '<em>Loan</em>' class.
@@ -579,13 +680,22 @@ public interface UnimodelPackage extends EPackage {
 	int FLOOR_FEATURE_COUNT = 3;
 
 	/**
+	 * The operation id for the '<em>Bathroom positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int FLOOR___BATHROOM_POSITIVE__DIAGNOSTICCHAIN_MAP = 0;
+
+	/**
 	 * The number of operations of the '<em>Floor</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int FLOOR_OPERATION_COUNT = 0;
+	int FLOOR_OPERATION_COUNT = 1;
 
 	/**
 	 * The meta object id for the '{@link unimodel.impl.RoomImpl <em>Room</em>}' class.
@@ -634,13 +744,22 @@ public interface UnimodelPackage extends EPackage {
 	int ROOM_FEATURE_COUNT = NAMED_FEATURE_COUNT + 2;
 
 	/**
+	 * The operation id for the '<em>Sockets positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int ROOM___SOCKETS_POSITIVE__DIAGNOSTICCHAIN_MAP = NAMED_OPERATION_COUNT + 0;
+
+	/**
 	 * The number of operations of the '<em>Room</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int ROOM_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int ROOM_OPERATION_COUNT = NAMED_OPERATION_COUNT + 1;
 
 	/**
 	 * The meta object id for the '{@link unimodel.impl.OfficeImpl <em>Office</em>}' class.
@@ -716,13 +835,58 @@ public interface UnimodelPackage extends EPackage {
 	int OFFICE__OFFICE_ADDRESS = ROOM_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>Phone</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OFFICE__PHONE = ROOM_FEATURE_COUNT + 4;
+
+	/**
 	 * The number of structural features of the '<em>Office</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE_FEATURE_COUNT = ROOM_FEATURE_COUNT + 4;
+	int OFFICE_FEATURE_COUNT = ROOM_FEATURE_COUNT + 5;
+
+	/**
+	 * The operation id for the '<em>Sockets positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OFFICE___SOCKETS_POSITIVE__DIAGNOSTICCHAIN_MAP = ROOM___SOCKETS_POSITIVE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Get Person In Office</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OFFICE___GET_PERSON_IN_OFFICE = ROOM_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Capacity positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OFFICE___CAPACITY_POSITIVE__DIAGNOSTICCHAIN_MAP = ROOM_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Person in office constraint</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int OFFICE___PERSON_IN_OFFICE_CONSTRAINT__DIAGNOSTICCHAIN_MAP = ROOM_OPERATION_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Office</em>' class.
@@ -731,7 +895,7 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int OFFICE_OPERATION_COUNT = ROOM_OPERATION_COUNT + 0;
+	int OFFICE_OPERATION_COUNT = ROOM_OPERATION_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link unimodel.impl.ClassImpl <em>Class</em>}' class.
@@ -798,13 +962,58 @@ public interface UnimodelPackage extends EPackage {
 	int CLASS__SPEAKERS = ROOM_FEATURE_COUNT + 2;
 
 	/**
+	 * The feature id for the '<em><b>Computers</b></em>' attribute.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS__COMPUTERS = ROOM_FEATURE_COUNT + 3;
+
+	/**
 	 * The number of structural features of the '<em>Class</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_FEATURE_COUNT = ROOM_FEATURE_COUNT + 3;
+	int CLASS_FEATURE_COUNT = ROOM_FEATURE_COUNT + 4;
+
+	/**
+	 * The operation id for the '<em>Sockets positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS___SOCKETS_POSITIVE__DIAGNOSTICCHAIN_MAP = ROOM___SOCKETS_POSITIVE__DIAGNOSTICCHAIN_MAP;
+
+	/**
+	 * The operation id for the '<em>Seats positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS___SEATS_POSITIVE__DIAGNOSTICCHAIN_MAP = ROOM_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Blackboards positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS___BLACKBOARDS_POSITIVE__DIAGNOSTICCHAIN_MAP = ROOM_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Speakers positive</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int CLASS___SPEAKERS_POSITIVE__DIAGNOSTICCHAIN_MAP = ROOM_OPERATION_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Class</em>' class.
@@ -813,7 +1022,7 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int CLASS_OPERATION_COUNT = ROOM_OPERATION_COUNT + 0;
+	int CLASS_OPERATION_COUNT = ROOM_OPERATION_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link unimodel.impl.PersonImpl <em>Person</em>}' class.
@@ -871,13 +1080,67 @@ public interface UnimodelPackage extends EPackage {
 	int PERSON__FISCAL_CODE = NAMED_FEATURE_COUNT + 3;
 
 	/**
+	 * The feature id for the '<em><b>Library</b></em>' reference.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__LIBRARY = NAMED_FEATURE_COUNT + 4;
+
+	/**
+	 * The feature id for the '<em><b>Loans</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__LOANS = NAMED_FEATURE_COUNT + 5;
+
+	/**
+	 * The feature id for the '<em><b>Books</b></em>' reference list.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON__BOOKS = NAMED_FEATURE_COUNT + 6;
+
+	/**
 	 * The number of structural features of the '<em>Person</em>' class.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_FEATURE_COUNT = NAMED_FEATURE_COUNT + 4;
+	int PERSON_FEATURE_COUNT = NAMED_FEATURE_COUNT + 7;
+
+	/**
+	 * The operation id for the '<em>Fiscal code length</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON___FISCAL_CODE_LENGTH__DIAGNOSTICCHAIN_MAP = NAMED_OPERATION_COUNT + 0;
+
+	/**
+	 * The operation id for the '<em>Age lower bound</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON___AGE_LOWER_BOUND__DIAGNOSTICCHAIN_MAP = NAMED_OPERATION_COUNT + 1;
+
+	/**
+	 * The operation id for the '<em>Age upper bound</em>' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @generated
+	 * @ordered
+	 */
+	int PERSON___AGE_UPPER_BOUND__DIAGNOSTICCHAIN_MAP = NAMED_OPERATION_COUNT + 2;
 
 	/**
 	 * The number of operations of the '<em>Person</em>' class.
@@ -886,7 +1149,7 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 * @ordered
 	 */
-	int PERSON_OPERATION_COUNT = NAMED_OPERATION_COUNT + 0;
+	int PERSON_OPERATION_COUNT = NAMED_OPERATION_COUNT + 3;
 
 	/**
 	 * The meta object id for the '{@link unimodel.Type <em>Type</em>}' enum.
@@ -995,17 +1258,6 @@ public interface UnimodelPackage extends EPackage {
 	EAttribute getBuilding_Description();
 
 	/**
-	 * Returns the meta object for the attribute '{@link unimodel.Building#getPhone <em>Phone</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the attribute '<em>Phone</em>'.
-	 * @see unimodel.Building#getPhone()
-	 * @see #getBuilding()
-	 * @generated
-	 */
-	EAttribute getBuilding_Phone();
-
-	/**
 	 * Returns the meta object for the containment reference '{@link unimodel.Building#getAddress <em>Address</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1037,17 +1289,6 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 */
 	EReference getBuilding_Floors();
-
-	/**
-	 * Returns the meta object for the containment reference list '{@link unimodel.Building#getPerson <em>Person</em>}'.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @return the meta object for the containment reference list '<em>Person</em>'.
-	 * @see unimodel.Building#getPerson()
-	 * @see #getBuilding()
-	 * @generated
-	 */
-	EReference getBuilding_Person();
 
 	/**
 	 * Returns the meta object for class '{@link unimodel.Address <em>Address</em>}'.
@@ -1137,6 +1378,47 @@ public interface UnimodelPackage extends EPackage {
 	EAttribute getAddress_Id();
 
 	/**
+	 * Returns the meta object for the attribute '{@link unimodel.Address#getPhone <em>Phone</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Phone</em>'.
+	 * @see unimodel.Address#getPhone()
+	 * @see #getAddress()
+	 * @generated
+	 */
+	EAttribute getAddress_Phone();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Address#id_number(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Id number</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Id number</em>' operation.
+	 * @see unimodel.Address#id_number(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getAddress__Id_number__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Address#phone_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Phone length</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Phone length</em>' operation.
+	 * @see unimodel.Address#phone_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getAddress__Phone_length__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Address#postcode_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Postcode length</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Postcode length</em>' operation.
+	 * @see unimodel.Address#postcode_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getAddress__Postcode_length__DiagnosticChain_Map();
+
+	/**
 	 * Returns the meta object for class '{@link unimodel.Library <em>Library</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1191,6 +1473,37 @@ public interface UnimodelPackage extends EPackage {
 	EReference getLibrary_Loans();
 
 	/**
+	 * Returns the meta object for the containment reference list '{@link unimodel.Library#getPerson <em>Person</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the containment reference list '<em>Person</em>'.
+	 * @see unimodel.Library#getPerson()
+	 * @see #getLibrary()
+	 * @generated
+	 */
+	EReference getLibrary_Person();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Library#workstation_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Workstation positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Workstation positive</em>' operation.
+	 * @see unimodel.Library#workstation_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getLibrary__Workstation_positive__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Library#computers_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Computers positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Computers positive</em>' operation.
+	 * @see unimodel.Library#computers_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getLibrary__Computers_positive__DiagnosticChain_Map();
+
+	/**
 	 * Returns the meta object for class '{@link unimodel.Book <em>Book</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1234,6 +1547,68 @@ public interface UnimodelPackage extends EPackage {
 	EAttribute getBook_Author();
 
 	/**
+	 * Returns the meta object for the container reference '{@link unimodel.Book#getLibrary <em>Library</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the container reference '<em>Library</em>'.
+	 * @see unimodel.Book#getLibrary()
+	 * @see #getBook()
+	 * @generated
+	 */
+	EReference getBook_Library();
+
+	/**
+	 * Returns the meta object for the reference list '{@link unimodel.Book#getLoans <em>Loans</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Loans</em>'.
+	 * @see unimodel.Book#getLoans()
+	 * @see #getBook()
+	 * @generated
+	 */
+	EReference getBook_Loans();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Book#isBookAvailable() <em>Is Book Available</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Is Book Available</em>' operation.
+	 * @see unimodel.Book#isBookAvailable()
+	 * @generated
+	 */
+	EOperation getBook__IsBookAvailable();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Book#quantity_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Quantity positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Quantity positive</em>' operation.
+	 * @see unimodel.Book#quantity_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getBook__Quantity_positive__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Book#ISBN_legth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>ISBN legth</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>ISBN legth</em>' operation.
+	 * @see unimodel.Book#ISBN_legth(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getBook__ISBN_legth__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Book#SufficientCopies(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Sufficient Copies</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Sufficient Copies</em>' operation.
+	 * @see unimodel.Book#SufficientCopies(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getBook__SufficientCopies__DiagnosticChain_Map();
+
+	/**
 	 * Returns the meta object for class '{@link unimodel.Loan <em>Loan</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1255,26 +1630,26 @@ public interface UnimodelPackage extends EPackage {
 	EAttribute getLoan_Date();
 
 	/**
-	 * Returns the meta object for the reference '{@link unimodel.Loan#getLoans_has_book <em>Loans has book</em>}'.
+	 * Returns the meta object for the reference '{@link unimodel.Loan#getBook <em>Book</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Loans has book</em>'.
-	 * @see unimodel.Loan#getLoans_has_book()
+	 * @return the meta object for the reference '<em>Book</em>'.
+	 * @see unimodel.Loan#getBook()
 	 * @see #getLoan()
 	 * @generated
 	 */
-	EReference getLoan_Loans_has_book();
+	EReference getLoan_Book();
 
 	/**
-	 * Returns the meta object for the reference '{@link unimodel.Loan#getLoan_has_person <em>Loan has person</em>}'.
+	 * Returns the meta object for the reference '{@link unimodel.Loan#getPerson <em>Person</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
-	 * @return the meta object for the reference '<em>Loan has person</em>'.
-	 * @see unimodel.Loan#getLoan_has_person()
+	 * @return the meta object for the reference '<em>Person</em>'.
+	 * @see unimodel.Loan#getPerson()
 	 * @see #getLoan()
 	 * @generated
 	 */
-	EReference getLoan_Loan_has_person();
+	EReference getLoan_Person();
 
 	/**
 	 * Returns the meta object for class '{@link unimodel.Floor <em>Floor</em>}'.
@@ -1320,6 +1695,16 @@ public interface UnimodelPackage extends EPackage {
 	EAttribute getFloor_Bathrooms();
 
 	/**
+	 * Returns the meta object for the '{@link unimodel.Floor#bathroom_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Bathroom positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Bathroom positive</em>' operation.
+	 * @see unimodel.Floor#bathroom_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getFloor__Bathroom_positive__DiagnosticChain_Map();
+
+	/**
 	 * Returns the meta object for class '{@link unimodel.Room <em>Room</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1350,6 +1735,16 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getRoom_Sockets();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Room#sockets_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Sockets positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Sockets positive</em>' operation.
+	 * @see unimodel.Room#sockets_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getRoom__Sockets_positive__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link unimodel.Office <em>Office</em>}'.
@@ -1406,6 +1801,47 @@ public interface UnimodelPackage extends EPackage {
 	EReference getOffice_Office_address();
 
 	/**
+	 * Returns the meta object for the attribute '{@link unimodel.Office#getPhone <em>Phone</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Phone</em>'.
+	 * @see unimodel.Office#getPhone()
+	 * @see #getOffice()
+	 * @generated
+	 */
+	EAttribute getOffice_Phone();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Office#getPersonInOffice() <em>Get Person In Office</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Get Person In Office</em>' operation.
+	 * @see unimodel.Office#getPersonInOffice()
+	 * @generated
+	 */
+	EOperation getOffice__GetPersonInOffice();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Office#capacity_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Capacity positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Capacity positive</em>' operation.
+	 * @see unimodel.Office#capacity_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getOffice__Capacity_positive__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Office#person_in_office_constraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Person in office constraint</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Person in office constraint</em>' operation.
+	 * @see unimodel.Office#person_in_office_constraint(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getOffice__Person_in_office_constraint__DiagnosticChain_Map();
+
+	/**
 	 * Returns the meta object for class '{@link unimodel.Class <em>Class</em>}'.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -1447,6 +1883,47 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getClass_Speakers();
+
+	/**
+	 * Returns the meta object for the attribute '{@link unimodel.Class#getComputers <em>Computers</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the attribute '<em>Computers</em>'.
+	 * @see unimodel.Class#getComputers()
+	 * @see #getClass_()
+	 * @generated
+	 */
+	EAttribute getClass_Computers();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Class#seats_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Seats positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Seats positive</em>' operation.
+	 * @see unimodel.Class#seats_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getClass__Seats_positive__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Class#blackboards_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Blackboards positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Blackboards positive</em>' operation.
+	 * @see unimodel.Class#blackboards_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getClass__Blackboards_positive__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Class#speakers_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Speakers positive</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Speakers positive</em>' operation.
+	 * @see unimodel.Class#speakers_positive(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getClass__Speakers_positive__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for class '{@link unimodel.Person <em>Person</em>}'.
@@ -1501,6 +1978,69 @@ public interface UnimodelPackage extends EPackage {
 	 * @generated
 	 */
 	EAttribute getPerson_Fiscal_code();
+
+	/**
+	 * Returns the meta object for the reference '{@link unimodel.Person#getLibrary <em>Library</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference '<em>Library</em>'.
+	 * @see unimodel.Person#getLibrary()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EReference getPerson_Library();
+
+	/**
+	 * Returns the meta object for the reference list '{@link unimodel.Person#getLoans <em>Loans</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Loans</em>'.
+	 * @see unimodel.Person#getLoans()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EReference getPerson_Loans();
+
+	/**
+	 * Returns the meta object for the reference list '{@link unimodel.Person#getBooks <em>Books</em>}'.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the reference list '<em>Books</em>'.
+	 * @see unimodel.Person#getBooks()
+	 * @see #getPerson()
+	 * @generated
+	 */
+	EReference getPerson_Books();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Person#fiscal_code_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Fiscal code length</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Fiscal code length</em>' operation.
+	 * @see unimodel.Person#fiscal_code_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getPerson__Fiscal_code_length__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Person#age_lower_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Age lower bound</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Age lower bound</em>' operation.
+	 * @see unimodel.Person#age_lower_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getPerson__Age_lower_bound__DiagnosticChain_Map();
+
+	/**
+	 * Returns the meta object for the '{@link unimodel.Person#age_upper_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Age upper bound</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @return the meta object for the '<em>Age upper bound</em>' operation.
+	 * @see unimodel.Person#age_upper_bound(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	EOperation getPerson__Age_upper_bound__DiagnosticChain_Map();
 
 	/**
 	 * Returns the meta object for enum '{@link unimodel.Type <em>Type</em>}'.
@@ -1616,14 +2156,6 @@ public interface UnimodelPackage extends EPackage {
 		EAttribute BUILDING__DESCRIPTION = eINSTANCE.getBuilding_Description();
 
 		/**
-		 * The meta object literal for the '<em><b>Phone</b></em>' attribute feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EAttribute BUILDING__PHONE = eINSTANCE.getBuilding_Phone();
-
-		/**
 		 * The meta object literal for the '<em><b>Address</b></em>' containment reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1646,14 +2178,6 @@ public interface UnimodelPackage extends EPackage {
 		 * @generated
 		 */
 		EReference BUILDING__FLOORS = eINSTANCE.getBuilding_Floors();
-
-		/**
-		 * The meta object literal for the '<em><b>Person</b></em>' containment reference list feature.
-		 * <!-- begin-user-doc -->
-		 * <!-- end-user-doc -->
-		 * @generated
-		 */
-		EReference BUILDING__PERSON = eINSTANCE.getBuilding_Person();
 
 		/**
 		 * The meta object literal for the '{@link unimodel.impl.AddressImpl <em>Address</em>}' class.
@@ -1722,6 +2246,38 @@ public interface UnimodelPackage extends EPackage {
 		EAttribute ADDRESS__ID = eINSTANCE.getAddress_Id();
 
 		/**
+		 * The meta object literal for the '<em><b>Phone</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute ADDRESS__PHONE = eINSTANCE.getAddress_Phone();
+
+		/**
+		 * The meta object literal for the '<em><b>Id number</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ADDRESS___ID_NUMBER__DIAGNOSTICCHAIN_MAP = eINSTANCE.getAddress__Id_number__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>Phone length</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ADDRESS___PHONE_LENGTH__DIAGNOSTICCHAIN_MAP = eINSTANCE.getAddress__Phone_length__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>Postcode length</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ADDRESS___POSTCODE_LENGTH__DIAGNOSTICCHAIN_MAP = eINSTANCE.getAddress__Postcode_length__DiagnosticChain_Map();
+
+		/**
 		 * The meta object literal for the '{@link unimodel.impl.LibraryImpl <em>Library</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1764,6 +2320,30 @@ public interface UnimodelPackage extends EPackage {
 		EReference LIBRARY__LOANS = eINSTANCE.getLibrary_Loans();
 
 		/**
+		 * The meta object literal for the '<em><b>Person</b></em>' containment reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference LIBRARY__PERSON = eINSTANCE.getLibrary_Person();
+
+		/**
+		 * The meta object literal for the '<em><b>Workstation positive</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation LIBRARY___WORKSTATION_POSITIVE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getLibrary__Workstation_positive__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>Computers positive</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation LIBRARY___COMPUTERS_POSITIVE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getLibrary__Computers_positive__DiagnosticChain_Map();
+
+		/**
 		 * The meta object literal for the '{@link unimodel.impl.BookImpl <em>Book</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1798,6 +2378,54 @@ public interface UnimodelPackage extends EPackage {
 		EAttribute BOOK__AUTHOR = eINSTANCE.getBook_Author();
 
 		/**
+		 * The meta object literal for the '<em><b>Library</b></em>' container reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BOOK__LIBRARY = eINSTANCE.getBook_Library();
+
+		/**
+		 * The meta object literal for the '<em><b>Loans</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference BOOK__LOANS = eINSTANCE.getBook_Loans();
+
+		/**
+		 * The meta object literal for the '<em><b>Is Book Available</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation BOOK___IS_BOOK_AVAILABLE = eINSTANCE.getBook__IsBookAvailable();
+
+		/**
+		 * The meta object literal for the '<em><b>Quantity positive</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation BOOK___QUANTITY_POSITIVE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getBook__Quantity_positive__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>ISBN legth</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation BOOK___ISBN_LEGTH__DIAGNOSTICCHAIN_MAP = eINSTANCE.getBook__ISBN_legth__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>Sufficient Copies</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation BOOK___SUFFICIENT_COPIES__DIAGNOSTICCHAIN_MAP = eINSTANCE.getBook__SufficientCopies__DiagnosticChain_Map();
+
+		/**
 		 * The meta object literal for the '{@link unimodel.impl.LoanImpl <em>Loan</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1816,20 +2444,20 @@ public interface UnimodelPackage extends EPackage {
 		EAttribute LOAN__DATE = eINSTANCE.getLoan_Date();
 
 		/**
-		 * The meta object literal for the '<em><b>Loans has book</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Book</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference LOAN__LOANS_HAS_BOOK = eINSTANCE.getLoan_Loans_has_book();
+		EReference LOAN__BOOK = eINSTANCE.getLoan_Book();
 
 		/**
-		 * The meta object literal for the '<em><b>Loan has person</b></em>' reference feature.
+		 * The meta object literal for the '<em><b>Person</b></em>' reference feature.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
 		 * @generated
 		 */
-		EReference LOAN__LOAN_HAS_PERSON = eINSTANCE.getLoan_Loan_has_person();
+		EReference LOAN__PERSON = eINSTANCE.getLoan_Person();
 
 		/**
 		 * The meta object literal for the '{@link unimodel.impl.FloorImpl <em>Floor</em>}' class.
@@ -1866,6 +2494,14 @@ public interface UnimodelPackage extends EPackage {
 		EAttribute FLOOR__BATHROOMS = eINSTANCE.getFloor_Bathrooms();
 
 		/**
+		 * The meta object literal for the '<em><b>Bathroom positive</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation FLOOR___BATHROOM_POSITIVE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getFloor__Bathroom_positive__DiagnosticChain_Map();
+
+		/**
 		 * The meta object literal for the '{@link unimodel.impl.RoomImpl <em>Room</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1890,6 +2526,14 @@ public interface UnimodelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute ROOM__SOCKETS = eINSTANCE.getRoom_Sockets();
+
+		/**
+		 * The meta object literal for the '<em><b>Sockets positive</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation ROOM___SOCKETS_POSITIVE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getRoom__Sockets_positive__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link unimodel.impl.OfficeImpl <em>Office</em>}' class.
@@ -1934,6 +2578,38 @@ public interface UnimodelPackage extends EPackage {
 		EReference OFFICE__OFFICE_ADDRESS = eINSTANCE.getOffice_Office_address();
 
 		/**
+		 * The meta object literal for the '<em><b>Phone</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute OFFICE__PHONE = eINSTANCE.getOffice_Phone();
+
+		/**
+		 * The meta object literal for the '<em><b>Get Person In Office</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation OFFICE___GET_PERSON_IN_OFFICE = eINSTANCE.getOffice__GetPersonInOffice();
+
+		/**
+		 * The meta object literal for the '<em><b>Capacity positive</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation OFFICE___CAPACITY_POSITIVE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getOffice__Capacity_positive__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>Person in office constraint</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation OFFICE___PERSON_IN_OFFICE_CONSTRAINT__DIAGNOSTICCHAIN_MAP = eINSTANCE.getOffice__Person_in_office_constraint__DiagnosticChain_Map();
+
+		/**
 		 * The meta object literal for the '{@link unimodel.impl.ClassImpl <em>Class</em>}' class.
 		 * <!-- begin-user-doc -->
 		 * <!-- end-user-doc -->
@@ -1966,6 +2642,38 @@ public interface UnimodelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute CLASS__SPEAKERS = eINSTANCE.getClass_Speakers();
+
+		/**
+		 * The meta object literal for the '<em><b>Computers</b></em>' attribute feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EAttribute CLASS__COMPUTERS = eINSTANCE.getClass_Computers();
+
+		/**
+		 * The meta object literal for the '<em><b>Seats positive</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CLASS___SEATS_POSITIVE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getClass__Seats_positive__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>Blackboards positive</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CLASS___BLACKBOARDS_POSITIVE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getClass__Blackboards_positive__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>Speakers positive</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation CLASS___SPEAKERS_POSITIVE__DIAGNOSTICCHAIN_MAP = eINSTANCE.getClass__Speakers_positive__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link unimodel.impl.PersonImpl <em>Person</em>}' class.
@@ -2008,6 +2716,54 @@ public interface UnimodelPackage extends EPackage {
 		 * @generated
 		 */
 		EAttribute PERSON__FISCAL_CODE = eINSTANCE.getPerson_Fiscal_code();
+
+		/**
+		 * The meta object literal for the '<em><b>Library</b></em>' reference feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERSON__LIBRARY = eINSTANCE.getPerson_Library();
+
+		/**
+		 * The meta object literal for the '<em><b>Loans</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERSON__LOANS = eINSTANCE.getPerson_Loans();
+
+		/**
+		 * The meta object literal for the '<em><b>Books</b></em>' reference list feature.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EReference PERSON__BOOKS = eINSTANCE.getPerson_Books();
+
+		/**
+		 * The meta object literal for the '<em><b>Fiscal code length</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation PERSON___FISCAL_CODE_LENGTH__DIAGNOSTICCHAIN_MAP = eINSTANCE.getPerson__Fiscal_code_length__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>Age lower bound</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation PERSON___AGE_LOWER_BOUND__DIAGNOSTICCHAIN_MAP = eINSTANCE.getPerson__Age_lower_bound__DiagnosticChain_Map();
+
+		/**
+		 * The meta object literal for the '<em><b>Age upper bound</b></em>' operation.
+		 * <!-- begin-user-doc -->
+		 * <!-- end-user-doc -->
+		 * @generated
+		 */
+		EOperation PERSON___AGE_UPPER_BOUND__DIAGNOSTICCHAIN_MAP = eINSTANCE.getPerson__Age_upper_bound__DiagnosticChain_Map();
 
 		/**
 		 * The meta object literal for the '{@link unimodel.Type <em>Type</em>}' enum.
