@@ -42,7 +42,7 @@ public class GeneratePage extends AbstractAcceleoGenerator {
      *
      * @generated
      */
-    public static final String[] TEMPLATE_NAMES = { "generateFloor", "generateProductDetails", "generateUserDetails", "generateAdminDetails" };
+    public static final String[] TEMPLATE_NAMES = { "generateFloor", "generateLibrary","generatePerson" };
     
     /**
      * The list of properties files from the launch parameters (Launch configuration).

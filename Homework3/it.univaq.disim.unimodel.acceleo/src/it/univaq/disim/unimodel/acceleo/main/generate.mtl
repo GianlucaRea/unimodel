@@ -33,7 +33,7 @@
 			</div>
 			<hr>
 			<section id="buildings">
-			<h3>Buildings</h3>
+			<h1>Buildings</h1>
 			[for (b: Building | university.buildings) ]
 			<div style="margin: 5px;" class="building" > 
 
@@ -41,7 +41,13 @@
 				<h3 style="text-align:left; margin-left:10px; ">[b.description/]</h3>
 				<p style="text-align:left; margin-left:15px; "> Phone: [b.address.phone/] </p>
 				<p style="text-align:left; margin-left:15px; "> [b.address.street/] [b.address.civic/],<br>[b.address.post_code/] [b.address.city/] ([b.address.state/]), [b.address.country/]</p>
-	            <h3>Floors:<h3>
+				[if not b.library.oclIsUndefined()]
+				<h3>Library: <a href="[b.library.name.replaceAll(' ', '')/].html"><p>[b.library.name/]</p></a>
+					[let lib : Library = b.library]
+						[lib.generateLibrary()/]
+					[/let]
+				[/if]
+	            <h3>Floors:</h3>
 					[for(f: Floor| b.floors)]
 					[f.generateFloor()/]
 					<ul>
@@ -50,5 +56,14 @@
 					[/for]
 			</div>
 			[/for]
+			<hr>
+			
+			<h1>People</h1>
+				[for(p: Person| eAllContents(Person) )]
+					[p.generatePerson()/]
+					<ul>
+						<li><a href="[p.name.replaceAll(' ','')/].html"><p>[p.name/]</p></a></li>
+					</ul>
+				[/for]
 [/file]
 [/template]
