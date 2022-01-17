@@ -22,32 +22,27 @@ import org.eclipse.emf.common.util.BasicMonitor;
 import org.eclipse.emf.common.util.Monitor;
 import org.eclipse.emf.common.util.URI;
 import org.eclipse.emf.ecore.EObject;
-import org.eclipse.emf.ecore.EPackage;
-import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.emf.ecore.resource.ResourceSet;
-import org.eclipse.emf.ecore.xmi.impl.XMIResourceFactoryImpl;
-import unimodel.UnimodelPackage;
-
 
 /**
- * Entry point of the 'Generate' generation module.
+ * Entry point of the 'GenerateDetails' generation module.
  *
  * @generated
  */
-public class Generate extends AbstractAcceleoGenerator {
+public class GeneratePage extends AbstractAcceleoGenerator {
     /**
      * The name of the module.
      *
      * @generated
      */
-    public static final String MODULE_FILE_NAME = "/it/univaq/disim/unimodel/acceleo/main/generate";
+    public static final String MODULE_FILE_NAME = "/it/univaq/disim/ecommerce/unimodel/acceleo/main/generatePage";
     
     /**
      * The name of the templates that are to be generated.
      *
      * @generated
      */
-    public static final String[] TEMPLATE_NAMES = { "generateElement" };
+    public static final String[] TEMPLATE_NAMES = { "generateFloor", "generateProductDetails", "generateUserDetails", "generateAdminDetails" };
     
     /**
      * The list of properties files from the launch parameters (Launch configuration).
@@ -70,7 +65,7 @@ public class Generate extends AbstractAcceleoGenerator {
      *
      * @generated
      */
-    public Generate() {
+    public GeneratePage() {
         // Empty implementation
     }
 
@@ -90,7 +85,7 @@ public class Generate extends AbstractAcceleoGenerator {
      *             the model cannot be loaded.
      * @generated
      */
-    public Generate(URI modelURI, File targetFolder,
+    public GeneratePage(URI modelURI, File targetFolder,
             List<? extends Object> arguments) throws IOException {
         initialize(modelURI, targetFolder, arguments);
     }
@@ -111,7 +106,7 @@ public class Generate extends AbstractAcceleoGenerator {
      *             This can be thrown in two scenarios : the module cannot be found, or it cannot be loaded.
      * @generated
      */
-    public Generate(EObject model, File targetFolder,
+    public GeneratePage(EObject model, File targetFolder,
             List<? extends Object> arguments) throws IOException {
         initialize(model, targetFolder, arguments);
     }
@@ -146,7 +141,7 @@ public class Generate extends AbstractAcceleoGenerator {
                  * add in "arguments" this "String" attribute.
                  */
                 
-                Generate generator = new Generate(modelURI, folder, arguments);
+                GeneratePage generator = new GeneratePage(modelURI, folder, arguments);
                 
                 /*
                  * Add the properties from the launch arguments.
@@ -384,12 +379,12 @@ public class Generate extends AbstractAcceleoGenerator {
      * 
      * @param resourceSet
      *            The resource set which registry has to be updated.
-     * 
+     * @generated
      */
     @Override
     public void registerResourceFactories(ResourceSet resourceSet) {
-    	EPackage.Registry.INSTANCE.put(UnimodelPackage.eNS_URI, UnimodelPackage.eINSTANCE);
-    	Resource.Factory.Registry.INSTANCE.getExtensionToFactoryMap().put(".xmi", new XMIResourceFactoryImpl());        /*
+        super.registerResourceFactories(resourceSet);
+        /*
          * If you want to change the content of this method, do NOT forget to change the "@generated"
          * tag in the Javadoc of this method to "@generated NOT". Without this new tag, any compilation
          * of the Acceleo module with the main template that has caused the creation of this class will

@@ -1,0 +1,57 @@
+[comment encoding = UTF-8 /]
+[module generatePage('http://it.univaq.disim/unimodel')]
+
+
+[template public generateFloor(aFloor : Floor)]
+[file ('floor'+ aFloor.number+ aFloor.ancestors(Building).name.replaceAll(' ','')  +'.html', false, 'UTF-8')]
+	<h1 style="text-align:center; margin:10px; color:green;">['Floor '+ aFloor.number +' '+ aFloor.ancestors(Building).name/]</h1>
+	<!-- Content -->
+	<div id="content" role="main">
+		<div class="info-content">
+			<div class="container">
+			<!-- Info Page -->
+			<section id="info-docs">
+			<p> This is the auto generated Html documentation using Acceleo and describes a Specific Floor. </p>
+			<hr>
+			<div class="row">
+				<div class="col-sm-6 col-lg-6">
+					<ul class="list-unstyled">
+						<li><strong>Version:</strong> 0.1</li>
+					</ul>
+				</div>
+				<div class="col-sm-6 col-lg-6">
+					<ul class="list-unstyled">
+						<li><strong>Author:</strong> Gianluca Rea & Pietro Ciammaricone</li>
+					</ul>
+				</div>
+			</div>
+			<hr>
+			<section id="buildings">
+			<h3>Buildings</h3>
+			[for (r: Room | aFloor.rooms) ]
+				<div style="margin: 5px;" class="building" > 
+				<h2 style="text-align:left; margin:10px; color:blue;">[r.name/]</h2>
+				<p style="text-align:left; margin-left:15px; ">Dimensions: [r.dimension/]</p>
+				<p style="text-align:left; margin-left:15px; ">Number of Sockets: [r.sockets/]</p>
+				[if (r.oclIsKindOf(Office))]
+				  [for(o: Office| r.oclAsType(Office))]
+					<p style="text-align:left; margin-left:15px;">Capacity [o.capacity/]</p>
+					<p style="text-align:left; margin-left:15px;">Phone: [o.phone/]</p>
+					<p style="text-align:left; margin-left:15px;">Type: [o.type/]</p>
+					[for(p: Person| o.person_in_office)]
+					<p style="text-align:left; margin-left:15px;">Office of the [p.category/] [p.name/]</p>
+					[/for]
+				  [/for]
+	    	    [/if]
+		 		[if(r.oclIsKindOf(Class))]
+				  [for(c: Class| r.oclAsType(Class))]
+					<p style="text-align:left; margin-left:15px;">Number of Blackboards [c.blackboards/]</p>
+					<p style="text-align:left; margin-left:15px;">Number of Computers: [c.computers/]</è>
+					<p style="text-align:left; margin-left:15px;">Number of Speakers: [c.speakers/]</p>
+					<p style="text-align:left; margin-left:15px;">Number of Seats: [c.seats/]</p>
+				  [/for]
+				[/if]
+			[/for]
+[/file]
+[/template]
+

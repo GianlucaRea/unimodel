@@ -4,7 +4,7 @@
     xmlns:xmi="http://www.omg.org/XMI"
     xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
     xmlns:unimodel="http://www.example.org/unimodel"
-    xsi:schemaLocation="http://www.example.org/unimodel unimodel.ecore"
+    xsi:schemaLocation="http://www.example.org/unimodel /it.univaq.disim.unimodel/model/unimodel.ecore"
     name="Univaq"
     chancellor="Alesse"
     description="L'università degli studi dell'Aquila">
@@ -216,7 +216,7 @@
     </floors>
   </buildings>
   <buildings
-      name="Palazzo Camponesci"
+      name="Palazzo Camponeschi"
       description="Rettorato dell'Università degli studi dell'Aquila">
     <address
         country="Italy"

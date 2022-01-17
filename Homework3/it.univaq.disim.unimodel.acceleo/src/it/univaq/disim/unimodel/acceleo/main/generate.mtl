@@ -1,5 +1,6 @@
 [comment encoding = UTF-8 /]
 [module generate('http://it.univaq.disim/unimodel')]
+[import it::univaq::disim::unimodel::acceleo::main::generatePage /]
 
 
 [template public generateElement(university : University)]
@@ -37,8 +38,16 @@
 			<div style="margin: 5px;" class="building" > 
 
 				<h2 style="text-align:left; margin:10px; color:blue;">[b.name/]</h2>
-				<h3 style="text-align:left; margin:5px; ">[b.description/]</h3>
-			
+				<h3 style="text-align:left; margin-left:10px; ">[b.description/]</h3>
+				<p style="text-align:left; margin-left:15px; "> Phone: [b.address.phone/] </p>
+				<p style="text-align:left; margin-left:15px; "> [b.address.street/] [b.address.civic/],<br>[b.address.post_code/] [b.address.city/] ([b.address.state/]), [b.address.country/]</p>
+	            <h3>Floors:<h3>
+					[for(f: Floor| b.floors)]
+					[f.generateFloor()/]
+					<ul>
+						<li><a href="floor[f.number + b.name.replaceAll(' ','')/].html"><p>Floor Number [f.number/]</p></a></li>
+					</ul>
+					[/for]
 			</div>
 			[/for]
 [/file]
