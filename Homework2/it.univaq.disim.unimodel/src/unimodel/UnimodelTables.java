@@ -64,24 +64,24 @@ public class UnimodelTables extends AbstractTables
 	/**
 	 *	Constants used by auto-generated code.
 	 */
+	public static final /*@NonInvalid*/ NsURIPackageId PACKid_http_c_s_s_it_univaq_disim_s_unimodel = IdManager.getNsURIPackageId("http://it.univaq.disim/unimodel", null, UnimodelPackage.eINSTANCE);
 	public static final /*@NonInvalid*/ NsURIPackageId PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore = IdManager.getNsURIPackageId("http://www.eclipse.org/emf/2002/Ecore", null, EcorePackage.eINSTANCE);
-	public static final /*@NonInvalid*/ NsURIPackageId PACKid_http_c_s_s_www_example_org_s_unimodel = IdManager.getNsURIPackageId("http://www.example.org/unimodel", null, UnimodelPackage.eINSTANCE);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Address = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Address", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Book = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Book", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Building = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Building", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Class = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Class", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Floor = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Floor", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Library = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Library", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Loan = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Loan", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Office = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Office", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Person = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Person", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_Room = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("Room", 0);
-	public static final /*@NonInvalid*/ ClassId CLSSid_University = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getClassId("University", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Address = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Address", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Book = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Book", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Building = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Building", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Class = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Class", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Floor = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Floor", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Library = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Library", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Loan = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Loan", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Office = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Office", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Person = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Person", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_Room = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("Room", 0);
+	public static final /*@NonInvalid*/ ClassId CLSSid_University = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getClassId("University", 0);
 	public static final /*@NonInvalid*/ DataTypeId DATAid_EDate = UnimodelTables.PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore.getDataTypeId("EDate", 0);
 	public static final /*@NonInvalid*/ DataTypeId DATAid_EFloat = UnimodelTables.PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore.getDataTypeId("EFloat", 0);
 	public static final /*@NonInvalid*/ DataTypeId DATAid_EInt = UnimodelTables.PACKid_http_c_s_s_www_eclipse_org_s_emf_s_2002_s_Ecore.getDataTypeId("EInt", 0);
-	public static final /*@NonInvalid*/ EnumerationId ENUMid_Category = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getEnumerationId("Category");
-	public static final /*@NonInvalid*/ EnumerationId ENUMid_Type = UnimodelTables.PACKid_http_c_s_s_www_example_org_s_unimodel.getEnumerationId("Type");
+	public static final /*@NonInvalid*/ EnumerationId ENUMid_Category = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getEnumerationId("Category");
+	public static final /*@NonInvalid*/ EnumerationId ENUMid_Type = UnimodelTables.PACKid_http_c_s_s_it_univaq_disim_s_unimodel.getEnumerationId("Type");
 	public static final /*@NonInvalid*/ IntegerValue INT_0 = ValueUtil.integerValueOf("0");
 	public static final /*@NonInvalid*/ IntegerValue INT_1 = ValueUtil.integerValueOf("1");
 	public static final /*@NonInvalid*/ IntegerValue INT_10 = ValueUtil.integerValueOf("10");

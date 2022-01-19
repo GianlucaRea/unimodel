@@ -303,7 +303,7 @@ public class PersonImpl extends NamedImpl implements Person {
 		final /*@NonInvalid*/ IdResolver idResolver = executor.getIdResolver();
 		final /*@NonInvalid*/ Library library = this.getLibrary();
 		if (library == null) {
-			throw new InvalidValueException("Null source for \'\'http://www.example.org/unimodel\'::Library::loans\'");
+			throw new InvalidValueException("Null source for \'\'http://it.univaq.disim/unimodel\'::Library::loans\'");
 		}
 		final /*@Thrown*/ List<Loan> loans = library.getLoans();
 		final /*@Thrown*/ SetValue BOXED_loans = idResolver.createSetOfAll(UnimodelTables.SET_CLSSid_Loan, loans);
@@ -320,7 +320,7 @@ public class PersonImpl extends NamedImpl implements Person {
 			 * person = self
 			 */
 			if (_1 == null) {
-				throw new InvalidValueException("Null source for \'\'http://www.example.org/unimodel\'::Loan::person\'");
+				throw new InvalidValueException("Null source for \'\'http://it.univaq.disim/unimodel\'::Loan::person\'");
 			}
 			final /*@Thrown*/ Person person = _1.getPerson();
 			final /*@Thrown*/ boolean eq = this.equals(person);
@@ -360,7 +360,7 @@ public class PersonImpl extends NamedImpl implements Person {
 			 * book
 			 */
 			if (_1 == null) {
-				throw new InvalidValueException("Null source for \'\'http://www.example.org/unimodel\'::Loan::book\'");
+				throw new InvalidValueException("Null source for \'\'http://it.univaq.disim/unimodel\'::Loan::book\'");
 			}
 			final /*@Thrown*/ Book book = _1.getBook();
 			//

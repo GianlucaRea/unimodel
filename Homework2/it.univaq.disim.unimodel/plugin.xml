@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.ecore.generated_package">
       <!-- @generated unimodel -->
       <package
-            uri="http://www.example.org/unimodel"
+            uri="http://it.univaq.disim/unimodel"
             class="unimodel.UnimodelPackage"
             genModel="model/unimodel.genmodel"/>
    </extension>

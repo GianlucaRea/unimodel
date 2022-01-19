@@ -41,7 +41,7 @@ public interface UnimodelPackage extends EPackage {
 	 * <!-- end-user-doc -->
 	 * @generated
 	 */
-	String eNS_URI = "http://www.example.org/unimodel";
+	String eNS_URI = "http://it.univaq.disim/unimodel";
 
 	/**
 	 * The package namespace name.

@@ -255,7 +255,7 @@ public class BookImpl extends NamedImpl implements Book {
 		final /*@NonInvalid*/ IdResolver idResolver = executor.getIdResolver();
 		final /*@NonInvalid*/ Library library = this.getLibrary();
 		if (library == null) {
-			throw new InvalidValueException("Null source for \'\'http://www.example.org/unimodel\'::Library::loans\'");
+			throw new InvalidValueException("Null source for \'\'http://it.univaq.disim/unimodel\'::Library::loans\'");
 		}
 		final /*@Thrown*/ List<Loan> loans = library.getLoans();
 		final /*@Thrown*/ SetValue BOXED_loans = idResolver.createSetOfAll(UnimodelTables.SET_CLSSid_Loan, loans);
@@ -272,7 +272,7 @@ public class BookImpl extends NamedImpl implements Book {
 			 * book = self
 			 */
 			if (_1 == null) {
-				throw new InvalidValueException("Null source for \'\'http://www.example.org/unimodel\'::Loan::book\'");
+				throw new InvalidValueException("Null source for \'\'http://it.univaq.disim/unimodel\'::Loan::book\'");
 			}
 			final /*@Thrown*/ Book book = _1.getBook();
 			final /*@Thrown*/ boolean eq = this.equals(book);
@@ -435,7 +435,7 @@ public class BookImpl extends NamedImpl implements Book {
 				try {
 					final /*@NonInvalid*/ Library library = this.getLibrary();
 					if (library == null) {
-						throw new InvalidValueException("Null source for \'\'http://www.example.org/unimodel\'::Library::loans\'");
+						throw new InvalidValueException("Null source for \'\'http://it.univaq.disim/unimodel\'::Library::loans\'");
 					}
 					final /*@Thrown*/ List<Loan> loans = library.getLoans();
 					final /*@Thrown*/ SetValue BOXED_loans = idResolver.createSetOfAll(UnimodelTables.SET_CLSSid_Loan, loans);
@@ -452,7 +452,7 @@ public class BookImpl extends NamedImpl implements Book {
 						 * book = self
 						 */
 						if (_1 == null) {
-							throw new InvalidValueException("Null source for \'\'http://www.example.org/unimodel\'::Loan::book\'");
+							throw new InvalidValueException("Null source for \'\'http://it.univaq.disim/unimodel\'::Loan::book\'");
 						}
 						final /*@Thrown*/ Book book = _1.getBook();
 						final /*@Thrown*/ boolean eq = this.equals(book);

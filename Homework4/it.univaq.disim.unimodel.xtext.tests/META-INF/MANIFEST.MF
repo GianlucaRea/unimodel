@@ -1,0 +1,16 @@
+Manifest-Version: 1.0
+Automatic-Module-Name: it.univaq.disim.unimodel.xtext.tests
+Bundle-ManifestVersion: 2
+Bundle-Name: it.univaq.disim.unimodel.xtext.tests
+Bundle-Vendor: My Company
+Bundle-Version: 1.0.0.qualifier
+Bundle-SymbolicName: it.univaq.disim.unimodel.xtext.tests; singleton:=true
+Bundle-ActivationPolicy: lazy
+Require-Bundle: it.univaq.disim.unimodel.xtext,
+ it.univaq.disim.unimodel,
+ org.junit.jupiter.api;bundle-version="[5.1.0,6.0.0)",
+ org.eclipse.xtext.testing,
+ org.eclipse.xtext.xbase.testing,
+ org.eclipse.xtext.xbase.lib;bundle-version="2.14.0"
+Bundle-RequiredExecutionEnvironment: JavaSE-11
+Export-Package: it.univaq.disim.unimodel.xtext.tests;x-internal=true
