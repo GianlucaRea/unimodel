@@ -9,7 +9,7 @@
    <extension point="org.eclipse.emf.edit.itemProviderAdapterFactories">
       <!-- @generated unimodel -->
       <factory
-            uri="http://www.example.org/unimodel"
+            uri="http://it.univaq.disim/unimodel"
             class="unimodel.provider.UnimodelItemProviderAdapterFactory"
             supportedTypes=
               "org.eclipse.emf.edit.provider.IEditingDomainItemProvider
