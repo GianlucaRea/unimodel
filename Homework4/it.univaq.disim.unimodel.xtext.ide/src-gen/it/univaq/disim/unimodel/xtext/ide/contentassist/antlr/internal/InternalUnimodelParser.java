@@ -22,7 +22,7 @@ import java.util.ArrayList;
 @SuppressWarnings("all")
 public class InternalUnimodelParser extends AbstractInternalContentAssistParser {
     public static final String[] tokenNames = new String[] {
-        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'EDate'", "'E'", "'e'", "'PROFESSOR'", "'PHD_STUDENT'", "'ADMINISTRATOR'", "'STAFF'", "'STUDENT'", "'PROFESSOR_OFFICE'", "'PHD_ROOM'", "'ADMINISTRATION'", "'SECRETARIAT'", "'University'", "'{'", "'buildings'", "'}'", "'chancellor'", "'description'", "','", "'Building'", "'address'", "'floors'", "'library'", "'Address'", "'country'", "'state'", "'city'", "'post_code'", "'street'", "'civic'", "'phone'", "'Library'", "'workstations'", "'computers'", "'books'", "'loans'", "'person'", "'Floor'", "'number'", "'bathrooms'", "'rooms'", "'-'", "'Book'", "'quantity'", "'ISBN'", "'author'", "'Loan'", "'date'", "'book'", "'Person'", "'category'", "'age'", "'badge'", "'fiscal_code'", "'Room'", "'dimension'", "'sockets'", "'.'", "'Office'", "'type'", "'capacity'", "'office_address'", "'person_in_office'", "'Class'", "'seats'", "'blackboards'", "'speakers'"
+        "<invalid>", "<EOR>", "<DOWN>", "<UP>", "RULE_STRING", "RULE_ID", "RULE_INT", "RULE_ML_COMMENT", "RULE_SL_COMMENT", "RULE_WS", "RULE_ANY_OTHER", "'EDate'", "'E'", "'e'", "'PROFESSOR'", "'PHD_STUDENT'", "'ADMINISTRATOR'", "'STAFF'", "'STUDENT'", "'PROFESSOR_OFFICE'", "'PHD_ROOM'", "'ADMINISTRATION'", "'SECRETARIAT'", "'University'", "'{'", "'buildings'", "'}'", "'chancellor'", "'description'", "','", "'Building'", "'address'", "'floors'", "'library'", "'Address'", "'country'", "'state'", "'city'", "'post_code'", "'street'", "'civic'", "'phone'", "'Library'", "'workstations'", "'computers'", "'books'", "'loans'", "'person'", "'Floor'", "'number'", "'bathrooms'", "'rooms'", "'Book'", "'quantity'", "'ISBN'", "'author'", "'Loan'", "'date'", "'book'", "'Person'", "'category'", "'age'", "'badge'", "'fiscal_code'", "'Room'", "'dimension'", "'sockets'", "'Office'", "'type'", "'capacity'", "'office_address'", "'person_in_office'", "'Class'", "'seats'", "'blackboards'", "'speakers'", "'-'", "'.'"
     };
     public static final int T__50=50;
     public static final int T__19=19;
@@ -212,166 +212,12 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "ruleUniversity"
 
 
-    // $ANTLR start "entryRuleRoom"
-    // InternalUnimodel.g:78:1: entryRuleRoom : ruleRoom EOF ;
-    public final void entryRuleRoom() throws RecognitionException {
-        try {
-            // InternalUnimodel.g:79:1: ( ruleRoom EOF )
-            // InternalUnimodel.g:80:1: ruleRoom EOF
-            {
-             before(grammarAccess.getRoomRule()); 
-            pushFollow(FOLLOW_1);
-            ruleRoom();
-
-            state._fsp--;
-
-             after(grammarAccess.getRoomRule()); 
-            match(input,EOF,FOLLOW_2); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleRoom"
-
-
-    // $ANTLR start "ruleRoom"
-    // InternalUnimodel.g:87:1: ruleRoom : ( ( rule__Room__Alternatives ) ) ;
-    public final void ruleRoom() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:91:2: ( ( ( rule__Room__Alternatives ) ) )
-            // InternalUnimodel.g:92:2: ( ( rule__Room__Alternatives ) )
-            {
-            // InternalUnimodel.g:92:2: ( ( rule__Room__Alternatives ) )
-            // InternalUnimodel.g:93:3: ( rule__Room__Alternatives )
-            {
-             before(grammarAccess.getRoomAccess().getAlternatives()); 
-            // InternalUnimodel.g:94:3: ( rule__Room__Alternatives )
-            // InternalUnimodel.g:94:4: rule__Room__Alternatives
-            {
-            pushFollow(FOLLOW_2);
-            rule__Room__Alternatives();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getRoomAccess().getAlternatives()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "ruleRoom"
-
-
-    // $ANTLR start "entryRuleEString"
-    // InternalUnimodel.g:103:1: entryRuleEString : ruleEString EOF ;
-    public final void entryRuleEString() throws RecognitionException {
-        try {
-            // InternalUnimodel.g:104:1: ( ruleEString EOF )
-            // InternalUnimodel.g:105:1: ruleEString EOF
-            {
-             before(grammarAccess.getEStringRule()); 
-            pushFollow(FOLLOW_1);
-            ruleEString();
-
-            state._fsp--;
-
-             after(grammarAccess.getEStringRule()); 
-            match(input,EOF,FOLLOW_2); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleEString"
-
-
-    // $ANTLR start "ruleEString"
-    // InternalUnimodel.g:112:1: ruleEString : ( ( rule__EString__Alternatives ) ) ;
-    public final void ruleEString() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:116:2: ( ( ( rule__EString__Alternatives ) ) )
-            // InternalUnimodel.g:117:2: ( ( rule__EString__Alternatives ) )
-            {
-            // InternalUnimodel.g:117:2: ( ( rule__EString__Alternatives ) )
-            // InternalUnimodel.g:118:3: ( rule__EString__Alternatives )
-            {
-             before(grammarAccess.getEStringAccess().getAlternatives()); 
-            // InternalUnimodel.g:119:3: ( rule__EString__Alternatives )
-            // InternalUnimodel.g:119:4: rule__EString__Alternatives
-            {
-            pushFollow(FOLLOW_2);
-            rule__EString__Alternatives();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getEStringAccess().getAlternatives()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "ruleEString"
-
-
     // $ANTLR start "entryRuleBuilding"
-    // InternalUnimodel.g:128:1: entryRuleBuilding : ruleBuilding EOF ;
+    // InternalUnimodel.g:78:1: entryRuleBuilding : ruleBuilding EOF ;
     public final void entryRuleBuilding() throws RecognitionException {
         try {
-            // InternalUnimodel.g:129:1: ( ruleBuilding EOF )
-            // InternalUnimodel.g:130:1: ruleBuilding EOF
+            // InternalUnimodel.g:79:1: ( ruleBuilding EOF )
+            // InternalUnimodel.g:80:1: ruleBuilding EOF
             {
              before(grammarAccess.getBuildingRule()); 
             pushFollow(FOLLOW_1);
@@ -397,21 +243,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "ruleBuilding"
-    // InternalUnimodel.g:137:1: ruleBuilding : ( ( rule__Building__Group__0 ) ) ;
+    // InternalUnimodel.g:87:1: ruleBuilding : ( ( rule__Building__Group__0 ) ) ;
     public final void ruleBuilding() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:141:2: ( ( ( rule__Building__Group__0 ) ) )
-            // InternalUnimodel.g:142:2: ( ( rule__Building__Group__0 ) )
+            // InternalUnimodel.g:91:2: ( ( ( rule__Building__Group__0 ) ) )
+            // InternalUnimodel.g:92:2: ( ( rule__Building__Group__0 ) )
             {
-            // InternalUnimodel.g:142:2: ( ( rule__Building__Group__0 ) )
-            // InternalUnimodel.g:143:3: ( rule__Building__Group__0 )
+            // InternalUnimodel.g:92:2: ( ( rule__Building__Group__0 ) )
+            // InternalUnimodel.g:93:3: ( rule__Building__Group__0 )
             {
              before(grammarAccess.getBuildingAccess().getGroup()); 
-            // InternalUnimodel.g:144:3: ( rule__Building__Group__0 )
-            // InternalUnimodel.g:144:4: rule__Building__Group__0
+            // InternalUnimodel.g:94:3: ( rule__Building__Group__0 )
+            // InternalUnimodel.g:94:4: rule__Building__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Building__Group__0();
@@ -444,11 +290,11 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "entryRuleAddress"
-    // InternalUnimodel.g:153:1: entryRuleAddress : ruleAddress EOF ;
+    // InternalUnimodel.g:103:1: entryRuleAddress : ruleAddress EOF ;
     public final void entryRuleAddress() throws RecognitionException {
         try {
-            // InternalUnimodel.g:154:1: ( ruleAddress EOF )
-            // InternalUnimodel.g:155:1: ruleAddress EOF
+            // InternalUnimodel.g:104:1: ( ruleAddress EOF )
+            // InternalUnimodel.g:105:1: ruleAddress EOF
             {
              before(grammarAccess.getAddressRule()); 
             pushFollow(FOLLOW_1);
@@ -474,21 +320,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "ruleAddress"
-    // InternalUnimodel.g:162:1: ruleAddress : ( ( rule__Address__Group__0 ) ) ;
+    // InternalUnimodel.g:112:1: ruleAddress : ( ( rule__Address__Group__0 ) ) ;
     public final void ruleAddress() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:166:2: ( ( ( rule__Address__Group__0 ) ) )
-            // InternalUnimodel.g:167:2: ( ( rule__Address__Group__0 ) )
+            // InternalUnimodel.g:116:2: ( ( ( rule__Address__Group__0 ) ) )
+            // InternalUnimodel.g:117:2: ( ( rule__Address__Group__0 ) )
             {
-            // InternalUnimodel.g:167:2: ( ( rule__Address__Group__0 ) )
-            // InternalUnimodel.g:168:3: ( rule__Address__Group__0 )
+            // InternalUnimodel.g:117:2: ( ( rule__Address__Group__0 ) )
+            // InternalUnimodel.g:118:3: ( rule__Address__Group__0 )
             {
              before(grammarAccess.getAddressAccess().getGroup()); 
-            // InternalUnimodel.g:169:3: ( rule__Address__Group__0 )
-            // InternalUnimodel.g:169:4: rule__Address__Group__0
+            // InternalUnimodel.g:119:3: ( rule__Address__Group__0 )
+            // InternalUnimodel.g:119:4: rule__Address__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Address__Group__0();
@@ -521,11 +367,11 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "entryRuleLibrary"
-    // InternalUnimodel.g:178:1: entryRuleLibrary : ruleLibrary EOF ;
+    // InternalUnimodel.g:128:1: entryRuleLibrary : ruleLibrary EOF ;
     public final void entryRuleLibrary() throws RecognitionException {
         try {
-            // InternalUnimodel.g:179:1: ( ruleLibrary EOF )
-            // InternalUnimodel.g:180:1: ruleLibrary EOF
+            // InternalUnimodel.g:129:1: ( ruleLibrary EOF )
+            // InternalUnimodel.g:130:1: ruleLibrary EOF
             {
              before(grammarAccess.getLibraryRule()); 
             pushFollow(FOLLOW_1);
@@ -551,21 +397,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "ruleLibrary"
-    // InternalUnimodel.g:187:1: ruleLibrary : ( ( rule__Library__Group__0 ) ) ;
+    // InternalUnimodel.g:137:1: ruleLibrary : ( ( rule__Library__Group__0 ) ) ;
     public final void ruleLibrary() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:191:2: ( ( ( rule__Library__Group__0 ) ) )
-            // InternalUnimodel.g:192:2: ( ( rule__Library__Group__0 ) )
+            // InternalUnimodel.g:141:2: ( ( ( rule__Library__Group__0 ) ) )
+            // InternalUnimodel.g:142:2: ( ( rule__Library__Group__0 ) )
             {
-            // InternalUnimodel.g:192:2: ( ( rule__Library__Group__0 ) )
-            // InternalUnimodel.g:193:3: ( rule__Library__Group__0 )
+            // InternalUnimodel.g:142:2: ( ( rule__Library__Group__0 ) )
+            // InternalUnimodel.g:143:3: ( rule__Library__Group__0 )
             {
              before(grammarAccess.getLibraryAccess().getGroup()); 
-            // InternalUnimodel.g:194:3: ( rule__Library__Group__0 )
-            // InternalUnimodel.g:194:4: rule__Library__Group__0
+            // InternalUnimodel.g:144:3: ( rule__Library__Group__0 )
+            // InternalUnimodel.g:144:4: rule__Library__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Library__Group__0();
@@ -598,11 +444,11 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "entryRuleFloor"
-    // InternalUnimodel.g:203:1: entryRuleFloor : ruleFloor EOF ;
+    // InternalUnimodel.g:153:1: entryRuleFloor : ruleFloor EOF ;
     public final void entryRuleFloor() throws RecognitionException {
         try {
-            // InternalUnimodel.g:204:1: ( ruleFloor EOF )
-            // InternalUnimodel.g:205:1: ruleFloor EOF
+            // InternalUnimodel.g:154:1: ( ruleFloor EOF )
+            // InternalUnimodel.g:155:1: ruleFloor EOF
             {
              before(grammarAccess.getFloorRule()); 
             pushFollow(FOLLOW_1);
@@ -628,21 +474,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "ruleFloor"
-    // InternalUnimodel.g:212:1: ruleFloor : ( ( rule__Floor__Group__0 ) ) ;
+    // InternalUnimodel.g:162:1: ruleFloor : ( ( rule__Floor__Group__0 ) ) ;
     public final void ruleFloor() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:216:2: ( ( ( rule__Floor__Group__0 ) ) )
-            // InternalUnimodel.g:217:2: ( ( rule__Floor__Group__0 ) )
+            // InternalUnimodel.g:166:2: ( ( ( rule__Floor__Group__0 ) ) )
+            // InternalUnimodel.g:167:2: ( ( rule__Floor__Group__0 ) )
             {
-            // InternalUnimodel.g:217:2: ( ( rule__Floor__Group__0 ) )
-            // InternalUnimodel.g:218:3: ( rule__Floor__Group__0 )
+            // InternalUnimodel.g:167:2: ( ( rule__Floor__Group__0 ) )
+            // InternalUnimodel.g:168:3: ( rule__Floor__Group__0 )
             {
              before(grammarAccess.getFloorAccess().getGroup()); 
-            // InternalUnimodel.g:219:3: ( rule__Floor__Group__0 )
-            // InternalUnimodel.g:219:4: rule__Floor__Group__0
+            // InternalUnimodel.g:169:3: ( rule__Floor__Group__0 )
+            // InternalUnimodel.g:169:4: rule__Floor__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Floor__Group__0();
@@ -674,89 +520,12 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "ruleFloor"
 
 
-    // $ANTLR start "entryRuleEInt"
-    // InternalUnimodel.g:228:1: entryRuleEInt : ruleEInt EOF ;
-    public final void entryRuleEInt() throws RecognitionException {
-        try {
-            // InternalUnimodel.g:229:1: ( ruleEInt EOF )
-            // InternalUnimodel.g:230:1: ruleEInt EOF
-            {
-             before(grammarAccess.getEIntRule()); 
-            pushFollow(FOLLOW_1);
-            ruleEInt();
-
-            state._fsp--;
-
-             after(grammarAccess.getEIntRule()); 
-            match(input,EOF,FOLLOW_2); 
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-        }
-        return ;
-    }
-    // $ANTLR end "entryRuleEInt"
-
-
-    // $ANTLR start "ruleEInt"
-    // InternalUnimodel.g:237:1: ruleEInt : ( ( rule__EInt__Group__0 ) ) ;
-    public final void ruleEInt() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:241:2: ( ( ( rule__EInt__Group__0 ) ) )
-            // InternalUnimodel.g:242:2: ( ( rule__EInt__Group__0 ) )
-            {
-            // InternalUnimodel.g:242:2: ( ( rule__EInt__Group__0 ) )
-            // InternalUnimodel.g:243:3: ( rule__EInt__Group__0 )
-            {
-             before(grammarAccess.getEIntAccess().getGroup()); 
-            // InternalUnimodel.g:244:3: ( rule__EInt__Group__0 )
-            // InternalUnimodel.g:244:4: rule__EInt__Group__0
-            {
-            pushFollow(FOLLOW_2);
-            rule__EInt__Group__0();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getEIntAccess().getGroup()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "ruleEInt"
-
-
     // $ANTLR start "entryRuleBook"
-    // InternalUnimodel.g:253:1: entryRuleBook : ruleBook EOF ;
+    // InternalUnimodel.g:178:1: entryRuleBook : ruleBook EOF ;
     public final void entryRuleBook() throws RecognitionException {
         try {
-            // InternalUnimodel.g:254:1: ( ruleBook EOF )
-            // InternalUnimodel.g:255:1: ruleBook EOF
+            // InternalUnimodel.g:179:1: ( ruleBook EOF )
+            // InternalUnimodel.g:180:1: ruleBook EOF
             {
              before(grammarAccess.getBookRule()); 
             pushFollow(FOLLOW_1);
@@ -782,21 +551,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "ruleBook"
-    // InternalUnimodel.g:262:1: ruleBook : ( ( rule__Book__Group__0 ) ) ;
+    // InternalUnimodel.g:187:1: ruleBook : ( ( rule__Book__Group__0 ) ) ;
     public final void ruleBook() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:266:2: ( ( ( rule__Book__Group__0 ) ) )
-            // InternalUnimodel.g:267:2: ( ( rule__Book__Group__0 ) )
+            // InternalUnimodel.g:191:2: ( ( ( rule__Book__Group__0 ) ) )
+            // InternalUnimodel.g:192:2: ( ( rule__Book__Group__0 ) )
             {
-            // InternalUnimodel.g:267:2: ( ( rule__Book__Group__0 ) )
-            // InternalUnimodel.g:268:3: ( rule__Book__Group__0 )
+            // InternalUnimodel.g:192:2: ( ( rule__Book__Group__0 ) )
+            // InternalUnimodel.g:193:3: ( rule__Book__Group__0 )
             {
              before(grammarAccess.getBookAccess().getGroup()); 
-            // InternalUnimodel.g:269:3: ( rule__Book__Group__0 )
-            // InternalUnimodel.g:269:4: rule__Book__Group__0
+            // InternalUnimodel.g:194:3: ( rule__Book__Group__0 )
+            // InternalUnimodel.g:194:4: rule__Book__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Book__Group__0();
@@ -829,11 +598,11 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "entryRuleLoan"
-    // InternalUnimodel.g:278:1: entryRuleLoan : ruleLoan EOF ;
+    // InternalUnimodel.g:203:1: entryRuleLoan : ruleLoan EOF ;
     public final void entryRuleLoan() throws RecognitionException {
         try {
-            // InternalUnimodel.g:279:1: ( ruleLoan EOF )
-            // InternalUnimodel.g:280:1: ruleLoan EOF
+            // InternalUnimodel.g:204:1: ( ruleLoan EOF )
+            // InternalUnimodel.g:205:1: ruleLoan EOF
             {
              before(grammarAccess.getLoanRule()); 
             pushFollow(FOLLOW_1);
@@ -859,21 +628,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "ruleLoan"
-    // InternalUnimodel.g:287:1: ruleLoan : ( ( rule__Loan__Group__0 ) ) ;
+    // InternalUnimodel.g:212:1: ruleLoan : ( ( rule__Loan__Group__0 ) ) ;
     public final void ruleLoan() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:291:2: ( ( ( rule__Loan__Group__0 ) ) )
-            // InternalUnimodel.g:292:2: ( ( rule__Loan__Group__0 ) )
+            // InternalUnimodel.g:216:2: ( ( ( rule__Loan__Group__0 ) ) )
+            // InternalUnimodel.g:217:2: ( ( rule__Loan__Group__0 ) )
             {
-            // InternalUnimodel.g:292:2: ( ( rule__Loan__Group__0 ) )
-            // InternalUnimodel.g:293:3: ( rule__Loan__Group__0 )
+            // InternalUnimodel.g:217:2: ( ( rule__Loan__Group__0 ) )
+            // InternalUnimodel.g:218:3: ( rule__Loan__Group__0 )
             {
              before(grammarAccess.getLoanAccess().getGroup()); 
-            // InternalUnimodel.g:294:3: ( rule__Loan__Group__0 )
-            // InternalUnimodel.g:294:4: rule__Loan__Group__0
+            // InternalUnimodel.g:219:3: ( rule__Loan__Group__0 )
+            // InternalUnimodel.g:219:4: rule__Loan__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Loan__Group__0();
@@ -906,11 +675,11 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "entryRulePerson"
-    // InternalUnimodel.g:303:1: entryRulePerson : rulePerson EOF ;
+    // InternalUnimodel.g:228:1: entryRulePerson : rulePerson EOF ;
     public final void entryRulePerson() throws RecognitionException {
         try {
-            // InternalUnimodel.g:304:1: ( rulePerson EOF )
-            // InternalUnimodel.g:305:1: rulePerson EOF
+            // InternalUnimodel.g:229:1: ( rulePerson EOF )
+            // InternalUnimodel.g:230:1: rulePerson EOF
             {
              before(grammarAccess.getPersonRule()); 
             pushFollow(FOLLOW_1);
@@ -936,21 +705,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rulePerson"
-    // InternalUnimodel.g:312:1: rulePerson : ( ( rule__Person__Group__0 ) ) ;
+    // InternalUnimodel.g:237:1: rulePerson : ( ( rule__Person__Group__0 ) ) ;
     public final void rulePerson() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:316:2: ( ( ( rule__Person__Group__0 ) ) )
-            // InternalUnimodel.g:317:2: ( ( rule__Person__Group__0 ) )
+            // InternalUnimodel.g:241:2: ( ( ( rule__Person__Group__0 ) ) )
+            // InternalUnimodel.g:242:2: ( ( rule__Person__Group__0 ) )
             {
-            // InternalUnimodel.g:317:2: ( ( rule__Person__Group__0 ) )
-            // InternalUnimodel.g:318:3: ( rule__Person__Group__0 )
+            // InternalUnimodel.g:242:2: ( ( rule__Person__Group__0 ) )
+            // InternalUnimodel.g:243:3: ( rule__Person__Group__0 )
             {
              before(grammarAccess.getPersonAccess().getGroup()); 
-            // InternalUnimodel.g:319:3: ( rule__Person__Group__0 )
-            // InternalUnimodel.g:319:4: rule__Person__Group__0
+            // InternalUnimodel.g:244:3: ( rule__Person__Group__0 )
+            // InternalUnimodel.g:244:4: rule__Person__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Person__Group__0();
@@ -982,20 +751,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rulePerson"
 
 
-    // $ANTLR start "entryRuleEDate"
-    // InternalUnimodel.g:328:1: entryRuleEDate : ruleEDate EOF ;
-    public final void entryRuleEDate() throws RecognitionException {
+    // $ANTLR start "entryRuleRoom"
+    // InternalUnimodel.g:253:1: entryRuleRoom : ruleRoom EOF ;
+    public final void entryRuleRoom() throws RecognitionException {
         try {
-            // InternalUnimodel.g:329:1: ( ruleEDate EOF )
-            // InternalUnimodel.g:330:1: ruleEDate EOF
+            // InternalUnimodel.g:254:1: ( ruleRoom EOF )
+            // InternalUnimodel.g:255:1: ruleRoom EOF
             {
-             before(grammarAccess.getEDateRule()); 
+             before(grammarAccess.getRoomRule()); 
             pushFollow(FOLLOW_1);
-            ruleEDate();
+            ruleRoom();
 
             state._fsp--;
 
-             after(grammarAccess.getEDateRule()); 
+             after(grammarAccess.getRoomRule()); 
             match(input,EOF,FOLLOW_2); 
 
             }
@@ -1009,25 +778,35 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "entryRuleEDate"
+    // $ANTLR end "entryRuleRoom"
 
 
-    // $ANTLR start "ruleEDate"
-    // InternalUnimodel.g:337:1: ruleEDate : ( 'EDate' ) ;
-    public final void ruleEDate() throws RecognitionException {
+    // $ANTLR start "ruleRoom"
+    // InternalUnimodel.g:262:1: ruleRoom : ( ( rule__Room__Alternatives ) ) ;
+    public final void ruleRoom() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:341:2: ( ( 'EDate' ) )
-            // InternalUnimodel.g:342:2: ( 'EDate' )
+            // InternalUnimodel.g:266:2: ( ( ( rule__Room__Alternatives ) ) )
+            // InternalUnimodel.g:267:2: ( ( rule__Room__Alternatives ) )
             {
-            // InternalUnimodel.g:342:2: ( 'EDate' )
-            // InternalUnimodel.g:343:3: 'EDate'
+            // InternalUnimodel.g:267:2: ( ( rule__Room__Alternatives ) )
+            // InternalUnimodel.g:268:3: ( rule__Room__Alternatives )
             {
-             before(grammarAccess.getEDateAccess().getEDateKeyword()); 
-            match(input,11,FOLLOW_2); 
-             after(grammarAccess.getEDateAccess().getEDateKeyword()); 
+             before(grammarAccess.getRoomAccess().getAlternatives()); 
+            // InternalUnimodel.g:269:3: ( rule__Room__Alternatives )
+            // InternalUnimodel.g:269:4: rule__Room__Alternatives
+            {
+            pushFollow(FOLLOW_2);
+            rule__Room__Alternatives();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getRoomAccess().getAlternatives()); 
 
             }
 
@@ -1046,15 +825,15 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "ruleEDate"
+    // $ANTLR end "ruleRoom"
 
 
     // $ANTLR start "entryRuleRoom_Impl"
-    // InternalUnimodel.g:353:1: entryRuleRoom_Impl : ruleRoom_Impl EOF ;
+    // InternalUnimodel.g:278:1: entryRuleRoom_Impl : ruleRoom_Impl EOF ;
     public final void entryRuleRoom_Impl() throws RecognitionException {
         try {
-            // InternalUnimodel.g:354:1: ( ruleRoom_Impl EOF )
-            // InternalUnimodel.g:355:1: ruleRoom_Impl EOF
+            // InternalUnimodel.g:279:1: ( ruleRoom_Impl EOF )
+            // InternalUnimodel.g:280:1: ruleRoom_Impl EOF
             {
              before(grammarAccess.getRoom_ImplRule()); 
             pushFollow(FOLLOW_1);
@@ -1080,21 +859,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "ruleRoom_Impl"
-    // InternalUnimodel.g:362:1: ruleRoom_Impl : ( ( rule__Room_Impl__Group__0 ) ) ;
+    // InternalUnimodel.g:287:1: ruleRoom_Impl : ( ( rule__Room_Impl__Group__0 ) ) ;
     public final void ruleRoom_Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:366:2: ( ( ( rule__Room_Impl__Group__0 ) ) )
-            // InternalUnimodel.g:367:2: ( ( rule__Room_Impl__Group__0 ) )
+            // InternalUnimodel.g:291:2: ( ( ( rule__Room_Impl__Group__0 ) ) )
+            // InternalUnimodel.g:292:2: ( ( rule__Room_Impl__Group__0 ) )
             {
-            // InternalUnimodel.g:367:2: ( ( rule__Room_Impl__Group__0 ) )
-            // InternalUnimodel.g:368:3: ( rule__Room_Impl__Group__0 )
+            // InternalUnimodel.g:292:2: ( ( rule__Room_Impl__Group__0 ) )
+            // InternalUnimodel.g:293:3: ( rule__Room_Impl__Group__0 )
             {
              before(grammarAccess.getRoom_ImplAccess().getGroup()); 
-            // InternalUnimodel.g:369:3: ( rule__Room_Impl__Group__0 )
-            // InternalUnimodel.g:369:4: rule__Room_Impl__Group__0
+            // InternalUnimodel.g:294:3: ( rule__Room_Impl__Group__0 )
+            // InternalUnimodel.g:294:4: rule__Room_Impl__Group__0
             {
             pushFollow(FOLLOW_2);
             rule__Room_Impl__Group__0();
@@ -1124,6 +903,237 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
         return ;
     }
     // $ANTLR end "ruleRoom_Impl"
+
+
+    // $ANTLR start "entryRuleOffice"
+    // InternalUnimodel.g:303:1: entryRuleOffice : ruleOffice EOF ;
+    public final void entryRuleOffice() throws RecognitionException {
+        try {
+            // InternalUnimodel.g:304:1: ( ruleOffice EOF )
+            // InternalUnimodel.g:305:1: ruleOffice EOF
+            {
+             before(grammarAccess.getOfficeRule()); 
+            pushFollow(FOLLOW_1);
+            ruleOffice();
+
+            state._fsp--;
+
+             after(grammarAccess.getOfficeRule()); 
+            match(input,EOF,FOLLOW_2); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRuleOffice"
+
+
+    // $ANTLR start "ruleOffice"
+    // InternalUnimodel.g:312:1: ruleOffice : ( ( rule__Office__Group__0 ) ) ;
+    public final void ruleOffice() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:316:2: ( ( ( rule__Office__Group__0 ) ) )
+            // InternalUnimodel.g:317:2: ( ( rule__Office__Group__0 ) )
+            {
+            // InternalUnimodel.g:317:2: ( ( rule__Office__Group__0 ) )
+            // InternalUnimodel.g:318:3: ( rule__Office__Group__0 )
+            {
+             before(grammarAccess.getOfficeAccess().getGroup()); 
+            // InternalUnimodel.g:319:3: ( rule__Office__Group__0 )
+            // InternalUnimodel.g:319:4: rule__Office__Group__0
+            {
+            pushFollow(FOLLOW_2);
+            rule__Office__Group__0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getOfficeAccess().getGroup()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "ruleOffice"
+
+
+    // $ANTLR start "entryRuleClass"
+    // InternalUnimodel.g:328:1: entryRuleClass : ruleClass EOF ;
+    public final void entryRuleClass() throws RecognitionException {
+        try {
+            // InternalUnimodel.g:329:1: ( ruleClass EOF )
+            // InternalUnimodel.g:330:1: ruleClass EOF
+            {
+             before(grammarAccess.getClassRule()); 
+            pushFollow(FOLLOW_1);
+            ruleClass();
+
+            state._fsp--;
+
+             after(grammarAccess.getClassRule()); 
+            match(input,EOF,FOLLOW_2); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRuleClass"
+
+
+    // $ANTLR start "ruleClass"
+    // InternalUnimodel.g:337:1: ruleClass : ( ( rule__Class__Group__0 ) ) ;
+    public final void ruleClass() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:341:2: ( ( ( rule__Class__Group__0 ) ) )
+            // InternalUnimodel.g:342:2: ( ( rule__Class__Group__0 ) )
+            {
+            // InternalUnimodel.g:342:2: ( ( rule__Class__Group__0 ) )
+            // InternalUnimodel.g:343:3: ( rule__Class__Group__0 )
+            {
+             before(grammarAccess.getClassAccess().getGroup()); 
+            // InternalUnimodel.g:344:3: ( rule__Class__Group__0 )
+            // InternalUnimodel.g:344:4: rule__Class__Group__0
+            {
+            pushFollow(FOLLOW_2);
+            rule__Class__Group__0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getClassAccess().getGroup()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "ruleClass"
+
+
+    // $ANTLR start "entryRuleEInt"
+    // InternalUnimodel.g:353:1: entryRuleEInt : ruleEInt EOF ;
+    public final void entryRuleEInt() throws RecognitionException {
+        try {
+            // InternalUnimodel.g:354:1: ( ruleEInt EOF )
+            // InternalUnimodel.g:355:1: ruleEInt EOF
+            {
+             before(grammarAccess.getEIntRule()); 
+            pushFollow(FOLLOW_1);
+            ruleEInt();
+
+            state._fsp--;
+
+             after(grammarAccess.getEIntRule()); 
+            match(input,EOF,FOLLOW_2); 
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+        }
+        return ;
+    }
+    // $ANTLR end "entryRuleEInt"
+
+
+    // $ANTLR start "ruleEInt"
+    // InternalUnimodel.g:362:1: ruleEInt : ( ( rule__EInt__Group__0 ) ) ;
+    public final void ruleEInt() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:366:2: ( ( ( rule__EInt__Group__0 ) ) )
+            // InternalUnimodel.g:367:2: ( ( rule__EInt__Group__0 ) )
+            {
+            // InternalUnimodel.g:367:2: ( ( rule__EInt__Group__0 ) )
+            // InternalUnimodel.g:368:3: ( rule__EInt__Group__0 )
+            {
+             before(grammarAccess.getEIntAccess().getGroup()); 
+            // InternalUnimodel.g:369:3: ( rule__EInt__Group__0 )
+            // InternalUnimodel.g:369:4: rule__EInt__Group__0
+            {
+            pushFollow(FOLLOW_2);
+            rule__EInt__Group__0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getEIntAccess().getGroup()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "ruleEInt"
 
 
     // $ANTLR start "entryRuleEFloat"
@@ -1203,20 +1213,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "ruleEFloat"
 
 
-    // $ANTLR start "entryRuleOffice"
-    // InternalUnimodel.g:403:1: entryRuleOffice : ruleOffice EOF ;
-    public final void entryRuleOffice() throws RecognitionException {
+    // $ANTLR start "entryRuleEString"
+    // InternalUnimodel.g:403:1: entryRuleEString : ruleEString EOF ;
+    public final void entryRuleEString() throws RecognitionException {
         try {
-            // InternalUnimodel.g:404:1: ( ruleOffice EOF )
-            // InternalUnimodel.g:405:1: ruleOffice EOF
+            // InternalUnimodel.g:404:1: ( ruleEString EOF )
+            // InternalUnimodel.g:405:1: ruleEString EOF
             {
-             before(grammarAccess.getOfficeRule()); 
+             before(grammarAccess.getEStringRule()); 
             pushFollow(FOLLOW_1);
-            ruleOffice();
+            ruleEString();
 
             state._fsp--;
 
-             after(grammarAccess.getOfficeRule()); 
+             after(grammarAccess.getEStringRule()); 
             match(input,EOF,FOLLOW_2); 
 
             }
@@ -1230,35 +1240,35 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "entryRuleOffice"
+    // $ANTLR end "entryRuleEString"
 
 
-    // $ANTLR start "ruleOffice"
-    // InternalUnimodel.g:412:1: ruleOffice : ( ( rule__Office__Group__0 ) ) ;
-    public final void ruleOffice() throws RecognitionException {
+    // $ANTLR start "ruleEString"
+    // InternalUnimodel.g:412:1: ruleEString : ( ( rule__EString__Alternatives ) ) ;
+    public final void ruleEString() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:416:2: ( ( ( rule__Office__Group__0 ) ) )
-            // InternalUnimodel.g:417:2: ( ( rule__Office__Group__0 ) )
+            // InternalUnimodel.g:416:2: ( ( ( rule__EString__Alternatives ) ) )
+            // InternalUnimodel.g:417:2: ( ( rule__EString__Alternatives ) )
             {
-            // InternalUnimodel.g:417:2: ( ( rule__Office__Group__0 ) )
-            // InternalUnimodel.g:418:3: ( rule__Office__Group__0 )
+            // InternalUnimodel.g:417:2: ( ( rule__EString__Alternatives ) )
+            // InternalUnimodel.g:418:3: ( rule__EString__Alternatives )
             {
-             before(grammarAccess.getOfficeAccess().getGroup()); 
-            // InternalUnimodel.g:419:3: ( rule__Office__Group__0 )
-            // InternalUnimodel.g:419:4: rule__Office__Group__0
+             before(grammarAccess.getEStringAccess().getAlternatives()); 
+            // InternalUnimodel.g:419:3: ( rule__EString__Alternatives )
+            // InternalUnimodel.g:419:4: rule__EString__Alternatives
             {
             pushFollow(FOLLOW_2);
-            rule__Office__Group__0();
+            rule__EString__Alternatives();
 
             state._fsp--;
 
 
             }
 
-             after(grammarAccess.getOfficeAccess().getGroup()); 
+             after(grammarAccess.getEStringAccess().getAlternatives()); 
 
             }
 
@@ -1277,23 +1287,23 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "ruleOffice"
+    // $ANTLR end "ruleEString"
 
 
-    // $ANTLR start "entryRuleClass"
-    // InternalUnimodel.g:428:1: entryRuleClass : ruleClass EOF ;
-    public final void entryRuleClass() throws RecognitionException {
+    // $ANTLR start "entryRuleEDate"
+    // InternalUnimodel.g:428:1: entryRuleEDate : ruleEDate EOF ;
+    public final void entryRuleEDate() throws RecognitionException {
         try {
-            // InternalUnimodel.g:429:1: ( ruleClass EOF )
-            // InternalUnimodel.g:430:1: ruleClass EOF
+            // InternalUnimodel.g:429:1: ( ruleEDate EOF )
+            // InternalUnimodel.g:430:1: ruleEDate EOF
             {
-             before(grammarAccess.getClassRule()); 
+             before(grammarAccess.getEDateRule()); 
             pushFollow(FOLLOW_1);
-            ruleClass();
+            ruleEDate();
 
             state._fsp--;
 
-             after(grammarAccess.getClassRule()); 
+             after(grammarAccess.getEDateRule()); 
             match(input,EOF,FOLLOW_2); 
 
             }
@@ -1307,35 +1317,25 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "entryRuleClass"
+    // $ANTLR end "entryRuleEDate"
 
 
-    // $ANTLR start "ruleClass"
-    // InternalUnimodel.g:437:1: ruleClass : ( ( rule__Class__Group__0 ) ) ;
-    public final void ruleClass() throws RecognitionException {
+    // $ANTLR start "ruleEDate"
+    // InternalUnimodel.g:437:1: ruleEDate : ( 'EDate' ) ;
+    public final void ruleEDate() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:441:2: ( ( ( rule__Class__Group__0 ) ) )
-            // InternalUnimodel.g:442:2: ( ( rule__Class__Group__0 ) )
+            // InternalUnimodel.g:441:2: ( ( 'EDate' ) )
+            // InternalUnimodel.g:442:2: ( 'EDate' )
             {
-            // InternalUnimodel.g:442:2: ( ( rule__Class__Group__0 ) )
-            // InternalUnimodel.g:443:3: ( rule__Class__Group__0 )
+            // InternalUnimodel.g:442:2: ( 'EDate' )
+            // InternalUnimodel.g:443:3: 'EDate'
             {
-             before(grammarAccess.getClassAccess().getGroup()); 
-            // InternalUnimodel.g:444:3: ( rule__Class__Group__0 )
-            // InternalUnimodel.g:444:4: rule__Class__Group__0
-            {
-            pushFollow(FOLLOW_2);
-            rule__Class__Group__0();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getClassAccess().getGroup()); 
+             before(grammarAccess.getEDateAccess().getEDateKeyword()); 
+            match(input,11,FOLLOW_2); 
+             after(grammarAccess.getEDateAccess().getEDateKeyword()); 
 
             }
 
@@ -1354,7 +1354,7 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
         }
         return ;
     }
-    // $ANTLR end "ruleClass"
+    // $ANTLR end "ruleEDate"
 
 
     // $ANTLR start "ruleCategory"
@@ -1461,17 +1461,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
             // InternalUnimodel.g:488:1: ( ( ruleRoom_Impl ) | ( ruleOffice ) | ( ruleClass ) )
             int alt1=3;
             switch ( input.LA(1) ) {
-            case 65:
+            case 64:
                 {
                 alt1=1;
                 }
                 break;
-            case 69:
+            case 67:
                 {
                 alt1=2;
                 }
                 break;
-            case 74:
+            case 72:
                 {
                 alt1=3;
                 }
@@ -1558,21 +1558,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__Room__Alternatives"
 
 
-    // $ANTLR start "rule__EString__Alternatives"
-    // InternalUnimodel.g:511:1: rule__EString__Alternatives : ( ( RULE_STRING ) | ( RULE_ID ) );
-    public final void rule__EString__Alternatives() throws RecognitionException {
+    // $ANTLR start "rule__EFloat__Alternatives_4_0"
+    // InternalUnimodel.g:511:1: rule__EFloat__Alternatives_4_0 : ( ( 'E' ) | ( 'e' ) );
+    public final void rule__EFloat__Alternatives_4_0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:515:1: ( ( RULE_STRING ) | ( RULE_ID ) )
+            // InternalUnimodel.g:515:1: ( ( 'E' ) | ( 'e' ) )
             int alt2=2;
             int LA2_0 = input.LA(1);
 
-            if ( (LA2_0==RULE_STRING) ) {
+            if ( (LA2_0==12) ) {
                 alt2=1;
             }
-            else if ( (LA2_0==RULE_ID) ) {
+            else if ( (LA2_0==13) ) {
                 alt2=2;
             }
             else {
@@ -1583,81 +1583,10 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
             }
             switch (alt2) {
                 case 1 :
-                    // InternalUnimodel.g:516:2: ( RULE_STRING )
+                    // InternalUnimodel.g:516:2: ( 'E' )
                     {
-                    // InternalUnimodel.g:516:2: ( RULE_STRING )
-                    // InternalUnimodel.g:517:3: RULE_STRING
-                    {
-                     before(grammarAccess.getEStringAccess().getSTRINGTerminalRuleCall_0()); 
-                    match(input,RULE_STRING,FOLLOW_2); 
-                     after(grammarAccess.getEStringAccess().getSTRINGTerminalRuleCall_0()); 
-
-                    }
-
-
-                    }
-                    break;
-                case 2 :
-                    // InternalUnimodel.g:522:2: ( RULE_ID )
-                    {
-                    // InternalUnimodel.g:522:2: ( RULE_ID )
-                    // InternalUnimodel.g:523:3: RULE_ID
-                    {
-                     before(grammarAccess.getEStringAccess().getIDTerminalRuleCall_1()); 
-                    match(input,RULE_ID,FOLLOW_2); 
-                     after(grammarAccess.getEStringAccess().getIDTerminalRuleCall_1()); 
-
-                    }
-
-
-                    }
-                    break;
-
-            }
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EString__Alternatives"
-
-
-    // $ANTLR start "rule__EFloat__Alternatives_4_0"
-    // InternalUnimodel.g:532:1: rule__EFloat__Alternatives_4_0 : ( ( 'E' ) | ( 'e' ) );
-    public final void rule__EFloat__Alternatives_4_0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:536:1: ( ( 'E' ) | ( 'e' ) )
-            int alt3=2;
-            int LA3_0 = input.LA(1);
-
-            if ( (LA3_0==12) ) {
-                alt3=1;
-            }
-            else if ( (LA3_0==13) ) {
-                alt3=2;
-            }
-            else {
-                NoViableAltException nvae =
-                    new NoViableAltException("", 3, 0, input);
-
-                throw nvae;
-            }
-            switch (alt3) {
-                case 1 :
-                    // InternalUnimodel.g:537:2: ( 'E' )
-                    {
-                    // InternalUnimodel.g:537:2: ( 'E' )
-                    // InternalUnimodel.g:538:3: 'E'
+                    // InternalUnimodel.g:516:2: ( 'E' )
+                    // InternalUnimodel.g:517:3: 'E'
                     {
                      before(grammarAccess.getEFloatAccess().getEKeyword_4_0_0()); 
                     match(input,12,FOLLOW_2); 
@@ -1669,10 +1598,10 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
                     }
                     break;
                 case 2 :
-                    // InternalUnimodel.g:543:2: ( 'e' )
+                    // InternalUnimodel.g:522:2: ( 'e' )
                     {
-                    // InternalUnimodel.g:543:2: ( 'e' )
-                    // InternalUnimodel.g:544:3: 'e'
+                    // InternalUnimodel.g:522:2: ( 'e' )
+                    // InternalUnimodel.g:523:3: 'e'
                     {
                      before(grammarAccess.getEFloatAccess().getEKeyword_4_0_1()); 
                     match(input,13,FOLLOW_2); 
@@ -1698,6 +1627,77 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
         return ;
     }
     // $ANTLR end "rule__EFloat__Alternatives_4_0"
+
+
+    // $ANTLR start "rule__EString__Alternatives"
+    // InternalUnimodel.g:532:1: rule__EString__Alternatives : ( ( RULE_STRING ) | ( RULE_ID ) );
+    public final void rule__EString__Alternatives() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:536:1: ( ( RULE_STRING ) | ( RULE_ID ) )
+            int alt3=2;
+            int LA3_0 = input.LA(1);
+
+            if ( (LA3_0==RULE_STRING) ) {
+                alt3=1;
+            }
+            else if ( (LA3_0==RULE_ID) ) {
+                alt3=2;
+            }
+            else {
+                NoViableAltException nvae =
+                    new NoViableAltException("", 3, 0, input);
+
+                throw nvae;
+            }
+            switch (alt3) {
+                case 1 :
+                    // InternalUnimodel.g:537:2: ( RULE_STRING )
+                    {
+                    // InternalUnimodel.g:537:2: ( RULE_STRING )
+                    // InternalUnimodel.g:538:3: RULE_STRING
+                    {
+                     before(grammarAccess.getEStringAccess().getSTRINGTerminalRuleCall_0()); 
+                    match(input,RULE_STRING,FOLLOW_2); 
+                     after(grammarAccess.getEStringAccess().getSTRINGTerminalRuleCall_0()); 
+
+                    }
+
+
+                    }
+                    break;
+                case 2 :
+                    // InternalUnimodel.g:543:2: ( RULE_ID )
+                    {
+                    // InternalUnimodel.g:543:2: ( RULE_ID )
+                    // InternalUnimodel.g:544:3: RULE_ID
+                    {
+                     before(grammarAccess.getEStringAccess().getIDTerminalRuleCall_1()); 
+                    match(input,RULE_ID,FOLLOW_2); 
+                     after(grammarAccess.getEStringAccess().getIDTerminalRuleCall_1()); 
+
+                    }
+
+
+                    }
+                    break;
+
+            }
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EString__Alternatives"
 
 
     // $ANTLR start "rule__Category__Alternatives"
@@ -10852,177 +10852,15 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__Floor__Group_6_3__1__Impl"
 
 
-    // $ANTLR start "rule__EInt__Group__0"
-    // InternalUnimodel.g:3568:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
-    public final void rule__EInt__Group__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:3572:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
-            // InternalUnimodel.g:3573:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
-            {
-            pushFollow(FOLLOW_15);
-            rule__EInt__Group__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__EInt__Group__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EInt__Group__0"
-
-
-    // $ANTLR start "rule__EInt__Group__0__Impl"
-    // InternalUnimodel.g:3580:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
-    public final void rule__EInt__Group__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:3584:1: ( ( ( '-' )? ) )
-            // InternalUnimodel.g:3585:1: ( ( '-' )? )
-            {
-            // InternalUnimodel.g:3585:1: ( ( '-' )? )
-            // InternalUnimodel.g:3586:2: ( '-' )?
-            {
-             before(grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
-            // InternalUnimodel.g:3587:2: ( '-' )?
-            int alt27=2;
-            int LA27_0 = input.LA(1);
-
-            if ( (LA27_0==52) ) {
-                alt27=1;
-            }
-            switch (alt27) {
-                case 1 :
-                    // InternalUnimodel.g:3587:3: '-'
-                    {
-                    match(input,52,FOLLOW_2); 
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EInt__Group__0__Impl"
-
-
-    // $ANTLR start "rule__EInt__Group__1"
-    // InternalUnimodel.g:3595:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
-    public final void rule__EInt__Group__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:3599:1: ( rule__EInt__Group__1__Impl )
-            // InternalUnimodel.g:3600:2: rule__EInt__Group__1__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__EInt__Group__1__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EInt__Group__1"
-
-
-    // $ANTLR start "rule__EInt__Group__1__Impl"
-    // InternalUnimodel.g:3606:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
-    public final void rule__EInt__Group__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:3610:1: ( ( RULE_INT ) )
-            // InternalUnimodel.g:3611:1: ( RULE_INT )
-            {
-            // InternalUnimodel.g:3611:1: ( RULE_INT )
-            // InternalUnimodel.g:3612:2: RULE_INT
-            {
-             before(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
-            match(input,RULE_INT,FOLLOW_2); 
-             after(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EInt__Group__1__Impl"
-
-
     // $ANTLR start "rule__Book__Group__0"
-    // InternalUnimodel.g:3622:1: rule__Book__Group__0 : rule__Book__Group__0__Impl rule__Book__Group__1 ;
+    // InternalUnimodel.g:3568:1: rule__Book__Group__0 : rule__Book__Group__0__Impl rule__Book__Group__1 ;
     public final void rule__Book__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3626:1: ( rule__Book__Group__0__Impl rule__Book__Group__1 )
-            // InternalUnimodel.g:3627:2: rule__Book__Group__0__Impl rule__Book__Group__1
+            // InternalUnimodel.g:3572:1: ( rule__Book__Group__0__Impl rule__Book__Group__1 )
+            // InternalUnimodel.g:3573:2: rule__Book__Group__0__Impl rule__Book__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Book__Group__0__Impl();
@@ -11053,20 +10891,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__0__Impl"
-    // InternalUnimodel.g:3634:1: rule__Book__Group__0__Impl : ( 'Book' ) ;
+    // InternalUnimodel.g:3580:1: rule__Book__Group__0__Impl : ( 'Book' ) ;
     public final void rule__Book__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3638:1: ( ( 'Book' ) )
-            // InternalUnimodel.g:3639:1: ( 'Book' )
+            // InternalUnimodel.g:3584:1: ( ( 'Book' ) )
+            // InternalUnimodel.g:3585:1: ( 'Book' )
             {
-            // InternalUnimodel.g:3639:1: ( 'Book' )
-            // InternalUnimodel.g:3640:2: 'Book'
+            // InternalUnimodel.g:3585:1: ( 'Book' )
+            // InternalUnimodel.g:3586:2: 'Book'
             {
              before(grammarAccess.getBookAccess().getBookKeyword_0()); 
-            match(input,53,FOLLOW_2); 
+            match(input,52,FOLLOW_2); 
              after(grammarAccess.getBookAccess().getBookKeyword_0()); 
 
             }
@@ -11090,14 +10928,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__1"
-    // InternalUnimodel.g:3649:1: rule__Book__Group__1 : rule__Book__Group__1__Impl rule__Book__Group__2 ;
+    // InternalUnimodel.g:3595:1: rule__Book__Group__1 : rule__Book__Group__1__Impl rule__Book__Group__2 ;
     public final void rule__Book__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3653:1: ( rule__Book__Group__1__Impl rule__Book__Group__2 )
-            // InternalUnimodel.g:3654:2: rule__Book__Group__1__Impl rule__Book__Group__2
+            // InternalUnimodel.g:3599:1: ( rule__Book__Group__1__Impl rule__Book__Group__2 )
+            // InternalUnimodel.g:3600:2: rule__Book__Group__1__Impl rule__Book__Group__2
             {
             pushFollow(FOLLOW_4);
             rule__Book__Group__1__Impl();
@@ -11128,21 +10966,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__1__Impl"
-    // InternalUnimodel.g:3661:1: rule__Book__Group__1__Impl : ( ( rule__Book__NameAssignment_1 ) ) ;
+    // InternalUnimodel.g:3607:1: rule__Book__Group__1__Impl : ( ( rule__Book__NameAssignment_1 ) ) ;
     public final void rule__Book__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3665:1: ( ( ( rule__Book__NameAssignment_1 ) ) )
-            // InternalUnimodel.g:3666:1: ( ( rule__Book__NameAssignment_1 ) )
+            // InternalUnimodel.g:3611:1: ( ( ( rule__Book__NameAssignment_1 ) ) )
+            // InternalUnimodel.g:3612:1: ( ( rule__Book__NameAssignment_1 ) )
             {
-            // InternalUnimodel.g:3666:1: ( ( rule__Book__NameAssignment_1 ) )
-            // InternalUnimodel.g:3667:2: ( rule__Book__NameAssignment_1 )
+            // InternalUnimodel.g:3612:1: ( ( rule__Book__NameAssignment_1 ) )
+            // InternalUnimodel.g:3613:2: ( rule__Book__NameAssignment_1 )
             {
              before(grammarAccess.getBookAccess().getNameAssignment_1()); 
-            // InternalUnimodel.g:3668:2: ( rule__Book__NameAssignment_1 )
-            // InternalUnimodel.g:3668:3: rule__Book__NameAssignment_1
+            // InternalUnimodel.g:3614:2: ( rule__Book__NameAssignment_1 )
+            // InternalUnimodel.g:3614:3: rule__Book__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Book__NameAssignment_1();
@@ -11175,14 +11013,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__2"
-    // InternalUnimodel.g:3676:1: rule__Book__Group__2 : rule__Book__Group__2__Impl rule__Book__Group__3 ;
+    // InternalUnimodel.g:3622:1: rule__Book__Group__2 : rule__Book__Group__2__Impl rule__Book__Group__3 ;
     public final void rule__Book__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3680:1: ( rule__Book__Group__2__Impl rule__Book__Group__3 )
-            // InternalUnimodel.g:3681:2: rule__Book__Group__2__Impl rule__Book__Group__3
+            // InternalUnimodel.g:3626:1: ( rule__Book__Group__2__Impl rule__Book__Group__3 )
+            // InternalUnimodel.g:3627:2: rule__Book__Group__2__Impl rule__Book__Group__3
             {
             pushFollow(FOLLOW_27);
             rule__Book__Group__2__Impl();
@@ -11213,17 +11051,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__2__Impl"
-    // InternalUnimodel.g:3688:1: rule__Book__Group__2__Impl : ( '{' ) ;
+    // InternalUnimodel.g:3634:1: rule__Book__Group__2__Impl : ( '{' ) ;
     public final void rule__Book__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3692:1: ( ( '{' ) )
-            // InternalUnimodel.g:3693:1: ( '{' )
+            // InternalUnimodel.g:3638:1: ( ( '{' ) )
+            // InternalUnimodel.g:3639:1: ( '{' )
             {
-            // InternalUnimodel.g:3693:1: ( '{' )
-            // InternalUnimodel.g:3694:2: '{'
+            // InternalUnimodel.g:3639:1: ( '{' )
+            // InternalUnimodel.g:3640:2: '{'
             {
              before(grammarAccess.getBookAccess().getLeftCurlyBracketKeyword_2()); 
             match(input,24,FOLLOW_2); 
@@ -11250,14 +11088,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__3"
-    // InternalUnimodel.g:3703:1: rule__Book__Group__3 : rule__Book__Group__3__Impl rule__Book__Group__4 ;
+    // InternalUnimodel.g:3649:1: rule__Book__Group__3 : rule__Book__Group__3__Impl rule__Book__Group__4 ;
     public final void rule__Book__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3707:1: ( rule__Book__Group__3__Impl rule__Book__Group__4 )
-            // InternalUnimodel.g:3708:2: rule__Book__Group__3__Impl rule__Book__Group__4
+            // InternalUnimodel.g:3653:1: ( rule__Book__Group__3__Impl rule__Book__Group__4 )
+            // InternalUnimodel.g:3654:2: rule__Book__Group__3__Impl rule__Book__Group__4
             {
             pushFollow(FOLLOW_15);
             rule__Book__Group__3__Impl();
@@ -11288,20 +11126,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__3__Impl"
-    // InternalUnimodel.g:3715:1: rule__Book__Group__3__Impl : ( 'quantity' ) ;
+    // InternalUnimodel.g:3661:1: rule__Book__Group__3__Impl : ( 'quantity' ) ;
     public final void rule__Book__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3719:1: ( ( 'quantity' ) )
-            // InternalUnimodel.g:3720:1: ( 'quantity' )
+            // InternalUnimodel.g:3665:1: ( ( 'quantity' ) )
+            // InternalUnimodel.g:3666:1: ( 'quantity' )
             {
-            // InternalUnimodel.g:3720:1: ( 'quantity' )
-            // InternalUnimodel.g:3721:2: 'quantity'
+            // InternalUnimodel.g:3666:1: ( 'quantity' )
+            // InternalUnimodel.g:3667:2: 'quantity'
             {
              before(grammarAccess.getBookAccess().getQuantityKeyword_3()); 
-            match(input,54,FOLLOW_2); 
+            match(input,53,FOLLOW_2); 
              after(grammarAccess.getBookAccess().getQuantityKeyword_3()); 
 
             }
@@ -11325,14 +11163,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__4"
-    // InternalUnimodel.g:3730:1: rule__Book__Group__4 : rule__Book__Group__4__Impl rule__Book__Group__5 ;
+    // InternalUnimodel.g:3676:1: rule__Book__Group__4 : rule__Book__Group__4__Impl rule__Book__Group__5 ;
     public final void rule__Book__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3734:1: ( rule__Book__Group__4__Impl rule__Book__Group__5 )
-            // InternalUnimodel.g:3735:2: rule__Book__Group__4__Impl rule__Book__Group__5
+            // InternalUnimodel.g:3680:1: ( rule__Book__Group__4__Impl rule__Book__Group__5 )
+            // InternalUnimodel.g:3681:2: rule__Book__Group__4__Impl rule__Book__Group__5
             {
             pushFollow(FOLLOW_28);
             rule__Book__Group__4__Impl();
@@ -11363,21 +11201,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__4__Impl"
-    // InternalUnimodel.g:3742:1: rule__Book__Group__4__Impl : ( ( rule__Book__QuantityAssignment_4 ) ) ;
+    // InternalUnimodel.g:3688:1: rule__Book__Group__4__Impl : ( ( rule__Book__QuantityAssignment_4 ) ) ;
     public final void rule__Book__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3746:1: ( ( ( rule__Book__QuantityAssignment_4 ) ) )
-            // InternalUnimodel.g:3747:1: ( ( rule__Book__QuantityAssignment_4 ) )
+            // InternalUnimodel.g:3692:1: ( ( ( rule__Book__QuantityAssignment_4 ) ) )
+            // InternalUnimodel.g:3693:1: ( ( rule__Book__QuantityAssignment_4 ) )
             {
-            // InternalUnimodel.g:3747:1: ( ( rule__Book__QuantityAssignment_4 ) )
-            // InternalUnimodel.g:3748:2: ( rule__Book__QuantityAssignment_4 )
+            // InternalUnimodel.g:3693:1: ( ( rule__Book__QuantityAssignment_4 ) )
+            // InternalUnimodel.g:3694:2: ( rule__Book__QuantityAssignment_4 )
             {
              before(grammarAccess.getBookAccess().getQuantityAssignment_4()); 
-            // InternalUnimodel.g:3749:2: ( rule__Book__QuantityAssignment_4 )
-            // InternalUnimodel.g:3749:3: rule__Book__QuantityAssignment_4
+            // InternalUnimodel.g:3695:2: ( rule__Book__QuantityAssignment_4 )
+            // InternalUnimodel.g:3695:3: rule__Book__QuantityAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Book__QuantityAssignment_4();
@@ -11410,14 +11248,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__5"
-    // InternalUnimodel.g:3757:1: rule__Book__Group__5 : rule__Book__Group__5__Impl rule__Book__Group__6 ;
+    // InternalUnimodel.g:3703:1: rule__Book__Group__5 : rule__Book__Group__5__Impl rule__Book__Group__6 ;
     public final void rule__Book__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3761:1: ( rule__Book__Group__5__Impl rule__Book__Group__6 )
-            // InternalUnimodel.g:3762:2: rule__Book__Group__5__Impl rule__Book__Group__6
+            // InternalUnimodel.g:3707:1: ( rule__Book__Group__5__Impl rule__Book__Group__6 )
+            // InternalUnimodel.g:3708:2: rule__Book__Group__5__Impl rule__Book__Group__6
             {
             pushFollow(FOLLOW_28);
             rule__Book__Group__5__Impl();
@@ -11448,29 +11286,29 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__5__Impl"
-    // InternalUnimodel.g:3769:1: rule__Book__Group__5__Impl : ( ( rule__Book__Group_5__0 )? ) ;
+    // InternalUnimodel.g:3715:1: rule__Book__Group__5__Impl : ( ( rule__Book__Group_5__0 )? ) ;
     public final void rule__Book__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3773:1: ( ( ( rule__Book__Group_5__0 )? ) )
-            // InternalUnimodel.g:3774:1: ( ( rule__Book__Group_5__0 )? )
+            // InternalUnimodel.g:3719:1: ( ( ( rule__Book__Group_5__0 )? ) )
+            // InternalUnimodel.g:3720:1: ( ( rule__Book__Group_5__0 )? )
             {
-            // InternalUnimodel.g:3774:1: ( ( rule__Book__Group_5__0 )? )
-            // InternalUnimodel.g:3775:2: ( rule__Book__Group_5__0 )?
+            // InternalUnimodel.g:3720:1: ( ( rule__Book__Group_5__0 )? )
+            // InternalUnimodel.g:3721:2: ( rule__Book__Group_5__0 )?
             {
              before(grammarAccess.getBookAccess().getGroup_5()); 
-            // InternalUnimodel.g:3776:2: ( rule__Book__Group_5__0 )?
-            int alt28=2;
-            int LA28_0 = input.LA(1);
+            // InternalUnimodel.g:3722:2: ( rule__Book__Group_5__0 )?
+            int alt27=2;
+            int LA27_0 = input.LA(1);
 
-            if ( (LA28_0==55) ) {
-                alt28=1;
+            if ( (LA27_0==54) ) {
+                alt27=1;
             }
-            switch (alt28) {
+            switch (alt27) {
                 case 1 :
-                    // InternalUnimodel.g:3776:3: rule__Book__Group_5__0
+                    // InternalUnimodel.g:3722:3: rule__Book__Group_5__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Book__Group_5__0();
@@ -11506,14 +11344,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__6"
-    // InternalUnimodel.g:3784:1: rule__Book__Group__6 : rule__Book__Group__6__Impl rule__Book__Group__7 ;
+    // InternalUnimodel.g:3730:1: rule__Book__Group__6 : rule__Book__Group__6__Impl rule__Book__Group__7 ;
     public final void rule__Book__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3788:1: ( rule__Book__Group__6__Impl rule__Book__Group__7 )
-            // InternalUnimodel.g:3789:2: rule__Book__Group__6__Impl rule__Book__Group__7
+            // InternalUnimodel.g:3734:1: ( rule__Book__Group__6__Impl rule__Book__Group__7 )
+            // InternalUnimodel.g:3735:2: rule__Book__Group__6__Impl rule__Book__Group__7
             {
             pushFollow(FOLLOW_28);
             rule__Book__Group__6__Impl();
@@ -11544,29 +11382,29 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__6__Impl"
-    // InternalUnimodel.g:3796:1: rule__Book__Group__6__Impl : ( ( rule__Book__Group_6__0 )? ) ;
+    // InternalUnimodel.g:3742:1: rule__Book__Group__6__Impl : ( ( rule__Book__Group_6__0 )? ) ;
     public final void rule__Book__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3800:1: ( ( ( rule__Book__Group_6__0 )? ) )
-            // InternalUnimodel.g:3801:1: ( ( rule__Book__Group_6__0 )? )
+            // InternalUnimodel.g:3746:1: ( ( ( rule__Book__Group_6__0 )? ) )
+            // InternalUnimodel.g:3747:1: ( ( rule__Book__Group_6__0 )? )
             {
-            // InternalUnimodel.g:3801:1: ( ( rule__Book__Group_6__0 )? )
-            // InternalUnimodel.g:3802:2: ( rule__Book__Group_6__0 )?
+            // InternalUnimodel.g:3747:1: ( ( rule__Book__Group_6__0 )? )
+            // InternalUnimodel.g:3748:2: ( rule__Book__Group_6__0 )?
             {
              before(grammarAccess.getBookAccess().getGroup_6()); 
-            // InternalUnimodel.g:3803:2: ( rule__Book__Group_6__0 )?
-            int alt29=2;
-            int LA29_0 = input.LA(1);
+            // InternalUnimodel.g:3749:2: ( rule__Book__Group_6__0 )?
+            int alt28=2;
+            int LA28_0 = input.LA(1);
 
-            if ( (LA29_0==56) ) {
-                alt29=1;
+            if ( (LA28_0==55) ) {
+                alt28=1;
             }
-            switch (alt29) {
+            switch (alt28) {
                 case 1 :
-                    // InternalUnimodel.g:3803:3: rule__Book__Group_6__0
+                    // InternalUnimodel.g:3749:3: rule__Book__Group_6__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Book__Group_6__0();
@@ -11602,14 +11440,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__7"
-    // InternalUnimodel.g:3811:1: rule__Book__Group__7 : rule__Book__Group__7__Impl ;
+    // InternalUnimodel.g:3757:1: rule__Book__Group__7 : rule__Book__Group__7__Impl ;
     public final void rule__Book__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3815:1: ( rule__Book__Group__7__Impl )
-            // InternalUnimodel.g:3816:2: rule__Book__Group__7__Impl
+            // InternalUnimodel.g:3761:1: ( rule__Book__Group__7__Impl )
+            // InternalUnimodel.g:3762:2: rule__Book__Group__7__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Book__Group__7__Impl();
@@ -11635,17 +11473,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group__7__Impl"
-    // InternalUnimodel.g:3822:1: rule__Book__Group__7__Impl : ( '}' ) ;
+    // InternalUnimodel.g:3768:1: rule__Book__Group__7__Impl : ( '}' ) ;
     public final void rule__Book__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3826:1: ( ( '}' ) )
-            // InternalUnimodel.g:3827:1: ( '}' )
+            // InternalUnimodel.g:3772:1: ( ( '}' ) )
+            // InternalUnimodel.g:3773:1: ( '}' )
             {
-            // InternalUnimodel.g:3827:1: ( '}' )
-            // InternalUnimodel.g:3828:2: '}'
+            // InternalUnimodel.g:3773:1: ( '}' )
+            // InternalUnimodel.g:3774:2: '}'
             {
              before(grammarAccess.getBookAccess().getRightCurlyBracketKeyword_7()); 
             match(input,26,FOLLOW_2); 
@@ -11672,14 +11510,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group_5__0"
-    // InternalUnimodel.g:3838:1: rule__Book__Group_5__0 : rule__Book__Group_5__0__Impl rule__Book__Group_5__1 ;
+    // InternalUnimodel.g:3784:1: rule__Book__Group_5__0 : rule__Book__Group_5__0__Impl rule__Book__Group_5__1 ;
     public final void rule__Book__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3842:1: ( rule__Book__Group_5__0__Impl rule__Book__Group_5__1 )
-            // InternalUnimodel.g:3843:2: rule__Book__Group_5__0__Impl rule__Book__Group_5__1
+            // InternalUnimodel.g:3788:1: ( rule__Book__Group_5__0__Impl rule__Book__Group_5__1 )
+            // InternalUnimodel.g:3789:2: rule__Book__Group_5__0__Impl rule__Book__Group_5__1
             {
             pushFollow(FOLLOW_3);
             rule__Book__Group_5__0__Impl();
@@ -11710,20 +11548,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group_5__0__Impl"
-    // InternalUnimodel.g:3850:1: rule__Book__Group_5__0__Impl : ( 'ISBN' ) ;
+    // InternalUnimodel.g:3796:1: rule__Book__Group_5__0__Impl : ( 'ISBN' ) ;
     public final void rule__Book__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3854:1: ( ( 'ISBN' ) )
-            // InternalUnimodel.g:3855:1: ( 'ISBN' )
+            // InternalUnimodel.g:3800:1: ( ( 'ISBN' ) )
+            // InternalUnimodel.g:3801:1: ( 'ISBN' )
             {
-            // InternalUnimodel.g:3855:1: ( 'ISBN' )
-            // InternalUnimodel.g:3856:2: 'ISBN'
+            // InternalUnimodel.g:3801:1: ( 'ISBN' )
+            // InternalUnimodel.g:3802:2: 'ISBN'
             {
              before(grammarAccess.getBookAccess().getISBNKeyword_5_0()); 
-            match(input,55,FOLLOW_2); 
+            match(input,54,FOLLOW_2); 
              after(grammarAccess.getBookAccess().getISBNKeyword_5_0()); 
 
             }
@@ -11747,14 +11585,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group_5__1"
-    // InternalUnimodel.g:3865:1: rule__Book__Group_5__1 : rule__Book__Group_5__1__Impl ;
+    // InternalUnimodel.g:3811:1: rule__Book__Group_5__1 : rule__Book__Group_5__1__Impl ;
     public final void rule__Book__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3869:1: ( rule__Book__Group_5__1__Impl )
-            // InternalUnimodel.g:3870:2: rule__Book__Group_5__1__Impl
+            // InternalUnimodel.g:3815:1: ( rule__Book__Group_5__1__Impl )
+            // InternalUnimodel.g:3816:2: rule__Book__Group_5__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Book__Group_5__1__Impl();
@@ -11780,21 +11618,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group_5__1__Impl"
-    // InternalUnimodel.g:3876:1: rule__Book__Group_5__1__Impl : ( ( rule__Book__ISBNAssignment_5_1 ) ) ;
+    // InternalUnimodel.g:3822:1: rule__Book__Group_5__1__Impl : ( ( rule__Book__ISBNAssignment_5_1 ) ) ;
     public final void rule__Book__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3880:1: ( ( ( rule__Book__ISBNAssignment_5_1 ) ) )
-            // InternalUnimodel.g:3881:1: ( ( rule__Book__ISBNAssignment_5_1 ) )
+            // InternalUnimodel.g:3826:1: ( ( ( rule__Book__ISBNAssignment_5_1 ) ) )
+            // InternalUnimodel.g:3827:1: ( ( rule__Book__ISBNAssignment_5_1 ) )
             {
-            // InternalUnimodel.g:3881:1: ( ( rule__Book__ISBNAssignment_5_1 ) )
-            // InternalUnimodel.g:3882:2: ( rule__Book__ISBNAssignment_5_1 )
+            // InternalUnimodel.g:3827:1: ( ( rule__Book__ISBNAssignment_5_1 ) )
+            // InternalUnimodel.g:3828:2: ( rule__Book__ISBNAssignment_5_1 )
             {
              before(grammarAccess.getBookAccess().getISBNAssignment_5_1()); 
-            // InternalUnimodel.g:3883:2: ( rule__Book__ISBNAssignment_5_1 )
-            // InternalUnimodel.g:3883:3: rule__Book__ISBNAssignment_5_1
+            // InternalUnimodel.g:3829:2: ( rule__Book__ISBNAssignment_5_1 )
+            // InternalUnimodel.g:3829:3: rule__Book__ISBNAssignment_5_1
             {
             pushFollow(FOLLOW_2);
             rule__Book__ISBNAssignment_5_1();
@@ -11827,14 +11665,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group_6__0"
-    // InternalUnimodel.g:3892:1: rule__Book__Group_6__0 : rule__Book__Group_6__0__Impl rule__Book__Group_6__1 ;
+    // InternalUnimodel.g:3838:1: rule__Book__Group_6__0 : rule__Book__Group_6__0__Impl rule__Book__Group_6__1 ;
     public final void rule__Book__Group_6__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3896:1: ( rule__Book__Group_6__0__Impl rule__Book__Group_6__1 )
-            // InternalUnimodel.g:3897:2: rule__Book__Group_6__0__Impl rule__Book__Group_6__1
+            // InternalUnimodel.g:3842:1: ( rule__Book__Group_6__0__Impl rule__Book__Group_6__1 )
+            // InternalUnimodel.g:3843:2: rule__Book__Group_6__0__Impl rule__Book__Group_6__1
             {
             pushFollow(FOLLOW_3);
             rule__Book__Group_6__0__Impl();
@@ -11865,20 +11703,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group_6__0__Impl"
-    // InternalUnimodel.g:3904:1: rule__Book__Group_6__0__Impl : ( 'author' ) ;
+    // InternalUnimodel.g:3850:1: rule__Book__Group_6__0__Impl : ( 'author' ) ;
     public final void rule__Book__Group_6__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3908:1: ( ( 'author' ) )
-            // InternalUnimodel.g:3909:1: ( 'author' )
+            // InternalUnimodel.g:3854:1: ( ( 'author' ) )
+            // InternalUnimodel.g:3855:1: ( 'author' )
             {
-            // InternalUnimodel.g:3909:1: ( 'author' )
-            // InternalUnimodel.g:3910:2: 'author'
+            // InternalUnimodel.g:3855:1: ( 'author' )
+            // InternalUnimodel.g:3856:2: 'author'
             {
              before(grammarAccess.getBookAccess().getAuthorKeyword_6_0()); 
-            match(input,56,FOLLOW_2); 
+            match(input,55,FOLLOW_2); 
              after(grammarAccess.getBookAccess().getAuthorKeyword_6_0()); 
 
             }
@@ -11902,14 +11740,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group_6__1"
-    // InternalUnimodel.g:3919:1: rule__Book__Group_6__1 : rule__Book__Group_6__1__Impl ;
+    // InternalUnimodel.g:3865:1: rule__Book__Group_6__1 : rule__Book__Group_6__1__Impl ;
     public final void rule__Book__Group_6__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3923:1: ( rule__Book__Group_6__1__Impl )
-            // InternalUnimodel.g:3924:2: rule__Book__Group_6__1__Impl
+            // InternalUnimodel.g:3869:1: ( rule__Book__Group_6__1__Impl )
+            // InternalUnimodel.g:3870:2: rule__Book__Group_6__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Book__Group_6__1__Impl();
@@ -11935,21 +11773,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Book__Group_6__1__Impl"
-    // InternalUnimodel.g:3930:1: rule__Book__Group_6__1__Impl : ( ( rule__Book__AuthorAssignment_6_1 ) ) ;
+    // InternalUnimodel.g:3876:1: rule__Book__Group_6__1__Impl : ( ( rule__Book__AuthorAssignment_6_1 ) ) ;
     public final void rule__Book__Group_6__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3934:1: ( ( ( rule__Book__AuthorAssignment_6_1 ) ) )
-            // InternalUnimodel.g:3935:1: ( ( rule__Book__AuthorAssignment_6_1 ) )
+            // InternalUnimodel.g:3880:1: ( ( ( rule__Book__AuthorAssignment_6_1 ) ) )
+            // InternalUnimodel.g:3881:1: ( ( rule__Book__AuthorAssignment_6_1 ) )
             {
-            // InternalUnimodel.g:3935:1: ( ( rule__Book__AuthorAssignment_6_1 ) )
-            // InternalUnimodel.g:3936:2: ( rule__Book__AuthorAssignment_6_1 )
+            // InternalUnimodel.g:3881:1: ( ( rule__Book__AuthorAssignment_6_1 ) )
+            // InternalUnimodel.g:3882:2: ( rule__Book__AuthorAssignment_6_1 )
             {
              before(grammarAccess.getBookAccess().getAuthorAssignment_6_1()); 
-            // InternalUnimodel.g:3937:2: ( rule__Book__AuthorAssignment_6_1 )
-            // InternalUnimodel.g:3937:3: rule__Book__AuthorAssignment_6_1
+            // InternalUnimodel.g:3883:2: ( rule__Book__AuthorAssignment_6_1 )
+            // InternalUnimodel.g:3883:3: rule__Book__AuthorAssignment_6_1
             {
             pushFollow(FOLLOW_2);
             rule__Book__AuthorAssignment_6_1();
@@ -11982,14 +11820,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__0"
-    // InternalUnimodel.g:3946:1: rule__Loan__Group__0 : rule__Loan__Group__0__Impl rule__Loan__Group__1 ;
+    // InternalUnimodel.g:3892:1: rule__Loan__Group__0 : rule__Loan__Group__0__Impl rule__Loan__Group__1 ;
     public final void rule__Loan__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3950:1: ( rule__Loan__Group__0__Impl rule__Loan__Group__1 )
-            // InternalUnimodel.g:3951:2: rule__Loan__Group__0__Impl rule__Loan__Group__1
+            // InternalUnimodel.g:3896:1: ( rule__Loan__Group__0__Impl rule__Loan__Group__1 )
+            // InternalUnimodel.g:3897:2: rule__Loan__Group__0__Impl rule__Loan__Group__1
             {
             pushFollow(FOLLOW_4);
             rule__Loan__Group__0__Impl();
@@ -12020,20 +11858,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__0__Impl"
-    // InternalUnimodel.g:3958:1: rule__Loan__Group__0__Impl : ( 'Loan' ) ;
+    // InternalUnimodel.g:3904:1: rule__Loan__Group__0__Impl : ( 'Loan' ) ;
     public final void rule__Loan__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3962:1: ( ( 'Loan' ) )
-            // InternalUnimodel.g:3963:1: ( 'Loan' )
+            // InternalUnimodel.g:3908:1: ( ( 'Loan' ) )
+            // InternalUnimodel.g:3909:1: ( 'Loan' )
             {
-            // InternalUnimodel.g:3963:1: ( 'Loan' )
-            // InternalUnimodel.g:3964:2: 'Loan'
+            // InternalUnimodel.g:3909:1: ( 'Loan' )
+            // InternalUnimodel.g:3910:2: 'Loan'
             {
              before(grammarAccess.getLoanAccess().getLoanKeyword_0()); 
-            match(input,57,FOLLOW_2); 
+            match(input,56,FOLLOW_2); 
              after(grammarAccess.getLoanAccess().getLoanKeyword_0()); 
 
             }
@@ -12057,14 +11895,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__1"
-    // InternalUnimodel.g:3973:1: rule__Loan__Group__1 : rule__Loan__Group__1__Impl rule__Loan__Group__2 ;
+    // InternalUnimodel.g:3919:1: rule__Loan__Group__1 : rule__Loan__Group__1__Impl rule__Loan__Group__2 ;
     public final void rule__Loan__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3977:1: ( rule__Loan__Group__1__Impl rule__Loan__Group__2 )
-            // InternalUnimodel.g:3978:2: rule__Loan__Group__1__Impl rule__Loan__Group__2
+            // InternalUnimodel.g:3923:1: ( rule__Loan__Group__1__Impl rule__Loan__Group__2 )
+            // InternalUnimodel.g:3924:2: rule__Loan__Group__1__Impl rule__Loan__Group__2
             {
             pushFollow(FOLLOW_29);
             rule__Loan__Group__1__Impl();
@@ -12095,17 +11933,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__1__Impl"
-    // InternalUnimodel.g:3985:1: rule__Loan__Group__1__Impl : ( '{' ) ;
+    // InternalUnimodel.g:3931:1: rule__Loan__Group__1__Impl : ( '{' ) ;
     public final void rule__Loan__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:3989:1: ( ( '{' ) )
-            // InternalUnimodel.g:3990:1: ( '{' )
+            // InternalUnimodel.g:3935:1: ( ( '{' ) )
+            // InternalUnimodel.g:3936:1: ( '{' )
             {
-            // InternalUnimodel.g:3990:1: ( '{' )
-            // InternalUnimodel.g:3991:2: '{'
+            // InternalUnimodel.g:3936:1: ( '{' )
+            // InternalUnimodel.g:3937:2: '{'
             {
              before(grammarAccess.getLoanAccess().getLeftCurlyBracketKeyword_1()); 
             match(input,24,FOLLOW_2); 
@@ -12132,14 +11970,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__2"
-    // InternalUnimodel.g:4000:1: rule__Loan__Group__2 : rule__Loan__Group__2__Impl rule__Loan__Group__3 ;
+    // InternalUnimodel.g:3946:1: rule__Loan__Group__2 : rule__Loan__Group__2__Impl rule__Loan__Group__3 ;
     public final void rule__Loan__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4004:1: ( rule__Loan__Group__2__Impl rule__Loan__Group__3 )
-            // InternalUnimodel.g:4005:2: rule__Loan__Group__2__Impl rule__Loan__Group__3
+            // InternalUnimodel.g:3950:1: ( rule__Loan__Group__2__Impl rule__Loan__Group__3 )
+            // InternalUnimodel.g:3951:2: rule__Loan__Group__2__Impl rule__Loan__Group__3
             {
             pushFollow(FOLLOW_30);
             rule__Loan__Group__2__Impl();
@@ -12170,20 +12008,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__2__Impl"
-    // InternalUnimodel.g:4012:1: rule__Loan__Group__2__Impl : ( 'date' ) ;
+    // InternalUnimodel.g:3958:1: rule__Loan__Group__2__Impl : ( 'date' ) ;
     public final void rule__Loan__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4016:1: ( ( 'date' ) )
-            // InternalUnimodel.g:4017:1: ( 'date' )
+            // InternalUnimodel.g:3962:1: ( ( 'date' ) )
+            // InternalUnimodel.g:3963:1: ( 'date' )
             {
-            // InternalUnimodel.g:4017:1: ( 'date' )
-            // InternalUnimodel.g:4018:2: 'date'
+            // InternalUnimodel.g:3963:1: ( 'date' )
+            // InternalUnimodel.g:3964:2: 'date'
             {
              before(grammarAccess.getLoanAccess().getDateKeyword_2()); 
-            match(input,58,FOLLOW_2); 
+            match(input,57,FOLLOW_2); 
              after(grammarAccess.getLoanAccess().getDateKeyword_2()); 
 
             }
@@ -12207,14 +12045,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__3"
-    // InternalUnimodel.g:4027:1: rule__Loan__Group__3 : rule__Loan__Group__3__Impl rule__Loan__Group__4 ;
+    // InternalUnimodel.g:3973:1: rule__Loan__Group__3 : rule__Loan__Group__3__Impl rule__Loan__Group__4 ;
     public final void rule__Loan__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4031:1: ( rule__Loan__Group__3__Impl rule__Loan__Group__4 )
-            // InternalUnimodel.g:4032:2: rule__Loan__Group__3__Impl rule__Loan__Group__4
+            // InternalUnimodel.g:3977:1: ( rule__Loan__Group__3__Impl rule__Loan__Group__4 )
+            // InternalUnimodel.g:3978:2: rule__Loan__Group__3__Impl rule__Loan__Group__4
             {
             pushFollow(FOLLOW_31);
             rule__Loan__Group__3__Impl();
@@ -12245,21 +12083,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__3__Impl"
-    // InternalUnimodel.g:4039:1: rule__Loan__Group__3__Impl : ( ( rule__Loan__DateAssignment_3 ) ) ;
+    // InternalUnimodel.g:3985:1: rule__Loan__Group__3__Impl : ( ( rule__Loan__DateAssignment_3 ) ) ;
     public final void rule__Loan__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4043:1: ( ( ( rule__Loan__DateAssignment_3 ) ) )
-            // InternalUnimodel.g:4044:1: ( ( rule__Loan__DateAssignment_3 ) )
+            // InternalUnimodel.g:3989:1: ( ( ( rule__Loan__DateAssignment_3 ) ) )
+            // InternalUnimodel.g:3990:1: ( ( rule__Loan__DateAssignment_3 ) )
             {
-            // InternalUnimodel.g:4044:1: ( ( rule__Loan__DateAssignment_3 ) )
-            // InternalUnimodel.g:4045:2: ( rule__Loan__DateAssignment_3 )
+            // InternalUnimodel.g:3990:1: ( ( rule__Loan__DateAssignment_3 ) )
+            // InternalUnimodel.g:3991:2: ( rule__Loan__DateAssignment_3 )
             {
              before(grammarAccess.getLoanAccess().getDateAssignment_3()); 
-            // InternalUnimodel.g:4046:2: ( rule__Loan__DateAssignment_3 )
-            // InternalUnimodel.g:4046:3: rule__Loan__DateAssignment_3
+            // InternalUnimodel.g:3992:2: ( rule__Loan__DateAssignment_3 )
+            // InternalUnimodel.g:3992:3: rule__Loan__DateAssignment_3
             {
             pushFollow(FOLLOW_2);
             rule__Loan__DateAssignment_3();
@@ -12292,14 +12130,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__4"
-    // InternalUnimodel.g:4054:1: rule__Loan__Group__4 : rule__Loan__Group__4__Impl rule__Loan__Group__5 ;
+    // InternalUnimodel.g:4000:1: rule__Loan__Group__4 : rule__Loan__Group__4__Impl rule__Loan__Group__5 ;
     public final void rule__Loan__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4058:1: ( rule__Loan__Group__4__Impl rule__Loan__Group__5 )
-            // InternalUnimodel.g:4059:2: rule__Loan__Group__4__Impl rule__Loan__Group__5
+            // InternalUnimodel.g:4004:1: ( rule__Loan__Group__4__Impl rule__Loan__Group__5 )
+            // InternalUnimodel.g:4005:2: rule__Loan__Group__4__Impl rule__Loan__Group__5
             {
             pushFollow(FOLLOW_31);
             rule__Loan__Group__4__Impl();
@@ -12330,29 +12168,29 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__4__Impl"
-    // InternalUnimodel.g:4066:1: rule__Loan__Group__4__Impl : ( ( rule__Loan__Group_4__0 )? ) ;
+    // InternalUnimodel.g:4012:1: rule__Loan__Group__4__Impl : ( ( rule__Loan__Group_4__0 )? ) ;
     public final void rule__Loan__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4070:1: ( ( ( rule__Loan__Group_4__0 )? ) )
-            // InternalUnimodel.g:4071:1: ( ( rule__Loan__Group_4__0 )? )
+            // InternalUnimodel.g:4016:1: ( ( ( rule__Loan__Group_4__0 )? ) )
+            // InternalUnimodel.g:4017:1: ( ( rule__Loan__Group_4__0 )? )
             {
-            // InternalUnimodel.g:4071:1: ( ( rule__Loan__Group_4__0 )? )
-            // InternalUnimodel.g:4072:2: ( rule__Loan__Group_4__0 )?
+            // InternalUnimodel.g:4017:1: ( ( rule__Loan__Group_4__0 )? )
+            // InternalUnimodel.g:4018:2: ( rule__Loan__Group_4__0 )?
             {
              before(grammarAccess.getLoanAccess().getGroup_4()); 
-            // InternalUnimodel.g:4073:2: ( rule__Loan__Group_4__0 )?
-            int alt30=2;
-            int LA30_0 = input.LA(1);
+            // InternalUnimodel.g:4019:2: ( rule__Loan__Group_4__0 )?
+            int alt29=2;
+            int LA29_0 = input.LA(1);
 
-            if ( (LA30_0==59) ) {
-                alt30=1;
+            if ( (LA29_0==58) ) {
+                alt29=1;
             }
-            switch (alt30) {
+            switch (alt29) {
                 case 1 :
-                    // InternalUnimodel.g:4073:3: rule__Loan__Group_4__0
+                    // InternalUnimodel.g:4019:3: rule__Loan__Group_4__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Loan__Group_4__0();
@@ -12388,14 +12226,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__5"
-    // InternalUnimodel.g:4081:1: rule__Loan__Group__5 : rule__Loan__Group__5__Impl rule__Loan__Group__6 ;
+    // InternalUnimodel.g:4027:1: rule__Loan__Group__5 : rule__Loan__Group__5__Impl rule__Loan__Group__6 ;
     public final void rule__Loan__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4085:1: ( rule__Loan__Group__5__Impl rule__Loan__Group__6 )
-            // InternalUnimodel.g:4086:2: rule__Loan__Group__5__Impl rule__Loan__Group__6
+            // InternalUnimodel.g:4031:1: ( rule__Loan__Group__5__Impl rule__Loan__Group__6 )
+            // InternalUnimodel.g:4032:2: rule__Loan__Group__5__Impl rule__Loan__Group__6
             {
             pushFollow(FOLLOW_31);
             rule__Loan__Group__5__Impl();
@@ -12426,29 +12264,29 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__5__Impl"
-    // InternalUnimodel.g:4093:1: rule__Loan__Group__5__Impl : ( ( rule__Loan__Group_5__0 )? ) ;
+    // InternalUnimodel.g:4039:1: rule__Loan__Group__5__Impl : ( ( rule__Loan__Group_5__0 )? ) ;
     public final void rule__Loan__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4097:1: ( ( ( rule__Loan__Group_5__0 )? ) )
-            // InternalUnimodel.g:4098:1: ( ( rule__Loan__Group_5__0 )? )
+            // InternalUnimodel.g:4043:1: ( ( ( rule__Loan__Group_5__0 )? ) )
+            // InternalUnimodel.g:4044:1: ( ( rule__Loan__Group_5__0 )? )
             {
-            // InternalUnimodel.g:4098:1: ( ( rule__Loan__Group_5__0 )? )
-            // InternalUnimodel.g:4099:2: ( rule__Loan__Group_5__0 )?
+            // InternalUnimodel.g:4044:1: ( ( rule__Loan__Group_5__0 )? )
+            // InternalUnimodel.g:4045:2: ( rule__Loan__Group_5__0 )?
             {
              before(grammarAccess.getLoanAccess().getGroup_5()); 
-            // InternalUnimodel.g:4100:2: ( rule__Loan__Group_5__0 )?
-            int alt31=2;
-            int LA31_0 = input.LA(1);
+            // InternalUnimodel.g:4046:2: ( rule__Loan__Group_5__0 )?
+            int alt30=2;
+            int LA30_0 = input.LA(1);
 
-            if ( (LA31_0==47) ) {
-                alt31=1;
+            if ( (LA30_0==47) ) {
+                alt30=1;
             }
-            switch (alt31) {
+            switch (alt30) {
                 case 1 :
-                    // InternalUnimodel.g:4100:3: rule__Loan__Group_5__0
+                    // InternalUnimodel.g:4046:3: rule__Loan__Group_5__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Loan__Group_5__0();
@@ -12484,14 +12322,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__6"
-    // InternalUnimodel.g:4108:1: rule__Loan__Group__6 : rule__Loan__Group__6__Impl ;
+    // InternalUnimodel.g:4054:1: rule__Loan__Group__6 : rule__Loan__Group__6__Impl ;
     public final void rule__Loan__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4112:1: ( rule__Loan__Group__6__Impl )
-            // InternalUnimodel.g:4113:2: rule__Loan__Group__6__Impl
+            // InternalUnimodel.g:4058:1: ( rule__Loan__Group__6__Impl )
+            // InternalUnimodel.g:4059:2: rule__Loan__Group__6__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Loan__Group__6__Impl();
@@ -12517,17 +12355,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group__6__Impl"
-    // InternalUnimodel.g:4119:1: rule__Loan__Group__6__Impl : ( '}' ) ;
+    // InternalUnimodel.g:4065:1: rule__Loan__Group__6__Impl : ( '}' ) ;
     public final void rule__Loan__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4123:1: ( ( '}' ) )
-            // InternalUnimodel.g:4124:1: ( '}' )
+            // InternalUnimodel.g:4069:1: ( ( '}' ) )
+            // InternalUnimodel.g:4070:1: ( '}' )
             {
-            // InternalUnimodel.g:4124:1: ( '}' )
-            // InternalUnimodel.g:4125:2: '}'
+            // InternalUnimodel.g:4070:1: ( '}' )
+            // InternalUnimodel.g:4071:2: '}'
             {
              before(grammarAccess.getLoanAccess().getRightCurlyBracketKeyword_6()); 
             match(input,26,FOLLOW_2); 
@@ -12554,14 +12392,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group_4__0"
-    // InternalUnimodel.g:4135:1: rule__Loan__Group_4__0 : rule__Loan__Group_4__0__Impl rule__Loan__Group_4__1 ;
+    // InternalUnimodel.g:4081:1: rule__Loan__Group_4__0 : rule__Loan__Group_4__0__Impl rule__Loan__Group_4__1 ;
     public final void rule__Loan__Group_4__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4139:1: ( rule__Loan__Group_4__0__Impl rule__Loan__Group_4__1 )
-            // InternalUnimodel.g:4140:2: rule__Loan__Group_4__0__Impl rule__Loan__Group_4__1
+            // InternalUnimodel.g:4085:1: ( rule__Loan__Group_4__0__Impl rule__Loan__Group_4__1 )
+            // InternalUnimodel.g:4086:2: rule__Loan__Group_4__0__Impl rule__Loan__Group_4__1
             {
             pushFollow(FOLLOW_3);
             rule__Loan__Group_4__0__Impl();
@@ -12592,20 +12430,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group_4__0__Impl"
-    // InternalUnimodel.g:4147:1: rule__Loan__Group_4__0__Impl : ( 'book' ) ;
+    // InternalUnimodel.g:4093:1: rule__Loan__Group_4__0__Impl : ( 'book' ) ;
     public final void rule__Loan__Group_4__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4151:1: ( ( 'book' ) )
-            // InternalUnimodel.g:4152:1: ( 'book' )
+            // InternalUnimodel.g:4097:1: ( ( 'book' ) )
+            // InternalUnimodel.g:4098:1: ( 'book' )
             {
-            // InternalUnimodel.g:4152:1: ( 'book' )
-            // InternalUnimodel.g:4153:2: 'book'
+            // InternalUnimodel.g:4098:1: ( 'book' )
+            // InternalUnimodel.g:4099:2: 'book'
             {
              before(grammarAccess.getLoanAccess().getBookKeyword_4_0()); 
-            match(input,59,FOLLOW_2); 
+            match(input,58,FOLLOW_2); 
              after(grammarAccess.getLoanAccess().getBookKeyword_4_0()); 
 
             }
@@ -12629,14 +12467,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group_4__1"
-    // InternalUnimodel.g:4162:1: rule__Loan__Group_4__1 : rule__Loan__Group_4__1__Impl ;
+    // InternalUnimodel.g:4108:1: rule__Loan__Group_4__1 : rule__Loan__Group_4__1__Impl ;
     public final void rule__Loan__Group_4__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4166:1: ( rule__Loan__Group_4__1__Impl )
-            // InternalUnimodel.g:4167:2: rule__Loan__Group_4__1__Impl
+            // InternalUnimodel.g:4112:1: ( rule__Loan__Group_4__1__Impl )
+            // InternalUnimodel.g:4113:2: rule__Loan__Group_4__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Loan__Group_4__1__Impl();
@@ -12662,21 +12500,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group_4__1__Impl"
-    // InternalUnimodel.g:4173:1: rule__Loan__Group_4__1__Impl : ( ( rule__Loan__BookAssignment_4_1 ) ) ;
+    // InternalUnimodel.g:4119:1: rule__Loan__Group_4__1__Impl : ( ( rule__Loan__BookAssignment_4_1 ) ) ;
     public final void rule__Loan__Group_4__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4177:1: ( ( ( rule__Loan__BookAssignment_4_1 ) ) )
-            // InternalUnimodel.g:4178:1: ( ( rule__Loan__BookAssignment_4_1 ) )
+            // InternalUnimodel.g:4123:1: ( ( ( rule__Loan__BookAssignment_4_1 ) ) )
+            // InternalUnimodel.g:4124:1: ( ( rule__Loan__BookAssignment_4_1 ) )
             {
-            // InternalUnimodel.g:4178:1: ( ( rule__Loan__BookAssignment_4_1 ) )
-            // InternalUnimodel.g:4179:2: ( rule__Loan__BookAssignment_4_1 )
+            // InternalUnimodel.g:4124:1: ( ( rule__Loan__BookAssignment_4_1 ) )
+            // InternalUnimodel.g:4125:2: ( rule__Loan__BookAssignment_4_1 )
             {
              before(grammarAccess.getLoanAccess().getBookAssignment_4_1()); 
-            // InternalUnimodel.g:4180:2: ( rule__Loan__BookAssignment_4_1 )
-            // InternalUnimodel.g:4180:3: rule__Loan__BookAssignment_4_1
+            // InternalUnimodel.g:4126:2: ( rule__Loan__BookAssignment_4_1 )
+            // InternalUnimodel.g:4126:3: rule__Loan__BookAssignment_4_1
             {
             pushFollow(FOLLOW_2);
             rule__Loan__BookAssignment_4_1();
@@ -12709,14 +12547,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group_5__0"
-    // InternalUnimodel.g:4189:1: rule__Loan__Group_5__0 : rule__Loan__Group_5__0__Impl rule__Loan__Group_5__1 ;
+    // InternalUnimodel.g:4135:1: rule__Loan__Group_5__0 : rule__Loan__Group_5__0__Impl rule__Loan__Group_5__1 ;
     public final void rule__Loan__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4193:1: ( rule__Loan__Group_5__0__Impl rule__Loan__Group_5__1 )
-            // InternalUnimodel.g:4194:2: rule__Loan__Group_5__0__Impl rule__Loan__Group_5__1
+            // InternalUnimodel.g:4139:1: ( rule__Loan__Group_5__0__Impl rule__Loan__Group_5__1 )
+            // InternalUnimodel.g:4140:2: rule__Loan__Group_5__0__Impl rule__Loan__Group_5__1
             {
             pushFollow(FOLLOW_3);
             rule__Loan__Group_5__0__Impl();
@@ -12747,17 +12585,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group_5__0__Impl"
-    // InternalUnimodel.g:4201:1: rule__Loan__Group_5__0__Impl : ( 'person' ) ;
+    // InternalUnimodel.g:4147:1: rule__Loan__Group_5__0__Impl : ( 'person' ) ;
     public final void rule__Loan__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4205:1: ( ( 'person' ) )
-            // InternalUnimodel.g:4206:1: ( 'person' )
+            // InternalUnimodel.g:4151:1: ( ( 'person' ) )
+            // InternalUnimodel.g:4152:1: ( 'person' )
             {
-            // InternalUnimodel.g:4206:1: ( 'person' )
-            // InternalUnimodel.g:4207:2: 'person'
+            // InternalUnimodel.g:4152:1: ( 'person' )
+            // InternalUnimodel.g:4153:2: 'person'
             {
              before(grammarAccess.getLoanAccess().getPersonKeyword_5_0()); 
             match(input,47,FOLLOW_2); 
@@ -12784,14 +12622,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group_5__1"
-    // InternalUnimodel.g:4216:1: rule__Loan__Group_5__1 : rule__Loan__Group_5__1__Impl ;
+    // InternalUnimodel.g:4162:1: rule__Loan__Group_5__1 : rule__Loan__Group_5__1__Impl ;
     public final void rule__Loan__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4220:1: ( rule__Loan__Group_5__1__Impl )
-            // InternalUnimodel.g:4221:2: rule__Loan__Group_5__1__Impl
+            // InternalUnimodel.g:4166:1: ( rule__Loan__Group_5__1__Impl )
+            // InternalUnimodel.g:4167:2: rule__Loan__Group_5__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Loan__Group_5__1__Impl();
@@ -12817,21 +12655,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Loan__Group_5__1__Impl"
-    // InternalUnimodel.g:4227:1: rule__Loan__Group_5__1__Impl : ( ( rule__Loan__PersonAssignment_5_1 ) ) ;
+    // InternalUnimodel.g:4173:1: rule__Loan__Group_5__1__Impl : ( ( rule__Loan__PersonAssignment_5_1 ) ) ;
     public final void rule__Loan__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4231:1: ( ( ( rule__Loan__PersonAssignment_5_1 ) ) )
-            // InternalUnimodel.g:4232:1: ( ( rule__Loan__PersonAssignment_5_1 ) )
+            // InternalUnimodel.g:4177:1: ( ( ( rule__Loan__PersonAssignment_5_1 ) ) )
+            // InternalUnimodel.g:4178:1: ( ( rule__Loan__PersonAssignment_5_1 ) )
             {
-            // InternalUnimodel.g:4232:1: ( ( rule__Loan__PersonAssignment_5_1 ) )
-            // InternalUnimodel.g:4233:2: ( rule__Loan__PersonAssignment_5_1 )
+            // InternalUnimodel.g:4178:1: ( ( rule__Loan__PersonAssignment_5_1 ) )
+            // InternalUnimodel.g:4179:2: ( rule__Loan__PersonAssignment_5_1 )
             {
              before(grammarAccess.getLoanAccess().getPersonAssignment_5_1()); 
-            // InternalUnimodel.g:4234:2: ( rule__Loan__PersonAssignment_5_1 )
-            // InternalUnimodel.g:4234:3: rule__Loan__PersonAssignment_5_1
+            // InternalUnimodel.g:4180:2: ( rule__Loan__PersonAssignment_5_1 )
+            // InternalUnimodel.g:4180:3: rule__Loan__PersonAssignment_5_1
             {
             pushFollow(FOLLOW_2);
             rule__Loan__PersonAssignment_5_1();
@@ -12864,14 +12702,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__0"
-    // InternalUnimodel.g:4243:1: rule__Person__Group__0 : rule__Person__Group__0__Impl rule__Person__Group__1 ;
+    // InternalUnimodel.g:4189:1: rule__Person__Group__0 : rule__Person__Group__0__Impl rule__Person__Group__1 ;
     public final void rule__Person__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4247:1: ( rule__Person__Group__0__Impl rule__Person__Group__1 )
-            // InternalUnimodel.g:4248:2: rule__Person__Group__0__Impl rule__Person__Group__1
+            // InternalUnimodel.g:4193:1: ( rule__Person__Group__0__Impl rule__Person__Group__1 )
+            // InternalUnimodel.g:4194:2: rule__Person__Group__0__Impl rule__Person__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Person__Group__0__Impl();
@@ -12902,20 +12740,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__0__Impl"
-    // InternalUnimodel.g:4255:1: rule__Person__Group__0__Impl : ( 'Person' ) ;
+    // InternalUnimodel.g:4201:1: rule__Person__Group__0__Impl : ( 'Person' ) ;
     public final void rule__Person__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4259:1: ( ( 'Person' ) )
-            // InternalUnimodel.g:4260:1: ( 'Person' )
+            // InternalUnimodel.g:4205:1: ( ( 'Person' ) )
+            // InternalUnimodel.g:4206:1: ( 'Person' )
             {
-            // InternalUnimodel.g:4260:1: ( 'Person' )
-            // InternalUnimodel.g:4261:2: 'Person'
+            // InternalUnimodel.g:4206:1: ( 'Person' )
+            // InternalUnimodel.g:4207:2: 'Person'
             {
              before(grammarAccess.getPersonAccess().getPersonKeyword_0()); 
-            match(input,60,FOLLOW_2); 
+            match(input,59,FOLLOW_2); 
              after(grammarAccess.getPersonAccess().getPersonKeyword_0()); 
 
             }
@@ -12939,14 +12777,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__1"
-    // InternalUnimodel.g:4270:1: rule__Person__Group__1 : rule__Person__Group__1__Impl rule__Person__Group__2 ;
+    // InternalUnimodel.g:4216:1: rule__Person__Group__1 : rule__Person__Group__1__Impl rule__Person__Group__2 ;
     public final void rule__Person__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4274:1: ( rule__Person__Group__1__Impl rule__Person__Group__2 )
-            // InternalUnimodel.g:4275:2: rule__Person__Group__1__Impl rule__Person__Group__2
+            // InternalUnimodel.g:4220:1: ( rule__Person__Group__1__Impl rule__Person__Group__2 )
+            // InternalUnimodel.g:4221:2: rule__Person__Group__1__Impl rule__Person__Group__2
             {
             pushFollow(FOLLOW_4);
             rule__Person__Group__1__Impl();
@@ -12977,21 +12815,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__1__Impl"
-    // InternalUnimodel.g:4282:1: rule__Person__Group__1__Impl : ( ( rule__Person__NameAssignment_1 ) ) ;
+    // InternalUnimodel.g:4228:1: rule__Person__Group__1__Impl : ( ( rule__Person__NameAssignment_1 ) ) ;
     public final void rule__Person__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4286:1: ( ( ( rule__Person__NameAssignment_1 ) ) )
-            // InternalUnimodel.g:4287:1: ( ( rule__Person__NameAssignment_1 ) )
+            // InternalUnimodel.g:4232:1: ( ( ( rule__Person__NameAssignment_1 ) ) )
+            // InternalUnimodel.g:4233:1: ( ( rule__Person__NameAssignment_1 ) )
             {
-            // InternalUnimodel.g:4287:1: ( ( rule__Person__NameAssignment_1 ) )
-            // InternalUnimodel.g:4288:2: ( rule__Person__NameAssignment_1 )
+            // InternalUnimodel.g:4233:1: ( ( rule__Person__NameAssignment_1 ) )
+            // InternalUnimodel.g:4234:2: ( rule__Person__NameAssignment_1 )
             {
              before(grammarAccess.getPersonAccess().getNameAssignment_1()); 
-            // InternalUnimodel.g:4289:2: ( rule__Person__NameAssignment_1 )
-            // InternalUnimodel.g:4289:3: rule__Person__NameAssignment_1
+            // InternalUnimodel.g:4235:2: ( rule__Person__NameAssignment_1 )
+            // InternalUnimodel.g:4235:3: rule__Person__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Person__NameAssignment_1();
@@ -13024,14 +12862,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__2"
-    // InternalUnimodel.g:4297:1: rule__Person__Group__2 : rule__Person__Group__2__Impl rule__Person__Group__3 ;
+    // InternalUnimodel.g:4243:1: rule__Person__Group__2 : rule__Person__Group__2__Impl rule__Person__Group__3 ;
     public final void rule__Person__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4301:1: ( rule__Person__Group__2__Impl rule__Person__Group__3 )
-            // InternalUnimodel.g:4302:2: rule__Person__Group__2__Impl rule__Person__Group__3
+            // InternalUnimodel.g:4247:1: ( rule__Person__Group__2__Impl rule__Person__Group__3 )
+            // InternalUnimodel.g:4248:2: rule__Person__Group__2__Impl rule__Person__Group__3
             {
             pushFollow(FOLLOW_32);
             rule__Person__Group__2__Impl();
@@ -13062,17 +12900,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__2__Impl"
-    // InternalUnimodel.g:4309:1: rule__Person__Group__2__Impl : ( '{' ) ;
+    // InternalUnimodel.g:4255:1: rule__Person__Group__2__Impl : ( '{' ) ;
     public final void rule__Person__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4313:1: ( ( '{' ) )
-            // InternalUnimodel.g:4314:1: ( '{' )
+            // InternalUnimodel.g:4259:1: ( ( '{' ) )
+            // InternalUnimodel.g:4260:1: ( '{' )
             {
-            // InternalUnimodel.g:4314:1: ( '{' )
-            // InternalUnimodel.g:4315:2: '{'
+            // InternalUnimodel.g:4260:1: ( '{' )
+            // InternalUnimodel.g:4261:2: '{'
             {
              before(grammarAccess.getPersonAccess().getLeftCurlyBracketKeyword_2()); 
             match(input,24,FOLLOW_2); 
@@ -13099,14 +12937,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__3"
-    // InternalUnimodel.g:4324:1: rule__Person__Group__3 : rule__Person__Group__3__Impl rule__Person__Group__4 ;
+    // InternalUnimodel.g:4270:1: rule__Person__Group__3 : rule__Person__Group__3__Impl rule__Person__Group__4 ;
     public final void rule__Person__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4328:1: ( rule__Person__Group__3__Impl rule__Person__Group__4 )
-            // InternalUnimodel.g:4329:2: rule__Person__Group__3__Impl rule__Person__Group__4
+            // InternalUnimodel.g:4274:1: ( rule__Person__Group__3__Impl rule__Person__Group__4 )
+            // InternalUnimodel.g:4275:2: rule__Person__Group__3__Impl rule__Person__Group__4
             {
             pushFollow(FOLLOW_33);
             rule__Person__Group__3__Impl();
@@ -13137,20 +12975,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__3__Impl"
-    // InternalUnimodel.g:4336:1: rule__Person__Group__3__Impl : ( 'category' ) ;
+    // InternalUnimodel.g:4282:1: rule__Person__Group__3__Impl : ( 'category' ) ;
     public final void rule__Person__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4340:1: ( ( 'category' ) )
-            // InternalUnimodel.g:4341:1: ( 'category' )
+            // InternalUnimodel.g:4286:1: ( ( 'category' ) )
+            // InternalUnimodel.g:4287:1: ( 'category' )
             {
-            // InternalUnimodel.g:4341:1: ( 'category' )
-            // InternalUnimodel.g:4342:2: 'category'
+            // InternalUnimodel.g:4287:1: ( 'category' )
+            // InternalUnimodel.g:4288:2: 'category'
             {
              before(grammarAccess.getPersonAccess().getCategoryKeyword_3()); 
-            match(input,61,FOLLOW_2); 
+            match(input,60,FOLLOW_2); 
              after(grammarAccess.getPersonAccess().getCategoryKeyword_3()); 
 
             }
@@ -13174,14 +13012,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__4"
-    // InternalUnimodel.g:4351:1: rule__Person__Group__4 : rule__Person__Group__4__Impl rule__Person__Group__5 ;
+    // InternalUnimodel.g:4297:1: rule__Person__Group__4 : rule__Person__Group__4__Impl rule__Person__Group__5 ;
     public final void rule__Person__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4355:1: ( rule__Person__Group__4__Impl rule__Person__Group__5 )
-            // InternalUnimodel.g:4356:2: rule__Person__Group__4__Impl rule__Person__Group__5
+            // InternalUnimodel.g:4301:1: ( rule__Person__Group__4__Impl rule__Person__Group__5 )
+            // InternalUnimodel.g:4302:2: rule__Person__Group__4__Impl rule__Person__Group__5
             {
             pushFollow(FOLLOW_34);
             rule__Person__Group__4__Impl();
@@ -13212,21 +13050,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__4__Impl"
-    // InternalUnimodel.g:4363:1: rule__Person__Group__4__Impl : ( ( rule__Person__CategoryAssignment_4 ) ) ;
+    // InternalUnimodel.g:4309:1: rule__Person__Group__4__Impl : ( ( rule__Person__CategoryAssignment_4 ) ) ;
     public final void rule__Person__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4367:1: ( ( ( rule__Person__CategoryAssignment_4 ) ) )
-            // InternalUnimodel.g:4368:1: ( ( rule__Person__CategoryAssignment_4 ) )
+            // InternalUnimodel.g:4313:1: ( ( ( rule__Person__CategoryAssignment_4 ) ) )
+            // InternalUnimodel.g:4314:1: ( ( rule__Person__CategoryAssignment_4 ) )
             {
-            // InternalUnimodel.g:4368:1: ( ( rule__Person__CategoryAssignment_4 ) )
-            // InternalUnimodel.g:4369:2: ( rule__Person__CategoryAssignment_4 )
+            // InternalUnimodel.g:4314:1: ( ( rule__Person__CategoryAssignment_4 ) )
+            // InternalUnimodel.g:4315:2: ( rule__Person__CategoryAssignment_4 )
             {
              before(grammarAccess.getPersonAccess().getCategoryAssignment_4()); 
-            // InternalUnimodel.g:4370:2: ( rule__Person__CategoryAssignment_4 )
-            // InternalUnimodel.g:4370:3: rule__Person__CategoryAssignment_4
+            // InternalUnimodel.g:4316:2: ( rule__Person__CategoryAssignment_4 )
+            // InternalUnimodel.g:4316:3: rule__Person__CategoryAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Person__CategoryAssignment_4();
@@ -13259,14 +13097,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__5"
-    // InternalUnimodel.g:4378:1: rule__Person__Group__5 : rule__Person__Group__5__Impl rule__Person__Group__6 ;
+    // InternalUnimodel.g:4324:1: rule__Person__Group__5 : rule__Person__Group__5__Impl rule__Person__Group__6 ;
     public final void rule__Person__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4382:1: ( rule__Person__Group__5__Impl rule__Person__Group__6 )
-            // InternalUnimodel.g:4383:2: rule__Person__Group__5__Impl rule__Person__Group__6
+            // InternalUnimodel.g:4328:1: ( rule__Person__Group__5__Impl rule__Person__Group__6 )
+            // InternalUnimodel.g:4329:2: rule__Person__Group__5__Impl rule__Person__Group__6
             {
             pushFollow(FOLLOW_34);
             rule__Person__Group__5__Impl();
@@ -13297,29 +13135,29 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__5__Impl"
-    // InternalUnimodel.g:4390:1: rule__Person__Group__5__Impl : ( ( rule__Person__Group_5__0 )? ) ;
+    // InternalUnimodel.g:4336:1: rule__Person__Group__5__Impl : ( ( rule__Person__Group_5__0 )? ) ;
     public final void rule__Person__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4394:1: ( ( ( rule__Person__Group_5__0 )? ) )
-            // InternalUnimodel.g:4395:1: ( ( rule__Person__Group_5__0 )? )
+            // InternalUnimodel.g:4340:1: ( ( ( rule__Person__Group_5__0 )? ) )
+            // InternalUnimodel.g:4341:1: ( ( rule__Person__Group_5__0 )? )
             {
-            // InternalUnimodel.g:4395:1: ( ( rule__Person__Group_5__0 )? )
-            // InternalUnimodel.g:4396:2: ( rule__Person__Group_5__0 )?
+            // InternalUnimodel.g:4341:1: ( ( rule__Person__Group_5__0 )? )
+            // InternalUnimodel.g:4342:2: ( rule__Person__Group_5__0 )?
             {
              before(grammarAccess.getPersonAccess().getGroup_5()); 
-            // InternalUnimodel.g:4397:2: ( rule__Person__Group_5__0 )?
-            int alt32=2;
-            int LA32_0 = input.LA(1);
+            // InternalUnimodel.g:4343:2: ( rule__Person__Group_5__0 )?
+            int alt31=2;
+            int LA31_0 = input.LA(1);
 
-            if ( (LA32_0==63) ) {
-                alt32=1;
+            if ( (LA31_0==62) ) {
+                alt31=1;
             }
-            switch (alt32) {
+            switch (alt31) {
                 case 1 :
-                    // InternalUnimodel.g:4397:3: rule__Person__Group_5__0
+                    // InternalUnimodel.g:4343:3: rule__Person__Group_5__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Person__Group_5__0();
@@ -13355,14 +13193,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__6"
-    // InternalUnimodel.g:4405:1: rule__Person__Group__6 : rule__Person__Group__6__Impl rule__Person__Group__7 ;
+    // InternalUnimodel.g:4351:1: rule__Person__Group__6 : rule__Person__Group__6__Impl rule__Person__Group__7 ;
     public final void rule__Person__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4409:1: ( rule__Person__Group__6__Impl rule__Person__Group__7 )
-            // InternalUnimodel.g:4410:2: rule__Person__Group__6__Impl rule__Person__Group__7
+            // InternalUnimodel.g:4355:1: ( rule__Person__Group__6__Impl rule__Person__Group__7 )
+            // InternalUnimodel.g:4356:2: rule__Person__Group__6__Impl rule__Person__Group__7
             {
             pushFollow(FOLLOW_15);
             rule__Person__Group__6__Impl();
@@ -13393,20 +13231,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__6__Impl"
-    // InternalUnimodel.g:4417:1: rule__Person__Group__6__Impl : ( 'age' ) ;
+    // InternalUnimodel.g:4363:1: rule__Person__Group__6__Impl : ( 'age' ) ;
     public final void rule__Person__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4421:1: ( ( 'age' ) )
-            // InternalUnimodel.g:4422:1: ( 'age' )
+            // InternalUnimodel.g:4367:1: ( ( 'age' ) )
+            // InternalUnimodel.g:4368:1: ( 'age' )
             {
-            // InternalUnimodel.g:4422:1: ( 'age' )
-            // InternalUnimodel.g:4423:2: 'age'
+            // InternalUnimodel.g:4368:1: ( 'age' )
+            // InternalUnimodel.g:4369:2: 'age'
             {
              before(grammarAccess.getPersonAccess().getAgeKeyword_6()); 
-            match(input,62,FOLLOW_2); 
+            match(input,61,FOLLOW_2); 
              after(grammarAccess.getPersonAccess().getAgeKeyword_6()); 
 
             }
@@ -13430,14 +13268,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__7"
-    // InternalUnimodel.g:4432:1: rule__Person__Group__7 : rule__Person__Group__7__Impl rule__Person__Group__8 ;
+    // InternalUnimodel.g:4378:1: rule__Person__Group__7 : rule__Person__Group__7__Impl rule__Person__Group__8 ;
     public final void rule__Person__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4436:1: ( rule__Person__Group__7__Impl rule__Person__Group__8 )
-            // InternalUnimodel.g:4437:2: rule__Person__Group__7__Impl rule__Person__Group__8
+            // InternalUnimodel.g:4382:1: ( rule__Person__Group__7__Impl rule__Person__Group__8 )
+            // InternalUnimodel.g:4383:2: rule__Person__Group__7__Impl rule__Person__Group__8
             {
             pushFollow(FOLLOW_35);
             rule__Person__Group__7__Impl();
@@ -13468,21 +13306,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__7__Impl"
-    // InternalUnimodel.g:4444:1: rule__Person__Group__7__Impl : ( ( rule__Person__AgeAssignment_7 ) ) ;
+    // InternalUnimodel.g:4390:1: rule__Person__Group__7__Impl : ( ( rule__Person__AgeAssignment_7 ) ) ;
     public final void rule__Person__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4448:1: ( ( ( rule__Person__AgeAssignment_7 ) ) )
-            // InternalUnimodel.g:4449:1: ( ( rule__Person__AgeAssignment_7 ) )
+            // InternalUnimodel.g:4394:1: ( ( ( rule__Person__AgeAssignment_7 ) ) )
+            // InternalUnimodel.g:4395:1: ( ( rule__Person__AgeAssignment_7 ) )
             {
-            // InternalUnimodel.g:4449:1: ( ( rule__Person__AgeAssignment_7 ) )
-            // InternalUnimodel.g:4450:2: ( rule__Person__AgeAssignment_7 )
+            // InternalUnimodel.g:4395:1: ( ( rule__Person__AgeAssignment_7 ) )
+            // InternalUnimodel.g:4396:2: ( rule__Person__AgeAssignment_7 )
             {
              before(grammarAccess.getPersonAccess().getAgeAssignment_7()); 
-            // InternalUnimodel.g:4451:2: ( rule__Person__AgeAssignment_7 )
-            // InternalUnimodel.g:4451:3: rule__Person__AgeAssignment_7
+            // InternalUnimodel.g:4397:2: ( rule__Person__AgeAssignment_7 )
+            // InternalUnimodel.g:4397:3: rule__Person__AgeAssignment_7
             {
             pushFollow(FOLLOW_2);
             rule__Person__AgeAssignment_7();
@@ -13515,14 +13353,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__8"
-    // InternalUnimodel.g:4459:1: rule__Person__Group__8 : rule__Person__Group__8__Impl rule__Person__Group__9 ;
+    // InternalUnimodel.g:4405:1: rule__Person__Group__8 : rule__Person__Group__8__Impl rule__Person__Group__9 ;
     public final void rule__Person__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4463:1: ( rule__Person__Group__8__Impl rule__Person__Group__9 )
-            // InternalUnimodel.g:4464:2: rule__Person__Group__8__Impl rule__Person__Group__9
+            // InternalUnimodel.g:4409:1: ( rule__Person__Group__8__Impl rule__Person__Group__9 )
+            // InternalUnimodel.g:4410:2: rule__Person__Group__8__Impl rule__Person__Group__9
             {
             pushFollow(FOLLOW_35);
             rule__Person__Group__8__Impl();
@@ -13553,29 +13391,29 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__8__Impl"
-    // InternalUnimodel.g:4471:1: rule__Person__Group__8__Impl : ( ( rule__Person__Group_8__0 )? ) ;
+    // InternalUnimodel.g:4417:1: rule__Person__Group__8__Impl : ( ( rule__Person__Group_8__0 )? ) ;
     public final void rule__Person__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4475:1: ( ( ( rule__Person__Group_8__0 )? ) )
-            // InternalUnimodel.g:4476:1: ( ( rule__Person__Group_8__0 )? )
+            // InternalUnimodel.g:4421:1: ( ( ( rule__Person__Group_8__0 )? ) )
+            // InternalUnimodel.g:4422:1: ( ( rule__Person__Group_8__0 )? )
             {
-            // InternalUnimodel.g:4476:1: ( ( rule__Person__Group_8__0 )? )
-            // InternalUnimodel.g:4477:2: ( rule__Person__Group_8__0 )?
+            // InternalUnimodel.g:4422:1: ( ( rule__Person__Group_8__0 )? )
+            // InternalUnimodel.g:4423:2: ( rule__Person__Group_8__0 )?
             {
              before(grammarAccess.getPersonAccess().getGroup_8()); 
-            // InternalUnimodel.g:4478:2: ( rule__Person__Group_8__0 )?
-            int alt33=2;
-            int LA33_0 = input.LA(1);
+            // InternalUnimodel.g:4424:2: ( rule__Person__Group_8__0 )?
+            int alt32=2;
+            int LA32_0 = input.LA(1);
 
-            if ( (LA33_0==64) ) {
-                alt33=1;
+            if ( (LA32_0==63) ) {
+                alt32=1;
             }
-            switch (alt33) {
+            switch (alt32) {
                 case 1 :
-                    // InternalUnimodel.g:4478:3: rule__Person__Group_8__0
+                    // InternalUnimodel.g:4424:3: rule__Person__Group_8__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Person__Group_8__0();
@@ -13611,14 +13449,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__9"
-    // InternalUnimodel.g:4486:1: rule__Person__Group__9 : rule__Person__Group__9__Impl rule__Person__Group__10 ;
+    // InternalUnimodel.g:4432:1: rule__Person__Group__9 : rule__Person__Group__9__Impl rule__Person__Group__10 ;
     public final void rule__Person__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4490:1: ( rule__Person__Group__9__Impl rule__Person__Group__10 )
-            // InternalUnimodel.g:4491:2: rule__Person__Group__9__Impl rule__Person__Group__10
+            // InternalUnimodel.g:4436:1: ( rule__Person__Group__9__Impl rule__Person__Group__10 )
+            // InternalUnimodel.g:4437:2: rule__Person__Group__9__Impl rule__Person__Group__10
             {
             pushFollow(FOLLOW_35);
             rule__Person__Group__9__Impl();
@@ -13649,29 +13487,29 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__9__Impl"
-    // InternalUnimodel.g:4498:1: rule__Person__Group__9__Impl : ( ( rule__Person__Group_9__0 )? ) ;
+    // InternalUnimodel.g:4444:1: rule__Person__Group__9__Impl : ( ( rule__Person__Group_9__0 )? ) ;
     public final void rule__Person__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4502:1: ( ( ( rule__Person__Group_9__0 )? ) )
-            // InternalUnimodel.g:4503:1: ( ( rule__Person__Group_9__0 )? )
+            // InternalUnimodel.g:4448:1: ( ( ( rule__Person__Group_9__0 )? ) )
+            // InternalUnimodel.g:4449:1: ( ( rule__Person__Group_9__0 )? )
             {
-            // InternalUnimodel.g:4503:1: ( ( rule__Person__Group_9__0 )? )
-            // InternalUnimodel.g:4504:2: ( rule__Person__Group_9__0 )?
+            // InternalUnimodel.g:4449:1: ( ( rule__Person__Group_9__0 )? )
+            // InternalUnimodel.g:4450:2: ( rule__Person__Group_9__0 )?
             {
              before(grammarAccess.getPersonAccess().getGroup_9()); 
-            // InternalUnimodel.g:4505:2: ( rule__Person__Group_9__0 )?
-            int alt34=2;
-            int LA34_0 = input.LA(1);
+            // InternalUnimodel.g:4451:2: ( rule__Person__Group_9__0 )?
+            int alt33=2;
+            int LA33_0 = input.LA(1);
 
-            if ( (LA34_0==33) ) {
-                alt34=1;
+            if ( (LA33_0==33) ) {
+                alt33=1;
             }
-            switch (alt34) {
+            switch (alt33) {
                 case 1 :
-                    // InternalUnimodel.g:4505:3: rule__Person__Group_9__0
+                    // InternalUnimodel.g:4451:3: rule__Person__Group_9__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Person__Group_9__0();
@@ -13707,14 +13545,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__10"
-    // InternalUnimodel.g:4513:1: rule__Person__Group__10 : rule__Person__Group__10__Impl ;
+    // InternalUnimodel.g:4459:1: rule__Person__Group__10 : rule__Person__Group__10__Impl ;
     public final void rule__Person__Group__10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4517:1: ( rule__Person__Group__10__Impl )
-            // InternalUnimodel.g:4518:2: rule__Person__Group__10__Impl
+            // InternalUnimodel.g:4463:1: ( rule__Person__Group__10__Impl )
+            // InternalUnimodel.g:4464:2: rule__Person__Group__10__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Person__Group__10__Impl();
@@ -13740,17 +13578,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group__10__Impl"
-    // InternalUnimodel.g:4524:1: rule__Person__Group__10__Impl : ( '}' ) ;
+    // InternalUnimodel.g:4470:1: rule__Person__Group__10__Impl : ( '}' ) ;
     public final void rule__Person__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4528:1: ( ( '}' ) )
-            // InternalUnimodel.g:4529:1: ( '}' )
+            // InternalUnimodel.g:4474:1: ( ( '}' ) )
+            // InternalUnimodel.g:4475:1: ( '}' )
             {
-            // InternalUnimodel.g:4529:1: ( '}' )
-            // InternalUnimodel.g:4530:2: '}'
+            // InternalUnimodel.g:4475:1: ( '}' )
+            // InternalUnimodel.g:4476:2: '}'
             {
              before(grammarAccess.getPersonAccess().getRightCurlyBracketKeyword_10()); 
             match(input,26,FOLLOW_2); 
@@ -13777,14 +13615,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_5__0"
-    // InternalUnimodel.g:4540:1: rule__Person__Group_5__0 : rule__Person__Group_5__0__Impl rule__Person__Group_5__1 ;
+    // InternalUnimodel.g:4486:1: rule__Person__Group_5__0 : rule__Person__Group_5__0__Impl rule__Person__Group_5__1 ;
     public final void rule__Person__Group_5__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4544:1: ( rule__Person__Group_5__0__Impl rule__Person__Group_5__1 )
-            // InternalUnimodel.g:4545:2: rule__Person__Group_5__0__Impl rule__Person__Group_5__1
+            // InternalUnimodel.g:4490:1: ( rule__Person__Group_5__0__Impl rule__Person__Group_5__1 )
+            // InternalUnimodel.g:4491:2: rule__Person__Group_5__0__Impl rule__Person__Group_5__1
             {
             pushFollow(FOLLOW_3);
             rule__Person__Group_5__0__Impl();
@@ -13815,20 +13653,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_5__0__Impl"
-    // InternalUnimodel.g:4552:1: rule__Person__Group_5__0__Impl : ( 'badge' ) ;
+    // InternalUnimodel.g:4498:1: rule__Person__Group_5__0__Impl : ( 'badge' ) ;
     public final void rule__Person__Group_5__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4556:1: ( ( 'badge' ) )
-            // InternalUnimodel.g:4557:1: ( 'badge' )
+            // InternalUnimodel.g:4502:1: ( ( 'badge' ) )
+            // InternalUnimodel.g:4503:1: ( 'badge' )
             {
-            // InternalUnimodel.g:4557:1: ( 'badge' )
-            // InternalUnimodel.g:4558:2: 'badge'
+            // InternalUnimodel.g:4503:1: ( 'badge' )
+            // InternalUnimodel.g:4504:2: 'badge'
             {
              before(grammarAccess.getPersonAccess().getBadgeKeyword_5_0()); 
-            match(input,63,FOLLOW_2); 
+            match(input,62,FOLLOW_2); 
              after(grammarAccess.getPersonAccess().getBadgeKeyword_5_0()); 
 
             }
@@ -13852,14 +13690,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_5__1"
-    // InternalUnimodel.g:4567:1: rule__Person__Group_5__1 : rule__Person__Group_5__1__Impl ;
+    // InternalUnimodel.g:4513:1: rule__Person__Group_5__1 : rule__Person__Group_5__1__Impl ;
     public final void rule__Person__Group_5__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4571:1: ( rule__Person__Group_5__1__Impl )
-            // InternalUnimodel.g:4572:2: rule__Person__Group_5__1__Impl
+            // InternalUnimodel.g:4517:1: ( rule__Person__Group_5__1__Impl )
+            // InternalUnimodel.g:4518:2: rule__Person__Group_5__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Person__Group_5__1__Impl();
@@ -13885,21 +13723,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_5__1__Impl"
-    // InternalUnimodel.g:4578:1: rule__Person__Group_5__1__Impl : ( ( rule__Person__BadgeAssignment_5_1 ) ) ;
+    // InternalUnimodel.g:4524:1: rule__Person__Group_5__1__Impl : ( ( rule__Person__BadgeAssignment_5_1 ) ) ;
     public final void rule__Person__Group_5__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4582:1: ( ( ( rule__Person__BadgeAssignment_5_1 ) ) )
-            // InternalUnimodel.g:4583:1: ( ( rule__Person__BadgeAssignment_5_1 ) )
+            // InternalUnimodel.g:4528:1: ( ( ( rule__Person__BadgeAssignment_5_1 ) ) )
+            // InternalUnimodel.g:4529:1: ( ( rule__Person__BadgeAssignment_5_1 ) )
             {
-            // InternalUnimodel.g:4583:1: ( ( rule__Person__BadgeAssignment_5_1 ) )
-            // InternalUnimodel.g:4584:2: ( rule__Person__BadgeAssignment_5_1 )
+            // InternalUnimodel.g:4529:1: ( ( rule__Person__BadgeAssignment_5_1 ) )
+            // InternalUnimodel.g:4530:2: ( rule__Person__BadgeAssignment_5_1 )
             {
              before(grammarAccess.getPersonAccess().getBadgeAssignment_5_1()); 
-            // InternalUnimodel.g:4585:2: ( rule__Person__BadgeAssignment_5_1 )
-            // InternalUnimodel.g:4585:3: rule__Person__BadgeAssignment_5_1
+            // InternalUnimodel.g:4531:2: ( rule__Person__BadgeAssignment_5_1 )
+            // InternalUnimodel.g:4531:3: rule__Person__BadgeAssignment_5_1
             {
             pushFollow(FOLLOW_2);
             rule__Person__BadgeAssignment_5_1();
@@ -13932,14 +13770,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_8__0"
-    // InternalUnimodel.g:4594:1: rule__Person__Group_8__0 : rule__Person__Group_8__0__Impl rule__Person__Group_8__1 ;
+    // InternalUnimodel.g:4540:1: rule__Person__Group_8__0 : rule__Person__Group_8__0__Impl rule__Person__Group_8__1 ;
     public final void rule__Person__Group_8__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4598:1: ( rule__Person__Group_8__0__Impl rule__Person__Group_8__1 )
-            // InternalUnimodel.g:4599:2: rule__Person__Group_8__0__Impl rule__Person__Group_8__1
+            // InternalUnimodel.g:4544:1: ( rule__Person__Group_8__0__Impl rule__Person__Group_8__1 )
+            // InternalUnimodel.g:4545:2: rule__Person__Group_8__0__Impl rule__Person__Group_8__1
             {
             pushFollow(FOLLOW_3);
             rule__Person__Group_8__0__Impl();
@@ -13970,20 +13808,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_8__0__Impl"
-    // InternalUnimodel.g:4606:1: rule__Person__Group_8__0__Impl : ( 'fiscal_code' ) ;
+    // InternalUnimodel.g:4552:1: rule__Person__Group_8__0__Impl : ( 'fiscal_code' ) ;
     public final void rule__Person__Group_8__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4610:1: ( ( 'fiscal_code' ) )
-            // InternalUnimodel.g:4611:1: ( 'fiscal_code' )
+            // InternalUnimodel.g:4556:1: ( ( 'fiscal_code' ) )
+            // InternalUnimodel.g:4557:1: ( 'fiscal_code' )
             {
-            // InternalUnimodel.g:4611:1: ( 'fiscal_code' )
-            // InternalUnimodel.g:4612:2: 'fiscal_code'
+            // InternalUnimodel.g:4557:1: ( 'fiscal_code' )
+            // InternalUnimodel.g:4558:2: 'fiscal_code'
             {
              before(grammarAccess.getPersonAccess().getFiscal_codeKeyword_8_0()); 
-            match(input,64,FOLLOW_2); 
+            match(input,63,FOLLOW_2); 
              after(grammarAccess.getPersonAccess().getFiscal_codeKeyword_8_0()); 
 
             }
@@ -14007,14 +13845,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_8__1"
-    // InternalUnimodel.g:4621:1: rule__Person__Group_8__1 : rule__Person__Group_8__1__Impl ;
+    // InternalUnimodel.g:4567:1: rule__Person__Group_8__1 : rule__Person__Group_8__1__Impl ;
     public final void rule__Person__Group_8__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4625:1: ( rule__Person__Group_8__1__Impl )
-            // InternalUnimodel.g:4626:2: rule__Person__Group_8__1__Impl
+            // InternalUnimodel.g:4571:1: ( rule__Person__Group_8__1__Impl )
+            // InternalUnimodel.g:4572:2: rule__Person__Group_8__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Person__Group_8__1__Impl();
@@ -14040,21 +13878,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_8__1__Impl"
-    // InternalUnimodel.g:4632:1: rule__Person__Group_8__1__Impl : ( ( rule__Person__Fiscal_codeAssignment_8_1 ) ) ;
+    // InternalUnimodel.g:4578:1: rule__Person__Group_8__1__Impl : ( ( rule__Person__Fiscal_codeAssignment_8_1 ) ) ;
     public final void rule__Person__Group_8__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4636:1: ( ( ( rule__Person__Fiscal_codeAssignment_8_1 ) ) )
-            // InternalUnimodel.g:4637:1: ( ( rule__Person__Fiscal_codeAssignment_8_1 ) )
+            // InternalUnimodel.g:4582:1: ( ( ( rule__Person__Fiscal_codeAssignment_8_1 ) ) )
+            // InternalUnimodel.g:4583:1: ( ( rule__Person__Fiscal_codeAssignment_8_1 ) )
             {
-            // InternalUnimodel.g:4637:1: ( ( rule__Person__Fiscal_codeAssignment_8_1 ) )
-            // InternalUnimodel.g:4638:2: ( rule__Person__Fiscal_codeAssignment_8_1 )
+            // InternalUnimodel.g:4583:1: ( ( rule__Person__Fiscal_codeAssignment_8_1 ) )
+            // InternalUnimodel.g:4584:2: ( rule__Person__Fiscal_codeAssignment_8_1 )
             {
              before(grammarAccess.getPersonAccess().getFiscal_codeAssignment_8_1()); 
-            // InternalUnimodel.g:4639:2: ( rule__Person__Fiscal_codeAssignment_8_1 )
-            // InternalUnimodel.g:4639:3: rule__Person__Fiscal_codeAssignment_8_1
+            // InternalUnimodel.g:4585:2: ( rule__Person__Fiscal_codeAssignment_8_1 )
+            // InternalUnimodel.g:4585:3: rule__Person__Fiscal_codeAssignment_8_1
             {
             pushFollow(FOLLOW_2);
             rule__Person__Fiscal_codeAssignment_8_1();
@@ -14087,14 +13925,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_9__0"
-    // InternalUnimodel.g:4648:1: rule__Person__Group_9__0 : rule__Person__Group_9__0__Impl rule__Person__Group_9__1 ;
+    // InternalUnimodel.g:4594:1: rule__Person__Group_9__0 : rule__Person__Group_9__0__Impl rule__Person__Group_9__1 ;
     public final void rule__Person__Group_9__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4652:1: ( rule__Person__Group_9__0__Impl rule__Person__Group_9__1 )
-            // InternalUnimodel.g:4653:2: rule__Person__Group_9__0__Impl rule__Person__Group_9__1
+            // InternalUnimodel.g:4598:1: ( rule__Person__Group_9__0__Impl rule__Person__Group_9__1 )
+            // InternalUnimodel.g:4599:2: rule__Person__Group_9__0__Impl rule__Person__Group_9__1
             {
             pushFollow(FOLLOW_3);
             rule__Person__Group_9__0__Impl();
@@ -14125,17 +13963,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_9__0__Impl"
-    // InternalUnimodel.g:4660:1: rule__Person__Group_9__0__Impl : ( 'library' ) ;
+    // InternalUnimodel.g:4606:1: rule__Person__Group_9__0__Impl : ( 'library' ) ;
     public final void rule__Person__Group_9__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4664:1: ( ( 'library' ) )
-            // InternalUnimodel.g:4665:1: ( 'library' )
+            // InternalUnimodel.g:4610:1: ( ( 'library' ) )
+            // InternalUnimodel.g:4611:1: ( 'library' )
             {
-            // InternalUnimodel.g:4665:1: ( 'library' )
-            // InternalUnimodel.g:4666:2: 'library'
+            // InternalUnimodel.g:4611:1: ( 'library' )
+            // InternalUnimodel.g:4612:2: 'library'
             {
              before(grammarAccess.getPersonAccess().getLibraryKeyword_9_0()); 
             match(input,33,FOLLOW_2); 
@@ -14162,14 +14000,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_9__1"
-    // InternalUnimodel.g:4675:1: rule__Person__Group_9__1 : rule__Person__Group_9__1__Impl ;
+    // InternalUnimodel.g:4621:1: rule__Person__Group_9__1 : rule__Person__Group_9__1__Impl ;
     public final void rule__Person__Group_9__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4679:1: ( rule__Person__Group_9__1__Impl )
-            // InternalUnimodel.g:4680:2: rule__Person__Group_9__1__Impl
+            // InternalUnimodel.g:4625:1: ( rule__Person__Group_9__1__Impl )
+            // InternalUnimodel.g:4626:2: rule__Person__Group_9__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Person__Group_9__1__Impl();
@@ -14195,21 +14033,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Person__Group_9__1__Impl"
-    // InternalUnimodel.g:4686:1: rule__Person__Group_9__1__Impl : ( ( rule__Person__LibraryAssignment_9_1 ) ) ;
+    // InternalUnimodel.g:4632:1: rule__Person__Group_9__1__Impl : ( ( rule__Person__LibraryAssignment_9_1 ) ) ;
     public final void rule__Person__Group_9__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4690:1: ( ( ( rule__Person__LibraryAssignment_9_1 ) ) )
-            // InternalUnimodel.g:4691:1: ( ( rule__Person__LibraryAssignment_9_1 ) )
+            // InternalUnimodel.g:4636:1: ( ( ( rule__Person__LibraryAssignment_9_1 ) ) )
+            // InternalUnimodel.g:4637:1: ( ( rule__Person__LibraryAssignment_9_1 ) )
             {
-            // InternalUnimodel.g:4691:1: ( ( rule__Person__LibraryAssignment_9_1 ) )
-            // InternalUnimodel.g:4692:2: ( rule__Person__LibraryAssignment_9_1 )
+            // InternalUnimodel.g:4637:1: ( ( rule__Person__LibraryAssignment_9_1 ) )
+            // InternalUnimodel.g:4638:2: ( rule__Person__LibraryAssignment_9_1 )
             {
              before(grammarAccess.getPersonAccess().getLibraryAssignment_9_1()); 
-            // InternalUnimodel.g:4693:2: ( rule__Person__LibraryAssignment_9_1 )
-            // InternalUnimodel.g:4693:3: rule__Person__LibraryAssignment_9_1
+            // InternalUnimodel.g:4639:2: ( rule__Person__LibraryAssignment_9_1 )
+            // InternalUnimodel.g:4639:3: rule__Person__LibraryAssignment_9_1
             {
             pushFollow(FOLLOW_2);
             rule__Person__LibraryAssignment_9_1();
@@ -14242,14 +14080,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__0"
-    // InternalUnimodel.g:4702:1: rule__Room_Impl__Group__0 : rule__Room_Impl__Group__0__Impl rule__Room_Impl__Group__1 ;
+    // InternalUnimodel.g:4648:1: rule__Room_Impl__Group__0 : rule__Room_Impl__Group__0__Impl rule__Room_Impl__Group__1 ;
     public final void rule__Room_Impl__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4706:1: ( rule__Room_Impl__Group__0__Impl rule__Room_Impl__Group__1 )
-            // InternalUnimodel.g:4707:2: rule__Room_Impl__Group__0__Impl rule__Room_Impl__Group__1
+            // InternalUnimodel.g:4652:1: ( rule__Room_Impl__Group__0__Impl rule__Room_Impl__Group__1 )
+            // InternalUnimodel.g:4653:2: rule__Room_Impl__Group__0__Impl rule__Room_Impl__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Room_Impl__Group__0__Impl();
@@ -14280,20 +14118,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__0__Impl"
-    // InternalUnimodel.g:4714:1: rule__Room_Impl__Group__0__Impl : ( 'Room' ) ;
+    // InternalUnimodel.g:4660:1: rule__Room_Impl__Group__0__Impl : ( 'Room' ) ;
     public final void rule__Room_Impl__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4718:1: ( ( 'Room' ) )
-            // InternalUnimodel.g:4719:1: ( 'Room' )
+            // InternalUnimodel.g:4664:1: ( ( 'Room' ) )
+            // InternalUnimodel.g:4665:1: ( 'Room' )
             {
-            // InternalUnimodel.g:4719:1: ( 'Room' )
-            // InternalUnimodel.g:4720:2: 'Room'
+            // InternalUnimodel.g:4665:1: ( 'Room' )
+            // InternalUnimodel.g:4666:2: 'Room'
             {
              before(grammarAccess.getRoom_ImplAccess().getRoomKeyword_0()); 
-            match(input,65,FOLLOW_2); 
+            match(input,64,FOLLOW_2); 
              after(grammarAccess.getRoom_ImplAccess().getRoomKeyword_0()); 
 
             }
@@ -14317,14 +14155,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__1"
-    // InternalUnimodel.g:4729:1: rule__Room_Impl__Group__1 : rule__Room_Impl__Group__1__Impl rule__Room_Impl__Group__2 ;
+    // InternalUnimodel.g:4675:1: rule__Room_Impl__Group__1 : rule__Room_Impl__Group__1__Impl rule__Room_Impl__Group__2 ;
     public final void rule__Room_Impl__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4733:1: ( rule__Room_Impl__Group__1__Impl rule__Room_Impl__Group__2 )
-            // InternalUnimodel.g:4734:2: rule__Room_Impl__Group__1__Impl rule__Room_Impl__Group__2
+            // InternalUnimodel.g:4679:1: ( rule__Room_Impl__Group__1__Impl rule__Room_Impl__Group__2 )
+            // InternalUnimodel.g:4680:2: rule__Room_Impl__Group__1__Impl rule__Room_Impl__Group__2
             {
             pushFollow(FOLLOW_4);
             rule__Room_Impl__Group__1__Impl();
@@ -14355,21 +14193,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__1__Impl"
-    // InternalUnimodel.g:4741:1: rule__Room_Impl__Group__1__Impl : ( ( rule__Room_Impl__NameAssignment_1 ) ) ;
+    // InternalUnimodel.g:4687:1: rule__Room_Impl__Group__1__Impl : ( ( rule__Room_Impl__NameAssignment_1 ) ) ;
     public final void rule__Room_Impl__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4745:1: ( ( ( rule__Room_Impl__NameAssignment_1 ) ) )
-            // InternalUnimodel.g:4746:1: ( ( rule__Room_Impl__NameAssignment_1 ) )
+            // InternalUnimodel.g:4691:1: ( ( ( rule__Room_Impl__NameAssignment_1 ) ) )
+            // InternalUnimodel.g:4692:1: ( ( rule__Room_Impl__NameAssignment_1 ) )
             {
-            // InternalUnimodel.g:4746:1: ( ( rule__Room_Impl__NameAssignment_1 ) )
-            // InternalUnimodel.g:4747:2: ( rule__Room_Impl__NameAssignment_1 )
+            // InternalUnimodel.g:4692:1: ( ( rule__Room_Impl__NameAssignment_1 ) )
+            // InternalUnimodel.g:4693:2: ( rule__Room_Impl__NameAssignment_1 )
             {
              before(grammarAccess.getRoom_ImplAccess().getNameAssignment_1()); 
-            // InternalUnimodel.g:4748:2: ( rule__Room_Impl__NameAssignment_1 )
-            // InternalUnimodel.g:4748:3: rule__Room_Impl__NameAssignment_1
+            // InternalUnimodel.g:4694:2: ( rule__Room_Impl__NameAssignment_1 )
+            // InternalUnimodel.g:4694:3: rule__Room_Impl__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Room_Impl__NameAssignment_1();
@@ -14402,14 +14240,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__2"
-    // InternalUnimodel.g:4756:1: rule__Room_Impl__Group__2 : rule__Room_Impl__Group__2__Impl rule__Room_Impl__Group__3 ;
+    // InternalUnimodel.g:4702:1: rule__Room_Impl__Group__2 : rule__Room_Impl__Group__2__Impl rule__Room_Impl__Group__3 ;
     public final void rule__Room_Impl__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4760:1: ( rule__Room_Impl__Group__2__Impl rule__Room_Impl__Group__3 )
-            // InternalUnimodel.g:4761:2: rule__Room_Impl__Group__2__Impl rule__Room_Impl__Group__3
+            // InternalUnimodel.g:4706:1: ( rule__Room_Impl__Group__2__Impl rule__Room_Impl__Group__3 )
+            // InternalUnimodel.g:4707:2: rule__Room_Impl__Group__2__Impl rule__Room_Impl__Group__3
             {
             pushFollow(FOLLOW_36);
             rule__Room_Impl__Group__2__Impl();
@@ -14440,17 +14278,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__2__Impl"
-    // InternalUnimodel.g:4768:1: rule__Room_Impl__Group__2__Impl : ( '{' ) ;
+    // InternalUnimodel.g:4714:1: rule__Room_Impl__Group__2__Impl : ( '{' ) ;
     public final void rule__Room_Impl__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4772:1: ( ( '{' ) )
-            // InternalUnimodel.g:4773:1: ( '{' )
+            // InternalUnimodel.g:4718:1: ( ( '{' ) )
+            // InternalUnimodel.g:4719:1: ( '{' )
             {
-            // InternalUnimodel.g:4773:1: ( '{' )
-            // InternalUnimodel.g:4774:2: '{'
+            // InternalUnimodel.g:4719:1: ( '{' )
+            // InternalUnimodel.g:4720:2: '{'
             {
              before(grammarAccess.getRoom_ImplAccess().getLeftCurlyBracketKeyword_2()); 
             match(input,24,FOLLOW_2); 
@@ -14477,14 +14315,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__3"
-    // InternalUnimodel.g:4783:1: rule__Room_Impl__Group__3 : rule__Room_Impl__Group__3__Impl rule__Room_Impl__Group__4 ;
+    // InternalUnimodel.g:4729:1: rule__Room_Impl__Group__3 : rule__Room_Impl__Group__3__Impl rule__Room_Impl__Group__4 ;
     public final void rule__Room_Impl__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4787:1: ( rule__Room_Impl__Group__3__Impl rule__Room_Impl__Group__4 )
-            // InternalUnimodel.g:4788:2: rule__Room_Impl__Group__3__Impl rule__Room_Impl__Group__4
+            // InternalUnimodel.g:4733:1: ( rule__Room_Impl__Group__3__Impl rule__Room_Impl__Group__4 )
+            // InternalUnimodel.g:4734:2: rule__Room_Impl__Group__3__Impl rule__Room_Impl__Group__4
             {
             pushFollow(FOLLOW_37);
             rule__Room_Impl__Group__3__Impl();
@@ -14515,20 +14353,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__3__Impl"
-    // InternalUnimodel.g:4795:1: rule__Room_Impl__Group__3__Impl : ( 'dimension' ) ;
+    // InternalUnimodel.g:4741:1: rule__Room_Impl__Group__3__Impl : ( 'dimension' ) ;
     public final void rule__Room_Impl__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4799:1: ( ( 'dimension' ) )
-            // InternalUnimodel.g:4800:1: ( 'dimension' )
+            // InternalUnimodel.g:4745:1: ( ( 'dimension' ) )
+            // InternalUnimodel.g:4746:1: ( 'dimension' )
             {
-            // InternalUnimodel.g:4800:1: ( 'dimension' )
-            // InternalUnimodel.g:4801:2: 'dimension'
+            // InternalUnimodel.g:4746:1: ( 'dimension' )
+            // InternalUnimodel.g:4747:2: 'dimension'
             {
              before(grammarAccess.getRoom_ImplAccess().getDimensionKeyword_3()); 
-            match(input,66,FOLLOW_2); 
+            match(input,65,FOLLOW_2); 
              after(grammarAccess.getRoom_ImplAccess().getDimensionKeyword_3()); 
 
             }
@@ -14552,14 +14390,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__4"
-    // InternalUnimodel.g:4810:1: rule__Room_Impl__Group__4 : rule__Room_Impl__Group__4__Impl rule__Room_Impl__Group__5 ;
+    // InternalUnimodel.g:4756:1: rule__Room_Impl__Group__4 : rule__Room_Impl__Group__4__Impl rule__Room_Impl__Group__5 ;
     public final void rule__Room_Impl__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4814:1: ( rule__Room_Impl__Group__4__Impl rule__Room_Impl__Group__5 )
-            // InternalUnimodel.g:4815:2: rule__Room_Impl__Group__4__Impl rule__Room_Impl__Group__5
+            // InternalUnimodel.g:4760:1: ( rule__Room_Impl__Group__4__Impl rule__Room_Impl__Group__5 )
+            // InternalUnimodel.g:4761:2: rule__Room_Impl__Group__4__Impl rule__Room_Impl__Group__5
             {
             pushFollow(FOLLOW_38);
             rule__Room_Impl__Group__4__Impl();
@@ -14590,21 +14428,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__4__Impl"
-    // InternalUnimodel.g:4822:1: rule__Room_Impl__Group__4__Impl : ( ( rule__Room_Impl__DimensionAssignment_4 ) ) ;
+    // InternalUnimodel.g:4768:1: rule__Room_Impl__Group__4__Impl : ( ( rule__Room_Impl__DimensionAssignment_4 ) ) ;
     public final void rule__Room_Impl__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4826:1: ( ( ( rule__Room_Impl__DimensionAssignment_4 ) ) )
-            // InternalUnimodel.g:4827:1: ( ( rule__Room_Impl__DimensionAssignment_4 ) )
+            // InternalUnimodel.g:4772:1: ( ( ( rule__Room_Impl__DimensionAssignment_4 ) ) )
+            // InternalUnimodel.g:4773:1: ( ( rule__Room_Impl__DimensionAssignment_4 ) )
             {
-            // InternalUnimodel.g:4827:1: ( ( rule__Room_Impl__DimensionAssignment_4 ) )
-            // InternalUnimodel.g:4828:2: ( rule__Room_Impl__DimensionAssignment_4 )
+            // InternalUnimodel.g:4773:1: ( ( rule__Room_Impl__DimensionAssignment_4 ) )
+            // InternalUnimodel.g:4774:2: ( rule__Room_Impl__DimensionAssignment_4 )
             {
              before(grammarAccess.getRoom_ImplAccess().getDimensionAssignment_4()); 
-            // InternalUnimodel.g:4829:2: ( rule__Room_Impl__DimensionAssignment_4 )
-            // InternalUnimodel.g:4829:3: rule__Room_Impl__DimensionAssignment_4
+            // InternalUnimodel.g:4775:2: ( rule__Room_Impl__DimensionAssignment_4 )
+            // InternalUnimodel.g:4775:3: rule__Room_Impl__DimensionAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Room_Impl__DimensionAssignment_4();
@@ -14637,14 +14475,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__5"
-    // InternalUnimodel.g:4837:1: rule__Room_Impl__Group__5 : rule__Room_Impl__Group__5__Impl rule__Room_Impl__Group__6 ;
+    // InternalUnimodel.g:4783:1: rule__Room_Impl__Group__5 : rule__Room_Impl__Group__5__Impl rule__Room_Impl__Group__6 ;
     public final void rule__Room_Impl__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4841:1: ( rule__Room_Impl__Group__5__Impl rule__Room_Impl__Group__6 )
-            // InternalUnimodel.g:4842:2: rule__Room_Impl__Group__5__Impl rule__Room_Impl__Group__6
+            // InternalUnimodel.g:4787:1: ( rule__Room_Impl__Group__5__Impl rule__Room_Impl__Group__6 )
+            // InternalUnimodel.g:4788:2: rule__Room_Impl__Group__5__Impl rule__Room_Impl__Group__6
             {
             pushFollow(FOLLOW_15);
             rule__Room_Impl__Group__5__Impl();
@@ -14675,20 +14513,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__5__Impl"
-    // InternalUnimodel.g:4849:1: rule__Room_Impl__Group__5__Impl : ( 'sockets' ) ;
+    // InternalUnimodel.g:4795:1: rule__Room_Impl__Group__5__Impl : ( 'sockets' ) ;
     public final void rule__Room_Impl__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4853:1: ( ( 'sockets' ) )
-            // InternalUnimodel.g:4854:1: ( 'sockets' )
+            // InternalUnimodel.g:4799:1: ( ( 'sockets' ) )
+            // InternalUnimodel.g:4800:1: ( 'sockets' )
             {
-            // InternalUnimodel.g:4854:1: ( 'sockets' )
-            // InternalUnimodel.g:4855:2: 'sockets'
+            // InternalUnimodel.g:4800:1: ( 'sockets' )
+            // InternalUnimodel.g:4801:2: 'sockets'
             {
              before(grammarAccess.getRoom_ImplAccess().getSocketsKeyword_5()); 
-            match(input,67,FOLLOW_2); 
+            match(input,66,FOLLOW_2); 
              after(grammarAccess.getRoom_ImplAccess().getSocketsKeyword_5()); 
 
             }
@@ -14712,14 +14550,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__6"
-    // InternalUnimodel.g:4864:1: rule__Room_Impl__Group__6 : rule__Room_Impl__Group__6__Impl rule__Room_Impl__Group__7 ;
+    // InternalUnimodel.g:4810:1: rule__Room_Impl__Group__6 : rule__Room_Impl__Group__6__Impl rule__Room_Impl__Group__7 ;
     public final void rule__Room_Impl__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4868:1: ( rule__Room_Impl__Group__6__Impl rule__Room_Impl__Group__7 )
-            // InternalUnimodel.g:4869:2: rule__Room_Impl__Group__6__Impl rule__Room_Impl__Group__7
+            // InternalUnimodel.g:4814:1: ( rule__Room_Impl__Group__6__Impl rule__Room_Impl__Group__7 )
+            // InternalUnimodel.g:4815:2: rule__Room_Impl__Group__6__Impl rule__Room_Impl__Group__7
             {
             pushFollow(FOLLOW_9);
             rule__Room_Impl__Group__6__Impl();
@@ -14750,21 +14588,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__6__Impl"
-    // InternalUnimodel.g:4876:1: rule__Room_Impl__Group__6__Impl : ( ( rule__Room_Impl__SocketsAssignment_6 ) ) ;
+    // InternalUnimodel.g:4822:1: rule__Room_Impl__Group__6__Impl : ( ( rule__Room_Impl__SocketsAssignment_6 ) ) ;
     public final void rule__Room_Impl__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4880:1: ( ( ( rule__Room_Impl__SocketsAssignment_6 ) ) )
-            // InternalUnimodel.g:4881:1: ( ( rule__Room_Impl__SocketsAssignment_6 ) )
+            // InternalUnimodel.g:4826:1: ( ( ( rule__Room_Impl__SocketsAssignment_6 ) ) )
+            // InternalUnimodel.g:4827:1: ( ( rule__Room_Impl__SocketsAssignment_6 ) )
             {
-            // InternalUnimodel.g:4881:1: ( ( rule__Room_Impl__SocketsAssignment_6 ) )
-            // InternalUnimodel.g:4882:2: ( rule__Room_Impl__SocketsAssignment_6 )
+            // InternalUnimodel.g:4827:1: ( ( rule__Room_Impl__SocketsAssignment_6 ) )
+            // InternalUnimodel.g:4828:2: ( rule__Room_Impl__SocketsAssignment_6 )
             {
              before(grammarAccess.getRoom_ImplAccess().getSocketsAssignment_6()); 
-            // InternalUnimodel.g:4883:2: ( rule__Room_Impl__SocketsAssignment_6 )
-            // InternalUnimodel.g:4883:3: rule__Room_Impl__SocketsAssignment_6
+            // InternalUnimodel.g:4829:2: ( rule__Room_Impl__SocketsAssignment_6 )
+            // InternalUnimodel.g:4829:3: rule__Room_Impl__SocketsAssignment_6
             {
             pushFollow(FOLLOW_2);
             rule__Room_Impl__SocketsAssignment_6();
@@ -14797,14 +14635,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__7"
-    // InternalUnimodel.g:4891:1: rule__Room_Impl__Group__7 : rule__Room_Impl__Group__7__Impl ;
+    // InternalUnimodel.g:4837:1: rule__Room_Impl__Group__7 : rule__Room_Impl__Group__7__Impl ;
     public final void rule__Room_Impl__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4895:1: ( rule__Room_Impl__Group__7__Impl )
-            // InternalUnimodel.g:4896:2: rule__Room_Impl__Group__7__Impl
+            // InternalUnimodel.g:4841:1: ( rule__Room_Impl__Group__7__Impl )
+            // InternalUnimodel.g:4842:2: rule__Room_Impl__Group__7__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Room_Impl__Group__7__Impl();
@@ -14830,17 +14668,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Room_Impl__Group__7__Impl"
-    // InternalUnimodel.g:4902:1: rule__Room_Impl__Group__7__Impl : ( '}' ) ;
+    // InternalUnimodel.g:4848:1: rule__Room_Impl__Group__7__Impl : ( '}' ) ;
     public final void rule__Room_Impl__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:4906:1: ( ( '}' ) )
-            // InternalUnimodel.g:4907:1: ( '}' )
+            // InternalUnimodel.g:4852:1: ( ( '}' ) )
+            // InternalUnimodel.g:4853:1: ( '}' )
             {
-            // InternalUnimodel.g:4907:1: ( '}' )
-            // InternalUnimodel.g:4908:2: '}'
+            // InternalUnimodel.g:4853:1: ( '}' )
+            // InternalUnimodel.g:4854:2: '}'
             {
              before(grammarAccess.getRoom_ImplAccess().getRightCurlyBracketKeyword_7()); 
             match(input,26,FOLLOW_2); 
@@ -14866,687 +14704,15 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
     // $ANTLR end "rule__Room_Impl__Group__7__Impl"
 
 
-    // $ANTLR start "rule__EFloat__Group__0"
-    // InternalUnimodel.g:4918:1: rule__EFloat__Group__0 : rule__EFloat__Group__0__Impl rule__EFloat__Group__1 ;
-    public final void rule__EFloat__Group__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:4922:1: ( rule__EFloat__Group__0__Impl rule__EFloat__Group__1 )
-            // InternalUnimodel.g:4923:2: rule__EFloat__Group__0__Impl rule__EFloat__Group__1
-            {
-            pushFollow(FOLLOW_37);
-            rule__EFloat__Group__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__EFloat__Group__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__0"
-
-
-    // $ANTLR start "rule__EFloat__Group__0__Impl"
-    // InternalUnimodel.g:4930:1: rule__EFloat__Group__0__Impl : ( ( '-' )? ) ;
-    public final void rule__EFloat__Group__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:4934:1: ( ( ( '-' )? ) )
-            // InternalUnimodel.g:4935:1: ( ( '-' )? )
-            {
-            // InternalUnimodel.g:4935:1: ( ( '-' )? )
-            // InternalUnimodel.g:4936:2: ( '-' )?
-            {
-             before(grammarAccess.getEFloatAccess().getHyphenMinusKeyword_0()); 
-            // InternalUnimodel.g:4937:2: ( '-' )?
-            int alt35=2;
-            int LA35_0 = input.LA(1);
-
-            if ( (LA35_0==52) ) {
-                alt35=1;
-            }
-            switch (alt35) {
-                case 1 :
-                    // InternalUnimodel.g:4937:3: '-'
-                    {
-                    match(input,52,FOLLOW_2); 
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getEFloatAccess().getHyphenMinusKeyword_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__0__Impl"
-
-
-    // $ANTLR start "rule__EFloat__Group__1"
-    // InternalUnimodel.g:4945:1: rule__EFloat__Group__1 : rule__EFloat__Group__1__Impl rule__EFloat__Group__2 ;
-    public final void rule__EFloat__Group__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:4949:1: ( rule__EFloat__Group__1__Impl rule__EFloat__Group__2 )
-            // InternalUnimodel.g:4950:2: rule__EFloat__Group__1__Impl rule__EFloat__Group__2
-            {
-            pushFollow(FOLLOW_37);
-            rule__EFloat__Group__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__EFloat__Group__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__1"
-
-
-    // $ANTLR start "rule__EFloat__Group__1__Impl"
-    // InternalUnimodel.g:4957:1: rule__EFloat__Group__1__Impl : ( ( RULE_INT )? ) ;
-    public final void rule__EFloat__Group__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:4961:1: ( ( ( RULE_INT )? ) )
-            // InternalUnimodel.g:4962:1: ( ( RULE_INT )? )
-            {
-            // InternalUnimodel.g:4962:1: ( ( RULE_INT )? )
-            // InternalUnimodel.g:4963:2: ( RULE_INT )?
-            {
-             before(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_1()); 
-            // InternalUnimodel.g:4964:2: ( RULE_INT )?
-            int alt36=2;
-            int LA36_0 = input.LA(1);
-
-            if ( (LA36_0==RULE_INT) ) {
-                alt36=1;
-            }
-            switch (alt36) {
-                case 1 :
-                    // InternalUnimodel.g:4964:3: RULE_INT
-                    {
-                    match(input,RULE_INT,FOLLOW_2); 
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__1__Impl"
-
-
-    // $ANTLR start "rule__EFloat__Group__2"
-    // InternalUnimodel.g:4972:1: rule__EFloat__Group__2 : rule__EFloat__Group__2__Impl rule__EFloat__Group__3 ;
-    public final void rule__EFloat__Group__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:4976:1: ( rule__EFloat__Group__2__Impl rule__EFloat__Group__3 )
-            // InternalUnimodel.g:4977:2: rule__EFloat__Group__2__Impl rule__EFloat__Group__3
-            {
-            pushFollow(FOLLOW_39);
-            rule__EFloat__Group__2__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__EFloat__Group__3();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__2"
-
-
-    // $ANTLR start "rule__EFloat__Group__2__Impl"
-    // InternalUnimodel.g:4984:1: rule__EFloat__Group__2__Impl : ( '.' ) ;
-    public final void rule__EFloat__Group__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:4988:1: ( ( '.' ) )
-            // InternalUnimodel.g:4989:1: ( '.' )
-            {
-            // InternalUnimodel.g:4989:1: ( '.' )
-            // InternalUnimodel.g:4990:2: '.'
-            {
-             before(grammarAccess.getEFloatAccess().getFullStopKeyword_2()); 
-            match(input,68,FOLLOW_2); 
-             after(grammarAccess.getEFloatAccess().getFullStopKeyword_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__2__Impl"
-
-
-    // $ANTLR start "rule__EFloat__Group__3"
-    // InternalUnimodel.g:4999:1: rule__EFloat__Group__3 : rule__EFloat__Group__3__Impl rule__EFloat__Group__4 ;
-    public final void rule__EFloat__Group__3() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5003:1: ( rule__EFloat__Group__3__Impl rule__EFloat__Group__4 )
-            // InternalUnimodel.g:5004:2: rule__EFloat__Group__3__Impl rule__EFloat__Group__4
-            {
-            pushFollow(FOLLOW_40);
-            rule__EFloat__Group__3__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__EFloat__Group__4();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__3"
-
-
-    // $ANTLR start "rule__EFloat__Group__3__Impl"
-    // InternalUnimodel.g:5011:1: rule__EFloat__Group__3__Impl : ( RULE_INT ) ;
-    public final void rule__EFloat__Group__3__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5015:1: ( ( RULE_INT ) )
-            // InternalUnimodel.g:5016:1: ( RULE_INT )
-            {
-            // InternalUnimodel.g:5016:1: ( RULE_INT )
-            // InternalUnimodel.g:5017:2: RULE_INT
-            {
-             before(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_3()); 
-            match(input,RULE_INT,FOLLOW_2); 
-             after(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_3()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__3__Impl"
-
-
-    // $ANTLR start "rule__EFloat__Group__4"
-    // InternalUnimodel.g:5026:1: rule__EFloat__Group__4 : rule__EFloat__Group__4__Impl ;
-    public final void rule__EFloat__Group__4() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5030:1: ( rule__EFloat__Group__4__Impl )
-            // InternalUnimodel.g:5031:2: rule__EFloat__Group__4__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__EFloat__Group__4__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__4"
-
-
-    // $ANTLR start "rule__EFloat__Group__4__Impl"
-    // InternalUnimodel.g:5037:1: rule__EFloat__Group__4__Impl : ( ( rule__EFloat__Group_4__0 )? ) ;
-    public final void rule__EFloat__Group__4__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5041:1: ( ( ( rule__EFloat__Group_4__0 )? ) )
-            // InternalUnimodel.g:5042:1: ( ( rule__EFloat__Group_4__0 )? )
-            {
-            // InternalUnimodel.g:5042:1: ( ( rule__EFloat__Group_4__0 )? )
-            // InternalUnimodel.g:5043:2: ( rule__EFloat__Group_4__0 )?
-            {
-             before(grammarAccess.getEFloatAccess().getGroup_4()); 
-            // InternalUnimodel.g:5044:2: ( rule__EFloat__Group_4__0 )?
-            int alt37=2;
-            int LA37_0 = input.LA(1);
-
-            if ( ((LA37_0>=12 && LA37_0<=13)) ) {
-                alt37=1;
-            }
-            switch (alt37) {
-                case 1 :
-                    // InternalUnimodel.g:5044:3: rule__EFloat__Group_4__0
-                    {
-                    pushFollow(FOLLOW_2);
-                    rule__EFloat__Group_4__0();
-
-                    state._fsp--;
-
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getEFloatAccess().getGroup_4()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group__4__Impl"
-
-
-    // $ANTLR start "rule__EFloat__Group_4__0"
-    // InternalUnimodel.g:5053:1: rule__EFloat__Group_4__0 : rule__EFloat__Group_4__0__Impl rule__EFloat__Group_4__1 ;
-    public final void rule__EFloat__Group_4__0() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5057:1: ( rule__EFloat__Group_4__0__Impl rule__EFloat__Group_4__1 )
-            // InternalUnimodel.g:5058:2: rule__EFloat__Group_4__0__Impl rule__EFloat__Group_4__1
-            {
-            pushFollow(FOLLOW_15);
-            rule__EFloat__Group_4__0__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__EFloat__Group_4__1();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group_4__0"
-
-
-    // $ANTLR start "rule__EFloat__Group_4__0__Impl"
-    // InternalUnimodel.g:5065:1: rule__EFloat__Group_4__0__Impl : ( ( rule__EFloat__Alternatives_4_0 ) ) ;
-    public final void rule__EFloat__Group_4__0__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5069:1: ( ( ( rule__EFloat__Alternatives_4_0 ) ) )
-            // InternalUnimodel.g:5070:1: ( ( rule__EFloat__Alternatives_4_0 ) )
-            {
-            // InternalUnimodel.g:5070:1: ( ( rule__EFloat__Alternatives_4_0 ) )
-            // InternalUnimodel.g:5071:2: ( rule__EFloat__Alternatives_4_0 )
-            {
-             before(grammarAccess.getEFloatAccess().getAlternatives_4_0()); 
-            // InternalUnimodel.g:5072:2: ( rule__EFloat__Alternatives_4_0 )
-            // InternalUnimodel.g:5072:3: rule__EFloat__Alternatives_4_0
-            {
-            pushFollow(FOLLOW_2);
-            rule__EFloat__Alternatives_4_0();
-
-            state._fsp--;
-
-
-            }
-
-             after(grammarAccess.getEFloatAccess().getAlternatives_4_0()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group_4__0__Impl"
-
-
-    // $ANTLR start "rule__EFloat__Group_4__1"
-    // InternalUnimodel.g:5080:1: rule__EFloat__Group_4__1 : rule__EFloat__Group_4__1__Impl rule__EFloat__Group_4__2 ;
-    public final void rule__EFloat__Group_4__1() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5084:1: ( rule__EFloat__Group_4__1__Impl rule__EFloat__Group_4__2 )
-            // InternalUnimodel.g:5085:2: rule__EFloat__Group_4__1__Impl rule__EFloat__Group_4__2
-            {
-            pushFollow(FOLLOW_15);
-            rule__EFloat__Group_4__1__Impl();
-
-            state._fsp--;
-
-            pushFollow(FOLLOW_2);
-            rule__EFloat__Group_4__2();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group_4__1"
-
-
-    // $ANTLR start "rule__EFloat__Group_4__1__Impl"
-    // InternalUnimodel.g:5092:1: rule__EFloat__Group_4__1__Impl : ( ( '-' )? ) ;
-    public final void rule__EFloat__Group_4__1__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5096:1: ( ( ( '-' )? ) )
-            // InternalUnimodel.g:5097:1: ( ( '-' )? )
-            {
-            // InternalUnimodel.g:5097:1: ( ( '-' )? )
-            // InternalUnimodel.g:5098:2: ( '-' )?
-            {
-             before(grammarAccess.getEFloatAccess().getHyphenMinusKeyword_4_1()); 
-            // InternalUnimodel.g:5099:2: ( '-' )?
-            int alt38=2;
-            int LA38_0 = input.LA(1);
-
-            if ( (LA38_0==52) ) {
-                alt38=1;
-            }
-            switch (alt38) {
-                case 1 :
-                    // InternalUnimodel.g:5099:3: '-'
-                    {
-                    match(input,52,FOLLOW_2); 
-
-                    }
-                    break;
-
-            }
-
-             after(grammarAccess.getEFloatAccess().getHyphenMinusKeyword_4_1()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group_4__1__Impl"
-
-
-    // $ANTLR start "rule__EFloat__Group_4__2"
-    // InternalUnimodel.g:5107:1: rule__EFloat__Group_4__2 : rule__EFloat__Group_4__2__Impl ;
-    public final void rule__EFloat__Group_4__2() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5111:1: ( rule__EFloat__Group_4__2__Impl )
-            // InternalUnimodel.g:5112:2: rule__EFloat__Group_4__2__Impl
-            {
-            pushFollow(FOLLOW_2);
-            rule__EFloat__Group_4__2__Impl();
-
-            state._fsp--;
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group_4__2"
-
-
-    // $ANTLR start "rule__EFloat__Group_4__2__Impl"
-    // InternalUnimodel.g:5118:1: rule__EFloat__Group_4__2__Impl : ( RULE_INT ) ;
-    public final void rule__EFloat__Group_4__2__Impl() throws RecognitionException {
-
-        		int stackSize = keepStackSize();
-        	
-        try {
-            // InternalUnimodel.g:5122:1: ( ( RULE_INT ) )
-            // InternalUnimodel.g:5123:1: ( RULE_INT )
-            {
-            // InternalUnimodel.g:5123:1: ( RULE_INT )
-            // InternalUnimodel.g:5124:2: RULE_INT
-            {
-             before(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_4_2()); 
-            match(input,RULE_INT,FOLLOW_2); 
-             after(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_4_2()); 
-
-            }
-
-
-            }
-
-        }
-        catch (RecognitionException re) {
-            reportError(re);
-            recover(input,re);
-        }
-        finally {
-
-            	restoreStackSize(stackSize);
-
-        }
-        return ;
-    }
-    // $ANTLR end "rule__EFloat__Group_4__2__Impl"
-
-
     // $ANTLR start "rule__Office__Group__0"
-    // InternalUnimodel.g:5134:1: rule__Office__Group__0 : rule__Office__Group__0__Impl rule__Office__Group__1 ;
+    // InternalUnimodel.g:4864:1: rule__Office__Group__0 : rule__Office__Group__0__Impl rule__Office__Group__1 ;
     public final void rule__Office__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5138:1: ( rule__Office__Group__0__Impl rule__Office__Group__1 )
-            // InternalUnimodel.g:5139:2: rule__Office__Group__0__Impl rule__Office__Group__1
+            // InternalUnimodel.g:4868:1: ( rule__Office__Group__0__Impl rule__Office__Group__1 )
+            // InternalUnimodel.g:4869:2: rule__Office__Group__0__Impl rule__Office__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Office__Group__0__Impl();
@@ -15577,20 +14743,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__0__Impl"
-    // InternalUnimodel.g:5146:1: rule__Office__Group__0__Impl : ( 'Office' ) ;
+    // InternalUnimodel.g:4876:1: rule__Office__Group__0__Impl : ( 'Office' ) ;
     public final void rule__Office__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5150:1: ( ( 'Office' ) )
-            // InternalUnimodel.g:5151:1: ( 'Office' )
+            // InternalUnimodel.g:4880:1: ( ( 'Office' ) )
+            // InternalUnimodel.g:4881:1: ( 'Office' )
             {
-            // InternalUnimodel.g:5151:1: ( 'Office' )
-            // InternalUnimodel.g:5152:2: 'Office'
+            // InternalUnimodel.g:4881:1: ( 'Office' )
+            // InternalUnimodel.g:4882:2: 'Office'
             {
              before(grammarAccess.getOfficeAccess().getOfficeKeyword_0()); 
-            match(input,69,FOLLOW_2); 
+            match(input,67,FOLLOW_2); 
              after(grammarAccess.getOfficeAccess().getOfficeKeyword_0()); 
 
             }
@@ -15614,14 +14780,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__1"
-    // InternalUnimodel.g:5161:1: rule__Office__Group__1 : rule__Office__Group__1__Impl rule__Office__Group__2 ;
+    // InternalUnimodel.g:4891:1: rule__Office__Group__1 : rule__Office__Group__1__Impl rule__Office__Group__2 ;
     public final void rule__Office__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5165:1: ( rule__Office__Group__1__Impl rule__Office__Group__2 )
-            // InternalUnimodel.g:5166:2: rule__Office__Group__1__Impl rule__Office__Group__2
+            // InternalUnimodel.g:4895:1: ( rule__Office__Group__1__Impl rule__Office__Group__2 )
+            // InternalUnimodel.g:4896:2: rule__Office__Group__1__Impl rule__Office__Group__2
             {
             pushFollow(FOLLOW_4);
             rule__Office__Group__1__Impl();
@@ -15652,21 +14818,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__1__Impl"
-    // InternalUnimodel.g:5173:1: rule__Office__Group__1__Impl : ( ( rule__Office__NameAssignment_1 ) ) ;
+    // InternalUnimodel.g:4903:1: rule__Office__Group__1__Impl : ( ( rule__Office__NameAssignment_1 ) ) ;
     public final void rule__Office__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5177:1: ( ( ( rule__Office__NameAssignment_1 ) ) )
-            // InternalUnimodel.g:5178:1: ( ( rule__Office__NameAssignment_1 ) )
+            // InternalUnimodel.g:4907:1: ( ( ( rule__Office__NameAssignment_1 ) ) )
+            // InternalUnimodel.g:4908:1: ( ( rule__Office__NameAssignment_1 ) )
             {
-            // InternalUnimodel.g:5178:1: ( ( rule__Office__NameAssignment_1 ) )
-            // InternalUnimodel.g:5179:2: ( rule__Office__NameAssignment_1 )
+            // InternalUnimodel.g:4908:1: ( ( rule__Office__NameAssignment_1 ) )
+            // InternalUnimodel.g:4909:2: ( rule__Office__NameAssignment_1 )
             {
              before(grammarAccess.getOfficeAccess().getNameAssignment_1()); 
-            // InternalUnimodel.g:5180:2: ( rule__Office__NameAssignment_1 )
-            // InternalUnimodel.g:5180:3: rule__Office__NameAssignment_1
+            // InternalUnimodel.g:4910:2: ( rule__Office__NameAssignment_1 )
+            // InternalUnimodel.g:4910:3: rule__Office__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Office__NameAssignment_1();
@@ -15699,14 +14865,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__2"
-    // InternalUnimodel.g:5188:1: rule__Office__Group__2 : rule__Office__Group__2__Impl rule__Office__Group__3 ;
+    // InternalUnimodel.g:4918:1: rule__Office__Group__2 : rule__Office__Group__2__Impl rule__Office__Group__3 ;
     public final void rule__Office__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5192:1: ( rule__Office__Group__2__Impl rule__Office__Group__3 )
-            // InternalUnimodel.g:5193:2: rule__Office__Group__2__Impl rule__Office__Group__3
+            // InternalUnimodel.g:4922:1: ( rule__Office__Group__2__Impl rule__Office__Group__3 )
+            // InternalUnimodel.g:4923:2: rule__Office__Group__2__Impl rule__Office__Group__3
             {
             pushFollow(FOLLOW_36);
             rule__Office__Group__2__Impl();
@@ -15737,17 +14903,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__2__Impl"
-    // InternalUnimodel.g:5200:1: rule__Office__Group__2__Impl : ( '{' ) ;
+    // InternalUnimodel.g:4930:1: rule__Office__Group__2__Impl : ( '{' ) ;
     public final void rule__Office__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5204:1: ( ( '{' ) )
-            // InternalUnimodel.g:5205:1: ( '{' )
+            // InternalUnimodel.g:4934:1: ( ( '{' ) )
+            // InternalUnimodel.g:4935:1: ( '{' )
             {
-            // InternalUnimodel.g:5205:1: ( '{' )
-            // InternalUnimodel.g:5206:2: '{'
+            // InternalUnimodel.g:4935:1: ( '{' )
+            // InternalUnimodel.g:4936:2: '{'
             {
              before(grammarAccess.getOfficeAccess().getLeftCurlyBracketKeyword_2()); 
             match(input,24,FOLLOW_2); 
@@ -15774,14 +14940,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__3"
-    // InternalUnimodel.g:5215:1: rule__Office__Group__3 : rule__Office__Group__3__Impl rule__Office__Group__4 ;
+    // InternalUnimodel.g:4945:1: rule__Office__Group__3 : rule__Office__Group__3__Impl rule__Office__Group__4 ;
     public final void rule__Office__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5219:1: ( rule__Office__Group__3__Impl rule__Office__Group__4 )
-            // InternalUnimodel.g:5220:2: rule__Office__Group__3__Impl rule__Office__Group__4
+            // InternalUnimodel.g:4949:1: ( rule__Office__Group__3__Impl rule__Office__Group__4 )
+            // InternalUnimodel.g:4950:2: rule__Office__Group__3__Impl rule__Office__Group__4
             {
             pushFollow(FOLLOW_37);
             rule__Office__Group__3__Impl();
@@ -15812,20 +14978,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__3__Impl"
-    // InternalUnimodel.g:5227:1: rule__Office__Group__3__Impl : ( 'dimension' ) ;
+    // InternalUnimodel.g:4957:1: rule__Office__Group__3__Impl : ( 'dimension' ) ;
     public final void rule__Office__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5231:1: ( ( 'dimension' ) )
-            // InternalUnimodel.g:5232:1: ( 'dimension' )
+            // InternalUnimodel.g:4961:1: ( ( 'dimension' ) )
+            // InternalUnimodel.g:4962:1: ( 'dimension' )
             {
-            // InternalUnimodel.g:5232:1: ( 'dimension' )
-            // InternalUnimodel.g:5233:2: 'dimension'
+            // InternalUnimodel.g:4962:1: ( 'dimension' )
+            // InternalUnimodel.g:4963:2: 'dimension'
             {
              before(grammarAccess.getOfficeAccess().getDimensionKeyword_3()); 
-            match(input,66,FOLLOW_2); 
+            match(input,65,FOLLOW_2); 
              after(grammarAccess.getOfficeAccess().getDimensionKeyword_3()); 
 
             }
@@ -15849,14 +15015,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__4"
-    // InternalUnimodel.g:5242:1: rule__Office__Group__4 : rule__Office__Group__4__Impl rule__Office__Group__5 ;
+    // InternalUnimodel.g:4972:1: rule__Office__Group__4 : rule__Office__Group__4__Impl rule__Office__Group__5 ;
     public final void rule__Office__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5246:1: ( rule__Office__Group__4__Impl rule__Office__Group__5 )
-            // InternalUnimodel.g:5247:2: rule__Office__Group__4__Impl rule__Office__Group__5
+            // InternalUnimodel.g:4976:1: ( rule__Office__Group__4__Impl rule__Office__Group__5 )
+            // InternalUnimodel.g:4977:2: rule__Office__Group__4__Impl rule__Office__Group__5
             {
             pushFollow(FOLLOW_38);
             rule__Office__Group__4__Impl();
@@ -15887,21 +15053,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__4__Impl"
-    // InternalUnimodel.g:5254:1: rule__Office__Group__4__Impl : ( ( rule__Office__DimensionAssignment_4 ) ) ;
+    // InternalUnimodel.g:4984:1: rule__Office__Group__4__Impl : ( ( rule__Office__DimensionAssignment_4 ) ) ;
     public final void rule__Office__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5258:1: ( ( ( rule__Office__DimensionAssignment_4 ) ) )
-            // InternalUnimodel.g:5259:1: ( ( rule__Office__DimensionAssignment_4 ) )
+            // InternalUnimodel.g:4988:1: ( ( ( rule__Office__DimensionAssignment_4 ) ) )
+            // InternalUnimodel.g:4989:1: ( ( rule__Office__DimensionAssignment_4 ) )
             {
-            // InternalUnimodel.g:5259:1: ( ( rule__Office__DimensionAssignment_4 ) )
-            // InternalUnimodel.g:5260:2: ( rule__Office__DimensionAssignment_4 )
+            // InternalUnimodel.g:4989:1: ( ( rule__Office__DimensionAssignment_4 ) )
+            // InternalUnimodel.g:4990:2: ( rule__Office__DimensionAssignment_4 )
             {
              before(grammarAccess.getOfficeAccess().getDimensionAssignment_4()); 
-            // InternalUnimodel.g:5261:2: ( rule__Office__DimensionAssignment_4 )
-            // InternalUnimodel.g:5261:3: rule__Office__DimensionAssignment_4
+            // InternalUnimodel.g:4991:2: ( rule__Office__DimensionAssignment_4 )
+            // InternalUnimodel.g:4991:3: rule__Office__DimensionAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Office__DimensionAssignment_4();
@@ -15934,14 +15100,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__5"
-    // InternalUnimodel.g:5269:1: rule__Office__Group__5 : rule__Office__Group__5__Impl rule__Office__Group__6 ;
+    // InternalUnimodel.g:4999:1: rule__Office__Group__5 : rule__Office__Group__5__Impl rule__Office__Group__6 ;
     public final void rule__Office__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5273:1: ( rule__Office__Group__5__Impl rule__Office__Group__6 )
-            // InternalUnimodel.g:5274:2: rule__Office__Group__5__Impl rule__Office__Group__6
+            // InternalUnimodel.g:5003:1: ( rule__Office__Group__5__Impl rule__Office__Group__6 )
+            // InternalUnimodel.g:5004:2: rule__Office__Group__5__Impl rule__Office__Group__6
             {
             pushFollow(FOLLOW_15);
             rule__Office__Group__5__Impl();
@@ -15972,20 +15138,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__5__Impl"
-    // InternalUnimodel.g:5281:1: rule__Office__Group__5__Impl : ( 'sockets' ) ;
+    // InternalUnimodel.g:5011:1: rule__Office__Group__5__Impl : ( 'sockets' ) ;
     public final void rule__Office__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5285:1: ( ( 'sockets' ) )
-            // InternalUnimodel.g:5286:1: ( 'sockets' )
+            // InternalUnimodel.g:5015:1: ( ( 'sockets' ) )
+            // InternalUnimodel.g:5016:1: ( 'sockets' )
             {
-            // InternalUnimodel.g:5286:1: ( 'sockets' )
-            // InternalUnimodel.g:5287:2: 'sockets'
+            // InternalUnimodel.g:5016:1: ( 'sockets' )
+            // InternalUnimodel.g:5017:2: 'sockets'
             {
              before(grammarAccess.getOfficeAccess().getSocketsKeyword_5()); 
-            match(input,67,FOLLOW_2); 
+            match(input,66,FOLLOW_2); 
              after(grammarAccess.getOfficeAccess().getSocketsKeyword_5()); 
 
             }
@@ -16009,16 +15175,16 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__6"
-    // InternalUnimodel.g:5296:1: rule__Office__Group__6 : rule__Office__Group__6__Impl rule__Office__Group__7 ;
+    // InternalUnimodel.g:5026:1: rule__Office__Group__6 : rule__Office__Group__6__Impl rule__Office__Group__7 ;
     public final void rule__Office__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5300:1: ( rule__Office__Group__6__Impl rule__Office__Group__7 )
-            // InternalUnimodel.g:5301:2: rule__Office__Group__6__Impl rule__Office__Group__7
+            // InternalUnimodel.g:5030:1: ( rule__Office__Group__6__Impl rule__Office__Group__7 )
+            // InternalUnimodel.g:5031:2: rule__Office__Group__6__Impl rule__Office__Group__7
             {
-            pushFollow(FOLLOW_41);
+            pushFollow(FOLLOW_39);
             rule__Office__Group__6__Impl();
 
             state._fsp--;
@@ -16047,21 +15213,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__6__Impl"
-    // InternalUnimodel.g:5308:1: rule__Office__Group__6__Impl : ( ( rule__Office__SocketsAssignment_6 ) ) ;
+    // InternalUnimodel.g:5038:1: rule__Office__Group__6__Impl : ( ( rule__Office__SocketsAssignment_6 ) ) ;
     public final void rule__Office__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5312:1: ( ( ( rule__Office__SocketsAssignment_6 ) ) )
-            // InternalUnimodel.g:5313:1: ( ( rule__Office__SocketsAssignment_6 ) )
+            // InternalUnimodel.g:5042:1: ( ( ( rule__Office__SocketsAssignment_6 ) ) )
+            // InternalUnimodel.g:5043:1: ( ( rule__Office__SocketsAssignment_6 ) )
             {
-            // InternalUnimodel.g:5313:1: ( ( rule__Office__SocketsAssignment_6 ) )
-            // InternalUnimodel.g:5314:2: ( rule__Office__SocketsAssignment_6 )
+            // InternalUnimodel.g:5043:1: ( ( rule__Office__SocketsAssignment_6 ) )
+            // InternalUnimodel.g:5044:2: ( rule__Office__SocketsAssignment_6 )
             {
              before(grammarAccess.getOfficeAccess().getSocketsAssignment_6()); 
-            // InternalUnimodel.g:5315:2: ( rule__Office__SocketsAssignment_6 )
-            // InternalUnimodel.g:5315:3: rule__Office__SocketsAssignment_6
+            // InternalUnimodel.g:5045:2: ( rule__Office__SocketsAssignment_6 )
+            // InternalUnimodel.g:5045:3: rule__Office__SocketsAssignment_6
             {
             pushFollow(FOLLOW_2);
             rule__Office__SocketsAssignment_6();
@@ -16094,16 +15260,16 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__7"
-    // InternalUnimodel.g:5323:1: rule__Office__Group__7 : rule__Office__Group__7__Impl rule__Office__Group__8 ;
+    // InternalUnimodel.g:5053:1: rule__Office__Group__7 : rule__Office__Group__7__Impl rule__Office__Group__8 ;
     public final void rule__Office__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5327:1: ( rule__Office__Group__7__Impl rule__Office__Group__8 )
-            // InternalUnimodel.g:5328:2: rule__Office__Group__7__Impl rule__Office__Group__8
+            // InternalUnimodel.g:5057:1: ( rule__Office__Group__7__Impl rule__Office__Group__8 )
+            // InternalUnimodel.g:5058:2: rule__Office__Group__7__Impl rule__Office__Group__8
             {
-            pushFollow(FOLLOW_42);
+            pushFollow(FOLLOW_40);
             rule__Office__Group__7__Impl();
 
             state._fsp--;
@@ -16132,20 +15298,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__7__Impl"
-    // InternalUnimodel.g:5335:1: rule__Office__Group__7__Impl : ( 'type' ) ;
+    // InternalUnimodel.g:5065:1: rule__Office__Group__7__Impl : ( 'type' ) ;
     public final void rule__Office__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5339:1: ( ( 'type' ) )
-            // InternalUnimodel.g:5340:1: ( 'type' )
+            // InternalUnimodel.g:5069:1: ( ( 'type' ) )
+            // InternalUnimodel.g:5070:1: ( 'type' )
             {
-            // InternalUnimodel.g:5340:1: ( 'type' )
-            // InternalUnimodel.g:5341:2: 'type'
+            // InternalUnimodel.g:5070:1: ( 'type' )
+            // InternalUnimodel.g:5071:2: 'type'
             {
              before(grammarAccess.getOfficeAccess().getTypeKeyword_7()); 
-            match(input,70,FOLLOW_2); 
+            match(input,68,FOLLOW_2); 
              after(grammarAccess.getOfficeAccess().getTypeKeyword_7()); 
 
             }
@@ -16169,16 +15335,16 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__8"
-    // InternalUnimodel.g:5350:1: rule__Office__Group__8 : rule__Office__Group__8__Impl rule__Office__Group__9 ;
+    // InternalUnimodel.g:5080:1: rule__Office__Group__8 : rule__Office__Group__8__Impl rule__Office__Group__9 ;
     public final void rule__Office__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5354:1: ( rule__Office__Group__8__Impl rule__Office__Group__9 )
-            // InternalUnimodel.g:5355:2: rule__Office__Group__8__Impl rule__Office__Group__9
+            // InternalUnimodel.g:5084:1: ( rule__Office__Group__8__Impl rule__Office__Group__9 )
+            // InternalUnimodel.g:5085:2: rule__Office__Group__8__Impl rule__Office__Group__9
             {
-            pushFollow(FOLLOW_43);
+            pushFollow(FOLLOW_41);
             rule__Office__Group__8__Impl();
 
             state._fsp--;
@@ -16207,21 +15373,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__8__Impl"
-    // InternalUnimodel.g:5362:1: rule__Office__Group__8__Impl : ( ( rule__Office__TypeAssignment_8 ) ) ;
+    // InternalUnimodel.g:5092:1: rule__Office__Group__8__Impl : ( ( rule__Office__TypeAssignment_8 ) ) ;
     public final void rule__Office__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5366:1: ( ( ( rule__Office__TypeAssignment_8 ) ) )
-            // InternalUnimodel.g:5367:1: ( ( rule__Office__TypeAssignment_8 ) )
+            // InternalUnimodel.g:5096:1: ( ( ( rule__Office__TypeAssignment_8 ) ) )
+            // InternalUnimodel.g:5097:1: ( ( rule__Office__TypeAssignment_8 ) )
             {
-            // InternalUnimodel.g:5367:1: ( ( rule__Office__TypeAssignment_8 ) )
-            // InternalUnimodel.g:5368:2: ( rule__Office__TypeAssignment_8 )
+            // InternalUnimodel.g:5097:1: ( ( rule__Office__TypeAssignment_8 ) )
+            // InternalUnimodel.g:5098:2: ( rule__Office__TypeAssignment_8 )
             {
              before(grammarAccess.getOfficeAccess().getTypeAssignment_8()); 
-            // InternalUnimodel.g:5369:2: ( rule__Office__TypeAssignment_8 )
-            // InternalUnimodel.g:5369:3: rule__Office__TypeAssignment_8
+            // InternalUnimodel.g:5099:2: ( rule__Office__TypeAssignment_8 )
+            // InternalUnimodel.g:5099:3: rule__Office__TypeAssignment_8
             {
             pushFollow(FOLLOW_2);
             rule__Office__TypeAssignment_8();
@@ -16254,14 +15420,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__9"
-    // InternalUnimodel.g:5377:1: rule__Office__Group__9 : rule__Office__Group__9__Impl rule__Office__Group__10 ;
+    // InternalUnimodel.g:5107:1: rule__Office__Group__9 : rule__Office__Group__9__Impl rule__Office__Group__10 ;
     public final void rule__Office__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5381:1: ( rule__Office__Group__9__Impl rule__Office__Group__10 )
-            // InternalUnimodel.g:5382:2: rule__Office__Group__9__Impl rule__Office__Group__10
+            // InternalUnimodel.g:5111:1: ( rule__Office__Group__9__Impl rule__Office__Group__10 )
+            // InternalUnimodel.g:5112:2: rule__Office__Group__9__Impl rule__Office__Group__10
             {
             pushFollow(FOLLOW_15);
             rule__Office__Group__9__Impl();
@@ -16292,20 +15458,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__9__Impl"
-    // InternalUnimodel.g:5389:1: rule__Office__Group__9__Impl : ( 'capacity' ) ;
+    // InternalUnimodel.g:5119:1: rule__Office__Group__9__Impl : ( 'capacity' ) ;
     public final void rule__Office__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5393:1: ( ( 'capacity' ) )
-            // InternalUnimodel.g:5394:1: ( 'capacity' )
+            // InternalUnimodel.g:5123:1: ( ( 'capacity' ) )
+            // InternalUnimodel.g:5124:1: ( 'capacity' )
             {
-            // InternalUnimodel.g:5394:1: ( 'capacity' )
-            // InternalUnimodel.g:5395:2: 'capacity'
+            // InternalUnimodel.g:5124:1: ( 'capacity' )
+            // InternalUnimodel.g:5125:2: 'capacity'
             {
              before(grammarAccess.getOfficeAccess().getCapacityKeyword_9()); 
-            match(input,71,FOLLOW_2); 
+            match(input,69,FOLLOW_2); 
              after(grammarAccess.getOfficeAccess().getCapacityKeyword_9()); 
 
             }
@@ -16329,16 +15495,16 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__10"
-    // InternalUnimodel.g:5404:1: rule__Office__Group__10 : rule__Office__Group__10__Impl rule__Office__Group__11 ;
+    // InternalUnimodel.g:5134:1: rule__Office__Group__10 : rule__Office__Group__10__Impl rule__Office__Group__11 ;
     public final void rule__Office__Group__10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5408:1: ( rule__Office__Group__10__Impl rule__Office__Group__11 )
-            // InternalUnimodel.g:5409:2: rule__Office__Group__10__Impl rule__Office__Group__11
+            // InternalUnimodel.g:5138:1: ( rule__Office__Group__10__Impl rule__Office__Group__11 )
+            // InternalUnimodel.g:5139:2: rule__Office__Group__10__Impl rule__Office__Group__11
             {
-            pushFollow(FOLLOW_44);
+            pushFollow(FOLLOW_42);
             rule__Office__Group__10__Impl();
 
             state._fsp--;
@@ -16367,21 +15533,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__10__Impl"
-    // InternalUnimodel.g:5416:1: rule__Office__Group__10__Impl : ( ( rule__Office__CapacityAssignment_10 ) ) ;
+    // InternalUnimodel.g:5146:1: rule__Office__Group__10__Impl : ( ( rule__Office__CapacityAssignment_10 ) ) ;
     public final void rule__Office__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5420:1: ( ( ( rule__Office__CapacityAssignment_10 ) ) )
-            // InternalUnimodel.g:5421:1: ( ( rule__Office__CapacityAssignment_10 ) )
+            // InternalUnimodel.g:5150:1: ( ( ( rule__Office__CapacityAssignment_10 ) ) )
+            // InternalUnimodel.g:5151:1: ( ( rule__Office__CapacityAssignment_10 ) )
             {
-            // InternalUnimodel.g:5421:1: ( ( rule__Office__CapacityAssignment_10 ) )
-            // InternalUnimodel.g:5422:2: ( rule__Office__CapacityAssignment_10 )
+            // InternalUnimodel.g:5151:1: ( ( rule__Office__CapacityAssignment_10 ) )
+            // InternalUnimodel.g:5152:2: ( rule__Office__CapacityAssignment_10 )
             {
              before(grammarAccess.getOfficeAccess().getCapacityAssignment_10()); 
-            // InternalUnimodel.g:5423:2: ( rule__Office__CapacityAssignment_10 )
-            // InternalUnimodel.g:5423:3: rule__Office__CapacityAssignment_10
+            // InternalUnimodel.g:5153:2: ( rule__Office__CapacityAssignment_10 )
+            // InternalUnimodel.g:5153:3: rule__Office__CapacityAssignment_10
             {
             pushFollow(FOLLOW_2);
             rule__Office__CapacityAssignment_10();
@@ -16414,16 +15580,16 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__11"
-    // InternalUnimodel.g:5431:1: rule__Office__Group__11 : rule__Office__Group__11__Impl rule__Office__Group__12 ;
+    // InternalUnimodel.g:5161:1: rule__Office__Group__11 : rule__Office__Group__11__Impl rule__Office__Group__12 ;
     public final void rule__Office__Group__11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5435:1: ( rule__Office__Group__11__Impl rule__Office__Group__12 )
-            // InternalUnimodel.g:5436:2: rule__Office__Group__11__Impl rule__Office__Group__12
+            // InternalUnimodel.g:5165:1: ( rule__Office__Group__11__Impl rule__Office__Group__12 )
+            // InternalUnimodel.g:5166:2: rule__Office__Group__11__Impl rule__Office__Group__12
             {
-            pushFollow(FOLLOW_44);
+            pushFollow(FOLLOW_42);
             rule__Office__Group__11__Impl();
 
             state._fsp--;
@@ -16452,29 +15618,29 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__11__Impl"
-    // InternalUnimodel.g:5443:1: rule__Office__Group__11__Impl : ( ( rule__Office__Group_11__0 )? ) ;
+    // InternalUnimodel.g:5173:1: rule__Office__Group__11__Impl : ( ( rule__Office__Group_11__0 )? ) ;
     public final void rule__Office__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5447:1: ( ( ( rule__Office__Group_11__0 )? ) )
-            // InternalUnimodel.g:5448:1: ( ( rule__Office__Group_11__0 )? )
+            // InternalUnimodel.g:5177:1: ( ( ( rule__Office__Group_11__0 )? ) )
+            // InternalUnimodel.g:5178:1: ( ( rule__Office__Group_11__0 )? )
             {
-            // InternalUnimodel.g:5448:1: ( ( rule__Office__Group_11__0 )? )
-            // InternalUnimodel.g:5449:2: ( rule__Office__Group_11__0 )?
+            // InternalUnimodel.g:5178:1: ( ( rule__Office__Group_11__0 )? )
+            // InternalUnimodel.g:5179:2: ( rule__Office__Group_11__0 )?
             {
              before(grammarAccess.getOfficeAccess().getGroup_11()); 
-            // InternalUnimodel.g:5450:2: ( rule__Office__Group_11__0 )?
-            int alt39=2;
-            int LA39_0 = input.LA(1);
+            // InternalUnimodel.g:5180:2: ( rule__Office__Group_11__0 )?
+            int alt34=2;
+            int LA34_0 = input.LA(1);
 
-            if ( (LA39_0==41) ) {
-                alt39=1;
+            if ( (LA34_0==41) ) {
+                alt34=1;
             }
-            switch (alt39) {
+            switch (alt34) {
                 case 1 :
-                    // InternalUnimodel.g:5450:3: rule__Office__Group_11__0
+                    // InternalUnimodel.g:5180:3: rule__Office__Group_11__0
                     {
                     pushFollow(FOLLOW_2);
                     rule__Office__Group_11__0();
@@ -16510,14 +15676,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__12"
-    // InternalUnimodel.g:5458:1: rule__Office__Group__12 : rule__Office__Group__12__Impl rule__Office__Group__13 ;
+    // InternalUnimodel.g:5188:1: rule__Office__Group__12 : rule__Office__Group__12__Impl rule__Office__Group__13 ;
     public final void rule__Office__Group__12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5462:1: ( rule__Office__Group__12__Impl rule__Office__Group__13 )
-            // InternalUnimodel.g:5463:2: rule__Office__Group__12__Impl rule__Office__Group__13
+            // InternalUnimodel.g:5192:1: ( rule__Office__Group__12__Impl rule__Office__Group__13 )
+            // InternalUnimodel.g:5193:2: rule__Office__Group__12__Impl rule__Office__Group__13
             {
             pushFollow(FOLLOW_3);
             rule__Office__Group__12__Impl();
@@ -16548,20 +15714,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__12__Impl"
-    // InternalUnimodel.g:5470:1: rule__Office__Group__12__Impl : ( 'office_address' ) ;
+    // InternalUnimodel.g:5200:1: rule__Office__Group__12__Impl : ( 'office_address' ) ;
     public final void rule__Office__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5474:1: ( ( 'office_address' ) )
-            // InternalUnimodel.g:5475:1: ( 'office_address' )
+            // InternalUnimodel.g:5204:1: ( ( 'office_address' ) )
+            // InternalUnimodel.g:5205:1: ( 'office_address' )
             {
-            // InternalUnimodel.g:5475:1: ( 'office_address' )
-            // InternalUnimodel.g:5476:2: 'office_address'
+            // InternalUnimodel.g:5205:1: ( 'office_address' )
+            // InternalUnimodel.g:5206:2: 'office_address'
             {
              before(grammarAccess.getOfficeAccess().getOffice_addressKeyword_12()); 
-            match(input,72,FOLLOW_2); 
+            match(input,70,FOLLOW_2); 
              after(grammarAccess.getOfficeAccess().getOffice_addressKeyword_12()); 
 
             }
@@ -16585,16 +15751,16 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__13"
-    // InternalUnimodel.g:5485:1: rule__Office__Group__13 : rule__Office__Group__13__Impl rule__Office__Group__14 ;
+    // InternalUnimodel.g:5215:1: rule__Office__Group__13 : rule__Office__Group__13__Impl rule__Office__Group__14 ;
     public final void rule__Office__Group__13() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5489:1: ( rule__Office__Group__13__Impl rule__Office__Group__14 )
-            // InternalUnimodel.g:5490:2: rule__Office__Group__13__Impl rule__Office__Group__14
+            // InternalUnimodel.g:5219:1: ( rule__Office__Group__13__Impl rule__Office__Group__14 )
+            // InternalUnimodel.g:5220:2: rule__Office__Group__13__Impl rule__Office__Group__14
             {
-            pushFollow(FOLLOW_45);
+            pushFollow(FOLLOW_43);
             rule__Office__Group__13__Impl();
 
             state._fsp--;
@@ -16623,21 +15789,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__13__Impl"
-    // InternalUnimodel.g:5497:1: rule__Office__Group__13__Impl : ( ( rule__Office__Office_addressAssignment_13 ) ) ;
+    // InternalUnimodel.g:5227:1: rule__Office__Group__13__Impl : ( ( rule__Office__Office_addressAssignment_13 ) ) ;
     public final void rule__Office__Group__13__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5501:1: ( ( ( rule__Office__Office_addressAssignment_13 ) ) )
-            // InternalUnimodel.g:5502:1: ( ( rule__Office__Office_addressAssignment_13 ) )
+            // InternalUnimodel.g:5231:1: ( ( ( rule__Office__Office_addressAssignment_13 ) ) )
+            // InternalUnimodel.g:5232:1: ( ( rule__Office__Office_addressAssignment_13 ) )
             {
-            // InternalUnimodel.g:5502:1: ( ( rule__Office__Office_addressAssignment_13 ) )
-            // InternalUnimodel.g:5503:2: ( rule__Office__Office_addressAssignment_13 )
+            // InternalUnimodel.g:5232:1: ( ( rule__Office__Office_addressAssignment_13 ) )
+            // InternalUnimodel.g:5233:2: ( rule__Office__Office_addressAssignment_13 )
             {
              before(grammarAccess.getOfficeAccess().getOffice_addressAssignment_13()); 
-            // InternalUnimodel.g:5504:2: ( rule__Office__Office_addressAssignment_13 )
-            // InternalUnimodel.g:5504:3: rule__Office__Office_addressAssignment_13
+            // InternalUnimodel.g:5234:2: ( rule__Office__Office_addressAssignment_13 )
+            // InternalUnimodel.g:5234:3: rule__Office__Office_addressAssignment_13
             {
             pushFollow(FOLLOW_2);
             rule__Office__Office_addressAssignment_13();
@@ -16670,14 +15836,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__14"
-    // InternalUnimodel.g:5512:1: rule__Office__Group__14 : rule__Office__Group__14__Impl rule__Office__Group__15 ;
+    // InternalUnimodel.g:5242:1: rule__Office__Group__14 : rule__Office__Group__14__Impl rule__Office__Group__15 ;
     public final void rule__Office__Group__14() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5516:1: ( rule__Office__Group__14__Impl rule__Office__Group__15 )
-            // InternalUnimodel.g:5517:2: rule__Office__Group__14__Impl rule__Office__Group__15
+            // InternalUnimodel.g:5246:1: ( rule__Office__Group__14__Impl rule__Office__Group__15 )
+            // InternalUnimodel.g:5247:2: rule__Office__Group__14__Impl rule__Office__Group__15
             {
             pushFollow(FOLLOW_4);
             rule__Office__Group__14__Impl();
@@ -16708,20 +15874,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__14__Impl"
-    // InternalUnimodel.g:5524:1: rule__Office__Group__14__Impl : ( 'person_in_office' ) ;
+    // InternalUnimodel.g:5254:1: rule__Office__Group__14__Impl : ( 'person_in_office' ) ;
     public final void rule__Office__Group__14__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5528:1: ( ( 'person_in_office' ) )
-            // InternalUnimodel.g:5529:1: ( 'person_in_office' )
+            // InternalUnimodel.g:5258:1: ( ( 'person_in_office' ) )
+            // InternalUnimodel.g:5259:1: ( 'person_in_office' )
             {
-            // InternalUnimodel.g:5529:1: ( 'person_in_office' )
-            // InternalUnimodel.g:5530:2: 'person_in_office'
+            // InternalUnimodel.g:5259:1: ( 'person_in_office' )
+            // InternalUnimodel.g:5260:2: 'person_in_office'
             {
              before(grammarAccess.getOfficeAccess().getPerson_in_officeKeyword_14()); 
-            match(input,73,FOLLOW_2); 
+            match(input,71,FOLLOW_2); 
              after(grammarAccess.getOfficeAccess().getPerson_in_officeKeyword_14()); 
 
             }
@@ -16745,14 +15911,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__15"
-    // InternalUnimodel.g:5539:1: rule__Office__Group__15 : rule__Office__Group__15__Impl rule__Office__Group__16 ;
+    // InternalUnimodel.g:5269:1: rule__Office__Group__15 : rule__Office__Group__15__Impl rule__Office__Group__16 ;
     public final void rule__Office__Group__15() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5543:1: ( rule__Office__Group__15__Impl rule__Office__Group__16 )
-            // InternalUnimodel.g:5544:2: rule__Office__Group__15__Impl rule__Office__Group__16
+            // InternalUnimodel.g:5273:1: ( rule__Office__Group__15__Impl rule__Office__Group__16 )
+            // InternalUnimodel.g:5274:2: rule__Office__Group__15__Impl rule__Office__Group__16
             {
             pushFollow(FOLLOW_22);
             rule__Office__Group__15__Impl();
@@ -16783,17 +15949,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__15__Impl"
-    // InternalUnimodel.g:5551:1: rule__Office__Group__15__Impl : ( '{' ) ;
+    // InternalUnimodel.g:5281:1: rule__Office__Group__15__Impl : ( '{' ) ;
     public final void rule__Office__Group__15__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5555:1: ( ( '{' ) )
-            // InternalUnimodel.g:5556:1: ( '{' )
+            // InternalUnimodel.g:5285:1: ( ( '{' ) )
+            // InternalUnimodel.g:5286:1: ( '{' )
             {
-            // InternalUnimodel.g:5556:1: ( '{' )
-            // InternalUnimodel.g:5557:2: '{'
+            // InternalUnimodel.g:5286:1: ( '{' )
+            // InternalUnimodel.g:5287:2: '{'
             {
              before(grammarAccess.getOfficeAccess().getLeftCurlyBracketKeyword_15()); 
             match(input,24,FOLLOW_2); 
@@ -16820,14 +15986,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__16"
-    // InternalUnimodel.g:5566:1: rule__Office__Group__16 : rule__Office__Group__16__Impl rule__Office__Group__17 ;
+    // InternalUnimodel.g:5296:1: rule__Office__Group__16 : rule__Office__Group__16__Impl rule__Office__Group__17 ;
     public final void rule__Office__Group__16() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5570:1: ( rule__Office__Group__16__Impl rule__Office__Group__17 )
-            // InternalUnimodel.g:5571:2: rule__Office__Group__16__Impl rule__Office__Group__17
+            // InternalUnimodel.g:5300:1: ( rule__Office__Group__16__Impl rule__Office__Group__17 )
+            // InternalUnimodel.g:5301:2: rule__Office__Group__16__Impl rule__Office__Group__17
             {
             pushFollow(FOLLOW_7);
             rule__Office__Group__16__Impl();
@@ -16858,21 +16024,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__16__Impl"
-    // InternalUnimodel.g:5578:1: rule__Office__Group__16__Impl : ( ( rule__Office__Person_in_officeAssignment_16 ) ) ;
+    // InternalUnimodel.g:5308:1: rule__Office__Group__16__Impl : ( ( rule__Office__Person_in_officeAssignment_16 ) ) ;
     public final void rule__Office__Group__16__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5582:1: ( ( ( rule__Office__Person_in_officeAssignment_16 ) ) )
-            // InternalUnimodel.g:5583:1: ( ( rule__Office__Person_in_officeAssignment_16 ) )
+            // InternalUnimodel.g:5312:1: ( ( ( rule__Office__Person_in_officeAssignment_16 ) ) )
+            // InternalUnimodel.g:5313:1: ( ( rule__Office__Person_in_officeAssignment_16 ) )
             {
-            // InternalUnimodel.g:5583:1: ( ( rule__Office__Person_in_officeAssignment_16 ) )
-            // InternalUnimodel.g:5584:2: ( rule__Office__Person_in_officeAssignment_16 )
+            // InternalUnimodel.g:5313:1: ( ( rule__Office__Person_in_officeAssignment_16 ) )
+            // InternalUnimodel.g:5314:2: ( rule__Office__Person_in_officeAssignment_16 )
             {
              before(grammarAccess.getOfficeAccess().getPerson_in_officeAssignment_16()); 
-            // InternalUnimodel.g:5585:2: ( rule__Office__Person_in_officeAssignment_16 )
-            // InternalUnimodel.g:5585:3: rule__Office__Person_in_officeAssignment_16
+            // InternalUnimodel.g:5315:2: ( rule__Office__Person_in_officeAssignment_16 )
+            // InternalUnimodel.g:5315:3: rule__Office__Person_in_officeAssignment_16
             {
             pushFollow(FOLLOW_2);
             rule__Office__Person_in_officeAssignment_16();
@@ -16905,14 +16071,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__17"
-    // InternalUnimodel.g:5593:1: rule__Office__Group__17 : rule__Office__Group__17__Impl rule__Office__Group__18 ;
+    // InternalUnimodel.g:5323:1: rule__Office__Group__17 : rule__Office__Group__17__Impl rule__Office__Group__18 ;
     public final void rule__Office__Group__17() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5597:1: ( rule__Office__Group__17__Impl rule__Office__Group__18 )
-            // InternalUnimodel.g:5598:2: rule__Office__Group__17__Impl rule__Office__Group__18
+            // InternalUnimodel.g:5327:1: ( rule__Office__Group__17__Impl rule__Office__Group__18 )
+            // InternalUnimodel.g:5328:2: rule__Office__Group__17__Impl rule__Office__Group__18
             {
             pushFollow(FOLLOW_7);
             rule__Office__Group__17__Impl();
@@ -16943,33 +16109,33 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__17__Impl"
-    // InternalUnimodel.g:5605:1: rule__Office__Group__17__Impl : ( ( rule__Office__Group_17__0 )* ) ;
+    // InternalUnimodel.g:5335:1: rule__Office__Group__17__Impl : ( ( rule__Office__Group_17__0 )* ) ;
     public final void rule__Office__Group__17__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5609:1: ( ( ( rule__Office__Group_17__0 )* ) )
-            // InternalUnimodel.g:5610:1: ( ( rule__Office__Group_17__0 )* )
+            // InternalUnimodel.g:5339:1: ( ( ( rule__Office__Group_17__0 )* ) )
+            // InternalUnimodel.g:5340:1: ( ( rule__Office__Group_17__0 )* )
             {
-            // InternalUnimodel.g:5610:1: ( ( rule__Office__Group_17__0 )* )
-            // InternalUnimodel.g:5611:2: ( rule__Office__Group_17__0 )*
+            // InternalUnimodel.g:5340:1: ( ( rule__Office__Group_17__0 )* )
+            // InternalUnimodel.g:5341:2: ( rule__Office__Group_17__0 )*
             {
              before(grammarAccess.getOfficeAccess().getGroup_17()); 
-            // InternalUnimodel.g:5612:2: ( rule__Office__Group_17__0 )*
-            loop40:
+            // InternalUnimodel.g:5342:2: ( rule__Office__Group_17__0 )*
+            loop35:
             do {
-                int alt40=2;
-                int LA40_0 = input.LA(1);
+                int alt35=2;
+                int LA35_0 = input.LA(1);
 
-                if ( (LA40_0==29) ) {
-                    alt40=1;
+                if ( (LA35_0==29) ) {
+                    alt35=1;
                 }
 
 
-                switch (alt40) {
+                switch (alt35) {
             	case 1 :
-            	    // InternalUnimodel.g:5612:3: rule__Office__Group_17__0
+            	    // InternalUnimodel.g:5342:3: rule__Office__Group_17__0
             	    {
             	    pushFollow(FOLLOW_8);
             	    rule__Office__Group_17__0();
@@ -16981,7 +16147,7 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
             	    break;
 
             	default :
-            	    break loop40;
+            	    break loop35;
                 }
             } while (true);
 
@@ -17008,14 +16174,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__18"
-    // InternalUnimodel.g:5620:1: rule__Office__Group__18 : rule__Office__Group__18__Impl rule__Office__Group__19 ;
+    // InternalUnimodel.g:5350:1: rule__Office__Group__18 : rule__Office__Group__18__Impl rule__Office__Group__19 ;
     public final void rule__Office__Group__18() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5624:1: ( rule__Office__Group__18__Impl rule__Office__Group__19 )
-            // InternalUnimodel.g:5625:2: rule__Office__Group__18__Impl rule__Office__Group__19
+            // InternalUnimodel.g:5354:1: ( rule__Office__Group__18__Impl rule__Office__Group__19 )
+            // InternalUnimodel.g:5355:2: rule__Office__Group__18__Impl rule__Office__Group__19
             {
             pushFollow(FOLLOW_9);
             rule__Office__Group__18__Impl();
@@ -17046,17 +16212,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__18__Impl"
-    // InternalUnimodel.g:5632:1: rule__Office__Group__18__Impl : ( '}' ) ;
+    // InternalUnimodel.g:5362:1: rule__Office__Group__18__Impl : ( '}' ) ;
     public final void rule__Office__Group__18__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5636:1: ( ( '}' ) )
-            // InternalUnimodel.g:5637:1: ( '}' )
+            // InternalUnimodel.g:5366:1: ( ( '}' ) )
+            // InternalUnimodel.g:5367:1: ( '}' )
             {
-            // InternalUnimodel.g:5637:1: ( '}' )
-            // InternalUnimodel.g:5638:2: '}'
+            // InternalUnimodel.g:5367:1: ( '}' )
+            // InternalUnimodel.g:5368:2: '}'
             {
              before(grammarAccess.getOfficeAccess().getRightCurlyBracketKeyword_18()); 
             match(input,26,FOLLOW_2); 
@@ -17083,14 +16249,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__19"
-    // InternalUnimodel.g:5647:1: rule__Office__Group__19 : rule__Office__Group__19__Impl ;
+    // InternalUnimodel.g:5377:1: rule__Office__Group__19 : rule__Office__Group__19__Impl ;
     public final void rule__Office__Group__19() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5651:1: ( rule__Office__Group__19__Impl )
-            // InternalUnimodel.g:5652:2: rule__Office__Group__19__Impl
+            // InternalUnimodel.g:5381:1: ( rule__Office__Group__19__Impl )
+            // InternalUnimodel.g:5382:2: rule__Office__Group__19__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Office__Group__19__Impl();
@@ -17116,17 +16282,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group__19__Impl"
-    // InternalUnimodel.g:5658:1: rule__Office__Group__19__Impl : ( '}' ) ;
+    // InternalUnimodel.g:5388:1: rule__Office__Group__19__Impl : ( '}' ) ;
     public final void rule__Office__Group__19__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5662:1: ( ( '}' ) )
-            // InternalUnimodel.g:5663:1: ( '}' )
+            // InternalUnimodel.g:5392:1: ( ( '}' ) )
+            // InternalUnimodel.g:5393:1: ( '}' )
             {
-            // InternalUnimodel.g:5663:1: ( '}' )
-            // InternalUnimodel.g:5664:2: '}'
+            // InternalUnimodel.g:5393:1: ( '}' )
+            // InternalUnimodel.g:5394:2: '}'
             {
              before(grammarAccess.getOfficeAccess().getRightCurlyBracketKeyword_19()); 
             match(input,26,FOLLOW_2); 
@@ -17153,14 +16319,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group_11__0"
-    // InternalUnimodel.g:5674:1: rule__Office__Group_11__0 : rule__Office__Group_11__0__Impl rule__Office__Group_11__1 ;
+    // InternalUnimodel.g:5404:1: rule__Office__Group_11__0 : rule__Office__Group_11__0__Impl rule__Office__Group_11__1 ;
     public final void rule__Office__Group_11__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5678:1: ( rule__Office__Group_11__0__Impl rule__Office__Group_11__1 )
-            // InternalUnimodel.g:5679:2: rule__Office__Group_11__0__Impl rule__Office__Group_11__1
+            // InternalUnimodel.g:5408:1: ( rule__Office__Group_11__0__Impl rule__Office__Group_11__1 )
+            // InternalUnimodel.g:5409:2: rule__Office__Group_11__0__Impl rule__Office__Group_11__1
             {
             pushFollow(FOLLOW_3);
             rule__Office__Group_11__0__Impl();
@@ -17191,17 +16357,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group_11__0__Impl"
-    // InternalUnimodel.g:5686:1: rule__Office__Group_11__0__Impl : ( 'phone' ) ;
+    // InternalUnimodel.g:5416:1: rule__Office__Group_11__0__Impl : ( 'phone' ) ;
     public final void rule__Office__Group_11__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5690:1: ( ( 'phone' ) )
-            // InternalUnimodel.g:5691:1: ( 'phone' )
+            // InternalUnimodel.g:5420:1: ( ( 'phone' ) )
+            // InternalUnimodel.g:5421:1: ( 'phone' )
             {
-            // InternalUnimodel.g:5691:1: ( 'phone' )
-            // InternalUnimodel.g:5692:2: 'phone'
+            // InternalUnimodel.g:5421:1: ( 'phone' )
+            // InternalUnimodel.g:5422:2: 'phone'
             {
              before(grammarAccess.getOfficeAccess().getPhoneKeyword_11_0()); 
             match(input,41,FOLLOW_2); 
@@ -17228,14 +16394,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group_11__1"
-    // InternalUnimodel.g:5701:1: rule__Office__Group_11__1 : rule__Office__Group_11__1__Impl ;
+    // InternalUnimodel.g:5431:1: rule__Office__Group_11__1 : rule__Office__Group_11__1__Impl ;
     public final void rule__Office__Group_11__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5705:1: ( rule__Office__Group_11__1__Impl )
-            // InternalUnimodel.g:5706:2: rule__Office__Group_11__1__Impl
+            // InternalUnimodel.g:5435:1: ( rule__Office__Group_11__1__Impl )
+            // InternalUnimodel.g:5436:2: rule__Office__Group_11__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Office__Group_11__1__Impl();
@@ -17261,21 +16427,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group_11__1__Impl"
-    // InternalUnimodel.g:5712:1: rule__Office__Group_11__1__Impl : ( ( rule__Office__PhoneAssignment_11_1 ) ) ;
+    // InternalUnimodel.g:5442:1: rule__Office__Group_11__1__Impl : ( ( rule__Office__PhoneAssignment_11_1 ) ) ;
     public final void rule__Office__Group_11__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5716:1: ( ( ( rule__Office__PhoneAssignment_11_1 ) ) )
-            // InternalUnimodel.g:5717:1: ( ( rule__Office__PhoneAssignment_11_1 ) )
+            // InternalUnimodel.g:5446:1: ( ( ( rule__Office__PhoneAssignment_11_1 ) ) )
+            // InternalUnimodel.g:5447:1: ( ( rule__Office__PhoneAssignment_11_1 ) )
             {
-            // InternalUnimodel.g:5717:1: ( ( rule__Office__PhoneAssignment_11_1 ) )
-            // InternalUnimodel.g:5718:2: ( rule__Office__PhoneAssignment_11_1 )
+            // InternalUnimodel.g:5447:1: ( ( rule__Office__PhoneAssignment_11_1 ) )
+            // InternalUnimodel.g:5448:2: ( rule__Office__PhoneAssignment_11_1 )
             {
              before(grammarAccess.getOfficeAccess().getPhoneAssignment_11_1()); 
-            // InternalUnimodel.g:5719:2: ( rule__Office__PhoneAssignment_11_1 )
-            // InternalUnimodel.g:5719:3: rule__Office__PhoneAssignment_11_1
+            // InternalUnimodel.g:5449:2: ( rule__Office__PhoneAssignment_11_1 )
+            // InternalUnimodel.g:5449:3: rule__Office__PhoneAssignment_11_1
             {
             pushFollow(FOLLOW_2);
             rule__Office__PhoneAssignment_11_1();
@@ -17308,14 +16474,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group_17__0"
-    // InternalUnimodel.g:5728:1: rule__Office__Group_17__0 : rule__Office__Group_17__0__Impl rule__Office__Group_17__1 ;
+    // InternalUnimodel.g:5458:1: rule__Office__Group_17__0 : rule__Office__Group_17__0__Impl rule__Office__Group_17__1 ;
     public final void rule__Office__Group_17__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5732:1: ( rule__Office__Group_17__0__Impl rule__Office__Group_17__1 )
-            // InternalUnimodel.g:5733:2: rule__Office__Group_17__0__Impl rule__Office__Group_17__1
+            // InternalUnimodel.g:5462:1: ( rule__Office__Group_17__0__Impl rule__Office__Group_17__1 )
+            // InternalUnimodel.g:5463:2: rule__Office__Group_17__0__Impl rule__Office__Group_17__1
             {
             pushFollow(FOLLOW_22);
             rule__Office__Group_17__0__Impl();
@@ -17346,17 +16512,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group_17__0__Impl"
-    // InternalUnimodel.g:5740:1: rule__Office__Group_17__0__Impl : ( ',' ) ;
+    // InternalUnimodel.g:5470:1: rule__Office__Group_17__0__Impl : ( ',' ) ;
     public final void rule__Office__Group_17__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5744:1: ( ( ',' ) )
-            // InternalUnimodel.g:5745:1: ( ',' )
+            // InternalUnimodel.g:5474:1: ( ( ',' ) )
+            // InternalUnimodel.g:5475:1: ( ',' )
             {
-            // InternalUnimodel.g:5745:1: ( ',' )
-            // InternalUnimodel.g:5746:2: ','
+            // InternalUnimodel.g:5475:1: ( ',' )
+            // InternalUnimodel.g:5476:2: ','
             {
              before(grammarAccess.getOfficeAccess().getCommaKeyword_17_0()); 
             match(input,29,FOLLOW_2); 
@@ -17383,14 +16549,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group_17__1"
-    // InternalUnimodel.g:5755:1: rule__Office__Group_17__1 : rule__Office__Group_17__1__Impl ;
+    // InternalUnimodel.g:5485:1: rule__Office__Group_17__1 : rule__Office__Group_17__1__Impl ;
     public final void rule__Office__Group_17__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5759:1: ( rule__Office__Group_17__1__Impl )
-            // InternalUnimodel.g:5760:2: rule__Office__Group_17__1__Impl
+            // InternalUnimodel.g:5489:1: ( rule__Office__Group_17__1__Impl )
+            // InternalUnimodel.g:5490:2: rule__Office__Group_17__1__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Office__Group_17__1__Impl();
@@ -17416,21 +16582,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Office__Group_17__1__Impl"
-    // InternalUnimodel.g:5766:1: rule__Office__Group_17__1__Impl : ( ( rule__Office__Person_in_officeAssignment_17_1 ) ) ;
+    // InternalUnimodel.g:5496:1: rule__Office__Group_17__1__Impl : ( ( rule__Office__Person_in_officeAssignment_17_1 ) ) ;
     public final void rule__Office__Group_17__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5770:1: ( ( ( rule__Office__Person_in_officeAssignment_17_1 ) ) )
-            // InternalUnimodel.g:5771:1: ( ( rule__Office__Person_in_officeAssignment_17_1 ) )
+            // InternalUnimodel.g:5500:1: ( ( ( rule__Office__Person_in_officeAssignment_17_1 ) ) )
+            // InternalUnimodel.g:5501:1: ( ( rule__Office__Person_in_officeAssignment_17_1 ) )
             {
-            // InternalUnimodel.g:5771:1: ( ( rule__Office__Person_in_officeAssignment_17_1 ) )
-            // InternalUnimodel.g:5772:2: ( rule__Office__Person_in_officeAssignment_17_1 )
+            // InternalUnimodel.g:5501:1: ( ( rule__Office__Person_in_officeAssignment_17_1 ) )
+            // InternalUnimodel.g:5502:2: ( rule__Office__Person_in_officeAssignment_17_1 )
             {
              before(grammarAccess.getOfficeAccess().getPerson_in_officeAssignment_17_1()); 
-            // InternalUnimodel.g:5773:2: ( rule__Office__Person_in_officeAssignment_17_1 )
-            // InternalUnimodel.g:5773:3: rule__Office__Person_in_officeAssignment_17_1
+            // InternalUnimodel.g:5503:2: ( rule__Office__Person_in_officeAssignment_17_1 )
+            // InternalUnimodel.g:5503:3: rule__Office__Person_in_officeAssignment_17_1
             {
             pushFollow(FOLLOW_2);
             rule__Office__Person_in_officeAssignment_17_1();
@@ -17463,14 +16629,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__0"
-    // InternalUnimodel.g:5782:1: rule__Class__Group__0 : rule__Class__Group__0__Impl rule__Class__Group__1 ;
+    // InternalUnimodel.g:5512:1: rule__Class__Group__0 : rule__Class__Group__0__Impl rule__Class__Group__1 ;
     public final void rule__Class__Group__0() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5786:1: ( rule__Class__Group__0__Impl rule__Class__Group__1 )
-            // InternalUnimodel.g:5787:2: rule__Class__Group__0__Impl rule__Class__Group__1
+            // InternalUnimodel.g:5516:1: ( rule__Class__Group__0__Impl rule__Class__Group__1 )
+            // InternalUnimodel.g:5517:2: rule__Class__Group__0__Impl rule__Class__Group__1
             {
             pushFollow(FOLLOW_3);
             rule__Class__Group__0__Impl();
@@ -17501,20 +16667,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__0__Impl"
-    // InternalUnimodel.g:5794:1: rule__Class__Group__0__Impl : ( 'Class' ) ;
+    // InternalUnimodel.g:5524:1: rule__Class__Group__0__Impl : ( 'Class' ) ;
     public final void rule__Class__Group__0__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5798:1: ( ( 'Class' ) )
-            // InternalUnimodel.g:5799:1: ( 'Class' )
+            // InternalUnimodel.g:5528:1: ( ( 'Class' ) )
+            // InternalUnimodel.g:5529:1: ( 'Class' )
             {
-            // InternalUnimodel.g:5799:1: ( 'Class' )
-            // InternalUnimodel.g:5800:2: 'Class'
+            // InternalUnimodel.g:5529:1: ( 'Class' )
+            // InternalUnimodel.g:5530:2: 'Class'
             {
              before(grammarAccess.getClassAccess().getClassKeyword_0()); 
-            match(input,74,FOLLOW_2); 
+            match(input,72,FOLLOW_2); 
              after(grammarAccess.getClassAccess().getClassKeyword_0()); 
 
             }
@@ -17538,14 +16704,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__1"
-    // InternalUnimodel.g:5809:1: rule__Class__Group__1 : rule__Class__Group__1__Impl rule__Class__Group__2 ;
+    // InternalUnimodel.g:5539:1: rule__Class__Group__1 : rule__Class__Group__1__Impl rule__Class__Group__2 ;
     public final void rule__Class__Group__1() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5813:1: ( rule__Class__Group__1__Impl rule__Class__Group__2 )
-            // InternalUnimodel.g:5814:2: rule__Class__Group__1__Impl rule__Class__Group__2
+            // InternalUnimodel.g:5543:1: ( rule__Class__Group__1__Impl rule__Class__Group__2 )
+            // InternalUnimodel.g:5544:2: rule__Class__Group__1__Impl rule__Class__Group__2
             {
             pushFollow(FOLLOW_4);
             rule__Class__Group__1__Impl();
@@ -17576,21 +16742,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__1__Impl"
-    // InternalUnimodel.g:5821:1: rule__Class__Group__1__Impl : ( ( rule__Class__NameAssignment_1 ) ) ;
+    // InternalUnimodel.g:5551:1: rule__Class__Group__1__Impl : ( ( rule__Class__NameAssignment_1 ) ) ;
     public final void rule__Class__Group__1__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5825:1: ( ( ( rule__Class__NameAssignment_1 ) ) )
-            // InternalUnimodel.g:5826:1: ( ( rule__Class__NameAssignment_1 ) )
+            // InternalUnimodel.g:5555:1: ( ( ( rule__Class__NameAssignment_1 ) ) )
+            // InternalUnimodel.g:5556:1: ( ( rule__Class__NameAssignment_1 ) )
             {
-            // InternalUnimodel.g:5826:1: ( ( rule__Class__NameAssignment_1 ) )
-            // InternalUnimodel.g:5827:2: ( rule__Class__NameAssignment_1 )
+            // InternalUnimodel.g:5556:1: ( ( rule__Class__NameAssignment_1 ) )
+            // InternalUnimodel.g:5557:2: ( rule__Class__NameAssignment_1 )
             {
              before(grammarAccess.getClassAccess().getNameAssignment_1()); 
-            // InternalUnimodel.g:5828:2: ( rule__Class__NameAssignment_1 )
-            // InternalUnimodel.g:5828:3: rule__Class__NameAssignment_1
+            // InternalUnimodel.g:5558:2: ( rule__Class__NameAssignment_1 )
+            // InternalUnimodel.g:5558:3: rule__Class__NameAssignment_1
             {
             pushFollow(FOLLOW_2);
             rule__Class__NameAssignment_1();
@@ -17623,14 +16789,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__2"
-    // InternalUnimodel.g:5836:1: rule__Class__Group__2 : rule__Class__Group__2__Impl rule__Class__Group__3 ;
+    // InternalUnimodel.g:5566:1: rule__Class__Group__2 : rule__Class__Group__2__Impl rule__Class__Group__3 ;
     public final void rule__Class__Group__2() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5840:1: ( rule__Class__Group__2__Impl rule__Class__Group__3 )
-            // InternalUnimodel.g:5841:2: rule__Class__Group__2__Impl rule__Class__Group__3
+            // InternalUnimodel.g:5570:1: ( rule__Class__Group__2__Impl rule__Class__Group__3 )
+            // InternalUnimodel.g:5571:2: rule__Class__Group__2__Impl rule__Class__Group__3
             {
             pushFollow(FOLLOW_36);
             rule__Class__Group__2__Impl();
@@ -17661,17 +16827,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__2__Impl"
-    // InternalUnimodel.g:5848:1: rule__Class__Group__2__Impl : ( '{' ) ;
+    // InternalUnimodel.g:5578:1: rule__Class__Group__2__Impl : ( '{' ) ;
     public final void rule__Class__Group__2__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5852:1: ( ( '{' ) )
-            // InternalUnimodel.g:5853:1: ( '{' )
+            // InternalUnimodel.g:5582:1: ( ( '{' ) )
+            // InternalUnimodel.g:5583:1: ( '{' )
             {
-            // InternalUnimodel.g:5853:1: ( '{' )
-            // InternalUnimodel.g:5854:2: '{'
+            // InternalUnimodel.g:5583:1: ( '{' )
+            // InternalUnimodel.g:5584:2: '{'
             {
              before(grammarAccess.getClassAccess().getLeftCurlyBracketKeyword_2()); 
             match(input,24,FOLLOW_2); 
@@ -17698,14 +16864,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__3"
-    // InternalUnimodel.g:5863:1: rule__Class__Group__3 : rule__Class__Group__3__Impl rule__Class__Group__4 ;
+    // InternalUnimodel.g:5593:1: rule__Class__Group__3 : rule__Class__Group__3__Impl rule__Class__Group__4 ;
     public final void rule__Class__Group__3() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5867:1: ( rule__Class__Group__3__Impl rule__Class__Group__4 )
-            // InternalUnimodel.g:5868:2: rule__Class__Group__3__Impl rule__Class__Group__4
+            // InternalUnimodel.g:5597:1: ( rule__Class__Group__3__Impl rule__Class__Group__4 )
+            // InternalUnimodel.g:5598:2: rule__Class__Group__3__Impl rule__Class__Group__4
             {
             pushFollow(FOLLOW_37);
             rule__Class__Group__3__Impl();
@@ -17736,20 +16902,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__3__Impl"
-    // InternalUnimodel.g:5875:1: rule__Class__Group__3__Impl : ( 'dimension' ) ;
+    // InternalUnimodel.g:5605:1: rule__Class__Group__3__Impl : ( 'dimension' ) ;
     public final void rule__Class__Group__3__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5879:1: ( ( 'dimension' ) )
-            // InternalUnimodel.g:5880:1: ( 'dimension' )
+            // InternalUnimodel.g:5609:1: ( ( 'dimension' ) )
+            // InternalUnimodel.g:5610:1: ( 'dimension' )
             {
-            // InternalUnimodel.g:5880:1: ( 'dimension' )
-            // InternalUnimodel.g:5881:2: 'dimension'
+            // InternalUnimodel.g:5610:1: ( 'dimension' )
+            // InternalUnimodel.g:5611:2: 'dimension'
             {
              before(grammarAccess.getClassAccess().getDimensionKeyword_3()); 
-            match(input,66,FOLLOW_2); 
+            match(input,65,FOLLOW_2); 
              after(grammarAccess.getClassAccess().getDimensionKeyword_3()); 
 
             }
@@ -17773,14 +16939,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__4"
-    // InternalUnimodel.g:5890:1: rule__Class__Group__4 : rule__Class__Group__4__Impl rule__Class__Group__5 ;
+    // InternalUnimodel.g:5620:1: rule__Class__Group__4 : rule__Class__Group__4__Impl rule__Class__Group__5 ;
     public final void rule__Class__Group__4() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5894:1: ( rule__Class__Group__4__Impl rule__Class__Group__5 )
-            // InternalUnimodel.g:5895:2: rule__Class__Group__4__Impl rule__Class__Group__5
+            // InternalUnimodel.g:5624:1: ( rule__Class__Group__4__Impl rule__Class__Group__5 )
+            // InternalUnimodel.g:5625:2: rule__Class__Group__4__Impl rule__Class__Group__5
             {
             pushFollow(FOLLOW_38);
             rule__Class__Group__4__Impl();
@@ -17811,21 +16977,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__4__Impl"
-    // InternalUnimodel.g:5902:1: rule__Class__Group__4__Impl : ( ( rule__Class__DimensionAssignment_4 ) ) ;
+    // InternalUnimodel.g:5632:1: rule__Class__Group__4__Impl : ( ( rule__Class__DimensionAssignment_4 ) ) ;
     public final void rule__Class__Group__4__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5906:1: ( ( ( rule__Class__DimensionAssignment_4 ) ) )
-            // InternalUnimodel.g:5907:1: ( ( rule__Class__DimensionAssignment_4 ) )
+            // InternalUnimodel.g:5636:1: ( ( ( rule__Class__DimensionAssignment_4 ) ) )
+            // InternalUnimodel.g:5637:1: ( ( rule__Class__DimensionAssignment_4 ) )
             {
-            // InternalUnimodel.g:5907:1: ( ( rule__Class__DimensionAssignment_4 ) )
-            // InternalUnimodel.g:5908:2: ( rule__Class__DimensionAssignment_4 )
+            // InternalUnimodel.g:5637:1: ( ( rule__Class__DimensionAssignment_4 ) )
+            // InternalUnimodel.g:5638:2: ( rule__Class__DimensionAssignment_4 )
             {
              before(grammarAccess.getClassAccess().getDimensionAssignment_4()); 
-            // InternalUnimodel.g:5909:2: ( rule__Class__DimensionAssignment_4 )
-            // InternalUnimodel.g:5909:3: rule__Class__DimensionAssignment_4
+            // InternalUnimodel.g:5639:2: ( rule__Class__DimensionAssignment_4 )
+            // InternalUnimodel.g:5639:3: rule__Class__DimensionAssignment_4
             {
             pushFollow(FOLLOW_2);
             rule__Class__DimensionAssignment_4();
@@ -17858,14 +17024,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__5"
-    // InternalUnimodel.g:5917:1: rule__Class__Group__5 : rule__Class__Group__5__Impl rule__Class__Group__6 ;
+    // InternalUnimodel.g:5647:1: rule__Class__Group__5 : rule__Class__Group__5__Impl rule__Class__Group__6 ;
     public final void rule__Class__Group__5() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5921:1: ( rule__Class__Group__5__Impl rule__Class__Group__6 )
-            // InternalUnimodel.g:5922:2: rule__Class__Group__5__Impl rule__Class__Group__6
+            // InternalUnimodel.g:5651:1: ( rule__Class__Group__5__Impl rule__Class__Group__6 )
+            // InternalUnimodel.g:5652:2: rule__Class__Group__5__Impl rule__Class__Group__6
             {
             pushFollow(FOLLOW_15);
             rule__Class__Group__5__Impl();
@@ -17896,20 +17062,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__5__Impl"
-    // InternalUnimodel.g:5929:1: rule__Class__Group__5__Impl : ( 'sockets' ) ;
+    // InternalUnimodel.g:5659:1: rule__Class__Group__5__Impl : ( 'sockets' ) ;
     public final void rule__Class__Group__5__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5933:1: ( ( 'sockets' ) )
-            // InternalUnimodel.g:5934:1: ( 'sockets' )
+            // InternalUnimodel.g:5663:1: ( ( 'sockets' ) )
+            // InternalUnimodel.g:5664:1: ( 'sockets' )
             {
-            // InternalUnimodel.g:5934:1: ( 'sockets' )
-            // InternalUnimodel.g:5935:2: 'sockets'
+            // InternalUnimodel.g:5664:1: ( 'sockets' )
+            // InternalUnimodel.g:5665:2: 'sockets'
             {
              before(grammarAccess.getClassAccess().getSocketsKeyword_5()); 
-            match(input,67,FOLLOW_2); 
+            match(input,66,FOLLOW_2); 
              after(grammarAccess.getClassAccess().getSocketsKeyword_5()); 
 
             }
@@ -17933,16 +17099,16 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__6"
-    // InternalUnimodel.g:5944:1: rule__Class__Group__6 : rule__Class__Group__6__Impl rule__Class__Group__7 ;
+    // InternalUnimodel.g:5674:1: rule__Class__Group__6 : rule__Class__Group__6__Impl rule__Class__Group__7 ;
     public final void rule__Class__Group__6() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5948:1: ( rule__Class__Group__6__Impl rule__Class__Group__7 )
-            // InternalUnimodel.g:5949:2: rule__Class__Group__6__Impl rule__Class__Group__7
+            // InternalUnimodel.g:5678:1: ( rule__Class__Group__6__Impl rule__Class__Group__7 )
+            // InternalUnimodel.g:5679:2: rule__Class__Group__6__Impl rule__Class__Group__7
             {
-            pushFollow(FOLLOW_46);
+            pushFollow(FOLLOW_44);
             rule__Class__Group__6__Impl();
 
             state._fsp--;
@@ -17971,21 +17137,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__6__Impl"
-    // InternalUnimodel.g:5956:1: rule__Class__Group__6__Impl : ( ( rule__Class__SocketsAssignment_6 ) ) ;
+    // InternalUnimodel.g:5686:1: rule__Class__Group__6__Impl : ( ( rule__Class__SocketsAssignment_6 ) ) ;
     public final void rule__Class__Group__6__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5960:1: ( ( ( rule__Class__SocketsAssignment_6 ) ) )
-            // InternalUnimodel.g:5961:1: ( ( rule__Class__SocketsAssignment_6 ) )
+            // InternalUnimodel.g:5690:1: ( ( ( rule__Class__SocketsAssignment_6 ) ) )
+            // InternalUnimodel.g:5691:1: ( ( rule__Class__SocketsAssignment_6 ) )
             {
-            // InternalUnimodel.g:5961:1: ( ( rule__Class__SocketsAssignment_6 ) )
-            // InternalUnimodel.g:5962:2: ( rule__Class__SocketsAssignment_6 )
+            // InternalUnimodel.g:5691:1: ( ( rule__Class__SocketsAssignment_6 ) )
+            // InternalUnimodel.g:5692:2: ( rule__Class__SocketsAssignment_6 )
             {
              before(grammarAccess.getClassAccess().getSocketsAssignment_6()); 
-            // InternalUnimodel.g:5963:2: ( rule__Class__SocketsAssignment_6 )
-            // InternalUnimodel.g:5963:3: rule__Class__SocketsAssignment_6
+            // InternalUnimodel.g:5693:2: ( rule__Class__SocketsAssignment_6 )
+            // InternalUnimodel.g:5693:3: rule__Class__SocketsAssignment_6
             {
             pushFollow(FOLLOW_2);
             rule__Class__SocketsAssignment_6();
@@ -18018,14 +17184,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__7"
-    // InternalUnimodel.g:5971:1: rule__Class__Group__7 : rule__Class__Group__7__Impl rule__Class__Group__8 ;
+    // InternalUnimodel.g:5701:1: rule__Class__Group__7 : rule__Class__Group__7__Impl rule__Class__Group__8 ;
     public final void rule__Class__Group__7() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5975:1: ( rule__Class__Group__7__Impl rule__Class__Group__8 )
-            // InternalUnimodel.g:5976:2: rule__Class__Group__7__Impl rule__Class__Group__8
+            // InternalUnimodel.g:5705:1: ( rule__Class__Group__7__Impl rule__Class__Group__8 )
+            // InternalUnimodel.g:5706:2: rule__Class__Group__7__Impl rule__Class__Group__8
             {
             pushFollow(FOLLOW_15);
             rule__Class__Group__7__Impl();
@@ -18056,20 +17222,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__7__Impl"
-    // InternalUnimodel.g:5983:1: rule__Class__Group__7__Impl : ( 'seats' ) ;
+    // InternalUnimodel.g:5713:1: rule__Class__Group__7__Impl : ( 'seats' ) ;
     public final void rule__Class__Group__7__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:5987:1: ( ( 'seats' ) )
-            // InternalUnimodel.g:5988:1: ( 'seats' )
+            // InternalUnimodel.g:5717:1: ( ( 'seats' ) )
+            // InternalUnimodel.g:5718:1: ( 'seats' )
             {
-            // InternalUnimodel.g:5988:1: ( 'seats' )
-            // InternalUnimodel.g:5989:2: 'seats'
+            // InternalUnimodel.g:5718:1: ( 'seats' )
+            // InternalUnimodel.g:5719:2: 'seats'
             {
              before(grammarAccess.getClassAccess().getSeatsKeyword_7()); 
-            match(input,75,FOLLOW_2); 
+            match(input,73,FOLLOW_2); 
              after(grammarAccess.getClassAccess().getSeatsKeyword_7()); 
 
             }
@@ -18093,16 +17259,16 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__8"
-    // InternalUnimodel.g:5998:1: rule__Class__Group__8 : rule__Class__Group__8__Impl rule__Class__Group__9 ;
+    // InternalUnimodel.g:5728:1: rule__Class__Group__8 : rule__Class__Group__8__Impl rule__Class__Group__9 ;
     public final void rule__Class__Group__8() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6002:1: ( rule__Class__Group__8__Impl rule__Class__Group__9 )
-            // InternalUnimodel.g:6003:2: rule__Class__Group__8__Impl rule__Class__Group__9
+            // InternalUnimodel.g:5732:1: ( rule__Class__Group__8__Impl rule__Class__Group__9 )
+            // InternalUnimodel.g:5733:2: rule__Class__Group__8__Impl rule__Class__Group__9
             {
-            pushFollow(FOLLOW_47);
+            pushFollow(FOLLOW_45);
             rule__Class__Group__8__Impl();
 
             state._fsp--;
@@ -18131,21 +17297,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__8__Impl"
-    // InternalUnimodel.g:6010:1: rule__Class__Group__8__Impl : ( ( rule__Class__SeatsAssignment_8 ) ) ;
+    // InternalUnimodel.g:5740:1: rule__Class__Group__8__Impl : ( ( rule__Class__SeatsAssignment_8 ) ) ;
     public final void rule__Class__Group__8__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6014:1: ( ( ( rule__Class__SeatsAssignment_8 ) ) )
-            // InternalUnimodel.g:6015:1: ( ( rule__Class__SeatsAssignment_8 ) )
+            // InternalUnimodel.g:5744:1: ( ( ( rule__Class__SeatsAssignment_8 ) ) )
+            // InternalUnimodel.g:5745:1: ( ( rule__Class__SeatsAssignment_8 ) )
             {
-            // InternalUnimodel.g:6015:1: ( ( rule__Class__SeatsAssignment_8 ) )
-            // InternalUnimodel.g:6016:2: ( rule__Class__SeatsAssignment_8 )
+            // InternalUnimodel.g:5745:1: ( ( rule__Class__SeatsAssignment_8 ) )
+            // InternalUnimodel.g:5746:2: ( rule__Class__SeatsAssignment_8 )
             {
              before(grammarAccess.getClassAccess().getSeatsAssignment_8()); 
-            // InternalUnimodel.g:6017:2: ( rule__Class__SeatsAssignment_8 )
-            // InternalUnimodel.g:6017:3: rule__Class__SeatsAssignment_8
+            // InternalUnimodel.g:5747:2: ( rule__Class__SeatsAssignment_8 )
+            // InternalUnimodel.g:5747:3: rule__Class__SeatsAssignment_8
             {
             pushFollow(FOLLOW_2);
             rule__Class__SeatsAssignment_8();
@@ -18178,14 +17344,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__9"
-    // InternalUnimodel.g:6025:1: rule__Class__Group__9 : rule__Class__Group__9__Impl rule__Class__Group__10 ;
+    // InternalUnimodel.g:5755:1: rule__Class__Group__9 : rule__Class__Group__9__Impl rule__Class__Group__10 ;
     public final void rule__Class__Group__9() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6029:1: ( rule__Class__Group__9__Impl rule__Class__Group__10 )
-            // InternalUnimodel.g:6030:2: rule__Class__Group__9__Impl rule__Class__Group__10
+            // InternalUnimodel.g:5759:1: ( rule__Class__Group__9__Impl rule__Class__Group__10 )
+            // InternalUnimodel.g:5760:2: rule__Class__Group__9__Impl rule__Class__Group__10
             {
             pushFollow(FOLLOW_15);
             rule__Class__Group__9__Impl();
@@ -18216,20 +17382,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__9__Impl"
-    // InternalUnimodel.g:6037:1: rule__Class__Group__9__Impl : ( 'blackboards' ) ;
+    // InternalUnimodel.g:5767:1: rule__Class__Group__9__Impl : ( 'blackboards' ) ;
     public final void rule__Class__Group__9__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6041:1: ( ( 'blackboards' ) )
-            // InternalUnimodel.g:6042:1: ( 'blackboards' )
+            // InternalUnimodel.g:5771:1: ( ( 'blackboards' ) )
+            // InternalUnimodel.g:5772:1: ( 'blackboards' )
             {
-            // InternalUnimodel.g:6042:1: ( 'blackboards' )
-            // InternalUnimodel.g:6043:2: 'blackboards'
+            // InternalUnimodel.g:5772:1: ( 'blackboards' )
+            // InternalUnimodel.g:5773:2: 'blackboards'
             {
              before(grammarAccess.getClassAccess().getBlackboardsKeyword_9()); 
-            match(input,76,FOLLOW_2); 
+            match(input,74,FOLLOW_2); 
              after(grammarAccess.getClassAccess().getBlackboardsKeyword_9()); 
 
             }
@@ -18253,16 +17419,16 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__10"
-    // InternalUnimodel.g:6052:1: rule__Class__Group__10 : rule__Class__Group__10__Impl rule__Class__Group__11 ;
+    // InternalUnimodel.g:5782:1: rule__Class__Group__10 : rule__Class__Group__10__Impl rule__Class__Group__11 ;
     public final void rule__Class__Group__10() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6056:1: ( rule__Class__Group__10__Impl rule__Class__Group__11 )
-            // InternalUnimodel.g:6057:2: rule__Class__Group__10__Impl rule__Class__Group__11
+            // InternalUnimodel.g:5786:1: ( rule__Class__Group__10__Impl rule__Class__Group__11 )
+            // InternalUnimodel.g:5787:2: rule__Class__Group__10__Impl rule__Class__Group__11
             {
-            pushFollow(FOLLOW_48);
+            pushFollow(FOLLOW_46);
             rule__Class__Group__10__Impl();
 
             state._fsp--;
@@ -18291,21 +17457,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__10__Impl"
-    // InternalUnimodel.g:6064:1: rule__Class__Group__10__Impl : ( ( rule__Class__BlackboardsAssignment_10 ) ) ;
+    // InternalUnimodel.g:5794:1: rule__Class__Group__10__Impl : ( ( rule__Class__BlackboardsAssignment_10 ) ) ;
     public final void rule__Class__Group__10__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6068:1: ( ( ( rule__Class__BlackboardsAssignment_10 ) ) )
-            // InternalUnimodel.g:6069:1: ( ( rule__Class__BlackboardsAssignment_10 ) )
+            // InternalUnimodel.g:5798:1: ( ( ( rule__Class__BlackboardsAssignment_10 ) ) )
+            // InternalUnimodel.g:5799:1: ( ( rule__Class__BlackboardsAssignment_10 ) )
             {
-            // InternalUnimodel.g:6069:1: ( ( rule__Class__BlackboardsAssignment_10 ) )
-            // InternalUnimodel.g:6070:2: ( rule__Class__BlackboardsAssignment_10 )
+            // InternalUnimodel.g:5799:1: ( ( rule__Class__BlackboardsAssignment_10 ) )
+            // InternalUnimodel.g:5800:2: ( rule__Class__BlackboardsAssignment_10 )
             {
              before(grammarAccess.getClassAccess().getBlackboardsAssignment_10()); 
-            // InternalUnimodel.g:6071:2: ( rule__Class__BlackboardsAssignment_10 )
-            // InternalUnimodel.g:6071:3: rule__Class__BlackboardsAssignment_10
+            // InternalUnimodel.g:5801:2: ( rule__Class__BlackboardsAssignment_10 )
+            // InternalUnimodel.g:5801:3: rule__Class__BlackboardsAssignment_10
             {
             pushFollow(FOLLOW_2);
             rule__Class__BlackboardsAssignment_10();
@@ -18338,14 +17504,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__11"
-    // InternalUnimodel.g:6079:1: rule__Class__Group__11 : rule__Class__Group__11__Impl rule__Class__Group__12 ;
+    // InternalUnimodel.g:5809:1: rule__Class__Group__11 : rule__Class__Group__11__Impl rule__Class__Group__12 ;
     public final void rule__Class__Group__11() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6083:1: ( rule__Class__Group__11__Impl rule__Class__Group__12 )
-            // InternalUnimodel.g:6084:2: rule__Class__Group__11__Impl rule__Class__Group__12
+            // InternalUnimodel.g:5813:1: ( rule__Class__Group__11__Impl rule__Class__Group__12 )
+            // InternalUnimodel.g:5814:2: rule__Class__Group__11__Impl rule__Class__Group__12
             {
             pushFollow(FOLLOW_15);
             rule__Class__Group__11__Impl();
@@ -18376,20 +17542,20 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__11__Impl"
-    // InternalUnimodel.g:6091:1: rule__Class__Group__11__Impl : ( 'speakers' ) ;
+    // InternalUnimodel.g:5821:1: rule__Class__Group__11__Impl : ( 'speakers' ) ;
     public final void rule__Class__Group__11__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6095:1: ( ( 'speakers' ) )
-            // InternalUnimodel.g:6096:1: ( 'speakers' )
+            // InternalUnimodel.g:5825:1: ( ( 'speakers' ) )
+            // InternalUnimodel.g:5826:1: ( 'speakers' )
             {
-            // InternalUnimodel.g:6096:1: ( 'speakers' )
-            // InternalUnimodel.g:6097:2: 'speakers'
+            // InternalUnimodel.g:5826:1: ( 'speakers' )
+            // InternalUnimodel.g:5827:2: 'speakers'
             {
              before(grammarAccess.getClassAccess().getSpeakersKeyword_11()); 
-            match(input,77,FOLLOW_2); 
+            match(input,75,FOLLOW_2); 
              after(grammarAccess.getClassAccess().getSpeakersKeyword_11()); 
 
             }
@@ -18413,14 +17579,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__12"
-    // InternalUnimodel.g:6106:1: rule__Class__Group__12 : rule__Class__Group__12__Impl rule__Class__Group__13 ;
+    // InternalUnimodel.g:5836:1: rule__Class__Group__12 : rule__Class__Group__12__Impl rule__Class__Group__13 ;
     public final void rule__Class__Group__12() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6110:1: ( rule__Class__Group__12__Impl rule__Class__Group__13 )
-            // InternalUnimodel.g:6111:2: rule__Class__Group__12__Impl rule__Class__Group__13
+            // InternalUnimodel.g:5840:1: ( rule__Class__Group__12__Impl rule__Class__Group__13 )
+            // InternalUnimodel.g:5841:2: rule__Class__Group__12__Impl rule__Class__Group__13
             {
             pushFollow(FOLLOW_18);
             rule__Class__Group__12__Impl();
@@ -18451,21 +17617,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__12__Impl"
-    // InternalUnimodel.g:6118:1: rule__Class__Group__12__Impl : ( ( rule__Class__SpeakersAssignment_12 ) ) ;
+    // InternalUnimodel.g:5848:1: rule__Class__Group__12__Impl : ( ( rule__Class__SpeakersAssignment_12 ) ) ;
     public final void rule__Class__Group__12__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6122:1: ( ( ( rule__Class__SpeakersAssignment_12 ) ) )
-            // InternalUnimodel.g:6123:1: ( ( rule__Class__SpeakersAssignment_12 ) )
+            // InternalUnimodel.g:5852:1: ( ( ( rule__Class__SpeakersAssignment_12 ) ) )
+            // InternalUnimodel.g:5853:1: ( ( rule__Class__SpeakersAssignment_12 ) )
             {
-            // InternalUnimodel.g:6123:1: ( ( rule__Class__SpeakersAssignment_12 ) )
-            // InternalUnimodel.g:6124:2: ( rule__Class__SpeakersAssignment_12 )
+            // InternalUnimodel.g:5853:1: ( ( rule__Class__SpeakersAssignment_12 ) )
+            // InternalUnimodel.g:5854:2: ( rule__Class__SpeakersAssignment_12 )
             {
              before(grammarAccess.getClassAccess().getSpeakersAssignment_12()); 
-            // InternalUnimodel.g:6125:2: ( rule__Class__SpeakersAssignment_12 )
-            // InternalUnimodel.g:6125:3: rule__Class__SpeakersAssignment_12
+            // InternalUnimodel.g:5855:2: ( rule__Class__SpeakersAssignment_12 )
+            // InternalUnimodel.g:5855:3: rule__Class__SpeakersAssignment_12
             {
             pushFollow(FOLLOW_2);
             rule__Class__SpeakersAssignment_12();
@@ -18498,14 +17664,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__13"
-    // InternalUnimodel.g:6133:1: rule__Class__Group__13 : rule__Class__Group__13__Impl rule__Class__Group__14 ;
+    // InternalUnimodel.g:5863:1: rule__Class__Group__13 : rule__Class__Group__13__Impl rule__Class__Group__14 ;
     public final void rule__Class__Group__13() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6137:1: ( rule__Class__Group__13__Impl rule__Class__Group__14 )
-            // InternalUnimodel.g:6138:2: rule__Class__Group__13__Impl rule__Class__Group__14
+            // InternalUnimodel.g:5867:1: ( rule__Class__Group__13__Impl rule__Class__Group__14 )
+            // InternalUnimodel.g:5868:2: rule__Class__Group__13__Impl rule__Class__Group__14
             {
             pushFollow(FOLLOW_15);
             rule__Class__Group__13__Impl();
@@ -18536,17 +17702,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__13__Impl"
-    // InternalUnimodel.g:6145:1: rule__Class__Group__13__Impl : ( 'computers' ) ;
+    // InternalUnimodel.g:5875:1: rule__Class__Group__13__Impl : ( 'computers' ) ;
     public final void rule__Class__Group__13__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6149:1: ( ( 'computers' ) )
-            // InternalUnimodel.g:6150:1: ( 'computers' )
+            // InternalUnimodel.g:5879:1: ( ( 'computers' ) )
+            // InternalUnimodel.g:5880:1: ( 'computers' )
             {
-            // InternalUnimodel.g:6150:1: ( 'computers' )
-            // InternalUnimodel.g:6151:2: 'computers'
+            // InternalUnimodel.g:5880:1: ( 'computers' )
+            // InternalUnimodel.g:5881:2: 'computers'
             {
              before(grammarAccess.getClassAccess().getComputersKeyword_13()); 
             match(input,44,FOLLOW_2); 
@@ -18573,14 +17739,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__14"
-    // InternalUnimodel.g:6160:1: rule__Class__Group__14 : rule__Class__Group__14__Impl rule__Class__Group__15 ;
+    // InternalUnimodel.g:5890:1: rule__Class__Group__14 : rule__Class__Group__14__Impl rule__Class__Group__15 ;
     public final void rule__Class__Group__14() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6164:1: ( rule__Class__Group__14__Impl rule__Class__Group__15 )
-            // InternalUnimodel.g:6165:2: rule__Class__Group__14__Impl rule__Class__Group__15
+            // InternalUnimodel.g:5894:1: ( rule__Class__Group__14__Impl rule__Class__Group__15 )
+            // InternalUnimodel.g:5895:2: rule__Class__Group__14__Impl rule__Class__Group__15
             {
             pushFollow(FOLLOW_9);
             rule__Class__Group__14__Impl();
@@ -18611,21 +17777,21 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__14__Impl"
-    // InternalUnimodel.g:6172:1: rule__Class__Group__14__Impl : ( ( rule__Class__ComputersAssignment_14 ) ) ;
+    // InternalUnimodel.g:5902:1: rule__Class__Group__14__Impl : ( ( rule__Class__ComputersAssignment_14 ) ) ;
     public final void rule__Class__Group__14__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6176:1: ( ( ( rule__Class__ComputersAssignment_14 ) ) )
-            // InternalUnimodel.g:6177:1: ( ( rule__Class__ComputersAssignment_14 ) )
+            // InternalUnimodel.g:5906:1: ( ( ( rule__Class__ComputersAssignment_14 ) ) )
+            // InternalUnimodel.g:5907:1: ( ( rule__Class__ComputersAssignment_14 ) )
             {
-            // InternalUnimodel.g:6177:1: ( ( rule__Class__ComputersAssignment_14 ) )
-            // InternalUnimodel.g:6178:2: ( rule__Class__ComputersAssignment_14 )
+            // InternalUnimodel.g:5907:1: ( ( rule__Class__ComputersAssignment_14 ) )
+            // InternalUnimodel.g:5908:2: ( rule__Class__ComputersAssignment_14 )
             {
              before(grammarAccess.getClassAccess().getComputersAssignment_14()); 
-            // InternalUnimodel.g:6179:2: ( rule__Class__ComputersAssignment_14 )
-            // InternalUnimodel.g:6179:3: rule__Class__ComputersAssignment_14
+            // InternalUnimodel.g:5909:2: ( rule__Class__ComputersAssignment_14 )
+            // InternalUnimodel.g:5909:3: rule__Class__ComputersAssignment_14
             {
             pushFollow(FOLLOW_2);
             rule__Class__ComputersAssignment_14();
@@ -18658,14 +17824,14 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__15"
-    // InternalUnimodel.g:6187:1: rule__Class__Group__15 : rule__Class__Group__15__Impl ;
+    // InternalUnimodel.g:5917:1: rule__Class__Group__15 : rule__Class__Group__15__Impl ;
     public final void rule__Class__Group__15() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6191:1: ( rule__Class__Group__15__Impl )
-            // InternalUnimodel.g:6192:2: rule__Class__Group__15__Impl
+            // InternalUnimodel.g:5921:1: ( rule__Class__Group__15__Impl )
+            // InternalUnimodel.g:5922:2: rule__Class__Group__15__Impl
             {
             pushFollow(FOLLOW_2);
             rule__Class__Group__15__Impl();
@@ -18691,17 +17857,17 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
 
 
     // $ANTLR start "rule__Class__Group__15__Impl"
-    // InternalUnimodel.g:6198:1: rule__Class__Group__15__Impl : ( '}' ) ;
+    // InternalUnimodel.g:5928:1: rule__Class__Group__15__Impl : ( '}' ) ;
     public final void rule__Class__Group__15__Impl() throws RecognitionException {
 
         		int stackSize = keepStackSize();
         	
         try {
-            // InternalUnimodel.g:6202:1: ( ( '}' ) )
-            // InternalUnimodel.g:6203:1: ( '}' )
+            // InternalUnimodel.g:5932:1: ( ( '}' ) )
+            // InternalUnimodel.g:5933:1: ( '}' )
             {
-            // InternalUnimodel.g:6203:1: ( '}' )
-            // InternalUnimodel.g:6204:2: '}'
+            // InternalUnimodel.g:5933:1: ( '}' )
+            // InternalUnimodel.g:5934:2: '}'
             {
              before(grammarAccess.getClassAccess().getRightCurlyBracketKeyword_15()); 
             match(input,26,FOLLOW_2); 
@@ -18725,6 +17891,840 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
         return ;
     }
     // $ANTLR end "rule__Class__Group__15__Impl"
+
+
+    // $ANTLR start "rule__EInt__Group__0"
+    // InternalUnimodel.g:5944:1: rule__EInt__Group__0 : rule__EInt__Group__0__Impl rule__EInt__Group__1 ;
+    public final void rule__EInt__Group__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:5948:1: ( rule__EInt__Group__0__Impl rule__EInt__Group__1 )
+            // InternalUnimodel.g:5949:2: rule__EInt__Group__0__Impl rule__EInt__Group__1
+            {
+            pushFollow(FOLLOW_15);
+            rule__EInt__Group__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__EInt__Group__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EInt__Group__0"
+
+
+    // $ANTLR start "rule__EInt__Group__0__Impl"
+    // InternalUnimodel.g:5956:1: rule__EInt__Group__0__Impl : ( ( '-' )? ) ;
+    public final void rule__EInt__Group__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:5960:1: ( ( ( '-' )? ) )
+            // InternalUnimodel.g:5961:1: ( ( '-' )? )
+            {
+            // InternalUnimodel.g:5961:1: ( ( '-' )? )
+            // InternalUnimodel.g:5962:2: ( '-' )?
+            {
+             before(grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
+            // InternalUnimodel.g:5963:2: ( '-' )?
+            int alt36=2;
+            int LA36_0 = input.LA(1);
+
+            if ( (LA36_0==76) ) {
+                alt36=1;
+            }
+            switch (alt36) {
+                case 1 :
+                    // InternalUnimodel.g:5963:3: '-'
+                    {
+                    match(input,76,FOLLOW_2); 
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getEIntAccess().getHyphenMinusKeyword_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EInt__Group__0__Impl"
+
+
+    // $ANTLR start "rule__EInt__Group__1"
+    // InternalUnimodel.g:5971:1: rule__EInt__Group__1 : rule__EInt__Group__1__Impl ;
+    public final void rule__EInt__Group__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:5975:1: ( rule__EInt__Group__1__Impl )
+            // InternalUnimodel.g:5976:2: rule__EInt__Group__1__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__EInt__Group__1__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EInt__Group__1"
+
+
+    // $ANTLR start "rule__EInt__Group__1__Impl"
+    // InternalUnimodel.g:5982:1: rule__EInt__Group__1__Impl : ( RULE_INT ) ;
+    public final void rule__EInt__Group__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:5986:1: ( ( RULE_INT ) )
+            // InternalUnimodel.g:5987:1: ( RULE_INT )
+            {
+            // InternalUnimodel.g:5987:1: ( RULE_INT )
+            // InternalUnimodel.g:5988:2: RULE_INT
+            {
+             before(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
+            match(input,RULE_INT,FOLLOW_2); 
+             after(grammarAccess.getEIntAccess().getINTTerminalRuleCall_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EInt__Group__1__Impl"
+
+
+    // $ANTLR start "rule__EFloat__Group__0"
+    // InternalUnimodel.g:5998:1: rule__EFloat__Group__0 : rule__EFloat__Group__0__Impl rule__EFloat__Group__1 ;
+    public final void rule__EFloat__Group__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6002:1: ( rule__EFloat__Group__0__Impl rule__EFloat__Group__1 )
+            // InternalUnimodel.g:6003:2: rule__EFloat__Group__0__Impl rule__EFloat__Group__1
+            {
+            pushFollow(FOLLOW_37);
+            rule__EFloat__Group__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__EFloat__Group__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__0"
+
+
+    // $ANTLR start "rule__EFloat__Group__0__Impl"
+    // InternalUnimodel.g:6010:1: rule__EFloat__Group__0__Impl : ( ( '-' )? ) ;
+    public final void rule__EFloat__Group__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6014:1: ( ( ( '-' )? ) )
+            // InternalUnimodel.g:6015:1: ( ( '-' )? )
+            {
+            // InternalUnimodel.g:6015:1: ( ( '-' )? )
+            // InternalUnimodel.g:6016:2: ( '-' )?
+            {
+             before(grammarAccess.getEFloatAccess().getHyphenMinusKeyword_0()); 
+            // InternalUnimodel.g:6017:2: ( '-' )?
+            int alt37=2;
+            int LA37_0 = input.LA(1);
+
+            if ( (LA37_0==76) ) {
+                alt37=1;
+            }
+            switch (alt37) {
+                case 1 :
+                    // InternalUnimodel.g:6017:3: '-'
+                    {
+                    match(input,76,FOLLOW_2); 
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getEFloatAccess().getHyphenMinusKeyword_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__0__Impl"
+
+
+    // $ANTLR start "rule__EFloat__Group__1"
+    // InternalUnimodel.g:6025:1: rule__EFloat__Group__1 : rule__EFloat__Group__1__Impl rule__EFloat__Group__2 ;
+    public final void rule__EFloat__Group__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6029:1: ( rule__EFloat__Group__1__Impl rule__EFloat__Group__2 )
+            // InternalUnimodel.g:6030:2: rule__EFloat__Group__1__Impl rule__EFloat__Group__2
+            {
+            pushFollow(FOLLOW_37);
+            rule__EFloat__Group__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__EFloat__Group__2();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__1"
+
+
+    // $ANTLR start "rule__EFloat__Group__1__Impl"
+    // InternalUnimodel.g:6037:1: rule__EFloat__Group__1__Impl : ( ( RULE_INT )? ) ;
+    public final void rule__EFloat__Group__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6041:1: ( ( ( RULE_INT )? ) )
+            // InternalUnimodel.g:6042:1: ( ( RULE_INT )? )
+            {
+            // InternalUnimodel.g:6042:1: ( ( RULE_INT )? )
+            // InternalUnimodel.g:6043:2: ( RULE_INT )?
+            {
+             before(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_1()); 
+            // InternalUnimodel.g:6044:2: ( RULE_INT )?
+            int alt38=2;
+            int LA38_0 = input.LA(1);
+
+            if ( (LA38_0==RULE_INT) ) {
+                alt38=1;
+            }
+            switch (alt38) {
+                case 1 :
+                    // InternalUnimodel.g:6044:3: RULE_INT
+                    {
+                    match(input,RULE_INT,FOLLOW_2); 
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__1__Impl"
+
+
+    // $ANTLR start "rule__EFloat__Group__2"
+    // InternalUnimodel.g:6052:1: rule__EFloat__Group__2 : rule__EFloat__Group__2__Impl rule__EFloat__Group__3 ;
+    public final void rule__EFloat__Group__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6056:1: ( rule__EFloat__Group__2__Impl rule__EFloat__Group__3 )
+            // InternalUnimodel.g:6057:2: rule__EFloat__Group__2__Impl rule__EFloat__Group__3
+            {
+            pushFollow(FOLLOW_47);
+            rule__EFloat__Group__2__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__EFloat__Group__3();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__2"
+
+
+    // $ANTLR start "rule__EFloat__Group__2__Impl"
+    // InternalUnimodel.g:6064:1: rule__EFloat__Group__2__Impl : ( '.' ) ;
+    public final void rule__EFloat__Group__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6068:1: ( ( '.' ) )
+            // InternalUnimodel.g:6069:1: ( '.' )
+            {
+            // InternalUnimodel.g:6069:1: ( '.' )
+            // InternalUnimodel.g:6070:2: '.'
+            {
+             before(grammarAccess.getEFloatAccess().getFullStopKeyword_2()); 
+            match(input,77,FOLLOW_2); 
+             after(grammarAccess.getEFloatAccess().getFullStopKeyword_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__2__Impl"
+
+
+    // $ANTLR start "rule__EFloat__Group__3"
+    // InternalUnimodel.g:6079:1: rule__EFloat__Group__3 : rule__EFloat__Group__3__Impl rule__EFloat__Group__4 ;
+    public final void rule__EFloat__Group__3() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6083:1: ( rule__EFloat__Group__3__Impl rule__EFloat__Group__4 )
+            // InternalUnimodel.g:6084:2: rule__EFloat__Group__3__Impl rule__EFloat__Group__4
+            {
+            pushFollow(FOLLOW_48);
+            rule__EFloat__Group__3__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__EFloat__Group__4();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__3"
+
+
+    // $ANTLR start "rule__EFloat__Group__3__Impl"
+    // InternalUnimodel.g:6091:1: rule__EFloat__Group__3__Impl : ( RULE_INT ) ;
+    public final void rule__EFloat__Group__3__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6095:1: ( ( RULE_INT ) )
+            // InternalUnimodel.g:6096:1: ( RULE_INT )
+            {
+            // InternalUnimodel.g:6096:1: ( RULE_INT )
+            // InternalUnimodel.g:6097:2: RULE_INT
+            {
+             before(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_3()); 
+            match(input,RULE_INT,FOLLOW_2); 
+             after(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_3()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__3__Impl"
+
+
+    // $ANTLR start "rule__EFloat__Group__4"
+    // InternalUnimodel.g:6106:1: rule__EFloat__Group__4 : rule__EFloat__Group__4__Impl ;
+    public final void rule__EFloat__Group__4() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6110:1: ( rule__EFloat__Group__4__Impl )
+            // InternalUnimodel.g:6111:2: rule__EFloat__Group__4__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__EFloat__Group__4__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__4"
+
+
+    // $ANTLR start "rule__EFloat__Group__4__Impl"
+    // InternalUnimodel.g:6117:1: rule__EFloat__Group__4__Impl : ( ( rule__EFloat__Group_4__0 )? ) ;
+    public final void rule__EFloat__Group__4__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6121:1: ( ( ( rule__EFloat__Group_4__0 )? ) )
+            // InternalUnimodel.g:6122:1: ( ( rule__EFloat__Group_4__0 )? )
+            {
+            // InternalUnimodel.g:6122:1: ( ( rule__EFloat__Group_4__0 )? )
+            // InternalUnimodel.g:6123:2: ( rule__EFloat__Group_4__0 )?
+            {
+             before(grammarAccess.getEFloatAccess().getGroup_4()); 
+            // InternalUnimodel.g:6124:2: ( rule__EFloat__Group_4__0 )?
+            int alt39=2;
+            int LA39_0 = input.LA(1);
+
+            if ( ((LA39_0>=12 && LA39_0<=13)) ) {
+                alt39=1;
+            }
+            switch (alt39) {
+                case 1 :
+                    // InternalUnimodel.g:6124:3: rule__EFloat__Group_4__0
+                    {
+                    pushFollow(FOLLOW_2);
+                    rule__EFloat__Group_4__0();
+
+                    state._fsp--;
+
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getEFloatAccess().getGroup_4()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group__4__Impl"
+
+
+    // $ANTLR start "rule__EFloat__Group_4__0"
+    // InternalUnimodel.g:6133:1: rule__EFloat__Group_4__0 : rule__EFloat__Group_4__0__Impl rule__EFloat__Group_4__1 ;
+    public final void rule__EFloat__Group_4__0() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6137:1: ( rule__EFloat__Group_4__0__Impl rule__EFloat__Group_4__1 )
+            // InternalUnimodel.g:6138:2: rule__EFloat__Group_4__0__Impl rule__EFloat__Group_4__1
+            {
+            pushFollow(FOLLOW_15);
+            rule__EFloat__Group_4__0__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__EFloat__Group_4__1();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group_4__0"
+
+
+    // $ANTLR start "rule__EFloat__Group_4__0__Impl"
+    // InternalUnimodel.g:6145:1: rule__EFloat__Group_4__0__Impl : ( ( rule__EFloat__Alternatives_4_0 ) ) ;
+    public final void rule__EFloat__Group_4__0__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6149:1: ( ( ( rule__EFloat__Alternatives_4_0 ) ) )
+            // InternalUnimodel.g:6150:1: ( ( rule__EFloat__Alternatives_4_0 ) )
+            {
+            // InternalUnimodel.g:6150:1: ( ( rule__EFloat__Alternatives_4_0 ) )
+            // InternalUnimodel.g:6151:2: ( rule__EFloat__Alternatives_4_0 )
+            {
+             before(grammarAccess.getEFloatAccess().getAlternatives_4_0()); 
+            // InternalUnimodel.g:6152:2: ( rule__EFloat__Alternatives_4_0 )
+            // InternalUnimodel.g:6152:3: rule__EFloat__Alternatives_4_0
+            {
+            pushFollow(FOLLOW_2);
+            rule__EFloat__Alternatives_4_0();
+
+            state._fsp--;
+
+
+            }
+
+             after(grammarAccess.getEFloatAccess().getAlternatives_4_0()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group_4__0__Impl"
+
+
+    // $ANTLR start "rule__EFloat__Group_4__1"
+    // InternalUnimodel.g:6160:1: rule__EFloat__Group_4__1 : rule__EFloat__Group_4__1__Impl rule__EFloat__Group_4__2 ;
+    public final void rule__EFloat__Group_4__1() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6164:1: ( rule__EFloat__Group_4__1__Impl rule__EFloat__Group_4__2 )
+            // InternalUnimodel.g:6165:2: rule__EFloat__Group_4__1__Impl rule__EFloat__Group_4__2
+            {
+            pushFollow(FOLLOW_15);
+            rule__EFloat__Group_4__1__Impl();
+
+            state._fsp--;
+
+            pushFollow(FOLLOW_2);
+            rule__EFloat__Group_4__2();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group_4__1"
+
+
+    // $ANTLR start "rule__EFloat__Group_4__1__Impl"
+    // InternalUnimodel.g:6172:1: rule__EFloat__Group_4__1__Impl : ( ( '-' )? ) ;
+    public final void rule__EFloat__Group_4__1__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6176:1: ( ( ( '-' )? ) )
+            // InternalUnimodel.g:6177:1: ( ( '-' )? )
+            {
+            // InternalUnimodel.g:6177:1: ( ( '-' )? )
+            // InternalUnimodel.g:6178:2: ( '-' )?
+            {
+             before(grammarAccess.getEFloatAccess().getHyphenMinusKeyword_4_1()); 
+            // InternalUnimodel.g:6179:2: ( '-' )?
+            int alt40=2;
+            int LA40_0 = input.LA(1);
+
+            if ( (LA40_0==76) ) {
+                alt40=1;
+            }
+            switch (alt40) {
+                case 1 :
+                    // InternalUnimodel.g:6179:3: '-'
+                    {
+                    match(input,76,FOLLOW_2); 
+
+                    }
+                    break;
+
+            }
+
+             after(grammarAccess.getEFloatAccess().getHyphenMinusKeyword_4_1()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group_4__1__Impl"
+
+
+    // $ANTLR start "rule__EFloat__Group_4__2"
+    // InternalUnimodel.g:6187:1: rule__EFloat__Group_4__2 : rule__EFloat__Group_4__2__Impl ;
+    public final void rule__EFloat__Group_4__2() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6191:1: ( rule__EFloat__Group_4__2__Impl )
+            // InternalUnimodel.g:6192:2: rule__EFloat__Group_4__2__Impl
+            {
+            pushFollow(FOLLOW_2);
+            rule__EFloat__Group_4__2__Impl();
+
+            state._fsp--;
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group_4__2"
+
+
+    // $ANTLR start "rule__EFloat__Group_4__2__Impl"
+    // InternalUnimodel.g:6198:1: rule__EFloat__Group_4__2__Impl : ( RULE_INT ) ;
+    public final void rule__EFloat__Group_4__2__Impl() throws RecognitionException {
+
+        		int stackSize = keepStackSize();
+        	
+        try {
+            // InternalUnimodel.g:6202:1: ( ( RULE_INT ) )
+            // InternalUnimodel.g:6203:1: ( RULE_INT )
+            {
+            // InternalUnimodel.g:6203:1: ( RULE_INT )
+            // InternalUnimodel.g:6204:2: RULE_INT
+            {
+             before(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_4_2()); 
+            match(input,RULE_INT,FOLLOW_2); 
+             after(grammarAccess.getEFloatAccess().getINTTerminalRuleCall_4_2()); 
+
+            }
+
+
+            }
+
+        }
+        catch (RecognitionException re) {
+            reportError(re);
+            recover(input,re);
+        }
+        finally {
+
+            	restoreStackSize(stackSize);
+
+        }
+        return ;
+    }
+    // $ANTLR end "rule__EFloat__Group_4__2__Impl"
 
 
     // $ANTLR start "rule__University__NameAssignment_1"
@@ -21401,39 +21401,39 @@ public class InternalUnimodelParser extends AbstractInternalContentAssistParser 
     public static final BitSet FOLLOW_12 = new BitSet(new long[]{0x0000000300000000L});
     public static final BitSet FOLLOW_13 = new BitSet(new long[]{0x0001000000000000L});
     public static final BitSet FOLLOW_14 = new BitSet(new long[]{0x0000040000000000L});
-    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0010000000000040L});
+    public static final BitSet FOLLOW_15 = new BitSet(new long[]{0x0000000000000040L,0x0000000000001000L});
     public static final BitSet FOLLOW_16 = new BitSet(new long[]{0x000003F804000000L});
     public static final BitSet FOLLOW_17 = new BitSet(new long[]{0x0000080000000000L});
     public static final BitSet FOLLOW_18 = new BitSet(new long[]{0x0000100000000000L});
     public static final BitSet FOLLOW_19 = new BitSet(new long[]{0x0000E00004000000L});
-    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0020000000000000L});
-    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0200000000000000L});
-    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x1000000000000000L});
+    public static final BitSet FOLLOW_20 = new BitSet(new long[]{0x0010000000000000L});
+    public static final BitSet FOLLOW_21 = new BitSet(new long[]{0x0100000000000000L});
+    public static final BitSet FOLLOW_22 = new BitSet(new long[]{0x0800000000000000L});
     public static final BitSet FOLLOW_23 = new BitSet(new long[]{0x0002000000000000L});
     public static final BitSet FOLLOW_24 = new BitSet(new long[]{0x0004000000000000L});
     public static final BitSet FOLLOW_25 = new BitSet(new long[]{0x0008000004000000L});
-    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000422L});
-    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0040000000000000L});
-    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x0180000004000000L});
-    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0400000000000000L});
+    public static final BitSet FOLLOW_26 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000109L});
+    public static final BitSet FOLLOW_27 = new BitSet(new long[]{0x0020000000000000L});
+    public static final BitSet FOLLOW_28 = new BitSet(new long[]{0x00C0000004000000L});
+    public static final BitSet FOLLOW_29 = new BitSet(new long[]{0x0200000000000000L});
     public static final BitSet FOLLOW_30 = new BitSet(new long[]{0x0000000000000800L});
-    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0800800004000000L});
-    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x2000000000000000L});
+    public static final BitSet FOLLOW_31 = new BitSet(new long[]{0x0400800004000000L});
+    public static final BitSet FOLLOW_32 = new BitSet(new long[]{0x1000000000000000L});
     public static final BitSet FOLLOW_33 = new BitSet(new long[]{0x000000000007C000L});
-    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0xC000000000000000L});
-    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x0000000204000000L,0x0000000000000001L});
-    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000004L});
-    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0010000000000040L,0x0000000000000010L});
-    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000008L});
-    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x0000000000000040L});
-    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x0000000000003000L});
-    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000040L});
-    public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x0000000000780000L});
+    public static final BitSet FOLLOW_34 = new BitSet(new long[]{0x6000000000000000L});
+    public static final BitSet FOLLOW_35 = new BitSet(new long[]{0x8000000204000000L});
+    public static final BitSet FOLLOW_36 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000002L});
+    public static final BitSet FOLLOW_37 = new BitSet(new long[]{0x0000000000000040L,0x0000000000003000L});
+    public static final BitSet FOLLOW_38 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000004L});
+    public static final BitSet FOLLOW_39 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000010L});
+    public static final BitSet FOLLOW_40 = new BitSet(new long[]{0x0000000000780000L});
+    public static final BitSet FOLLOW_41 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000020L});
+    public static final BitSet FOLLOW_42 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000040L});
     public static final BitSet FOLLOW_43 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000080L});
-    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x0000020000000000L,0x0000000000000100L});
-    public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
+    public static final BitSet FOLLOW_44 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000200L});
+    public static final BitSet FOLLOW_45 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000400L});
     public static final BitSet FOLLOW_46 = new BitSet(new long[]{0x0000000000000000L,0x0000000000000800L});
-    public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x0000000000000000L,0x0000000000001000L});
-    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x0000000000000000L,0x0000000000002000L});
+    public static final BitSet FOLLOW_47 = new BitSet(new long[]{0x0000000000000040L});
+    public static final BitSet FOLLOW_48 = new BitSet(new long[]{0x0000000000003000L});
 
 }

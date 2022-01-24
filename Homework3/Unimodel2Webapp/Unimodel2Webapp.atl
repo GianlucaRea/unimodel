@@ -51,11 +51,11 @@ rule Person2User{
 		)
 }
 
-rule Building2Building_Page{
+rule Building2Building{
 	from
 	  	s: MM1!Building
 	to
-		t: MM2!Building_Page(
+		t: MM2!Building(
 			name <- s.name,
 			info <- s.address,
 			description <- s.description,
@@ -87,7 +87,7 @@ rule Library2LPage{
 	from
 		s: MM1!Library
 	to
-		t: MM2!Library_Page(
+		t: MM2!Library(
 			name <- s.name,
 			computers <- s.computers,
 			workstation <- s.workstations,

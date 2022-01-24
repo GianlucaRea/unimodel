@@ -137,48 +137,6 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_10() { return cRightCurlyBracketKeyword_10; }
 	}
-	public class RoomElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Room");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cRoom_ImplParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cOfficeParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		private final RuleCall cClassParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
-		
-		//Room returns Room:
-		//    Room_Impl | Office | Class;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//Room_Impl | Office | Class
-		public Alternatives getAlternatives() { return cAlternatives; }
-		
-		//Room_Impl
-		public RuleCall getRoom_ImplParserRuleCall_0() { return cRoom_ImplParserRuleCall_0; }
-		
-		//Office
-		public RuleCall getOfficeParserRuleCall_1() { return cOfficeParserRuleCall_1; }
-		
-		//Class
-		public RuleCall getClassParserRuleCall_2() { return cClassParserRuleCall_2; }
-	}
-	public class EStringElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EString");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cSTRINGTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//EString returns ecore::EString:
-		//    STRING | ID;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//STRING | ID
-		public Alternatives getAlternatives() { return cAlternatives; }
-		
-		//STRING
-		public RuleCall getSTRINGTerminalRuleCall_0() { return cSTRINGTerminalRuleCall_0; }
-		
-		//ID
-		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
-	}
 	public class BuildingElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Building");
 		private final Group cGroup = (Group)rule.eContents().get(1);
@@ -761,25 +719,6 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_7() { return cRightCurlyBracketKeyword_7; }
 	}
-	public class EIntElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EInt");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cHyphenMinusKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
-		
-		//EInt returns ecore::EInt:
-		//    '-'? INT;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//'-'? INT
-		public Group getGroup() { return cGroup; }
-		
-		//'-'?
-		public Keyword getHyphenMinusKeyword_0() { return cHyphenMinusKeyword_0; }
-		
-		//INT
-		public RuleCall getINTTerminalRuleCall_1() { return cINTTerminalRuleCall_1; }
-	}
 	public class BookElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Book");
 		private final Group cGroup = (Group)rule.eContents().get(1);
@@ -1075,16 +1014,28 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_10() { return cRightCurlyBracketKeyword_10; }
 	}
-	public class EDateElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EDate");
-		private final Keyword cEDateKeyword = (Keyword)rule.eContents().get(1);
+	public class RoomElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Room");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cRoom_ImplParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cOfficeParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		private final RuleCall cClassParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
 		
-		//EDate returns ecore::EDate:
-		//    'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
+		//Room returns Room:
+		//    Room_Impl | Office | Class;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//'EDate'
-		public Keyword getEDateKeyword() { return cEDateKeyword; }
+		//Room_Impl | Office | Class
+		public Alternatives getAlternatives() { return cAlternatives; }
+		
+		//Room_Impl
+		public RuleCall getRoom_ImplParserRuleCall_0() { return cRoom_ImplParserRuleCall_0; }
+		
+		//Office
+		public RuleCall getOfficeParserRuleCall_1() { return cOfficeParserRuleCall_1; }
+		
+		//Class
+		public RuleCall getClassParserRuleCall_2() { return cClassParserRuleCall_2; }
 	}
 	public class Room_ImplElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Room_Impl");
@@ -1150,57 +1101,6 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_7() { return cRightCurlyBracketKeyword_7; }
-	}
-	public class EFloatElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EFloat");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cHyphenMinusKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
-		private final Keyword cFullStopKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final RuleCall cINTTerminalRuleCall_3 = (RuleCall)cGroup.eContents().get(3);
-		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
-		private final Alternatives cAlternatives_4_0 = (Alternatives)cGroup_4.eContents().get(0);
-		private final Keyword cEKeyword_4_0_0 = (Keyword)cAlternatives_4_0.eContents().get(0);
-		private final Keyword cEKeyword_4_0_1 = (Keyword)cAlternatives_4_0.eContents().get(1);
-		private final Keyword cHyphenMinusKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
-		private final RuleCall cINTTerminalRuleCall_4_2 = (RuleCall)cGroup_4.eContents().get(2);
-		
-		//EFloat returns ecore::EFloat:
-		//    '-'? INT? '.' INT (('E'|'e') '-'? INT)?;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//'-'? INT? '.' INT (('E'|'e') '-'? INT)?
-		public Group getGroup() { return cGroup; }
-		
-		//'-'?
-		public Keyword getHyphenMinusKeyword_0() { return cHyphenMinusKeyword_0; }
-		
-		//INT?
-		public RuleCall getINTTerminalRuleCall_1() { return cINTTerminalRuleCall_1; }
-		
-		//'.'
-		public Keyword getFullStopKeyword_2() { return cFullStopKeyword_2; }
-		
-		//INT
-		public RuleCall getINTTerminalRuleCall_3() { return cINTTerminalRuleCall_3; }
-		
-		//(('E'|'e') '-'? INT)?
-		public Group getGroup_4() { return cGroup_4; }
-		
-		//('E'|'e')
-		public Alternatives getAlternatives_4_0() { return cAlternatives_4_0; }
-		
-		//'E'
-		public Keyword getEKeyword_4_0_0() { return cEKeyword_4_0_0; }
-		
-		//'e'
-		public Keyword getEKeyword_4_0_1() { return cEKeyword_4_0_1; }
-		
-		//'-'?
-		public Keyword getHyphenMinusKeyword_4_1() { return cHyphenMinusKeyword_4_1; }
-		
-		//INT
-		public RuleCall getINTTerminalRuleCall_4_2() { return cINTTerminalRuleCall_4_2; }
 	}
 	public class OfficeElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Office");
@@ -1490,6 +1390,106 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_15() { return cRightCurlyBracketKeyword_15; }
 	}
+	public class EIntElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EInt");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cHyphenMinusKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		
+		//EInt returns ecore::EInt:
+		//    '-'? INT;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'-'? INT
+		public Group getGroup() { return cGroup; }
+		
+		//'-'?
+		public Keyword getHyphenMinusKeyword_0() { return cHyphenMinusKeyword_0; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_1() { return cINTTerminalRuleCall_1; }
+	}
+	public class EFloatElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EFloat");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cHyphenMinusKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		private final Keyword cFullStopKeyword_2 = (Keyword)cGroup.eContents().get(2);
+		private final RuleCall cINTTerminalRuleCall_3 = (RuleCall)cGroup.eContents().get(3);
+		private final Group cGroup_4 = (Group)cGroup.eContents().get(4);
+		private final Alternatives cAlternatives_4_0 = (Alternatives)cGroup_4.eContents().get(0);
+		private final Keyword cEKeyword_4_0_0 = (Keyword)cAlternatives_4_0.eContents().get(0);
+		private final Keyword cEKeyword_4_0_1 = (Keyword)cAlternatives_4_0.eContents().get(1);
+		private final Keyword cHyphenMinusKeyword_4_1 = (Keyword)cGroup_4.eContents().get(1);
+		private final RuleCall cINTTerminalRuleCall_4_2 = (RuleCall)cGroup_4.eContents().get(2);
+		
+		//EFloat returns ecore::EFloat:
+		//    '-'? INT? '.' INT (('E'|'e') '-'? INT)?;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'-'? INT? '.' INT (('E'|'e') '-'? INT)?
+		public Group getGroup() { return cGroup; }
+		
+		//'-'?
+		public Keyword getHyphenMinusKeyword_0() { return cHyphenMinusKeyword_0; }
+		
+		//INT?
+		public RuleCall getINTTerminalRuleCall_1() { return cINTTerminalRuleCall_1; }
+		
+		//'.'
+		public Keyword getFullStopKeyword_2() { return cFullStopKeyword_2; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_3() { return cINTTerminalRuleCall_3; }
+		
+		//(('E'|'e') '-'? INT)?
+		public Group getGroup_4() { return cGroup_4; }
+		
+		//('E'|'e')
+		public Alternatives getAlternatives_4_0() { return cAlternatives_4_0; }
+		
+		//'E'
+		public Keyword getEKeyword_4_0_0() { return cEKeyword_4_0_0; }
+		
+		//'e'
+		public Keyword getEKeyword_4_0_1() { return cEKeyword_4_0_1; }
+		
+		//'-'?
+		public Keyword getHyphenMinusKeyword_4_1() { return cHyphenMinusKeyword_4_1; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_4_2() { return cINTTerminalRuleCall_4_2; }
+	}
+	public class EStringElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EString");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cSTRINGTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		
+		//EString returns ecore::EString:
+		//    STRING | ID;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//STRING | ID
+		public Alternatives getAlternatives() { return cAlternatives; }
+		
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_0() { return cSTRINGTerminalRuleCall_0; }
+		
+		//ID
+		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
+	}
+	public class EDateElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EDate");
+		private final Keyword cEDateKeyword = (Keyword)rule.eContents().get(1);
+		
+		//EDate returns ecore::EDate:
+		//    'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'EDate'
+		public Keyword getEDateKeyword() { return cEDateKeyword; }
+	}
 	
 	public class CategoryElements extends AbstractElementFinder.AbstractEnumRuleElementFinder {
 		private final EnumRule rule = (EnumRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Category");
@@ -1587,22 +1587,22 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	}
 	
 	private final UniversityElements pUniversity;
-	private final RoomElements pRoom;
-	private final EStringElements pEString;
 	private final BuildingElements pBuilding;
 	private final AddressElements pAddress;
 	private final LibraryElements pLibrary;
 	private final FloorElements pFloor;
-	private final EIntElements pEInt;
 	private final BookElements pBook;
 	private final LoanElements pLoan;
 	private final PersonElements pPerson;
-	private final EDateElements pEDate;
-	private final CategoryElements eCategory;
+	private final RoomElements pRoom;
 	private final Room_ImplElements pRoom_Impl;
-	private final EFloatElements pEFloat;
 	private final OfficeElements pOffice;
 	private final ClassElements pClass;
+	private final EIntElements pEInt;
+	private final EFloatElements pEFloat;
+	private final EStringElements pEString;
+	private final EDateElements pEDate;
+	private final CategoryElements eCategory;
 	private final TypeElements eType;
 	
 	private final Grammar grammar;
@@ -1615,22 +1615,22 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaTerminals = gaTerminals;
 		this.pUniversity = new UniversityElements();
-		this.pRoom = new RoomElements();
-		this.pEString = new EStringElements();
 		this.pBuilding = new BuildingElements();
 		this.pAddress = new AddressElements();
 		this.pLibrary = new LibraryElements();
 		this.pFloor = new FloorElements();
-		this.pEInt = new EIntElements();
 		this.pBook = new BookElements();
 		this.pLoan = new LoanElements();
 		this.pPerson = new PersonElements();
-		this.pEDate = new EDateElements();
-		this.eCategory = new CategoryElements();
+		this.pRoom = new RoomElements();
 		this.pRoom_Impl = new Room_ImplElements();
-		this.pEFloat = new EFloatElements();
 		this.pOffice = new OfficeElements();
 		this.pClass = new ClassElements();
+		this.pEInt = new EIntElements();
+		this.pEFloat = new EFloatElements();
+		this.pEString = new EStringElements();
+		this.pEDate = new EDateElements();
+		this.eCategory = new CategoryElements();
 		this.eType = new TypeElements();
 	}
 	
@@ -1675,26 +1675,6 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	
 	public ParserRule getUniversityRule() {
 		return getUniversityAccess().getRule();
-	}
-	
-	//Room returns Room:
-	//    Room_Impl | Office | Class;
-	public RoomElements getRoomAccess() {
-		return pRoom;
-	}
-	
-	public ParserRule getRoomRule() {
-		return getRoomAccess().getRule();
-	}
-	
-	//EString returns ecore::EString:
-	//    STRING | ID;
-	public EStringElements getEStringAccess() {
-		return pEString;
-	}
-	
-	public ParserRule getEStringRule() {
-		return getEStringAccess().getRule();
 	}
 	
 	//Building returns Building:
@@ -1768,16 +1748,6 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		return getFloorAccess().getRule();
 	}
 	
-	//EInt returns ecore::EInt:
-	//    '-'? INT;
-	public EIntElements getEIntAccess() {
-		return pEInt;
-	}
-	
-	public ParserRule getEIntRule() {
-		return getEIntAccess().getRule();
-	}
-	
 	//Book returns Book:
 	//    'Book'
 	//    name=EString
@@ -1827,24 +1797,14 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		return getPersonAccess().getRule();
 	}
 	
-	//EDate returns ecore::EDate:
-	//    'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
-	public EDateElements getEDateAccess() {
-		return pEDate;
+	//Room returns Room:
+	//    Room_Impl | Office | Class;
+	public RoomElements getRoomAccess() {
+		return pRoom;
 	}
 	
-	public ParserRule getEDateRule() {
-		return getEDateAccess().getRule();
-	}
-	
-	//enum Category returns Category:
-	//                PROFESSOR = 'PROFESSOR' | PHD_STUDENT = 'PHD_STUDENT' | ADMINISTRATOR = 'ADMINISTRATOR' | STAFF = 'STAFF' | STUDENT = 'STUDENT';
-	public CategoryElements getCategoryAccess() {
-		return eCategory;
-	}
-	
-	public EnumRule getCategoryRule() {
-		return getCategoryAccess().getRule();
+	public ParserRule getRoomRule() {
+		return getRoomAccess().getRule();
 	}
 	
 	//Room_Impl returns Room:
@@ -1860,16 +1820,6 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	
 	public ParserRule getRoom_ImplRule() {
 		return getRoom_ImplAccess().getRule();
-	}
-	
-	//EFloat returns ecore::EFloat:
-	//    '-'? INT? '.' INT (('E'|'e') '-'? INT)?;
-	public EFloatElements getEFloatAccess() {
-		return pEFloat;
-	}
-	
-	public ParserRule getEFloatRule() {
-		return getEFloatAccess().getRule();
 	}
 	
 	//Office returns Office:
@@ -1909,6 +1859,56 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	
 	public ParserRule getClassRule() {
 		return getClassAccess().getRule();
+	}
+	
+	//EInt returns ecore::EInt:
+	//    '-'? INT;
+	public EIntElements getEIntAccess() {
+		return pEInt;
+	}
+	
+	public ParserRule getEIntRule() {
+		return getEIntAccess().getRule();
+	}
+	
+	//EFloat returns ecore::EFloat:
+	//    '-'? INT? '.' INT (('E'|'e') '-'? INT)?;
+	public EFloatElements getEFloatAccess() {
+		return pEFloat;
+	}
+	
+	public ParserRule getEFloatRule() {
+		return getEFloatAccess().getRule();
+	}
+	
+	//EString returns ecore::EString:
+	//    STRING | ID;
+	public EStringElements getEStringAccess() {
+		return pEString;
+	}
+	
+	public ParserRule getEStringRule() {
+		return getEStringAccess().getRule();
+	}
+	
+	//EDate returns ecore::EDate:
+	//    'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
+	public EDateElements getEDateAccess() {
+		return pEDate;
+	}
+	
+	public ParserRule getEDateRule() {
+		return getEDateAccess().getRule();
+	}
+	
+	//enum Category returns Category:
+	//                PROFESSOR = 'PROFESSOR' | PHD_STUDENT = 'PHD_STUDENT' | ADMINISTRATOR = 'ADMINISTRATOR' | STAFF = 'STAFF' | STUDENT = 'STUDENT';
+	public CategoryElements getCategoryAccess() {
+		return eCategory;
+	}
+	
+	public EnumRule getCategoryRule() {
+		return getCategoryAccess().getRule();
 	}
 	
 	//enum Type returns Type:

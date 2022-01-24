@@ -217,85 +217,6 @@ ruleUniversity returns [EObject current=null]
 	)
 ;
 
-// Entry rule entryRuleRoom
-entryRuleRoom returns [EObject current=null]:
-	{ newCompositeNode(grammarAccess.getRoomRule()); }
-	iv_ruleRoom=ruleRoom
-	{ $current=$iv_ruleRoom.current; }
-	EOF;
-
-// Rule Room
-ruleRoom returns [EObject current=null]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
-		{
-			newCompositeNode(grammarAccess.getRoomAccess().getRoom_ImplParserRuleCall_0());
-		}
-		this_Room_Impl_0=ruleRoom_Impl
-		{
-			$current = $this_Room_Impl_0.current;
-			afterParserOrEnumRuleCall();
-		}
-		    |
-		{
-			newCompositeNode(grammarAccess.getRoomAccess().getOfficeParserRuleCall_1());
-		}
-		this_Office_1=ruleOffice
-		{
-			$current = $this_Office_1.current;
-			afterParserOrEnumRuleCall();
-		}
-		    |
-		{
-			newCompositeNode(grammarAccess.getRoomAccess().getClassParserRuleCall_2());
-		}
-		this_Class_2=ruleClass
-		{
-			$current = $this_Class_2.current;
-			afterParserOrEnumRuleCall();
-		}
-	)
-;
-
-// Entry rule entryRuleEString
-entryRuleEString returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getEStringRule()); }
-	iv_ruleEString=ruleEString
-	{ $current=$iv_ruleEString.current.getText(); }
-	EOF;
-
-// Rule EString
-ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
-		this_STRING_0=RULE_STRING
-		{
-			$current.merge(this_STRING_0);
-		}
-		{
-			newLeafNode(this_STRING_0, grammarAccess.getEStringAccess().getSTRINGTerminalRuleCall_0());
-		}
-		    |
-		this_ID_1=RULE_ID
-		{
-			$current.merge(this_ID_1);
-		}
-		{
-			newLeafNode(this_ID_1, grammarAccess.getEStringAccess().getIDTerminalRuleCall_1());
-		}
-	)
-;
-
 // Entry rule entryRuleBuilding
 entryRuleBuilding returns [EObject current=null]:
 	{ newCompositeNode(grammarAccess.getBuildingRule()); }
@@ -1112,39 +1033,6 @@ ruleFloor returns [EObject current=null]
 	)
 ;
 
-// Entry rule entryRuleEInt
-entryRuleEInt returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getEIntRule()); }
-	iv_ruleEInt=ruleEInt
-	{ $current=$iv_ruleEInt.current.getText(); }
-	EOF;
-
-// Rule EInt
-ruleEInt returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
-		(
-			kw='-'
-			{
-				$current.merge(kw);
-				newLeafNode(kw, grammarAccess.getEIntAccess().getHyphenMinusKeyword_0());
-			}
-		)?
-		this_INT_1=RULE_INT
-		{
-			$current.merge(this_INT_1);
-		}
-		{
-			newLeafNode(this_INT_1, grammarAccess.getEIntAccess().getINTTerminalRuleCall_1());
-		}
-	)
-;
-
 // Entry rule entryRuleBook
 entryRuleBook returns [EObject current=null]:
 	{ newCompositeNode(grammarAccess.getBookRule()); }
@@ -1534,26 +1422,49 @@ rulePerson returns [EObject current=null]
 	)
 ;
 
-// Entry rule entryRuleEDate
-entryRuleEDate returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getEDateRule()); }
-	iv_ruleEDate=ruleEDate
-	{ $current=$iv_ruleEDate.current.getText(); }
+// Entry rule entryRuleRoom
+entryRuleRoom returns [EObject current=null]:
+	{ newCompositeNode(grammarAccess.getRoomRule()); }
+	iv_ruleRoom=ruleRoom
+	{ $current=$iv_ruleRoom.current; }
 	EOF;
 
-// Rule EDate
-ruleEDate returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+// Rule Room
+ruleRoom returns [EObject current=null]
 @init {
 	enterRule();
 }
 @after {
 	leaveRule();
 }:
-	kw='EDate'
-	{
-		$current.merge(kw);
-		newLeafNode(kw, grammarAccess.getEDateAccess().getEDateKeyword());
-	}
+	(
+		{
+			newCompositeNode(grammarAccess.getRoomAccess().getRoom_ImplParserRuleCall_0());
+		}
+		this_Room_Impl_0=ruleRoom_Impl
+		{
+			$current = $this_Room_Impl_0.current;
+			afterParserOrEnumRuleCall();
+		}
+		    |
+		{
+			newCompositeNode(grammarAccess.getRoomAccess().getOfficeParserRuleCall_1());
+		}
+		this_Office_1=ruleOffice
+		{
+			$current = $this_Office_1.current;
+			afterParserOrEnumRuleCall();
+		}
+		    |
+		{
+			newCompositeNode(grammarAccess.getRoomAccess().getClassParserRuleCall_2());
+		}
+		this_Class_2=ruleClass
+		{
+			$current = $this_Class_2.current;
+			afterParserOrEnumRuleCall();
+		}
+	)
 ;
 
 // Entry rule entryRuleRoom_Impl
@@ -1649,82 +1560,6 @@ ruleRoom_Impl returns [EObject current=null]
 		{
 			newLeafNode(otherlv_7, grammarAccess.getRoom_ImplAccess().getRightCurlyBracketKeyword_7());
 		}
-	)
-;
-
-// Entry rule entryRuleEFloat
-entryRuleEFloat returns [String current=null]:
-	{ newCompositeNode(grammarAccess.getEFloatRule()); }
-	iv_ruleEFloat=ruleEFloat
-	{ $current=$iv_ruleEFloat.current.getText(); }
-	EOF;
-
-// Rule EFloat
-ruleEFloat returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
-@init {
-	enterRule();
-}
-@after {
-	leaveRule();
-}:
-	(
-		(
-			kw='-'
-			{
-				$current.merge(kw);
-				newLeafNode(kw, grammarAccess.getEFloatAccess().getHyphenMinusKeyword_0());
-			}
-		)?
-		(
-			this_INT_1=RULE_INT
-			{
-				$current.merge(this_INT_1);
-			}
-			{
-				newLeafNode(this_INT_1, grammarAccess.getEFloatAccess().getINTTerminalRuleCall_1());
-			}
-		)?
-		kw='.'
-		{
-			$current.merge(kw);
-			newLeafNode(kw, grammarAccess.getEFloatAccess().getFullStopKeyword_2());
-		}
-		this_INT_3=RULE_INT
-		{
-			$current.merge(this_INT_3);
-		}
-		{
-			newLeafNode(this_INT_3, grammarAccess.getEFloatAccess().getINTTerminalRuleCall_3());
-		}
-		(
-			(
-				kw='E'
-				{
-					$current.merge(kw);
-					newLeafNode(kw, grammarAccess.getEFloatAccess().getEKeyword_4_0_0());
-				}
-				    |
-				kw='e'
-				{
-					$current.merge(kw);
-					newLeafNode(kw, grammarAccess.getEFloatAccess().getEKeyword_4_0_1());
-				}
-			)
-			(
-				kw='-'
-				{
-					$current.merge(kw);
-					newLeafNode(kw, grammarAccess.getEFloatAccess().getHyphenMinusKeyword_4_1());
-				}
-			)?
-			this_INT_7=RULE_INT
-			{
-				$current.merge(this_INT_7);
-			}
-			{
-				newLeafNode(this_INT_7, grammarAccess.getEFloatAccess().getINTTerminalRuleCall_4_2());
-			}
-		)?
 	)
 ;
 
@@ -2157,6 +1992,171 @@ ruleClass returns [EObject current=null]
 			newLeafNode(otherlv_15, grammarAccess.getClassAccess().getRightCurlyBracketKeyword_15());
 		}
 	)
+;
+
+// Entry rule entryRuleEInt
+entryRuleEInt returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getEIntRule()); }
+	iv_ruleEInt=ruleEInt
+	{ $current=$iv_ruleEInt.current.getText(); }
+	EOF;
+
+// Rule EInt
+ruleEInt returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		(
+			kw='-'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getEIntAccess().getHyphenMinusKeyword_0());
+			}
+		)?
+		this_INT_1=RULE_INT
+		{
+			$current.merge(this_INT_1);
+		}
+		{
+			newLeafNode(this_INT_1, grammarAccess.getEIntAccess().getINTTerminalRuleCall_1());
+		}
+	)
+;
+
+// Entry rule entryRuleEFloat
+entryRuleEFloat returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getEFloatRule()); }
+	iv_ruleEFloat=ruleEFloat
+	{ $current=$iv_ruleEFloat.current.getText(); }
+	EOF;
+
+// Rule EFloat
+ruleEFloat returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		(
+			kw='-'
+			{
+				$current.merge(kw);
+				newLeafNode(kw, grammarAccess.getEFloatAccess().getHyphenMinusKeyword_0());
+			}
+		)?
+		(
+			this_INT_1=RULE_INT
+			{
+				$current.merge(this_INT_1);
+			}
+			{
+				newLeafNode(this_INT_1, grammarAccess.getEFloatAccess().getINTTerminalRuleCall_1());
+			}
+		)?
+		kw='.'
+		{
+			$current.merge(kw);
+			newLeafNode(kw, grammarAccess.getEFloatAccess().getFullStopKeyword_2());
+		}
+		this_INT_3=RULE_INT
+		{
+			$current.merge(this_INT_3);
+		}
+		{
+			newLeafNode(this_INT_3, grammarAccess.getEFloatAccess().getINTTerminalRuleCall_3());
+		}
+		(
+			(
+				kw='E'
+				{
+					$current.merge(kw);
+					newLeafNode(kw, grammarAccess.getEFloatAccess().getEKeyword_4_0_0());
+				}
+				    |
+				kw='e'
+				{
+					$current.merge(kw);
+					newLeafNode(kw, grammarAccess.getEFloatAccess().getEKeyword_4_0_1());
+				}
+			)
+			(
+				kw='-'
+				{
+					$current.merge(kw);
+					newLeafNode(kw, grammarAccess.getEFloatAccess().getHyphenMinusKeyword_4_1());
+				}
+			)?
+			this_INT_7=RULE_INT
+			{
+				$current.merge(this_INT_7);
+			}
+			{
+				newLeafNode(this_INT_7, grammarAccess.getEFloatAccess().getINTTerminalRuleCall_4_2());
+			}
+		)?
+	)
+;
+
+// Entry rule entryRuleEString
+entryRuleEString returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getEStringRule()); }
+	iv_ruleEString=ruleEString
+	{ $current=$iv_ruleEString.current.getText(); }
+	EOF;
+
+// Rule EString
+ruleEString returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	(
+		this_STRING_0=RULE_STRING
+		{
+			$current.merge(this_STRING_0);
+		}
+		{
+			newLeafNode(this_STRING_0, grammarAccess.getEStringAccess().getSTRINGTerminalRuleCall_0());
+		}
+		    |
+		this_ID_1=RULE_ID
+		{
+			$current.merge(this_ID_1);
+		}
+		{
+			newLeafNode(this_ID_1, grammarAccess.getEStringAccess().getIDTerminalRuleCall_1());
+		}
+	)
+;
+
+// Entry rule entryRuleEDate
+entryRuleEDate returns [String current=null]:
+	{ newCompositeNode(grammarAccess.getEDateRule()); }
+	iv_ruleEDate=ruleEDate
+	{ $current=$iv_ruleEDate.current.getText(); }
+	EOF;
+
+// Rule EDate
+ruleEDate returns [AntlrDatatypeRuleToken current=new AntlrDatatypeRuleToken()]
+@init {
+	enterRule();
+}
+@after {
+	leaveRule();
+}:
+	kw='EDate'
+	{
+		$current.merge(kw);
+		newLeafNode(kw, grammarAccess.getEDateAccess().getEDateKeyword());
+	}
 ;
 
 // Rule Category

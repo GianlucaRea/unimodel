@@ -6,14 +6,14 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="Description" lowerBound="1"
         eType="#//Description" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="Department_Page" lowerBound="1"
-        upperBound="-1" eType="#//Building_Page" containment="true"/>
+        upperBound="-1" eType="#//Building" containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="users" upperBound="-1"
         eType="#//User" containment="true"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Building_Page" eSuperTypes="#//Named">
+  <eClassifiers xsi:type="ecore:EClass" name="Building" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EReference" name="info" lowerBound="1" eType="#//Info"
         containment="true"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="library_page" eType="#//Library_Page"
+    <eStructuralFeatures xsi:type="ecore:EReference" name="library_page" eType="#//Library"
         containment="true"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="map_section" lowerBound="1"
         upperBound="-1" eType="#//Map_Section" containment="true"/>
@@ -49,7 +49,7 @@
     <eStructuralFeatures xsi:type="ecore:EReference" name="office_info" eType="#//Info"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="phone" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
   </eClassifiers>
-  <eClassifiers xsi:type="ecore:EClass" name="Library_Page" eSuperTypes="#//Named">
+  <eClassifiers xsi:type="ecore:EClass" name="Library" eSuperTypes="#//Named">
     <eStructuralFeatures xsi:type="ecore:EReference" name="books" upperBound="-1"
         eType="#//Book" containment="true" eOpposite="#//Book/library"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="loans" upperBound="-1"
@@ -81,8 +81,8 @@
         eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EInt"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="ISBN" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
     <eStructuralFeatures xsi:type="ecore:EAttribute" name="author" eType="ecore:EDataType http://www.eclipse.org/emf/2002/Ecore#//EString"/>
-    <eStructuralFeatures xsi:type="ecore:EReference" name="library" eType="#//Library_Page"
-        eOpposite="#//Library_Page/books"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="library" eType="#//Library"
+        eOpposite="#//Library/books"/>
     <eStructuralFeatures xsi:type="ecore:EReference" name="loans" upperBound="-1"
         eType="#//Loan"/>
   </eClassifiers>

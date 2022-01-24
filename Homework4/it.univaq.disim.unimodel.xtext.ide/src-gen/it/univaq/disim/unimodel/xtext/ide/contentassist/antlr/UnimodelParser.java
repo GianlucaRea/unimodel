@@ -32,8 +32,8 @@ public class UnimodelParser extends AbstractContentAssistParser {
 		
 		private static void init(ImmutableMap.Builder<AbstractElement, String> builder, UnimodelGrammarAccess grammarAccess) {
 			builder.put(grammarAccess.getRoomAccess().getAlternatives(), "rule__Room__Alternatives");
-			builder.put(grammarAccess.getEStringAccess().getAlternatives(), "rule__EString__Alternatives");
 			builder.put(grammarAccess.getEFloatAccess().getAlternatives_4_0(), "rule__EFloat__Alternatives_4_0");
+			builder.put(grammarAccess.getEStringAccess().getAlternatives(), "rule__EString__Alternatives");
 			builder.put(grammarAccess.getCategoryAccess().getAlternatives(), "rule__Category__Alternatives");
 			builder.put(grammarAccess.getTypeAccess().getAlternatives(), "rule__Type__Alternatives");
 			builder.put(grammarAccess.getUniversityAccess().getGroup(), "rule__University__Group__0");
@@ -62,7 +62,6 @@ public class UnimodelParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getFloorAccess().getGroup(), "rule__Floor__Group__0");
 			builder.put(grammarAccess.getFloorAccess().getGroup_6(), "rule__Floor__Group_6__0");
 			builder.put(grammarAccess.getFloorAccess().getGroup_6_3(), "rule__Floor__Group_6_3__0");
-			builder.put(grammarAccess.getEIntAccess().getGroup(), "rule__EInt__Group__0");
 			builder.put(grammarAccess.getBookAccess().getGroup(), "rule__Book__Group__0");
 			builder.put(grammarAccess.getBookAccess().getGroup_5(), "rule__Book__Group_5__0");
 			builder.put(grammarAccess.getBookAccess().getGroup_6(), "rule__Book__Group_6__0");
@@ -74,12 +73,13 @@ public class UnimodelParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getPersonAccess().getGroup_8(), "rule__Person__Group_8__0");
 			builder.put(grammarAccess.getPersonAccess().getGroup_9(), "rule__Person__Group_9__0");
 			builder.put(grammarAccess.getRoom_ImplAccess().getGroup(), "rule__Room_Impl__Group__0");
-			builder.put(grammarAccess.getEFloatAccess().getGroup(), "rule__EFloat__Group__0");
-			builder.put(grammarAccess.getEFloatAccess().getGroup_4(), "rule__EFloat__Group_4__0");
 			builder.put(grammarAccess.getOfficeAccess().getGroup(), "rule__Office__Group__0");
 			builder.put(grammarAccess.getOfficeAccess().getGroup_11(), "rule__Office__Group_11__0");
 			builder.put(grammarAccess.getOfficeAccess().getGroup_17(), "rule__Office__Group_17__0");
 			builder.put(grammarAccess.getClassAccess().getGroup(), "rule__Class__Group__0");
+			builder.put(grammarAccess.getEIntAccess().getGroup(), "rule__EInt__Group__0");
+			builder.put(grammarAccess.getEFloatAccess().getGroup(), "rule__EFloat__Group__0");
+			builder.put(grammarAccess.getEFloatAccess().getGroup_4(), "rule__EFloat__Group_4__0");
 			builder.put(grammarAccess.getUniversityAccess().getNameAssignment_1(), "rule__University__NameAssignment_1");
 			builder.put(grammarAccess.getUniversityAccess().getChancellorAssignment_3_1(), "rule__University__ChancellorAssignment_3_1");
 			builder.put(grammarAccess.getUniversityAccess().getDescriptionAssignment_4_1(), "rule__University__DescriptionAssignment_4_1");
