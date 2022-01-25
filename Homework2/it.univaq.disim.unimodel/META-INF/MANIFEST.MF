@@ -9,9 +9,27 @@ Bundle-Vendor: %providerName
 Bundle-Localization: plugin
 Bundle-RequiredExecutionEnvironment: J2SE-1.5,
  JavaSE-11
-Export-Package: unimodel,
- unimodel.impl,
- unimodel.util
+Export-Package: unimodel;
+  uses:="org.eclipse.emf.ecore,
+   org.eclipse.emf.common.util,
+   org.eclipse.ocl.pivot.internal.library.executor,
+   org.eclipse.ocl.pivot.ids,
+   org.eclipse.ocl.pivot.values,
+   org.eclipse.ocl.pivot.internal.library.ecore,
+   org.eclipse.ocl.pivot.utilities",
+ unimodel.impl;
+  uses:="org.eclipse.emf.ecore,
+   org.eclipse.emf.ecore.impl,
+   org.eclipse.emf.common.util,
+   org.eclipse.emf.common.notify,
+   unimodel",
+ unimodel.util;
+  uses:="org.eclipse.emf.ecore,
+   org.eclipse.emf.common.util,
+   org.eclipse.emf.common.notify,
+   org.eclipse.emf.common.notify.impl,
+   org.eclipse.emf.ecore.util,
+   unimodel"
 Require-Bundle: org.eclipse.emf.ecore;visibility:=reexport,
  org.eclipse.ocl.pivot;visibility:=reexport,
  org.eclipse.ocl.examples.codegen;visibility:=reexport,
