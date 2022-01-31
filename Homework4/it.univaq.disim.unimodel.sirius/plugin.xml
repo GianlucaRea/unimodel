@@ -4,7 +4,7 @@
   <extension point="org.eclipse.sirius.componentization">
     <component class="it.univaq.disim.unimodel.sirius.Activator"
                id="it.univaq.disim.unimodel.sirius"
-	       name="unimodel">
+	       name="sirius">
     </component>
   </extension>
 </plugin>
