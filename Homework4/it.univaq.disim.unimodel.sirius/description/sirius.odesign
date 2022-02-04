@@ -5,35 +5,35 @@
       <metamodel href="/it.univaq.disim.unimodel/model/unimodel.ecore#/"/>
       <defaultLayer name="Default">
         <nodeMappings name="building_node" semanticCandidatesExpression="feature:buildings" domainClass="unimodel::Building">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" sizeComputationExpression="4" labelPosition="node" resizeKind="NSEW" width="10" height="3">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="library_node" domainClass="unimodel::Library">
-          <style xsi:type="style:EllipseNodeDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:EllipseNodeDescription" labelSize="12" sizeComputationExpression="4" labelPosition="node" resizeKind="NSEW" horizontalDiameterComputationExpression="10" verticalDiameterComputationExpression="3">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='green']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="loan_node" domainClass="unimodel::Loan">
-          <style xsi:type="style:DotDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelExpression="feature:date" labelPosition="node" resizeKind="NSEW" width="10" height="3">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
-            <backgroundColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='gray']"/>
+            <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_blue']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="book_node" domainClass="unimodel::Book">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="3">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_red']"/>
           </style>
         </nodeMappings>
         <nodeMappings name="person_node" domainClass="unimodel::Person">
-          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW">
+          <style xsi:type="style:SquareDescription" labelSize="12" labelPosition="node" resizeKind="NSEW" width="10" height="3">
             <borderColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <labelColor xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='black']"/>
             <color xsi:type="description:SystemColor" href="environment:/viewpoint#//@systemColors/@entries[name='light_yellow']"/>
