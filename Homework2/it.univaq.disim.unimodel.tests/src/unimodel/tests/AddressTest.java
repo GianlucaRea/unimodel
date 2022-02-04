@@ -95,6 +95,19 @@ public class AddressTest extends TestCase {
 	}
 
 	/**
+	 * Tests the '{@link unimodel.Address#postcode_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Postcode length</em>}' operation.
+	 * <!-- begin-user-doc -->
+	 * <!-- end-user-doc -->
+	 * @see unimodel.Address#postcode_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
+	 * @generated
+	 */
+	public void testPostcode_length__DiagnosticChain_Map() {
+		// TODO: implement this operation test method
+		// Ensure that you remove @generated or mark it @generated NOT
+		fail();
+	}
+
+	/**
 	 * Tests the '{@link unimodel.Address#id_number(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Id number</em>}' operation.
 	 * <!-- begin-user-doc -->
 	 * <!-- end-user-doc -->
@@ -115,19 +128,6 @@ public class AddressTest extends TestCase {
 	 * @generated
 	 */
 	public void testPhone_length__DiagnosticChain_Map() {
-		// TODO: implement this operation test method
-		// Ensure that you remove @generated or mark it @generated NOT
-		fail();
-	}
-
-	/**
-	 * Tests the '{@link unimodel.Address#postcode_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map) <em>Postcode length</em>}' operation.
-	 * <!-- begin-user-doc -->
-	 * <!-- end-user-doc -->
-	 * @see unimodel.Address#postcode_length(org.eclipse.emf.common.util.DiagnosticChain, java.util.Map)
-	 * @generated
-	 */
-	public void testPostcode_length__DiagnosticChain_Map() {
 		// TODO: implement this operation test method
 		// Ensure that you remove @generated or mark it @generated NOT
 		fail();
