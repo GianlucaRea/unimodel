@@ -13,7 +13,7 @@ public abstract class AbstractUnimodelValidator extends AbstractDeclarativeValid
 	@Override
 	protected List<EPackage> getEPackages() {
 		List<EPackage> result = new ArrayList<EPackage>();
-		result.add(EPackage.Registry.INSTANCE.getEPackage("http://it.univaq.disim/unimodel"));
+		result.add(EPackage.Registry.INSTANCE.getEPackage("http://it.univaq.disim.unimodel/h4model"));
 		return result;
 	}
 }

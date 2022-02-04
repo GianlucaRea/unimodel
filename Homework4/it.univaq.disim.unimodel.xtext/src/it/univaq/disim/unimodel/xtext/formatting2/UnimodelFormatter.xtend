@@ -4,11 +4,11 @@
 package it.univaq.disim.unimodel.xtext.formatting2
 
 import com.google.inject.Inject
+import it.univaq.disim.unimodel.h4model.Building
+import it.univaq.disim.unimodel.h4model.University
 import it.univaq.disim.unimodel.xtext.services.UnimodelGrammarAccess
 import org.eclipse.xtext.formatting2.AbstractFormatter2
 import org.eclipse.xtext.formatting2.IFormattableDocument
-import unimodel.Building
-import unimodel.University
 
 class UnimodelFormatter extends AbstractFormatter2 {
 	

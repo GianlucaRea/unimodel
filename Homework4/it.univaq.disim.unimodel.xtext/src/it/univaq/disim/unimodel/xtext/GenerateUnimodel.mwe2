@@ -33,7 +33,7 @@ Workflow {
 		language = StandardLanguage {
 			name = "it.univaq.disim.unimodel.xtext.Unimodel"
 			fileExtensions = "unimodel"
-			referencedResource = "platform:/resource/it.univaq.disim.unimodel/model/unimodel.genmodel"
+			referencedResource = "platform:/resource/it.univaq.disim.unimodel.h4model/model/h4model.genmodel"
 			
 			fragment = ecore2xtext.Ecore2XtextValueConverterServiceFragment2 auto-inject {}
 

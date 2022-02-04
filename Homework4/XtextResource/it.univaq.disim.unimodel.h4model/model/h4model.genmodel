@@ -1,0 +1,109 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel"
+    modelDirectory="/it.univaq.disim.unimodel.h4model/src-gen" creationIcons="false"
+    editDirectory="/it.univaq.disim.unimodel.h4model.edit/src-gen" editorDirectory="/it.univaq.disim.unimodel.h4model.editor/src-gen"
+    modelPluginID="it.univaq.disim.unimodel.h4model" modelName="H4model" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    codeFormatting="true" importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0"
+    copyrightFields="false" operationReflection="true" importOrganizing="true">
+  <foreignModel>h4model.ecore</foreignModel>
+  <testsDirectory xsi:nil="true"/>
+  <genPackages prefix="H4model" basePackage="it.univaq.disim.unimodel" disposableProviderFactory="true"
+      ecorePackage="h4model.ecore#/">
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="h4model.ecore#//Type">
+      <genEnumLiterals ecoreEnumLiteral="h4model.ecore#//Type/PROFESSOR_OFFICE"/>
+      <genEnumLiterals ecoreEnumLiteral="h4model.ecore#//Type/PHD_ROOM"/>
+      <genEnumLiterals ecoreEnumLiteral="h4model.ecore#//Type/ADMINISTRATION"/>
+      <genEnumLiterals ecoreEnumLiteral="h4model.ecore#//Type/SECRETARIAT"/>
+    </genEnums>
+    <genEnums typeSafeEnumCompatible="false" ecoreEnum="h4model.ecore#//Category">
+      <genEnumLiterals ecoreEnumLiteral="h4model.ecore#//Category/PROFESSOR"/>
+      <genEnumLiterals ecoreEnumLiteral="h4model.ecore#//Category/PHD_STUDENT"/>
+      <genEnumLiterals ecoreEnumLiteral="h4model.ecore#//Category/ADMINISTRATOR"/>
+      <genEnumLiterals ecoreEnumLiteral="h4model.ecore#//Category/STAFF"/>
+      <genEnumLiterals ecoreEnumLiteral="h4model.ecore#//Category/STUDENT"/>
+    </genEnums>
+    <genClasses ecoreClass="h4model.ecore#//University">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//University/chancellor"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//University/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h4model.ecore#//University/buildings"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Named">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Named/name"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Building">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Building/description"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h4model.ecore#//Building/address"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h4model.ecore#//Building/library"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h4model.ecore#//Building/floors"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Address">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Address/country"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Address/state"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Address/city"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Address/post_code"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Address/street"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Address/civic"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Address/id"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Address/phone"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Library">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Library/workstations"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Library/computers"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h4model.ecore#//Library/books"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h4model.ecore#//Library/loans"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h4model.ecore#//Library/person"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Book">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Book/quantity"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Book/ISBN"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Book/author"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Book/library"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Book/loans"/>
+      <genOperations ecoreOperation="h4model.ecore#//Book/isBookAvailable"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Loan">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Loan/date"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Loan/book"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Loan/person"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Floor">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Floor/number"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h4model.ecore#//Floor/rooms"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Floor/bathrooms"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Floor/offices"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Floor/classes"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Room">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Room/dimension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Room/sockets"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Office">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Office/type"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Office/capacity"/>
+      <genFeatures property="None" children="true" createChild="true" ecoreFeature="ecore:EReference h4model.ecore#//Office/person_in_office"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Office/office_address"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Office/phone"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Office/dimension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Office/sockets"/>
+      <genOperations ecoreOperation="h4model.ecore#//Office/getPersonInOffice"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Class">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Class/seats"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Class/blackboards"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Class/speakers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Class/computers"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Class/dimension"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Class/sockets"/>
+    </genClasses>
+    <genClasses ecoreClass="h4model.ecore#//Person">
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Person/category"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Person/badge"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Person/age"/>
+      <genFeatures createChild="false" ecoreFeature="ecore:EAttribute h4model.ecore#//Person/fiscal_code"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Person/library"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Person/loans"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference h4model.ecore#//Person/books"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

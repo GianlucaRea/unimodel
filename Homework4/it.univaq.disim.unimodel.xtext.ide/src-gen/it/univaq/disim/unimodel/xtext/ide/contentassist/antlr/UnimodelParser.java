@@ -31,9 +31,8 @@ public class UnimodelParser extends AbstractContentAssistParser {
 		}
 		
 		private static void init(ImmutableMap.Builder<AbstractElement, String> builder, UnimodelGrammarAccess grammarAccess) {
-			builder.put(grammarAccess.getRoomAccess().getAlternatives(), "rule__Room__Alternatives");
-			builder.put(grammarAccess.getEFloatAccess().getAlternatives_4_0(), "rule__EFloat__Alternatives_4_0");
 			builder.put(grammarAccess.getEStringAccess().getAlternatives(), "rule__EString__Alternatives");
+			builder.put(grammarAccess.getEFloatAccess().getAlternatives_4_0(), "rule__EFloat__Alternatives_4_0");
 			builder.put(grammarAccess.getCategoryAccess().getAlternatives(), "rule__Category__Alternatives");
 			builder.put(grammarAccess.getTypeAccess().getAlternatives(), "rule__Type__Alternatives");
 			builder.put(grammarAccess.getUniversityAccess().getGroup(), "rule__University__Group__0");
@@ -62,9 +61,15 @@ public class UnimodelParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getFloorAccess().getGroup(), "rule__Floor__Group__0");
 			builder.put(grammarAccess.getFloorAccess().getGroup_6(), "rule__Floor__Group_6__0");
 			builder.put(grammarAccess.getFloorAccess().getGroup_6_3(), "rule__Floor__Group_6_3__0");
+			builder.put(grammarAccess.getFloorAccess().getGroup_7(), "rule__Floor__Group_7__0");
+			builder.put(grammarAccess.getFloorAccess().getGroup_7_3(), "rule__Floor__Group_7_3__0");
+			builder.put(grammarAccess.getFloorAccess().getGroup_8(), "rule__Floor__Group_8__0");
+			builder.put(grammarAccess.getFloorAccess().getGroup_8_3(), "rule__Floor__Group_8_3__0");
+			builder.put(grammarAccess.getEIntAccess().getGroup(), "rule__EInt__Group__0");
 			builder.put(grammarAccess.getBookAccess().getGroup(), "rule__Book__Group__0");
 			builder.put(grammarAccess.getBookAccess().getGroup_5(), "rule__Book__Group_5__0");
 			builder.put(grammarAccess.getBookAccess().getGroup_6(), "rule__Book__Group_6__0");
+			builder.put(grammarAccess.getBookAccess().getGroup_7(), "rule__Book__Group_7__0");
 			builder.put(grammarAccess.getLoanAccess().getGroup(), "rule__Loan__Group__0");
 			builder.put(grammarAccess.getLoanAccess().getGroup_4(), "rule__Loan__Group_4__0");
 			builder.put(grammarAccess.getLoanAccess().getGroup_5(), "rule__Loan__Group_5__0");
@@ -72,12 +77,11 @@ public class UnimodelParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getPersonAccess().getGroup_5(), "rule__Person__Group_5__0");
 			builder.put(grammarAccess.getPersonAccess().getGroup_8(), "rule__Person__Group_8__0");
 			builder.put(grammarAccess.getPersonAccess().getGroup_9(), "rule__Person__Group_9__0");
-			builder.put(grammarAccess.getRoom_ImplAccess().getGroup(), "rule__Room_Impl__Group__0");
+			builder.put(grammarAccess.getRoomAccess().getGroup(), "rule__Room__Group__0");
 			builder.put(grammarAccess.getOfficeAccess().getGroup(), "rule__Office__Group__0");
-			builder.put(grammarAccess.getOfficeAccess().getGroup_11(), "rule__Office__Group_11__0");
+			builder.put(grammarAccess.getOfficeAccess().getGroup_7(), "rule__Office__Group_7__0");
 			builder.put(grammarAccess.getOfficeAccess().getGroup_17(), "rule__Office__Group_17__0");
 			builder.put(grammarAccess.getClassAccess().getGroup(), "rule__Class__Group__0");
-			builder.put(grammarAccess.getEIntAccess().getGroup(), "rule__EInt__Group__0");
 			builder.put(grammarAccess.getEFloatAccess().getGroup(), "rule__EFloat__Group__0");
 			builder.put(grammarAccess.getEFloatAccess().getGroup_4(), "rule__EFloat__Group_4__0");
 			builder.put(grammarAccess.getUniversityAccess().getNameAssignment_1(), "rule__University__NameAssignment_1");
@@ -110,12 +114,17 @@ public class UnimodelParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getLibraryAccess().getPersonAssignment_9_3_1(), "rule__Library__PersonAssignment_9_3_1");
 			builder.put(grammarAccess.getFloorAccess().getNumberAssignment_3(), "rule__Floor__NumberAssignment_3");
 			builder.put(grammarAccess.getFloorAccess().getBathroomsAssignment_5(), "rule__Floor__BathroomsAssignment_5");
-			builder.put(grammarAccess.getFloorAccess().getRoomsAssignment_6_2(), "rule__Floor__RoomsAssignment_6_2");
-			builder.put(grammarAccess.getFloorAccess().getRoomsAssignment_6_3_1(), "rule__Floor__RoomsAssignment_6_3_1");
+			builder.put(grammarAccess.getFloorAccess().getOfficesAssignment_6_2(), "rule__Floor__OfficesAssignment_6_2");
+			builder.put(grammarAccess.getFloorAccess().getOfficesAssignment_6_3_1(), "rule__Floor__OfficesAssignment_6_3_1");
+			builder.put(grammarAccess.getFloorAccess().getClassesAssignment_7_2(), "rule__Floor__ClassesAssignment_7_2");
+			builder.put(grammarAccess.getFloorAccess().getClassesAssignment_7_3_1(), "rule__Floor__ClassesAssignment_7_3_1");
+			builder.put(grammarAccess.getFloorAccess().getRoomsAssignment_8_2(), "rule__Floor__RoomsAssignment_8_2");
+			builder.put(grammarAccess.getFloorAccess().getRoomsAssignment_8_3_1(), "rule__Floor__RoomsAssignment_8_3_1");
 			builder.put(grammarAccess.getBookAccess().getNameAssignment_1(), "rule__Book__NameAssignment_1");
 			builder.put(grammarAccess.getBookAccess().getQuantityAssignment_4(), "rule__Book__QuantityAssignment_4");
 			builder.put(grammarAccess.getBookAccess().getISBNAssignment_5_1(), "rule__Book__ISBNAssignment_5_1");
 			builder.put(grammarAccess.getBookAccess().getAuthorAssignment_6_1(), "rule__Book__AuthorAssignment_6_1");
+			builder.put(grammarAccess.getBookAccess().getLibraryAssignment_7_1(), "rule__Book__LibraryAssignment_7_1");
 			builder.put(grammarAccess.getLoanAccess().getDateAssignment_3(), "rule__Loan__DateAssignment_3");
 			builder.put(grammarAccess.getLoanAccess().getBookAssignment_4_1(), "rule__Loan__BookAssignment_4_1");
 			builder.put(grammarAccess.getLoanAccess().getPersonAssignment_5_1(), "rule__Loan__PersonAssignment_5_1");
@@ -125,25 +134,25 @@ public class UnimodelParser extends AbstractContentAssistParser {
 			builder.put(grammarAccess.getPersonAccess().getAgeAssignment_7(), "rule__Person__AgeAssignment_7");
 			builder.put(grammarAccess.getPersonAccess().getFiscal_codeAssignment_8_1(), "rule__Person__Fiscal_codeAssignment_8_1");
 			builder.put(grammarAccess.getPersonAccess().getLibraryAssignment_9_1(), "rule__Person__LibraryAssignment_9_1");
-			builder.put(grammarAccess.getRoom_ImplAccess().getNameAssignment_1(), "rule__Room_Impl__NameAssignment_1");
-			builder.put(grammarAccess.getRoom_ImplAccess().getDimensionAssignment_4(), "rule__Room_Impl__DimensionAssignment_4");
-			builder.put(grammarAccess.getRoom_ImplAccess().getSocketsAssignment_6(), "rule__Room_Impl__SocketsAssignment_6");
+			builder.put(grammarAccess.getRoomAccess().getNameAssignment_1(), "rule__Room__NameAssignment_1");
+			builder.put(grammarAccess.getRoomAccess().getDimensionAssignment_4(), "rule__Room__DimensionAssignment_4");
+			builder.put(grammarAccess.getRoomAccess().getSocketsAssignment_6(), "rule__Room__SocketsAssignment_6");
 			builder.put(grammarAccess.getOfficeAccess().getNameAssignment_1(), "rule__Office__NameAssignment_1");
-			builder.put(grammarAccess.getOfficeAccess().getDimensionAssignment_4(), "rule__Office__DimensionAssignment_4");
-			builder.put(grammarAccess.getOfficeAccess().getSocketsAssignment_6(), "rule__Office__SocketsAssignment_6");
-			builder.put(grammarAccess.getOfficeAccess().getTypeAssignment_8(), "rule__Office__TypeAssignment_8");
-			builder.put(grammarAccess.getOfficeAccess().getCapacityAssignment_10(), "rule__Office__CapacityAssignment_10");
-			builder.put(grammarAccess.getOfficeAccess().getPhoneAssignment_11_1(), "rule__Office__PhoneAssignment_11_1");
+			builder.put(grammarAccess.getOfficeAccess().getTypeAssignment_4(), "rule__Office__TypeAssignment_4");
+			builder.put(grammarAccess.getOfficeAccess().getCapacityAssignment_6(), "rule__Office__CapacityAssignment_6");
+			builder.put(grammarAccess.getOfficeAccess().getPhoneAssignment_7_1(), "rule__Office__PhoneAssignment_7_1");
+			builder.put(grammarAccess.getOfficeAccess().getDimensionAssignment_9(), "rule__Office__DimensionAssignment_9");
+			builder.put(grammarAccess.getOfficeAccess().getSocketsAssignment_11(), "rule__Office__SocketsAssignment_11");
 			builder.put(grammarAccess.getOfficeAccess().getOffice_addressAssignment_13(), "rule__Office__Office_addressAssignment_13");
 			builder.put(grammarAccess.getOfficeAccess().getPerson_in_officeAssignment_16(), "rule__Office__Person_in_officeAssignment_16");
 			builder.put(grammarAccess.getOfficeAccess().getPerson_in_officeAssignment_17_1(), "rule__Office__Person_in_officeAssignment_17_1");
 			builder.put(grammarAccess.getClassAccess().getNameAssignment_1(), "rule__Class__NameAssignment_1");
-			builder.put(grammarAccess.getClassAccess().getDimensionAssignment_4(), "rule__Class__DimensionAssignment_4");
-			builder.put(grammarAccess.getClassAccess().getSocketsAssignment_6(), "rule__Class__SocketsAssignment_6");
-			builder.put(grammarAccess.getClassAccess().getSeatsAssignment_8(), "rule__Class__SeatsAssignment_8");
-			builder.put(grammarAccess.getClassAccess().getBlackboardsAssignment_10(), "rule__Class__BlackboardsAssignment_10");
-			builder.put(grammarAccess.getClassAccess().getSpeakersAssignment_12(), "rule__Class__SpeakersAssignment_12");
-			builder.put(grammarAccess.getClassAccess().getComputersAssignment_14(), "rule__Class__ComputersAssignment_14");
+			builder.put(grammarAccess.getClassAccess().getSeatsAssignment_4(), "rule__Class__SeatsAssignment_4");
+			builder.put(grammarAccess.getClassAccess().getBlackboardsAssignment_6(), "rule__Class__BlackboardsAssignment_6");
+			builder.put(grammarAccess.getClassAccess().getSpeakersAssignment_8(), "rule__Class__SpeakersAssignment_8");
+			builder.put(grammarAccess.getClassAccess().getComputersAssignment_10(), "rule__Class__ComputersAssignment_10");
+			builder.put(grammarAccess.getClassAccess().getDimensionAssignment_12(), "rule__Class__DimensionAssignment_12");
+			builder.put(grammarAccess.getClassAccess().getSocketsAssignment_14(), "rule__Class__SocketsAssignment_14");
 		}
 	}
 	

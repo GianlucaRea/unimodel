@@ -137,6 +137,25 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_10() { return cRightCurlyBracketKeyword_10; }
 	}
+	public class EStringElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EString");
+		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
+		private final RuleCall cSTRINGTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
+		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
+		
+		//EString returns ecore::EString:
+		//    STRING | ID;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//STRING | ID
+		public Alternatives getAlternatives() { return cAlternatives; }
+		
+		//STRING
+		public RuleCall getSTRINGTerminalRuleCall_0() { return cSTRINGTerminalRuleCall_0; }
+		
+		//ID
+		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
+	}
 	public class BuildingElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Building");
 		private final Group cGroup = (Group)rule.eContents().get(1);
@@ -634,22 +653,48 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		private final Assignment cBathroomsAssignment_5 = (Assignment)cGroup.eContents().get(5);
 		private final RuleCall cBathroomsEIntParserRuleCall_5_0 = (RuleCall)cBathroomsAssignment_5.eContents().get(0);
 		private final Group cGroup_6 = (Group)cGroup.eContents().get(6);
-		private final Keyword cRoomsKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
-		private final Keyword cLeftCurlyBracketKeyword_6_1 = (Keyword)cGroup_6.eContents().get(1);
-		private final Assignment cRoomsAssignment_6_2 = (Assignment)cGroup_6.eContents().get(2);
-		private final RuleCall cRoomsRoomParserRuleCall_6_2_0 = (RuleCall)cRoomsAssignment_6_2.eContents().get(0);
+		private final Keyword cOfficesKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_6_1 = (Keyword)cGroup_6.eContents().get(1);
+		private final Assignment cOfficesAssignment_6_2 = (Assignment)cGroup_6.eContents().get(2);
+		private final CrossReference cOfficesOfficeCrossReference_6_2_0 = (CrossReference)cOfficesAssignment_6_2.eContents().get(0);
+		private final RuleCall cOfficesOfficeEStringParserRuleCall_6_2_0_1 = (RuleCall)cOfficesOfficeCrossReference_6_2_0.eContents().get(1);
 		private final Group cGroup_6_3 = (Group)cGroup_6.eContents().get(3);
 		private final Keyword cCommaKeyword_6_3_0 = (Keyword)cGroup_6_3.eContents().get(0);
-		private final Assignment cRoomsAssignment_6_3_1 = (Assignment)cGroup_6_3.eContents().get(1);
-		private final RuleCall cRoomsRoomParserRuleCall_6_3_1_0 = (RuleCall)cRoomsAssignment_6_3_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_6_4 = (Keyword)cGroup_6.eContents().get(4);
-		private final Keyword cRightCurlyBracketKeyword_7 = (Keyword)cGroup.eContents().get(7);
+		private final Assignment cOfficesAssignment_6_3_1 = (Assignment)cGroup_6_3.eContents().get(1);
+		private final CrossReference cOfficesOfficeCrossReference_6_3_1_0 = (CrossReference)cOfficesAssignment_6_3_1.eContents().get(0);
+		private final RuleCall cOfficesOfficeEStringParserRuleCall_6_3_1_0_1 = (RuleCall)cOfficesOfficeCrossReference_6_3_1_0.eContents().get(1);
+		private final Keyword cRightParenthesisKeyword_6_4 = (Keyword)cGroup_6.eContents().get(4);
+		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
+		private final Keyword cClassesKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
+		private final Keyword cLeftParenthesisKeyword_7_1 = (Keyword)cGroup_7.eContents().get(1);
+		private final Assignment cClassesAssignment_7_2 = (Assignment)cGroup_7.eContents().get(2);
+		private final CrossReference cClassesClassCrossReference_7_2_0 = (CrossReference)cClassesAssignment_7_2.eContents().get(0);
+		private final RuleCall cClassesClassEStringParserRuleCall_7_2_0_1 = (RuleCall)cClassesClassCrossReference_7_2_0.eContents().get(1);
+		private final Group cGroup_7_3 = (Group)cGroup_7.eContents().get(3);
+		private final Keyword cCommaKeyword_7_3_0 = (Keyword)cGroup_7_3.eContents().get(0);
+		private final Assignment cClassesAssignment_7_3_1 = (Assignment)cGroup_7_3.eContents().get(1);
+		private final CrossReference cClassesClassCrossReference_7_3_1_0 = (CrossReference)cClassesAssignment_7_3_1.eContents().get(0);
+		private final RuleCall cClassesClassEStringParserRuleCall_7_3_1_0_1 = (RuleCall)cClassesClassCrossReference_7_3_1_0.eContents().get(1);
+		private final Keyword cRightParenthesisKeyword_7_4 = (Keyword)cGroup_7.eContents().get(4);
+		private final Group cGroup_8 = (Group)cGroup.eContents().get(8);
+		private final Keyword cRoomsKeyword_8_0 = (Keyword)cGroup_8.eContents().get(0);
+		private final Keyword cLeftCurlyBracketKeyword_8_1 = (Keyword)cGroup_8.eContents().get(1);
+		private final Assignment cRoomsAssignment_8_2 = (Assignment)cGroup_8.eContents().get(2);
+		private final RuleCall cRoomsRoomParserRuleCall_8_2_0 = (RuleCall)cRoomsAssignment_8_2.eContents().get(0);
+		private final Group cGroup_8_3 = (Group)cGroup_8.eContents().get(3);
+		private final Keyword cCommaKeyword_8_3_0 = (Keyword)cGroup_8_3.eContents().get(0);
+		private final Assignment cRoomsAssignment_8_3_1 = (Assignment)cGroup_8_3.eContents().get(1);
+		private final RuleCall cRoomsRoomParserRuleCall_8_3_1_0 = (RuleCall)cRoomsAssignment_8_3_1.eContents().get(0);
+		private final Keyword cRightCurlyBracketKeyword_8_4 = (Keyword)cGroup_8.eContents().get(4);
+		private final Keyword cRightCurlyBracketKeyword_9 = (Keyword)cGroup.eContents().get(9);
 		
 		//Floor returns Floor:
 		//    'Floor'
 		//    '{'
 		//        'number' number=EInt
 		//        'bathrooms' bathrooms=EInt
+		//        ('offices' '(' offices+=[Office|EString] ( "," offices+=[Office|EString])* ')' )?
+		//        ('classes' '(' classes+=[Class|EString] ( "," classes+=[Class|EString])* ')' )?
 		//        ('rooms' '{' rooms+=Room ( "," rooms+=Room)* '}' )?
 		//    '}';
 		@Override public ParserRule getRule() { return rule; }
@@ -658,6 +703,8 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'{'
 		//    'number' number=EInt
 		//    'bathrooms' bathrooms=EInt
+		//    ('offices' '(' offices+=[Office|EString] ( "," offices+=[Office|EString])* ')' )?
+		//    ('classes' '(' classes+=[Class|EString] ( "," classes+=[Class|EString])* ')' )?
 		//    ('rooms' '{' rooms+=Room ( "," rooms+=Room)* '}' )?
 		//'}'
 		public Group getGroup() { return cGroup; }
@@ -686,38 +733,129 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//EInt
 		public RuleCall getBathroomsEIntParserRuleCall_5_0() { return cBathroomsEIntParserRuleCall_5_0; }
 		
-		//('rooms' '{' rooms+=Room ( "," rooms+=Room)* '}' )?
+		//('offices' '(' offices+=[Office|EString] ( "," offices+=[Office|EString])* ')' )?
 		public Group getGroup_6() { return cGroup_6; }
 		
-		//'rooms'
-		public Keyword getRoomsKeyword_6_0() { return cRoomsKeyword_6_0; }
+		//'offices'
+		public Keyword getOfficesKeyword_6_0() { return cOfficesKeyword_6_0; }
 		
-		//'{'
-		public Keyword getLeftCurlyBracketKeyword_6_1() { return cLeftCurlyBracketKeyword_6_1; }
+		//'('
+		public Keyword getLeftParenthesisKeyword_6_1() { return cLeftParenthesisKeyword_6_1; }
 		
-		//rooms+=Room
-		public Assignment getRoomsAssignment_6_2() { return cRoomsAssignment_6_2; }
+		//offices+=[Office|EString]
+		public Assignment getOfficesAssignment_6_2() { return cOfficesAssignment_6_2; }
 		
-		//Room
-		public RuleCall getRoomsRoomParserRuleCall_6_2_0() { return cRoomsRoomParserRuleCall_6_2_0; }
+		//[Office|EString]
+		public CrossReference getOfficesOfficeCrossReference_6_2_0() { return cOfficesOfficeCrossReference_6_2_0; }
 		
-		//( "," rooms+=Room)*
+		//EString
+		public RuleCall getOfficesOfficeEStringParserRuleCall_6_2_0_1() { return cOfficesOfficeEStringParserRuleCall_6_2_0_1; }
+		
+		//( "," offices+=[Office|EString])*
 		public Group getGroup_6_3() { return cGroup_6_3; }
 		
 		//","
 		public Keyword getCommaKeyword_6_3_0() { return cCommaKeyword_6_3_0; }
 		
+		//offices+=[Office|EString]
+		public Assignment getOfficesAssignment_6_3_1() { return cOfficesAssignment_6_3_1; }
+		
+		//[Office|EString]
+		public CrossReference getOfficesOfficeCrossReference_6_3_1_0() { return cOfficesOfficeCrossReference_6_3_1_0; }
+		
+		//EString
+		public RuleCall getOfficesOfficeEStringParserRuleCall_6_3_1_0_1() { return cOfficesOfficeEStringParserRuleCall_6_3_1_0_1; }
+		
+		//')'
+		public Keyword getRightParenthesisKeyword_6_4() { return cRightParenthesisKeyword_6_4; }
+		
+		//('classes' '(' classes+=[Class|EString] ( "," classes+=[Class|EString])* ')' )?
+		public Group getGroup_7() { return cGroup_7; }
+		
+		//'classes'
+		public Keyword getClassesKeyword_7_0() { return cClassesKeyword_7_0; }
+		
+		//'('
+		public Keyword getLeftParenthesisKeyword_7_1() { return cLeftParenthesisKeyword_7_1; }
+		
+		//classes+=[Class|EString]
+		public Assignment getClassesAssignment_7_2() { return cClassesAssignment_7_2; }
+		
+		//[Class|EString]
+		public CrossReference getClassesClassCrossReference_7_2_0() { return cClassesClassCrossReference_7_2_0; }
+		
+		//EString
+		public RuleCall getClassesClassEStringParserRuleCall_7_2_0_1() { return cClassesClassEStringParserRuleCall_7_2_0_1; }
+		
+		//( "," classes+=[Class|EString])*
+		public Group getGroup_7_3() { return cGroup_7_3; }
+		
+		//","
+		public Keyword getCommaKeyword_7_3_0() { return cCommaKeyword_7_3_0; }
+		
+		//classes+=[Class|EString]
+		public Assignment getClassesAssignment_7_3_1() { return cClassesAssignment_7_3_1; }
+		
+		//[Class|EString]
+		public CrossReference getClassesClassCrossReference_7_3_1_0() { return cClassesClassCrossReference_7_3_1_0; }
+		
+		//EString
+		public RuleCall getClassesClassEStringParserRuleCall_7_3_1_0_1() { return cClassesClassEStringParserRuleCall_7_3_1_0_1; }
+		
+		//')'
+		public Keyword getRightParenthesisKeyword_7_4() { return cRightParenthesisKeyword_7_4; }
+		
+		//('rooms' '{' rooms+=Room ( "," rooms+=Room)* '}' )?
+		public Group getGroup_8() { return cGroup_8; }
+		
+		//'rooms'
+		public Keyword getRoomsKeyword_8_0() { return cRoomsKeyword_8_0; }
+		
+		//'{'
+		public Keyword getLeftCurlyBracketKeyword_8_1() { return cLeftCurlyBracketKeyword_8_1; }
+		
 		//rooms+=Room
-		public Assignment getRoomsAssignment_6_3_1() { return cRoomsAssignment_6_3_1; }
+		public Assignment getRoomsAssignment_8_2() { return cRoomsAssignment_8_2; }
 		
 		//Room
-		public RuleCall getRoomsRoomParserRuleCall_6_3_1_0() { return cRoomsRoomParserRuleCall_6_3_1_0; }
+		public RuleCall getRoomsRoomParserRuleCall_8_2_0() { return cRoomsRoomParserRuleCall_8_2_0; }
+		
+		//( "," rooms+=Room)*
+		public Group getGroup_8_3() { return cGroup_8_3; }
+		
+		//","
+		public Keyword getCommaKeyword_8_3_0() { return cCommaKeyword_8_3_0; }
+		
+		//rooms+=Room
+		public Assignment getRoomsAssignment_8_3_1() { return cRoomsAssignment_8_3_1; }
+		
+		//Room
+		public RuleCall getRoomsRoomParserRuleCall_8_3_1_0() { return cRoomsRoomParserRuleCall_8_3_1_0; }
 		
 		//'}'
-		public Keyword getRightCurlyBracketKeyword_6_4() { return cRightCurlyBracketKeyword_6_4; }
+		public Keyword getRightCurlyBracketKeyword_8_4() { return cRightCurlyBracketKeyword_8_4; }
 		
 		//'}'
-		public Keyword getRightCurlyBracketKeyword_7() { return cRightCurlyBracketKeyword_7; }
+		public Keyword getRightCurlyBracketKeyword_9() { return cRightCurlyBracketKeyword_9; }
+	}
+	public class EIntElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EInt");
+		private final Group cGroup = (Group)rule.eContents().get(1);
+		private final Keyword cHyphenMinusKeyword_0 = (Keyword)cGroup.eContents().get(0);
+		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
+		
+		//EInt returns ecore::EInt:
+		//    '-'? INT;
+		@Override public ParserRule getRule() { return rule; }
+		
+		//'-'? INT
+		public Group getGroup() { return cGroup; }
+		
+		//'-'?
+		public Keyword getHyphenMinusKeyword_0() { return cHyphenMinusKeyword_0; }
+		
+		//INT
+		public RuleCall getINTTerminalRuleCall_1() { return cINTTerminalRuleCall_1; }
 	}
 	public class BookElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Book");
@@ -737,7 +875,12 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		private final Keyword cAuthorKeyword_6_0 = (Keyword)cGroup_6.eContents().get(0);
 		private final Assignment cAuthorAssignment_6_1 = (Assignment)cGroup_6.eContents().get(1);
 		private final RuleCall cAuthorEStringParserRuleCall_6_1_0 = (RuleCall)cAuthorAssignment_6_1.eContents().get(0);
-		private final Keyword cRightCurlyBracketKeyword_7 = (Keyword)cGroup.eContents().get(7);
+		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
+		private final Keyword cLibraryKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
+		private final Assignment cLibraryAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
+		private final CrossReference cLibraryLibraryCrossReference_7_1_0 = (CrossReference)cLibraryAssignment_7_1.eContents().get(0);
+		private final RuleCall cLibraryLibraryEStringParserRuleCall_7_1_0_1 = (RuleCall)cLibraryLibraryCrossReference_7_1_0.eContents().get(1);
+		private final Keyword cRightCurlyBracketKeyword_8 = (Keyword)cGroup.eContents().get(8);
 		
 		//Book returns Book:
 		//    'Book'
@@ -746,6 +889,7 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//        'quantity' quantity=EInt
 		//        ('ISBN' ISBN=EString)?
 		//        ('author' author=EString)?
+		//        ('library' library=[Library|EString])?
 		//    '}';
 		@Override public ParserRule getRule() { return rule; }
 		
@@ -755,6 +899,7 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//    'quantity' quantity=EInt
 		//    ('ISBN' ISBN=EString)?
 		//    ('author' author=EString)?
+		//    ('library' library=[Library|EString])?
 		//'}'
 		public Group getGroup() { return cGroup; }
 		
@@ -803,8 +948,23 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//EString
 		public RuleCall getAuthorEStringParserRuleCall_6_1_0() { return cAuthorEStringParserRuleCall_6_1_0; }
 		
+		//('library' library=[Library|EString])?
+		public Group getGroup_7() { return cGroup_7; }
+		
+		//'library'
+		public Keyword getLibraryKeyword_7_0() { return cLibraryKeyword_7_0; }
+		
+		//library=[Library|EString]
+		public Assignment getLibraryAssignment_7_1() { return cLibraryAssignment_7_1; }
+		
+		//[Library|EString]
+		public CrossReference getLibraryLibraryCrossReference_7_1_0() { return cLibraryLibraryCrossReference_7_1_0; }
+		
+		//EString
+		public RuleCall getLibraryLibraryEStringParserRuleCall_7_1_0_1() { return cLibraryLibraryEStringParserRuleCall_7_1_0_1; }
+		
 		//'}'
-		public Keyword getRightCurlyBracketKeyword_7() { return cRightCurlyBracketKeyword_7; }
+		public Keyword getRightCurlyBracketKeyword_8() { return cRightCurlyBracketKeyword_8; }
 	}
 	public class LoanElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Loan");
@@ -1014,31 +1174,19 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_10() { return cRightCurlyBracketKeyword_10; }
 	}
-	public class RoomElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Room");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cRoom_ImplParserRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cOfficeParserRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		private final RuleCall cClassParserRuleCall_2 = (RuleCall)cAlternatives.eContents().get(2);
+	public class EDateElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EDate");
+		private final Keyword cEDateKeyword = (Keyword)rule.eContents().get(1);
 		
-		//Room returns Room:
-		//    Room_Impl | Office | Class;
+		//EDate returns ecore::EDate:
+		//    'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
 		@Override public ParserRule getRule() { return rule; }
 		
-		//Room_Impl | Office | Class
-		public Alternatives getAlternatives() { return cAlternatives; }
-		
-		//Room_Impl
-		public RuleCall getRoom_ImplParserRuleCall_0() { return cRoom_ImplParserRuleCall_0; }
-		
-		//Office
-		public RuleCall getOfficeParserRuleCall_1() { return cOfficeParserRuleCall_1; }
-		
-		//Class
-		public RuleCall getClassParserRuleCall_2() { return cClassParserRuleCall_2; }
+		//'EDate'
+		public Keyword getEDateKeyword() { return cEDateKeyword; }
 	}
-	public class Room_ImplElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Room_Impl");
+	public class RoomElements extends AbstractParserRuleElementFinder {
+		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.Room");
 		private final Group cGroup = (Group)rule.eContents().get(1);
 		private final Keyword cRoomKeyword_0 = (Keyword)cGroup.eContents().get(0);
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
@@ -1052,7 +1200,7 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		private final RuleCall cSocketsEIntParserRuleCall_6_0 = (RuleCall)cSocketsAssignment_6.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_7 = (Keyword)cGroup.eContents().get(7);
 		
-		//Room_Impl returns Room:
+		//Room returns Room:
 		//    'Room'
 		//    name=EString
 		//    '{'
@@ -1109,22 +1257,22 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameEStringParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Keyword cDimensionKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		private final Assignment cDimensionAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cDimensionEFloatParserRuleCall_4_0 = (RuleCall)cDimensionAssignment_4.eContents().get(0);
-		private final Keyword cSocketsKeyword_5 = (Keyword)cGroup.eContents().get(5);
-		private final Assignment cSocketsAssignment_6 = (Assignment)cGroup.eContents().get(6);
-		private final RuleCall cSocketsEIntParserRuleCall_6_0 = (RuleCall)cSocketsAssignment_6.eContents().get(0);
-		private final Keyword cTypeKeyword_7 = (Keyword)cGroup.eContents().get(7);
-		private final Assignment cTypeAssignment_8 = (Assignment)cGroup.eContents().get(8);
-		private final RuleCall cTypeTypeEnumRuleCall_8_0 = (RuleCall)cTypeAssignment_8.eContents().get(0);
-		private final Keyword cCapacityKeyword_9 = (Keyword)cGroup.eContents().get(9);
-		private final Assignment cCapacityAssignment_10 = (Assignment)cGroup.eContents().get(10);
-		private final RuleCall cCapacityEIntParserRuleCall_10_0 = (RuleCall)cCapacityAssignment_10.eContents().get(0);
-		private final Group cGroup_11 = (Group)cGroup.eContents().get(11);
-		private final Keyword cPhoneKeyword_11_0 = (Keyword)cGroup_11.eContents().get(0);
-		private final Assignment cPhoneAssignment_11_1 = (Assignment)cGroup_11.eContents().get(1);
-		private final RuleCall cPhoneEStringParserRuleCall_11_1_0 = (RuleCall)cPhoneAssignment_11_1.eContents().get(0);
+		private final Keyword cTypeKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cTypeAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cTypeTypeEnumRuleCall_4_0 = (RuleCall)cTypeAssignment_4.eContents().get(0);
+		private final Keyword cCapacityKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		private final Assignment cCapacityAssignment_6 = (Assignment)cGroup.eContents().get(6);
+		private final RuleCall cCapacityEIntParserRuleCall_6_0 = (RuleCall)cCapacityAssignment_6.eContents().get(0);
+		private final Group cGroup_7 = (Group)cGroup.eContents().get(7);
+		private final Keyword cPhoneKeyword_7_0 = (Keyword)cGroup_7.eContents().get(0);
+		private final Assignment cPhoneAssignment_7_1 = (Assignment)cGroup_7.eContents().get(1);
+		private final RuleCall cPhoneEStringParserRuleCall_7_1_0 = (RuleCall)cPhoneAssignment_7_1.eContents().get(0);
+		private final Keyword cDimensionKeyword_8 = (Keyword)cGroup.eContents().get(8);
+		private final Assignment cDimensionAssignment_9 = (Assignment)cGroup.eContents().get(9);
+		private final RuleCall cDimensionEFloatParserRuleCall_9_0 = (RuleCall)cDimensionAssignment_9.eContents().get(0);
+		private final Keyword cSocketsKeyword_10 = (Keyword)cGroup.eContents().get(10);
+		private final Assignment cSocketsAssignment_11 = (Assignment)cGroup.eContents().get(11);
+		private final RuleCall cSocketsEIntParserRuleCall_11_0 = (RuleCall)cSocketsAssignment_11.eContents().get(0);
 		private final Keyword cOffice_addressKeyword_12 = (Keyword)cGroup.eContents().get(12);
 		private final Assignment cOffice_addressAssignment_13 = (Assignment)cGroup.eContents().get(13);
 		private final CrossReference cOffice_addressAddressCrossReference_13_0 = (CrossReference)cOffice_addressAssignment_13.eContents().get(0);
@@ -1144,11 +1292,11 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//    'Office'
 		//    name=EString
 		//    '{'
-		//        'dimension' dimension=EFloat
-		//        'sockets' sockets=EInt
 		//        'type' type=Type
 		//        'capacity' capacity=EInt
 		//        ('phone' phone=EString)?
+		//        'dimension' dimension=EFloat
+		//        'sockets' sockets=EInt
 		//        'office_address' office_address=[Address|EString]
 		//        'person_in_office' '{' person_in_office+=Person ( "," person_in_office+=Person)* '}'
 		//    '}';
@@ -1157,11 +1305,11 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'Office'
 		//name=EString
 		//'{'
-		//    'dimension' dimension=EFloat
-		//    'sockets' sockets=EInt
 		//    'type' type=Type
 		//    'capacity' capacity=EInt
 		//    ('phone' phone=EString)?
+		//    'dimension' dimension=EFloat
+		//    'sockets' sockets=EInt
 		//    'office_address' office_address=[Address|EString]
 		//    'person_in_office' '{' person_in_office+=Person ( "," person_in_office+=Person)* '}'
 		//'}'
@@ -1179,53 +1327,53 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'{'
 		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
 		
-		//'dimension'
-		public Keyword getDimensionKeyword_3() { return cDimensionKeyword_3; }
-		
-		//dimension=EFloat
-		public Assignment getDimensionAssignment_4() { return cDimensionAssignment_4; }
-		
-		//EFloat
-		public RuleCall getDimensionEFloatParserRuleCall_4_0() { return cDimensionEFloatParserRuleCall_4_0; }
-		
-		//'sockets'
-		public Keyword getSocketsKeyword_5() { return cSocketsKeyword_5; }
-		
-		//sockets=EInt
-		public Assignment getSocketsAssignment_6() { return cSocketsAssignment_6; }
-		
-		//EInt
-		public RuleCall getSocketsEIntParserRuleCall_6_0() { return cSocketsEIntParserRuleCall_6_0; }
-		
 		//'type'
-		public Keyword getTypeKeyword_7() { return cTypeKeyword_7; }
+		public Keyword getTypeKeyword_3() { return cTypeKeyword_3; }
 		
 		//type=Type
-		public Assignment getTypeAssignment_8() { return cTypeAssignment_8; }
+		public Assignment getTypeAssignment_4() { return cTypeAssignment_4; }
 		
 		//Type
-		public RuleCall getTypeTypeEnumRuleCall_8_0() { return cTypeTypeEnumRuleCall_8_0; }
+		public RuleCall getTypeTypeEnumRuleCall_4_0() { return cTypeTypeEnumRuleCall_4_0; }
 		
 		//'capacity'
-		public Keyword getCapacityKeyword_9() { return cCapacityKeyword_9; }
+		public Keyword getCapacityKeyword_5() { return cCapacityKeyword_5; }
 		
 		//capacity=EInt
-		public Assignment getCapacityAssignment_10() { return cCapacityAssignment_10; }
+		public Assignment getCapacityAssignment_6() { return cCapacityAssignment_6; }
 		
 		//EInt
-		public RuleCall getCapacityEIntParserRuleCall_10_0() { return cCapacityEIntParserRuleCall_10_0; }
+		public RuleCall getCapacityEIntParserRuleCall_6_0() { return cCapacityEIntParserRuleCall_6_0; }
 		
 		//('phone' phone=EString)?
-		public Group getGroup_11() { return cGroup_11; }
+		public Group getGroup_7() { return cGroup_7; }
 		
 		//'phone'
-		public Keyword getPhoneKeyword_11_0() { return cPhoneKeyword_11_0; }
+		public Keyword getPhoneKeyword_7_0() { return cPhoneKeyword_7_0; }
 		
 		//phone=EString
-		public Assignment getPhoneAssignment_11_1() { return cPhoneAssignment_11_1; }
+		public Assignment getPhoneAssignment_7_1() { return cPhoneAssignment_7_1; }
 		
 		//EString
-		public RuleCall getPhoneEStringParserRuleCall_11_1_0() { return cPhoneEStringParserRuleCall_11_1_0; }
+		public RuleCall getPhoneEStringParserRuleCall_7_1_0() { return cPhoneEStringParserRuleCall_7_1_0; }
+		
+		//'dimension'
+		public Keyword getDimensionKeyword_8() { return cDimensionKeyword_8; }
+		
+		//dimension=EFloat
+		public Assignment getDimensionAssignment_9() { return cDimensionAssignment_9; }
+		
+		//EFloat
+		public RuleCall getDimensionEFloatParserRuleCall_9_0() { return cDimensionEFloatParserRuleCall_9_0; }
+		
+		//'sockets'
+		public Keyword getSocketsKeyword_10() { return cSocketsKeyword_10; }
+		
+		//sockets=EInt
+		public Assignment getSocketsAssignment_11() { return cSocketsAssignment_11; }
+		
+		//EInt
+		public RuleCall getSocketsEIntParserRuleCall_11_0() { return cSocketsEIntParserRuleCall_11_0; }
 		
 		//'office_address'
 		public Keyword getOffice_addressKeyword_12() { return cOffice_addressKeyword_12; }
@@ -1276,48 +1424,48 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		private final Assignment cNameAssignment_1 = (Assignment)cGroup.eContents().get(1);
 		private final RuleCall cNameEStringParserRuleCall_1_0 = (RuleCall)cNameAssignment_1.eContents().get(0);
 		private final Keyword cLeftCurlyBracketKeyword_2 = (Keyword)cGroup.eContents().get(2);
-		private final Keyword cDimensionKeyword_3 = (Keyword)cGroup.eContents().get(3);
-		private final Assignment cDimensionAssignment_4 = (Assignment)cGroup.eContents().get(4);
-		private final RuleCall cDimensionEFloatParserRuleCall_4_0 = (RuleCall)cDimensionAssignment_4.eContents().get(0);
-		private final Keyword cSocketsKeyword_5 = (Keyword)cGroup.eContents().get(5);
-		private final Assignment cSocketsAssignment_6 = (Assignment)cGroup.eContents().get(6);
-		private final RuleCall cSocketsEIntParserRuleCall_6_0 = (RuleCall)cSocketsAssignment_6.eContents().get(0);
-		private final Keyword cSeatsKeyword_7 = (Keyword)cGroup.eContents().get(7);
-		private final Assignment cSeatsAssignment_8 = (Assignment)cGroup.eContents().get(8);
-		private final RuleCall cSeatsEIntParserRuleCall_8_0 = (RuleCall)cSeatsAssignment_8.eContents().get(0);
-		private final Keyword cBlackboardsKeyword_9 = (Keyword)cGroup.eContents().get(9);
-		private final Assignment cBlackboardsAssignment_10 = (Assignment)cGroup.eContents().get(10);
-		private final RuleCall cBlackboardsEIntParserRuleCall_10_0 = (RuleCall)cBlackboardsAssignment_10.eContents().get(0);
-		private final Keyword cSpeakersKeyword_11 = (Keyword)cGroup.eContents().get(11);
-		private final Assignment cSpeakersAssignment_12 = (Assignment)cGroup.eContents().get(12);
-		private final RuleCall cSpeakersEIntParserRuleCall_12_0 = (RuleCall)cSpeakersAssignment_12.eContents().get(0);
-		private final Keyword cComputersKeyword_13 = (Keyword)cGroup.eContents().get(13);
-		private final Assignment cComputersAssignment_14 = (Assignment)cGroup.eContents().get(14);
-		private final RuleCall cComputersEIntParserRuleCall_14_0 = (RuleCall)cComputersAssignment_14.eContents().get(0);
+		private final Keyword cSeatsKeyword_3 = (Keyword)cGroup.eContents().get(3);
+		private final Assignment cSeatsAssignment_4 = (Assignment)cGroup.eContents().get(4);
+		private final RuleCall cSeatsEIntParserRuleCall_4_0 = (RuleCall)cSeatsAssignment_4.eContents().get(0);
+		private final Keyword cBlackboardsKeyword_5 = (Keyword)cGroup.eContents().get(5);
+		private final Assignment cBlackboardsAssignment_6 = (Assignment)cGroup.eContents().get(6);
+		private final RuleCall cBlackboardsEIntParserRuleCall_6_0 = (RuleCall)cBlackboardsAssignment_6.eContents().get(0);
+		private final Keyword cSpeakersKeyword_7 = (Keyword)cGroup.eContents().get(7);
+		private final Assignment cSpeakersAssignment_8 = (Assignment)cGroup.eContents().get(8);
+		private final RuleCall cSpeakersEIntParserRuleCall_8_0 = (RuleCall)cSpeakersAssignment_8.eContents().get(0);
+		private final Keyword cComputersKeyword_9 = (Keyword)cGroup.eContents().get(9);
+		private final Assignment cComputersAssignment_10 = (Assignment)cGroup.eContents().get(10);
+		private final RuleCall cComputersEIntParserRuleCall_10_0 = (RuleCall)cComputersAssignment_10.eContents().get(0);
+		private final Keyword cDimensionKeyword_11 = (Keyword)cGroup.eContents().get(11);
+		private final Assignment cDimensionAssignment_12 = (Assignment)cGroup.eContents().get(12);
+		private final RuleCall cDimensionEFloatParserRuleCall_12_0 = (RuleCall)cDimensionAssignment_12.eContents().get(0);
+		private final Keyword cSocketsKeyword_13 = (Keyword)cGroup.eContents().get(13);
+		private final Assignment cSocketsAssignment_14 = (Assignment)cGroup.eContents().get(14);
+		private final RuleCall cSocketsEIntParserRuleCall_14_0 = (RuleCall)cSocketsAssignment_14.eContents().get(0);
 		private final Keyword cRightCurlyBracketKeyword_15 = (Keyword)cGroup.eContents().get(15);
 		
 		//Class returns Class:
 		//    'Class'
 		//    name=EString
 		//    '{'
-		//        'dimension' dimension=EFloat
-		//        'sockets' sockets=EInt
 		//        'seats' seats=EInt
 		//        'blackboards' blackboards=EInt
 		//        'speakers' speakers=EInt
 		//        'computers' computers=EInt
+		//        'dimension' dimension=EFloat
+		//        'sockets' sockets=EInt
 		//    '}';
 		@Override public ParserRule getRule() { return rule; }
 		
 		//'Class'
 		//name=EString
 		//'{'
-		//    'dimension' dimension=EFloat
-		//    'sockets' sockets=EInt
 		//    'seats' seats=EInt
 		//    'blackboards' blackboards=EInt
 		//    'speakers' speakers=EInt
 		//    'computers' computers=EInt
+		//    'dimension' dimension=EFloat
+		//    'sockets' sockets=EInt
 		//'}'
 		public Group getGroup() { return cGroup; }
 		
@@ -1333,81 +1481,62 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		//'{'
 		public Keyword getLeftCurlyBracketKeyword_2() { return cLeftCurlyBracketKeyword_2; }
 		
-		//'dimension'
-		public Keyword getDimensionKeyword_3() { return cDimensionKeyword_3; }
-		
-		//dimension=EFloat
-		public Assignment getDimensionAssignment_4() { return cDimensionAssignment_4; }
-		
-		//EFloat
-		public RuleCall getDimensionEFloatParserRuleCall_4_0() { return cDimensionEFloatParserRuleCall_4_0; }
-		
-		//'sockets'
-		public Keyword getSocketsKeyword_5() { return cSocketsKeyword_5; }
-		
-		//sockets=EInt
-		public Assignment getSocketsAssignment_6() { return cSocketsAssignment_6; }
-		
-		//EInt
-		public RuleCall getSocketsEIntParserRuleCall_6_0() { return cSocketsEIntParserRuleCall_6_0; }
-		
 		//'seats'
-		public Keyword getSeatsKeyword_7() { return cSeatsKeyword_7; }
+		public Keyword getSeatsKeyword_3() { return cSeatsKeyword_3; }
 		
 		//seats=EInt
-		public Assignment getSeatsAssignment_8() { return cSeatsAssignment_8; }
+		public Assignment getSeatsAssignment_4() { return cSeatsAssignment_4; }
 		
 		//EInt
-		public RuleCall getSeatsEIntParserRuleCall_8_0() { return cSeatsEIntParserRuleCall_8_0; }
+		public RuleCall getSeatsEIntParserRuleCall_4_0() { return cSeatsEIntParserRuleCall_4_0; }
 		
 		//'blackboards'
-		public Keyword getBlackboardsKeyword_9() { return cBlackboardsKeyword_9; }
+		public Keyword getBlackboardsKeyword_5() { return cBlackboardsKeyword_5; }
 		
 		//blackboards=EInt
-		public Assignment getBlackboardsAssignment_10() { return cBlackboardsAssignment_10; }
+		public Assignment getBlackboardsAssignment_6() { return cBlackboardsAssignment_6; }
 		
 		//EInt
-		public RuleCall getBlackboardsEIntParserRuleCall_10_0() { return cBlackboardsEIntParserRuleCall_10_0; }
+		public RuleCall getBlackboardsEIntParserRuleCall_6_0() { return cBlackboardsEIntParserRuleCall_6_0; }
 		
 		//'speakers'
-		public Keyword getSpeakersKeyword_11() { return cSpeakersKeyword_11; }
+		public Keyword getSpeakersKeyword_7() { return cSpeakersKeyword_7; }
 		
 		//speakers=EInt
-		public Assignment getSpeakersAssignment_12() { return cSpeakersAssignment_12; }
+		public Assignment getSpeakersAssignment_8() { return cSpeakersAssignment_8; }
 		
 		//EInt
-		public RuleCall getSpeakersEIntParserRuleCall_12_0() { return cSpeakersEIntParserRuleCall_12_0; }
+		public RuleCall getSpeakersEIntParserRuleCall_8_0() { return cSpeakersEIntParserRuleCall_8_0; }
 		
 		//'computers'
-		public Keyword getComputersKeyword_13() { return cComputersKeyword_13; }
+		public Keyword getComputersKeyword_9() { return cComputersKeyword_9; }
 		
 		//computers=EInt
-		public Assignment getComputersAssignment_14() { return cComputersAssignment_14; }
+		public Assignment getComputersAssignment_10() { return cComputersAssignment_10; }
 		
 		//EInt
-		public RuleCall getComputersEIntParserRuleCall_14_0() { return cComputersEIntParserRuleCall_14_0; }
+		public RuleCall getComputersEIntParserRuleCall_10_0() { return cComputersEIntParserRuleCall_10_0; }
+		
+		//'dimension'
+		public Keyword getDimensionKeyword_11() { return cDimensionKeyword_11; }
+		
+		//dimension=EFloat
+		public Assignment getDimensionAssignment_12() { return cDimensionAssignment_12; }
+		
+		//EFloat
+		public RuleCall getDimensionEFloatParserRuleCall_12_0() { return cDimensionEFloatParserRuleCall_12_0; }
+		
+		//'sockets'
+		public Keyword getSocketsKeyword_13() { return cSocketsKeyword_13; }
+		
+		//sockets=EInt
+		public Assignment getSocketsAssignment_14() { return cSocketsAssignment_14; }
+		
+		//EInt
+		public RuleCall getSocketsEIntParserRuleCall_14_0() { return cSocketsEIntParserRuleCall_14_0; }
 		
 		//'}'
 		public Keyword getRightCurlyBracketKeyword_15() { return cRightCurlyBracketKeyword_15; }
-	}
-	public class EIntElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EInt");
-		private final Group cGroup = (Group)rule.eContents().get(1);
-		private final Keyword cHyphenMinusKeyword_0 = (Keyword)cGroup.eContents().get(0);
-		private final RuleCall cINTTerminalRuleCall_1 = (RuleCall)cGroup.eContents().get(1);
-		
-		//EInt returns ecore::EInt:
-		//    '-'? INT;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//'-'? INT
-		public Group getGroup() { return cGroup; }
-		
-		//'-'?
-		public Keyword getHyphenMinusKeyword_0() { return cHyphenMinusKeyword_0; }
-		
-		//INT
-		public RuleCall getINTTerminalRuleCall_1() { return cINTTerminalRuleCall_1; }
 	}
 	public class EFloatElements extends AbstractParserRuleElementFinder {
 		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EFloat");
@@ -1459,36 +1588,6 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		
 		//INT
 		public RuleCall getINTTerminalRuleCall_4_2() { return cINTTerminalRuleCall_4_2; }
-	}
-	public class EStringElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EString");
-		private final Alternatives cAlternatives = (Alternatives)rule.eContents().get(1);
-		private final RuleCall cSTRINGTerminalRuleCall_0 = (RuleCall)cAlternatives.eContents().get(0);
-		private final RuleCall cIDTerminalRuleCall_1 = (RuleCall)cAlternatives.eContents().get(1);
-		
-		//EString returns ecore::EString:
-		//    STRING | ID;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//STRING | ID
-		public Alternatives getAlternatives() { return cAlternatives; }
-		
-		//STRING
-		public RuleCall getSTRINGTerminalRuleCall_0() { return cSTRINGTerminalRuleCall_0; }
-		
-		//ID
-		public RuleCall getIDTerminalRuleCall_1() { return cIDTerminalRuleCall_1; }
-	}
-	public class EDateElements extends AbstractParserRuleElementFinder {
-		private final ParserRule rule = (ParserRule) GrammarUtil.findRuleForName(getGrammar(), "it.univaq.disim.unimodel.xtext.Unimodel.EDate");
-		private final Keyword cEDateKeyword = (Keyword)rule.eContents().get(1);
-		
-		//EDate returns ecore::EDate:
-		//    'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
-		@Override public ParserRule getRule() { return rule; }
-		
-		//'EDate'
-		public Keyword getEDateKeyword() { return cEDateKeyword; }
 	}
 	
 	public class CategoryElements extends AbstractElementFinder.AbstractEnumRuleElementFinder {
@@ -1587,22 +1686,21 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	}
 	
 	private final UniversityElements pUniversity;
+	private final EStringElements pEString;
 	private final BuildingElements pBuilding;
 	private final AddressElements pAddress;
 	private final LibraryElements pLibrary;
 	private final FloorElements pFloor;
+	private final EIntElements pEInt;
 	private final BookElements pBook;
 	private final LoanElements pLoan;
 	private final PersonElements pPerson;
-	private final RoomElements pRoom;
-	private final Room_ImplElements pRoom_Impl;
-	private final OfficeElements pOffice;
-	private final ClassElements pClass;
-	private final EIntElements pEInt;
-	private final EFloatElements pEFloat;
-	private final EStringElements pEString;
 	private final EDateElements pEDate;
 	private final CategoryElements eCategory;
+	private final RoomElements pRoom;
+	private final OfficeElements pOffice;
+	private final ClassElements pClass;
+	private final EFloatElements pEFloat;
 	private final TypeElements eType;
 	
 	private final Grammar grammar;
@@ -1615,22 +1713,21 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		this.grammar = internalFindGrammar(grammarProvider);
 		this.gaTerminals = gaTerminals;
 		this.pUniversity = new UniversityElements();
+		this.pEString = new EStringElements();
 		this.pBuilding = new BuildingElements();
 		this.pAddress = new AddressElements();
 		this.pLibrary = new LibraryElements();
 		this.pFloor = new FloorElements();
+		this.pEInt = new EIntElements();
 		this.pBook = new BookElements();
 		this.pLoan = new LoanElements();
 		this.pPerson = new PersonElements();
-		this.pRoom = new RoomElements();
-		this.pRoom_Impl = new Room_ImplElements();
-		this.pOffice = new OfficeElements();
-		this.pClass = new ClassElements();
-		this.pEInt = new EIntElements();
-		this.pEFloat = new EFloatElements();
-		this.pEString = new EStringElements();
 		this.pEDate = new EDateElements();
 		this.eCategory = new CategoryElements();
+		this.pRoom = new RoomElements();
+		this.pOffice = new OfficeElements();
+		this.pClass = new ClassElements();
+		this.pEFloat = new EFloatElements();
 		this.eType = new TypeElements();
 	}
 	
@@ -1675,6 +1772,16 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	
 	public ParserRule getUniversityRule() {
 		return getUniversityAccess().getRule();
+	}
+	
+	//EString returns ecore::EString:
+	//    STRING | ID;
+	public EStringElements getEStringAccess() {
+		return pEString;
+	}
+	
+	public ParserRule getEStringRule() {
+		return getEStringAccess().getRule();
 	}
 	
 	//Building returns Building:
@@ -1738,6 +1845,8 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	//    '{'
 	//        'number' number=EInt
 	//        'bathrooms' bathrooms=EInt
+	//        ('offices' '(' offices+=[Office|EString] ( "," offices+=[Office|EString])* ')' )?
+	//        ('classes' '(' classes+=[Class|EString] ( "," classes+=[Class|EString])* ')' )?
 	//        ('rooms' '{' rooms+=Room ( "," rooms+=Room)* '}' )?
 	//    '}';
 	public FloorElements getFloorAccess() {
@@ -1748,6 +1857,16 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		return getFloorAccess().getRule();
 	}
 	
+	//EInt returns ecore::EInt:
+	//    '-'? INT;
+	public EIntElements getEIntAccess() {
+		return pEInt;
+	}
+	
+	public ParserRule getEIntRule() {
+		return getEIntAccess().getRule();
+	}
+	
 	//Book returns Book:
 	//    'Book'
 	//    name=EString
@@ -1755,6 +1874,7 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	//        'quantity' quantity=EInt
 	//        ('ISBN' ISBN=EString)?
 	//        ('author' author=EString)?
+	//        ('library' library=[Library|EString])?
 	//    '}';
 	public BookElements getBookAccess() {
 		return pBook;
@@ -1797,100 +1917,6 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 		return getPersonAccess().getRule();
 	}
 	
-	//Room returns Room:
-	//    Room_Impl | Office | Class;
-	public RoomElements getRoomAccess() {
-		return pRoom;
-	}
-	
-	public ParserRule getRoomRule() {
-		return getRoomAccess().getRule();
-	}
-	
-	//Room_Impl returns Room:
-	//    'Room'
-	//    name=EString
-	//    '{'
-	//        'dimension' dimension=EFloat
-	//        'sockets' sockets=EInt
-	//    '}';
-	public Room_ImplElements getRoom_ImplAccess() {
-		return pRoom_Impl;
-	}
-	
-	public ParserRule getRoom_ImplRule() {
-		return getRoom_ImplAccess().getRule();
-	}
-	
-	//Office returns Office:
-	//    'Office'
-	//    name=EString
-	//    '{'
-	//        'dimension' dimension=EFloat
-	//        'sockets' sockets=EInt
-	//        'type' type=Type
-	//        'capacity' capacity=EInt
-	//        ('phone' phone=EString)?
-	//        'office_address' office_address=[Address|EString]
-	//        'person_in_office' '{' person_in_office+=Person ( "," person_in_office+=Person)* '}'
-	//    '}';
-	public OfficeElements getOfficeAccess() {
-		return pOffice;
-	}
-	
-	public ParserRule getOfficeRule() {
-		return getOfficeAccess().getRule();
-	}
-	
-	//Class returns Class:
-	//    'Class'
-	//    name=EString
-	//    '{'
-	//        'dimension' dimension=EFloat
-	//        'sockets' sockets=EInt
-	//        'seats' seats=EInt
-	//        'blackboards' blackboards=EInt
-	//        'speakers' speakers=EInt
-	//        'computers' computers=EInt
-	//    '}';
-	public ClassElements getClassAccess() {
-		return pClass;
-	}
-	
-	public ParserRule getClassRule() {
-		return getClassAccess().getRule();
-	}
-	
-	//EInt returns ecore::EInt:
-	//    '-'? INT;
-	public EIntElements getEIntAccess() {
-		return pEInt;
-	}
-	
-	public ParserRule getEIntRule() {
-		return getEIntAccess().getRule();
-	}
-	
-	//EFloat returns ecore::EFloat:
-	//    '-'? INT? '.' INT (('E'|'e') '-'? INT)?;
-	public EFloatElements getEFloatAccess() {
-		return pEFloat;
-	}
-	
-	public ParserRule getEFloatRule() {
-		return getEFloatAccess().getRule();
-	}
-	
-	//EString returns ecore::EString:
-	//    STRING | ID;
-	public EStringElements getEStringAccess() {
-		return pEString;
-	}
-	
-	public ParserRule getEStringRule() {
-		return getEStringAccess().getRule();
-	}
-	
 	//EDate returns ecore::EDate:
 	//    'EDate' /* TODO: implement this rule and an appropriate IValueConverter */;
 	public EDateElements getEDateAccess() {
@@ -1909,6 +1935,70 @@ public class UnimodelGrammarAccess extends AbstractElementFinder.AbstractGrammar
 	
 	public EnumRule getCategoryRule() {
 		return getCategoryAccess().getRule();
+	}
+	
+	//Room returns Room:
+	//    'Room'
+	//    name=EString
+	//    '{'
+	//        'dimension' dimension=EFloat
+	//        'sockets' sockets=EInt
+	//    '}';
+	public RoomElements getRoomAccess() {
+		return pRoom;
+	}
+	
+	public ParserRule getRoomRule() {
+		return getRoomAccess().getRule();
+	}
+	
+	//Office returns Office:
+	//    'Office'
+	//    name=EString
+	//    '{'
+	//        'type' type=Type
+	//        'capacity' capacity=EInt
+	//        ('phone' phone=EString)?
+	//        'dimension' dimension=EFloat
+	//        'sockets' sockets=EInt
+	//        'office_address' office_address=[Address|EString]
+	//        'person_in_office' '{' person_in_office+=Person ( "," person_in_office+=Person)* '}'
+	//    '}';
+	public OfficeElements getOfficeAccess() {
+		return pOffice;
+	}
+	
+	public ParserRule getOfficeRule() {
+		return getOfficeAccess().getRule();
+	}
+	
+	//Class returns Class:
+	//    'Class'
+	//    name=EString
+	//    '{'
+	//        'seats' seats=EInt
+	//        'blackboards' blackboards=EInt
+	//        'speakers' speakers=EInt
+	//        'computers' computers=EInt
+	//        'dimension' dimension=EFloat
+	//        'sockets' sockets=EInt
+	//    '}';
+	public ClassElements getClassAccess() {
+		return pClass;
+	}
+	
+	public ParserRule getClassRule() {
+		return getClassAccess().getRule();
+	}
+	
+	//EFloat returns ecore::EFloat:
+	//    '-'? INT? '.' INT (('E'|'e') '-'? INT)?;
+	public EFloatElements getEFloatAccess() {
+		return pEFloat;
+	}
+	
+	public ParserRule getEFloatRule() {
+		return getEFloatAccess().getRule();
 	}
 	
 	//enum Type returns Type:

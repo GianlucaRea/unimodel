@@ -4,6 +4,17 @@
 package it.univaq.disim.unimodel.xtext.serializer;
 
 import com.google.inject.Inject;
+import it.univaq.disim.unimodel.h4model.Address;
+import it.univaq.disim.unimodel.h4model.Book;
+import it.univaq.disim.unimodel.h4model.Building;
+import it.univaq.disim.unimodel.h4model.Floor;
+import it.univaq.disim.unimodel.h4model.H4modelPackage;
+import it.univaq.disim.unimodel.h4model.Library;
+import it.univaq.disim.unimodel.h4model.Loan;
+import it.univaq.disim.unimodel.h4model.Office;
+import it.univaq.disim.unimodel.h4model.Person;
+import it.univaq.disim.unimodel.h4model.Room;
+import it.univaq.disim.unimodel.h4model.University;
 import it.univaq.disim.unimodel.xtext.services.UnimodelGrammarAccess;
 import java.util.Set;
 import org.eclipse.emf.ecore.EObject;
@@ -15,17 +26,6 @@ import org.eclipse.xtext.serializer.ISerializationContext;
 import org.eclipse.xtext.serializer.acceptor.SequenceFeeder;
 import org.eclipse.xtext.serializer.sequencer.AbstractDelegatingSemanticSequencer;
 import org.eclipse.xtext.serializer.sequencer.ITransientValueService.ValueTransient;
-import unimodel.Address;
-import unimodel.Book;
-import unimodel.Building;
-import unimodel.Floor;
-import unimodel.Library;
-import unimodel.Loan;
-import unimodel.Office;
-import unimodel.Person;
-import unimodel.Room;
-import unimodel.UnimodelPackage;
-import unimodel.University;
 
 @SuppressWarnings("all")
 public class UnimodelSemanticSequencer extends AbstractDelegatingSemanticSequencer {
@@ -39,39 +39,39 @@ public class UnimodelSemanticSequencer extends AbstractDelegatingSemanticSequenc
 		ParserRule rule = context.getParserRule();
 		Action action = context.getAssignedAction();
 		Set<Parameter> parameters = context.getEnabledBooleanParameters();
-		if (epackage == UnimodelPackage.eINSTANCE)
+		if (epackage == H4modelPackage.eINSTANCE)
 			switch (semanticObject.eClass().getClassifierID()) {
-			case UnimodelPackage.ADDRESS:
+			case H4modelPackage.ADDRESS:
 				sequence_Address(context, (Address) semanticObject); 
 				return; 
-			case UnimodelPackage.BOOK:
+			case H4modelPackage.BOOK:
 				sequence_Book(context, (Book) semanticObject); 
 				return; 
-			case UnimodelPackage.BUILDING:
+			case H4modelPackage.BUILDING:
 				sequence_Building(context, (Building) semanticObject); 
 				return; 
-			case UnimodelPackage.CLASS:
-				sequence_Class(context, (unimodel.Class) semanticObject); 
+			case H4modelPackage.CLASS:
+				sequence_Class(context, (it.univaq.disim.unimodel.h4model.Class) semanticObject); 
 				return; 
-			case UnimodelPackage.FLOOR:
+			case H4modelPackage.FLOOR:
 				sequence_Floor(context, (Floor) semanticObject); 
 				return; 
-			case UnimodelPackage.LIBRARY:
+			case H4modelPackage.LIBRARY:
 				sequence_Library(context, (Library) semanticObject); 
 				return; 
-			case UnimodelPackage.LOAN:
+			case H4modelPackage.LOAN:
 				sequence_Loan(context, (Loan) semanticObject); 
 				return; 
-			case UnimodelPackage.OFFICE:
+			case H4modelPackage.OFFICE:
 				sequence_Office(context, (Office) semanticObject); 
 				return; 
-			case UnimodelPackage.PERSON:
+			case H4modelPackage.PERSON:
 				sequence_Person(context, (Person) semanticObject); 
 				return; 
-			case UnimodelPackage.ROOM:
-				sequence_Room_Impl(context, (Room) semanticObject); 
+			case H4modelPackage.ROOM:
+				sequence_Room(context, (Room) semanticObject); 
 				return; 
-			case UnimodelPackage.UNIVERSITY:
+			case H4modelPackage.UNIVERSITY:
 				sequence_University(context, (University) semanticObject); 
 				return; 
 			}
@@ -105,7 +105,7 @@ public class UnimodelSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Book returns Book
 	 *
 	 * Constraint:
-	 *     (name=EString quantity=EInt ISBN=EString? author=EString?)
+	 *     (name=EString quantity=EInt ISBN=EString? author=EString? library=[Library|EString]?)
 	 */
 	protected void sequence_Book(ISerializationContext context, Book semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -133,45 +133,44 @@ public class UnimodelSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	
 	/**
 	 * Contexts:
-	 *     Room returns Class
 	 *     Class returns Class
 	 *
 	 * Constraint:
 	 *     (
 	 *         name=EString 
-	 *         dimension=EFloat 
-	 *         sockets=EInt 
 	 *         seats=EInt 
 	 *         blackboards=EInt 
 	 *         speakers=EInt 
-	 *         computers=EInt
+	 *         computers=EInt 
+	 *         dimension=EFloat 
+	 *         sockets=EInt
 	 *     )
 	 */
-	protected void sequence_Class(ISerializationContext context, unimodel.Class semanticObject) {
+	protected void sequence_Class(ISerializationContext context, it.univaq.disim.unimodel.h4model.Class semanticObject) {
 		if (errorAcceptor != null) {
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.NAMED__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.NAMED__NAME));
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.ROOM__DIMENSION) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.ROOM__DIMENSION));
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.ROOM__SOCKETS) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.ROOM__SOCKETS));
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.CLASS__SEATS) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.CLASS__SEATS));
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.CLASS__BLACKBOARDS) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.CLASS__BLACKBOARDS));
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.CLASS__SPEAKERS) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.CLASS__SPEAKERS));
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.CLASS__COMPUTERS) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.CLASS__COMPUTERS));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.NAMED__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.NAMED__NAME));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.CLASS__SEATS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.CLASS__SEATS));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.CLASS__BLACKBOARDS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.CLASS__BLACKBOARDS));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.CLASS__SPEAKERS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.CLASS__SPEAKERS));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.CLASS__COMPUTERS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.CLASS__COMPUTERS));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.CLASS__DIMENSION) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.CLASS__DIMENSION));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.CLASS__SOCKETS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.CLASS__SOCKETS));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
 		feeder.accept(grammarAccess.getClassAccess().getNameEStringParserRuleCall_1_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getClassAccess().getDimensionEFloatParserRuleCall_4_0(), semanticObject.getDimension());
-		feeder.accept(grammarAccess.getClassAccess().getSocketsEIntParserRuleCall_6_0(), semanticObject.getSockets());
-		feeder.accept(grammarAccess.getClassAccess().getSeatsEIntParserRuleCall_8_0(), semanticObject.getSeats());
-		feeder.accept(grammarAccess.getClassAccess().getBlackboardsEIntParserRuleCall_10_0(), semanticObject.getBlackboards());
-		feeder.accept(grammarAccess.getClassAccess().getSpeakersEIntParserRuleCall_12_0(), semanticObject.getSpeakers());
-		feeder.accept(grammarAccess.getClassAccess().getComputersEIntParserRuleCall_14_0(), semanticObject.getComputers());
+		feeder.accept(grammarAccess.getClassAccess().getSeatsEIntParserRuleCall_4_0(), semanticObject.getSeats());
+		feeder.accept(grammarAccess.getClassAccess().getBlackboardsEIntParserRuleCall_6_0(), semanticObject.getBlackboards());
+		feeder.accept(grammarAccess.getClassAccess().getSpeakersEIntParserRuleCall_8_0(), semanticObject.getSpeakers());
+		feeder.accept(grammarAccess.getClassAccess().getComputersEIntParserRuleCall_10_0(), semanticObject.getComputers());
+		feeder.accept(grammarAccess.getClassAccess().getDimensionEFloatParserRuleCall_12_0(), semanticObject.getDimension());
+		feeder.accept(grammarAccess.getClassAccess().getSocketsEIntParserRuleCall_14_0(), semanticObject.getSockets());
 		feeder.finish();
 	}
 	
@@ -181,7 +180,13 @@ public class UnimodelSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	 *     Floor returns Floor
 	 *
 	 * Constraint:
-	 *     (number=EInt bathrooms=EInt (rooms+=Room rooms+=Room*)?)
+	 *     (
+	 *         number=EInt 
+	 *         bathrooms=EInt 
+	 *         (offices+=[Office|EString] offices+=[Office|EString]*)? 
+	 *         (classes+=[Class|EString] classes+=[Class|EString]*)? 
+	 *         (rooms+=Room rooms+=Room*)?
+	 *     )
 	 */
 	protected void sequence_Floor(ISerializationContext context, Floor semanticObject) {
 		genericSequencer.createSequence(context, semanticObject);
@@ -221,17 +226,16 @@ public class UnimodelSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	
 	/**
 	 * Contexts:
-	 *     Room returns Office
 	 *     Office returns Office
 	 *
 	 * Constraint:
 	 *     (
 	 *         name=EString 
-	 *         dimension=EFloat 
-	 *         sockets=EInt 
 	 *         type=Type 
 	 *         capacity=EInt 
 	 *         phone=EString? 
+	 *         dimension=EFloat 
+	 *         sockets=EInt 
 	 *         office_address=[Address|EString] 
 	 *         person_in_office+=Person 
 	 *         person_in_office+=Person*
@@ -264,24 +268,23 @@ public class UnimodelSemanticSequencer extends AbstractDelegatingSemanticSequenc
 	/**
 	 * Contexts:
 	 *     Room returns Room
-	 *     Room_Impl returns Room
 	 *
 	 * Constraint:
 	 *     (name=EString dimension=EFloat sockets=EInt)
 	 */
-	protected void sequence_Room_Impl(ISerializationContext context, Room semanticObject) {
+	protected void sequence_Room(ISerializationContext context, Room semanticObject) {
 		if (errorAcceptor != null) {
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.NAMED__NAME) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.NAMED__NAME));
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.ROOM__DIMENSION) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.ROOM__DIMENSION));
-			if (transientValues.isValueTransient(semanticObject, UnimodelPackage.Literals.ROOM__SOCKETS) == ValueTransient.YES)
-				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, UnimodelPackage.Literals.ROOM__SOCKETS));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.NAMED__NAME) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.NAMED__NAME));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.ROOM__DIMENSION) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.ROOM__DIMENSION));
+			if (transientValues.isValueTransient(semanticObject, H4modelPackage.Literals.ROOM__SOCKETS) == ValueTransient.YES)
+				errorAcceptor.accept(diagnosticProvider.createFeatureValueMissing(semanticObject, H4modelPackage.Literals.ROOM__SOCKETS));
 		}
 		SequenceFeeder feeder = createSequencerFeeder(context, semanticObject);
-		feeder.accept(grammarAccess.getRoom_ImplAccess().getNameEStringParserRuleCall_1_0(), semanticObject.getName());
-		feeder.accept(grammarAccess.getRoom_ImplAccess().getDimensionEFloatParserRuleCall_4_0(), semanticObject.getDimension());
-		feeder.accept(grammarAccess.getRoom_ImplAccess().getSocketsEIntParserRuleCall_6_0(), semanticObject.getSockets());
+		feeder.accept(grammarAccess.getRoomAccess().getNameEStringParserRuleCall_1_0(), semanticObject.getName());
+		feeder.accept(grammarAccess.getRoomAccess().getDimensionEFloatParserRuleCall_4_0(), semanticObject.getDimension());
+		feeder.accept(grammarAccess.getRoomAccess().getSocketsEIntParserRuleCall_6_0(), semanticObject.getSockets());
 		feeder.finish();
 	}
 	

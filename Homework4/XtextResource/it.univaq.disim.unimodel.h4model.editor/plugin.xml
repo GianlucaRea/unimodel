@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.0"?>
+
+<!--
+-->
+
+<plugin>
+
+   <extension point="org.eclipse.ui.newWizards">
+      <!-- @generated h4model -->
+      <category
+            id="org.eclipse.emf.ecore.Wizard.category.ID"
+            name="%_UI_Wizard_category"/>
+      <wizard
+            id="it.univaq.disim.unimodel.h4model.presentation.H4modelModelWizardID"
+            name="%_UI_H4modelModelWizard_label"
+            class="it.univaq.disim.unimodel.h4model.presentation.H4modelModelWizard"
+            category="org.eclipse.emf.ecore.Wizard.category.ID"
+            icon="icons/full/obj16/H4modelModelFile.gif">
+         <description>%_UI_H4modelModelWizard_description</description>
+         <selection class="org.eclipse.core.resources.IResource"/>
+      </wizard>
+   </extension>
+
+   <extension point="org.eclipse.ui.editors">
+      <!-- @generated h4model -->
+      <editor
+            id="it.univaq.disim.unimodel.h4model.presentation.H4modelEditorID"
+            name="%_UI_H4modelEditor_label"
+            icon="icons/full/obj16/H4modelModelFile.gif"
+            extensions="h4model"
+            class="it.univaq.disim.unimodel.h4model.presentation.H4modelEditor"
+            contributorClass="it.univaq.disim.unimodel.h4model.presentation.H4modelActionBarContributor">
+      </editor>
+   </extension>
+
+</plugin>

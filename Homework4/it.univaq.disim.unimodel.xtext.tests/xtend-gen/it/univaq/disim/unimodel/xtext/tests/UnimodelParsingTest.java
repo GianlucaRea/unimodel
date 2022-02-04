@@ -4,6 +4,7 @@
 package it.univaq.disim.unimodel.xtext.tests;
 
 import com.google.inject.Inject;
+import it.univaq.disim.unimodel.h4model.University;
 import org.eclipse.emf.common.util.EList;
 import org.eclipse.emf.ecore.resource.Resource;
 import org.eclipse.xtend2.lib.StringConcatenation;
@@ -15,7 +16,6 @@ import org.eclipse.xtext.xbase.lib.IterableExtensions;
 import org.junit.jupiter.api.Assertions;
 import org.junit.jupiter.api.Test;
 import org.junit.jupiter.api.extension.ExtendWith;
-import unimodel.University;
 
 @ExtendWith(InjectionExtension.class)
 @InjectWith(UnimodelInjectorProvider.class)
